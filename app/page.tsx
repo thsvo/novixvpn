@@ -95,7 +95,7 @@ export default function Home() {
         <section className="bg-[#0052cc] text-white py-8">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center">
-              <h2 className="text-3xl font-bold mb-6">Time to go Turbo!</h2>
+              <h2 className="text-3xl font-bold mb-6">Limited Time Offer, Grab Now!  </h2>
               <CountdownTimer />
               <Button size="lg" className="mt-6 bg-[#ff7043] hover:bg-[#ff7043]/90 text-white">
                 Save 65% Now!
