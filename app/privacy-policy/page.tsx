@@ -83,6 +83,29 @@ export default function PrivacyPolicy() {
             </section>
 
             <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">Our No-Logs VPN Policy</h2>
+              <p>Novix VPN operates under a strict no-logs policy. This means:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>
+                  We do not monitor, record, log, store or share any of your activities while using our VPN service
+                </li>
+                <li>
+                  We do not store connection timestamps, session information, used bandwidth, traffic logs, IP
+                  addresses, or browsing data
+                </li>
+                <li>
+                  We do not store any information that could identify what you browse, view, or do online via our VPN
+                  connection
+                </li>
+                <li>We do not store your original IP address or the IP addresses of the VPN servers you use</li>
+              </ul>
+              <p>
+                Our no-logs policy has been independently audited by cybersecurity experts to verify our claims. The
+                audit reports are available upon request.
+              </p>
+            </section>
+
+            <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">How We Use Your Information</h2>
               <p>We use the information we collect to:</p>
               <ul className="list-disc pl-6 mb-4">
@@ -124,11 +147,39 @@ export default function PrivacyPolicy() {
             </section>
 
             <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">Google Play Store Compliance</h2>
+              <p>
+                For users who download our application from the Google Play Store, we comply with Google Play's
+                Developer Program Policies, including:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>We do not use your data for any purpose other than providing and improving our VPN service</li>
+                <li>We do not sell your personal or sensitive data to third parties</li>
+                <li>We clearly disclose our data collection and use practices in this Privacy Policy</li>
+                <li>We implement appropriate security measures to protect your data</li>
+                <li>
+                  We comply with all applicable laws and regulations, including GDPR, CCPA, and other privacy laws
+                </li>
+              </ul>
+            </section>
+
+            <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Data Security</h2>
               <p>
                 We implement appropriate technical and organizational measures to protect the security of your personal
-                information. However, please be aware that no method of transmission over the Internet or method of
-                electronic storage is 100% secure.
+                information, including:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>AES-256 encryption for all VPN connections</li>
+                <li>
+                  Perfect Forward Secrecy to ensure that your encrypted data cannot be captured and decrypted later
+                </li>
+                <li>Regular security audits and penetration testing</li>
+                <li>Secure, encrypted storage of any personal information we do collect</li>
+              </ul>
+              <p>
+                However, please be aware that no method of transmission over the Internet or method of electronic
+                storage is 100% secure.
               </p>
             </section>
 
@@ -153,6 +204,52 @@ export default function PrivacyPolicy() {
             </section>
 
             <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">GDPR Compliance</h2>
+              <p>
+                For users in the European Economic Area (EEA), we comply with the General Data Protection Regulation
+                (GDPR). This means:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>We process your data lawfully, fairly, and transparently</li>
+                <li>We collect data for specified, explicit, and legitimate purposes</li>
+                <li>We limit data collection to what is necessary for the purposes for which it is processed</li>
+                <li>We take steps to ensure data accuracy</li>
+                <li>We store data only as long as necessary</li>
+                <li>We implement appropriate security measures to protect your data</li>
+              </ul>
+              <p>Our Data Protection Officer can be contacted at dpo@novixvpn.com.</p>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">CCPA Compliance</h2>
+              <p>
+                For California residents, we comply with the California Consumer Privacy Act (CCPA). Under the CCPA, you
+                have the right to:
+              </p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Know what personal information we collect about you</li>
+                <li>Request deletion of your personal information</li>
+                <li>
+                  Opt-out of the sale of your personal information (note that we do not sell your personal information)
+                </li>
+                <li>Non-discrimination for exercising your CCPA rights</li>
+              </ul>
+              <p>
+                To exercise your rights under the CCPA, please contact us using the information provided in the "Contact
+                Us" section below.
+              </p>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">Children's Privacy</h2>
+              <p>
+                Our Service is not directed to children under the age of 16. We do not knowingly collect personal
+                information from children under 16. If you are a parent or guardian and you are aware that your child
+                has provided us with personal information, please contact us so that we can take necessary actions.
+              </p>
+            </section>
+
+            <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Changes to This Privacy Policy</h2>
               <p>
                 We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
@@ -168,7 +265,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
               <p>If you have any questions about this Privacy Policy, please contact us at:</p>
               <p className="mt-2">
-                <strong>Email:</strong> privacy@novixvpn.com
+                <strong>Email:</strong> novixvpna@gmail.com
                 <br />
                 <strong>Address:</strong> 123 Privacy Street, Secure City, 10001
               </p>

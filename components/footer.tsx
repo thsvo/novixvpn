@@ -95,13 +95,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">
-                  Careers
+                <Link href="/contact" className="text-muted-foreground hover:text-foreground">
+                  Contact
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground">
-                  Contact
+                  Careers
                 </Link>
               </li>
               <li>
@@ -124,6 +124,14 @@ export default function Footer() {
             <Link href="/cookie-policy" className="hover:underline">
               Cookie Policy
             </Link>
+          </div>
+          <div className="mt-4">
+            <p>
+              Support:{" "}
+              <a href="mailto:novixvpna@gmail.com" className="text-primary hover:underline">
+                novixvpna@gmail.com
+              </a>
+            </p>
           </div>
         </div>
       </div>
