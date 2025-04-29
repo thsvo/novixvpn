@@ -23,6 +23,7 @@ import Testimonials from "@/components/testimonials";
 import Footer from "@/components/footer";
 import MainNav from "@/components/main-nav";
 import HeroPromotionCom from "@/components/HeroPromotionCom";
+import HeaderCom from "@/components/HeaderCom";
 
 export default function Home() {
   return (
@@ -30,32 +31,7 @@ export default function Home() {
       <IpBanner />
 
       {/* Header/Navigation */}
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between py-4">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/novix-logo.png"
-              alt="Novix VPN Logo"
-              width={180}
-              height={58}
-              className="rounded-md"
-              draggable="false"
-            />
-          </div>
-          <nav className="hidden md:flex items-center gap-6">
-            <MainNav />
-          </nav>
-          <div className="flex items-center gap-4">
-            <Link
-              href="#"
-              className="text-sm font-medium hover:underline hidden md:block"
-            >
-              Log in
-            </Link>
-            <Button>Get Novix VPN</Button>
-          </div>
-        </div>
-      </header>
+      <HeaderCom />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-background py-12 md:py-24">
