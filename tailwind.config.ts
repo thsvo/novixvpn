@@ -9,9 +9,6 @@ const config = {
     "./src/**/*.{ts,tsx}",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
-  safelist: [
-    'w-[90vw]', // <-- Safelist this utility
-  ],
   prefix: "",
   theme: {
     container: {

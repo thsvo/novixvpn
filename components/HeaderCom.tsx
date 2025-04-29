@@ -26,7 +26,7 @@ export default function HeaderCom() {
     <header
       className={`sticky top-0 z-40 w-full border-b  ${
         isScrolled
-          ? "w-[90vw] mx-auto px-10 mt-5 top-2 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300 rounded-full "
+          ? "w-[91vw] mx-auto px-10 mt-5 top-2 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300 rounded-full "
           : ""
       }`}
     >
