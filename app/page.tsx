@@ -8,6 +8,7 @@ import {
   Smartphone,
   Laptop,
   Star,
+  Tag,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -21,6 +22,7 @@ import PricingCards from "@/components/pricing-cards";
 import Testimonials from "@/components/testimonials";
 import Footer from "@/components/footer";
 import MainNav from "@/components/main-nav";
+import HeroPromotionCom from "@/components/HeroPromotionCom";
 
 export default function Home() {
   return (
@@ -32,10 +34,10 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Image
-              src="/logo.png"
+              src="/novixlogo.png"
               alt="Novix VPN Logo"
-              width={150}
-              height={50}
+              width={180}
+              height={58}
               className="rounded-md"
             />
           </div>
@@ -53,21 +55,34 @@ export default function Home() {
           </div>
         </div>
       </header>
-
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
               <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
+                <div className="space-y-6">
                   <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    The VPN That Works Better
+                    Guard What’s Yours. Ghost Everything Else.
                   </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Unlimited devices, global locations, seamless connections.
-                    Secure your online presence with military-grade encryption.
-                  </p>
+                  <ul>
+                    <li className="flex justify-start items-center gap-2  ">
+                      <Check className="text-[#2460D1]" />
+                      Route traffic through two secure servers
+                    </li>
+                    <li className="flex justify-start items-center gap-2  ">
+                      <Check className="text-[#2460D1]" />
+                      Blazing-fast servers, no throttling
+                    </li>
+                    <li className="flex justify-start items-center gap-2  ">
+                      <Check className="text-[#2460D1]" />
+                      Strict No-Logs
+                    </li>
+                  </ul>
+                  {/* promotion section */}
+                  <Link href="#">
+                    <HeroPromotionCom />
+                  </Link>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
