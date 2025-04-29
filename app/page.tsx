@@ -1,18 +1,26 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Shield, Zap, Check, Download, Smartphone, Laptop, Star } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Shield,
+  Zap,
+  Check,
+  Download,
+  Smartphone,
+  Laptop,
+  Star,
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import CountdownTimer from "@/components/countdown-timer"
-import IpBanner from "@/components/ip-banner"
-import ComparisonTable from "@/components/comparison-table"
-import PricingCards from "@/components/pricing-cards"
-import Testimonials from "@/components/testimonials"
-import Footer from "@/components/footer"
-import MainNav from "@/components/main-nav"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import CountdownTimer from "@/components/countdown-timer";
+import IpBanner from "@/components/ip-banner";
+import ComparisonTable from "@/components/comparison-table";
+import PricingCards from "@/components/pricing-cards";
+import Testimonials from "@/components/testimonials";
+import Footer from "@/components/footer";
+import MainNav from "@/components/main-nav";
 
 export default function Home() {
   return (
@@ -23,14 +31,22 @@ export default function Home() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
-            <Image src="/novix-logo.png" alt="Novix VPN Logo" width={32} height={32} className="rounded-md" />
-            <span className="text-xl font-bold">Novix VPN</span>
+            <Image
+              src="/logo.png"
+              alt="Novix VPN Logo"
+              width={150}
+              height={50}
+              className="rounded-md"
+            />
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <MainNav />
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#" className="text-sm font-medium hover:underline hidden md:block">
+            <Link
+              href="#"
+              className="text-sm font-medium hover:underline hidden md:block"
+            >
               Log in
             </Link>
             <Button>Get Novix VPN</Button>
@@ -49,8 +65,8 @@ export default function Home() {
                     The VPN That Works Better
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Unlimited devices, global locations, seamless connections. Secure your online presence with
-                    military-grade encryption.
+                    Unlimited devices, global locations, seamless connections.
+                    Secure your online presence with military-grade encryption.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -70,10 +86,15 @@ export default function Home() {
                     {Array(5)
                       .fill(null)
                       .map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                        <Star
+                          key={i}
+                          className="h-5 w-5 fill-primary text-primary"
+                        />
                       ))}
                   </div>
-                  <span className="text-sm font-medium">25,798 reviews on Trustpilot</span>
+                  <span className="text-sm font-medium">
+                    25,798 reviews on Trustpilot
+                  </span>
                 </div>
               </div>
               <div className="relative hidden lg:block">
@@ -85,7 +106,9 @@ export default function Home() {
                   alt="VPN App Interface"
                   className="relative z-10 mx-auto"
                 />
-                <Badge className="absolute top-10 right-10 text-lg py-2 px-4 bg-primary text-white">-65% OFF</Badge>
+                <Badge className="absolute top-10 right-10 text-lg py-2 px-4 bg-primary text-white">
+                  -65% OFF
+                </Badge>
               </div>
             </div>
           </div>
@@ -95,9 +118,14 @@ export default function Home() {
         <section className="bg-[#0052cc] text-white py-8">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center">
-              <h2 className="text-3xl font-bold mb-6">Limited Time Offer, Grab Now!  </h2>
+              <h2 className="text-3xl font-bold mb-6">
+                Limited Time Offer, Grab Now!{" "}
+              </h2>
               <CountdownTimer />
-              <Button size="lg" className="mt-6 bg-[#ff7043] hover:bg-[#ff7043]/90 text-white">
+              <Button
+                size="lg"
+                className="mt-6 bg-[#ff7043] hover:bg-[#ff7043]/90 text-white"
+              >
                 Save 65% Now!
               </Button>
               <div className="flex items-center gap-2 mt-4">
@@ -116,8 +144,8 @@ export default function Home() {
                 One VPN. 360° Protection. Zero Hassle.
               </h2>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
-                No complex configurations. No tech skills needed. Just install, tap connect, and you're instantly
-                protected.
+                No complex configurations. No tech skills needed. Just install,
+                tap connect, and you're instantly protected.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -127,7 +155,9 @@ export default function Home() {
                     <Download className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-2">Download & Install</h3>
-                  <p className="text-muted-foreground">Available on all devices</p>
+                  <p className="text-muted-foreground">
+                    Available on all devices
+                  </p>
                   <Button variant="link" asChild className="mt-4">
                     <Link href="/features">Learn More</Link>
                   </Button>
@@ -139,7 +169,9 @@ export default function Home() {
                     <Zap className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold mb-2">One-Tap Connect</h3>
-                  <p className="text-muted-foreground">Instant encryption - no manual setup</p>
+                  <p className="text-muted-foreground">
+                    Instant encryption - no manual setup
+                  </p>
                   <Button variant="link" asChild className="mt-4">
                     <Link href="/high-speed-vpn">Learn More</Link>
                   </Button>
@@ -150,8 +182,12 @@ export default function Home() {
                   <div className="mb-4 rounded-full bg-primary/10 p-4">
                     <Shield className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Stay Private & Secure</h3>
-                  <p className="text-muted-foreground">Auto-connect with 24/7 protection</p>
+                  <h3 className="text-xl font-bold mb-2">
+                    Stay Private & Secure
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Auto-connect with 24/7 protection
+                  </p>
                   <Button variant="link" asChild className="mt-4">
                     <Link href="/no-user-tracking">Learn More</Link>
                   </Button>
@@ -172,9 +208,12 @@ export default function Home() {
                       <Check className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold">One-click setup on any device—get protected instantly</h3>
+                      <h3 className="font-bold">
+                        One-click setup on any device—get protected instantly
+                      </h3>
                       <p className="text-muted-foreground">
-                        Connect with a single tap on Windows, Mac, iOS, Android, Linux, and more.
+                        Connect with a single tap on Windows, Mac, iOS, Android,
+                        Linux, and more.
                       </p>
                     </div>
                   </li>
@@ -183,9 +222,12 @@ export default function Home() {
                       <Check className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold">Seamlessly switch between devices without interruptions</h3>
+                      <h3 className="font-bold">
+                        Seamlessly switch between devices without interruptions
+                      </h3>
                       <p className="text-muted-foreground">
-                        Your connection stays secure as you move between your phone, tablet, and computer.
+                        Your connection stays secure as you move between your
+                        phone, tablet, and computer.
                       </p>
                     </div>
                   </li>
@@ -194,8 +236,13 @@ export default function Home() {
                       <Check className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold">Secure up to 8 devices with one simple connection</h3>
-                      <p className="text-muted-foreground">Protect your entire household with a single subscription.</p>
+                      <h3 className="font-bold">
+                        Secure up to 8 devices with one simple connection
+                      </h3>
+                      <p className="text-muted-foreground">
+                        Protect your entire household with a single
+                        subscription.
+                      </p>
                     </div>
                   </li>
                 </ul>
@@ -217,7 +264,9 @@ export default function Home() {
         <section id="comparison" className="bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Why Choose Novix VPN?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Why Choose Novix VPN?
+              </h2>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
                 See how we compare to other leading VPN providers
               </p>
@@ -233,7 +282,9 @@ export default function Home() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                 Simple, Transparent Pricing
               </h2>
-              <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">Choose the plan that works for you</p>
+              <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
+                Choose the plan that works for you
+              </p>
             </div>
             <Tabs defaultValue="monthly" className="w-full max-w-3xl mx-auto">
               <TabsList className="grid w-full grid-cols-2 mb-8">
@@ -254,7 +305,9 @@ export default function Home() {
         <section id="testimonials" className="bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What Our Users Say</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                What Our Users Say
+              </h2>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
                 Join millions of satisfied users worldwide
               </p>
@@ -264,11 +317,18 @@ export default function Home() {
         </section>
 
         {/* Download Section */}
-        <section id="download" className="bg-primary text-primary-foreground py-12 md:py-24">
+        <section
+          id="download"
+          className="bg-primary text-primary-foreground py-12 md:py-24"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Download Novix VPN Now</h2>
-              <p className="mt-4 max-w-[700px] md:text-xl">Available on all your favorite platforms</p>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Download Novix VPN Now
+              </h2>
+              <p className="mt-4 max-w-[700px] md:text-xl">
+                Available on all your favorite platforms
+              </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
               <Link
@@ -289,13 +349,19 @@ export default function Home() {
                 </div>
                 <span>iOS</span>
               </Link>
-              <Link href="#" className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity">
+              <Link
+                href="#"
+                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+              >
                 <div className="rounded-full bg-white/10 p-4">
                   <Laptop className="h-8 w-8" />
                 </div>
                 <span>Windows</span>
               </Link>
-              <Link href="#" className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity">
+              <Link
+                href="#"
+                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+              >
                 <div className="rounded-full bg-white/10 p-4">
                   <Laptop className="h-8 w-8" />
                 </div>
@@ -308,6 +374,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  )
+  );
 }
-
