@@ -148,7 +148,7 @@ export default function MainNav() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/blogs" legacyBehavior passHref>
             <NavigationMenuLink
               className={`bg-transparent ${navigationMenuTriggerStyle()}`}
@@ -156,7 +156,7 @@ export default function MainNav() {
               Blogs
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem> */}
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );
