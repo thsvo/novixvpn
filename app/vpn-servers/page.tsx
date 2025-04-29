@@ -1,11 +1,11 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowLeft, Globe, Search, Check, Server } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowLeft, Globe, Search, Check, Server } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import Footer from "@/components/footer"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import Footer from "@/components/footer";
 
 export default function VPNServers() {
   return (
@@ -16,8 +16,14 @@ export default function VPNServers() {
           <div className="flex items-center gap-2">
             <Link href="/">
               <div className="flex items-center gap-2">
-                <Image src="/novix-logo.png" alt="Novix VPN Logo" width={32} height={32} className="rounded-md" />
-                <span className="text-xl font-bold">Novix VPN</span>
+                <Image
+                  src="/novix-logo.png"
+                  alt="Novix VPN Logo"
+                  width={180}
+                  height={58}
+                  className="rounded-md"
+                  draggable="false"
+                />
               </div>
             </Link>
           </div>
@@ -40,7 +46,8 @@ export default function VPNServers() {
                 Global VPN Server Network
               </h1>
               <p className="text-xl md:text-2xl mb-8">
-                Access the internet securely from anywhere with our extensive network of high-speed servers.
+                Access the internet securely from anywhere with our extensive
+                network of high-speed servers.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <div className="flex items-center gap-2">
@@ -66,7 +73,11 @@ export default function VPNServers() {
               <div className="flex flex-col md:flex-row gap-4 items-center">
                 <div className="relative w-full">
                   <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                  <Input type="search" placeholder="Search for a country or city..." className="pl-10" />
+                  <Input
+                    type="search"
+                    placeholder="Search for a country or city..."
+                    className="pl-10"
+                  />
                 </div>
                 <Button className="whitespace-nowrap">Find Servers</Button>
               </div>
@@ -87,7 +98,9 @@ export default function VPNServers() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold">United States</h3>
-                      <p className="text-sm text-muted-foreground">500+ servers</p>
+                      <p className="text-sm text-muted-foreground">
+                        500+ servers
+                      </p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -129,7 +142,9 @@ export default function VPNServers() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold">United Kingdom</h3>
-                      <p className="text-sm text-muted-foreground">200+ servers</p>
+                      <p className="text-sm text-muted-foreground">
+                        200+ servers
+                      </p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -167,7 +182,9 @@ export default function VPNServers() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold">Germany</h3>
-                      <p className="text-sm text-muted-foreground">150+ servers</p>
+                      <p className="text-sm text-muted-foreground">
+                        150+ servers
+                      </p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -205,7 +222,9 @@ export default function VPNServers() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold">Japan</h3>
-                      <p className="text-sm text-muted-foreground">100+ servers</p>
+                      <p className="text-sm text-muted-foreground">
+                        100+ servers
+                      </p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -239,7 +258,9 @@ export default function VPNServers() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold">Australia</h3>
-                      <p className="text-sm text-muted-foreground">80+ servers</p>
+                      <p className="text-sm text-muted-foreground">
+                        80+ servers
+                      </p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -277,7 +298,9 @@ export default function VPNServers() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold">Canada</h3>
-                      <p className="text-sm text-muted-foreground">120+ servers</p>
+                      <p className="text-sm text-muted-foreground">
+                        120+ servers
+                      </p>
                     </div>
                   </div>
                   <div className="space-y-2">
@@ -306,7 +329,9 @@ export default function VPNServers() {
               <Button variant="outline" className="mr-2">
                 View More Countries
               </Button>
-              <Button className="bg-primary hover:bg-primary/90">Get Novix VPN</Button>
+              <Button className="bg-primary hover:bg-primary/90">
+                Get Novix VPN
+              </Button>
             </div>
           </div>
         </section>
@@ -322,8 +347,8 @@ export default function VPNServers() {
                     <div>
                       <h4 className="font-medium">Optimized for Speed</h4>
                       <p className="text-muted-foreground">
-                        Our servers are optimized for maximum speed and minimal latency, ensuring a smooth browsing
-                        experience.
+                        Our servers are optimized for maximum speed and minimal
+                        latency, ensuring a smooth browsing experience.
                       </p>
                     </div>
                   </li>
@@ -332,8 +357,9 @@ export default function VPNServers() {
                     <div>
                       <h4 className="font-medium">P2P Support</h4>
                       <p className="text-muted-foreground">
-                        Many of our servers support P2P file sharing, making them ideal for torrenting and other
-                        peer-to-peer activities.
+                        Many of our servers support P2P file sharing, making
+                        them ideal for torrenting and other peer-to-peer
+                        activities.
                       </p>
                     </div>
                   </li>
@@ -342,7 +368,8 @@ export default function VPNServers() {
                     <div>
                       <h4 className="font-medium">Obfuscated Servers</h4>
                       <p className="text-muted-foreground">
-                        Special servers designed to bypass network restrictions in countries with internet censorship.
+                        Special servers designed to bypass network restrictions
+                        in countries with internet censorship.
                       </p>
                     </div>
                   </li>
@@ -351,7 +378,8 @@ export default function VPNServers() {
                     <div>
                       <h4 className="font-medium">Double VPN</h4>
                       <p className="text-muted-foreground">
-                        Route your traffic through two different VPN servers for an extra layer of security.
+                        Route your traffic through two different VPN servers for
+                        an extra layer of security.
                       </p>
                     </div>
                   </li>
@@ -373,14 +401,19 @@ export default function VPNServers() {
         <section className="py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">Ready to Connect?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
+                Ready to Connect?
+              </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Get access to our global network of high-speed servers with Novix VPN.
+                Get access to our global network of high-speed servers with
+                Novix VPN.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Get Started Today
               </Button>
-              <p className="mt-4 text-sm text-muted-foreground">30-day money-back guarantee. No questions asked.</p>
+              <p className="mt-4 text-sm text-muted-foreground">
+                30-day money-back guarantee. No questions asked.
+              </p>
             </div>
           </div>
         </section>
@@ -388,6 +421,5 @@ export default function VPNServers() {
 
       <Footer />
     </div>
-  )
+  );
 }
-

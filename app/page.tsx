@@ -34,11 +34,12 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Image
-              src="/novixlogo.png"
+              src="/novix-logo.png"
               alt="Novix VPN Logo"
               width={180}
               height={58}
               className="rounded-md"
+              draggable="false"
             />
           </div>
           <nav className="hidden md:flex items-center gap-6">

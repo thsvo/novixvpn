@@ -1,11 +1,24 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowLeft, Shield, Lock, Zap, Globe, Check, Smartphone, Laptop, Tv, Server, Eye, Clock } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  ArrowLeft,
+  Shield,
+  Lock,
+  Zap,
+  Globe,
+  Check,
+  Smartphone,
+  Laptop,
+  Tv,
+  Server,
+  Eye,
+  Clock,
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Footer from "@/components/footer"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Footer from "@/components/footer";
 
 export default function Features() {
   return (
@@ -16,8 +29,14 @@ export default function Features() {
           <div className="flex items-center gap-2">
             <Link href="/">
               <div className="flex items-center gap-2">
-                <Image src="/novix-logo.png" alt="Novix VPN Logo" width={32} height={32} className="rounded-md" />
-                <span className="text-xl font-bold">Novix VPN</span>
+                <Image
+                  src="/novix-logo.png"
+                  alt="Novix VPN Logo"
+                  width={180}
+                  height={58}
+                  className="rounded-md"
+                  draggable="false"
+                />
               </div>
             </Link>
           </div>
@@ -36,10 +55,12 @@ export default function Features() {
         <section className="bg-gradient-to-b from-primary to-primary/80 text-white py-16 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">Novix VPN Features</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
+                Novix VPN Features
+              </h1>
               <p className="text-xl md:text-2xl mb-8">
-                Discover all the powerful features that make Novix VPN the best choice for your online privacy and
-                security.
+                Discover all the powerful features that make Novix VPN the best
+                choice for your online privacy and security.
               </p>
             </div>
           </div>
@@ -58,9 +79,12 @@ export default function Features() {
               <TabsContent value="security" className="space-y-8">
                 <div className="grid gap-8 md:grid-cols-2">
                   <div>
-                    <h2 className="text-3xl font-bold mb-4">Military-Grade Security</h2>
+                    <h2 className="text-3xl font-bold mb-4">
+                      Military-Grade Security
+                    </h2>
                     <p className="text-muted-foreground mb-6">
-                      Novix VPN uses the most advanced encryption standards to keep your data secure and private.
+                      Novix VPN uses the most advanced encryption standards to
+                      keep your data secure and private.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
@@ -68,7 +92,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">AES-256 Encryption</h4>
                           <p className="text-muted-foreground">
-                            The gold standard in encryption, used by governments and security experts worldwide.
+                            The gold standard in encryption, used by governments
+                            and security experts worldwide.
                           </p>
                         </div>
                       </li>
@@ -77,7 +102,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">Kill Switch</h4>
                           <p className="text-muted-foreground">
-                            Automatically disconnects your internet if the VPN connection drops, preventing data leaks.
+                            Automatically disconnects your internet if the VPN
+                            connection drops, preventing data leaks.
                           </p>
                         </div>
                       </li>
@@ -86,7 +112,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">DNS Leak Protection</h4>
                           <p className="text-muted-foreground">
-                            Ensures your DNS requests are always routed through our secure servers.
+                            Ensures your DNS requests are always routed through
+                            our secure servers.
                           </p>
                         </div>
                       </li>
@@ -95,7 +122,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">Double VPN</h4>
                           <p className="text-muted-foreground">
-                            Routes your traffic through two VPN servers for an extra layer of encryption.
+                            Routes your traffic through two VPN servers for an
+                            extra layer of encryption.
                           </p>
                         </div>
                       </li>
@@ -125,9 +153,12 @@ export default function Features() {
                     />
                   </div>
                   <div>
-                    <h2 className="text-3xl font-bold mb-4">Lightning-Fast Performance</h2>
+                    <h2 className="text-3xl font-bold mb-4">
+                      Lightning-Fast Performance
+                    </h2>
                     <p className="text-muted-foreground mb-6">
-                      Enjoy blazing-fast speeds without compromising on security or privacy.
+                      Enjoy blazing-fast speeds without compromising on security
+                      or privacy.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
@@ -135,7 +166,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">Optimized Servers</h4>
                           <p className="text-muted-foreground">
-                            Our servers are optimized for speed, ensuring minimal impact on your connection.
+                            Our servers are optimized for speed, ensuring
+                            minimal impact on your connection.
                           </p>
                         </div>
                       </li>
@@ -144,7 +176,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">Unlimited Bandwidth</h4>
                           <p className="text-muted-foreground">
-                            Stream, download, and browse without restrictions or throttling.
+                            Stream, download, and browse without restrictions or
+                            throttling.
                           </p>
                         </div>
                       </li>
@@ -153,7 +186,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">P2P Support</h4>
                           <p className="text-muted-foreground">
-                            Optimized servers for peer-to-peer file sharing with fast download speeds.
+                            Optimized servers for peer-to-peer file sharing with
+                            fast download speeds.
                           </p>
                         </div>
                       </li>
@@ -162,7 +196,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">Smart Connect</h4>
                           <p className="text-muted-foreground">
-                            Automatically connects you to the fastest server based on your location.
+                            Automatically connects you to the fastest server
+                            based on your location.
                           </p>
                         </div>
                       </li>
@@ -174,25 +209,35 @@ export default function Features() {
               <TabsContent value="accessibility" className="space-y-8">
                 <div className="grid gap-8 md:grid-cols-2">
                   <div>
-                    <h2 className="text-3xl font-bold mb-4">Easy Accessibility</h2>
+                    <h2 className="text-3xl font-bold mb-4">
+                      Easy Accessibility
+                    </h2>
                     <p className="text-muted-foreground mb-6">
-                      Novix VPN is designed to be user-friendly and accessible on all your devices.
+                      Novix VPN is designed to be user-friendly and accessible
+                      on all your devices.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
                         <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">Multi-Platform Support</h4>
+                          <h4 className="font-medium">
+                            Multi-Platform Support
+                          </h4>
                           <p className="text-muted-foreground">
-                            Apps for Windows, Mac, iOS, Android, Linux, and browser extensions.
+                            Apps for Windows, Mac, iOS, Android, Linux, and
+                            browser extensions.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Laptop className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">Connect Up to 8 Devices</h4>
-                          <p className="text-muted-foreground">Protect all your devices with a single subscription.</p>
+                          <h4 className="font-medium">
+                            Connect Up to 8 Devices
+                          </h4>
+                          <p className="text-muted-foreground">
+                            Protect all your devices with a single subscription.
+                          </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
@@ -200,7 +245,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">Smart TV Support</h4>
                           <p className="text-muted-foreground">
-                            Dedicated apps for Android TV, Fire TV, and other smart TV platforms.
+                            Dedicated apps for Android TV, Fire TV, and other
+                            smart TV platforms.
                           </p>
                         </div>
                       </li>
@@ -209,7 +255,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">One-Click Connect</h4>
                           <p className="text-muted-foreground">
-                            Simple interface that makes it easy to connect with just one click.
+                            Simple interface that makes it easy to connect with
+                            just one click.
                           </p>
                         </div>
                       </li>
@@ -239,10 +286,12 @@ export default function Features() {
                     />
                   </div>
                   <div>
-                    <h2 className="text-3xl font-bold mb-4">Complete Privacy</h2>
+                    <h2 className="text-3xl font-bold mb-4">
+                      Complete Privacy
+                    </h2>
                     <p className="text-muted-foreground mb-6">
-                      We take your privacy seriously with features designed to keep your online activities completely
-                      private.
+                      We take your privacy seriously with features designed to
+                      keep your online activities completely private.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
@@ -250,7 +299,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">Strict No-Logs Policy</h4>
                           <p className="text-muted-foreground">
-                            We never track, collect, or share your browsing history.
+                            We never track, collect, or share your browsing
+                            history.
                           </p>
                         </div>
                       </li>
@@ -259,7 +309,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">RAM-Only Servers</h4>
                           <p className="text-muted-foreground">
-                            Our servers run on RAM only, ensuring all data is wiped with every reboot.
+                            Our servers run on RAM only, ensuring all data is
+                            wiped with every reboot.
                           </p>
                         </div>
                       </li>
@@ -268,7 +319,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">Anonymous Browsing</h4>
                           <p className="text-muted-foreground">
-                            Hide your IP address and encrypt your internet traffic to browse anonymously.
+                            Hide your IP address and encrypt your internet
+                            traffic to browse anonymously.
                           </p>
                         </div>
                       </li>
@@ -277,7 +329,8 @@ export default function Features() {
                         <div>
                           <h4 className="font-medium">Camouflage Mode</h4>
                           <p className="text-muted-foreground">
-                            Disguise your VPN traffic to look like regular HTTPS traffic, bypassing VPN blocks.
+                            Disguise your VPN traffic to look like regular HTTPS
+                            traffic, bypassing VPN blocks.
                           </p>
                         </div>
                       </li>
@@ -292,9 +345,12 @@ export default function Features() {
         <section className="bg-muted py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Additional Features</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+                Additional Features
+              </h2>
               <p className="text-xl text-muted-foreground">
-                Novix VPN comes packed with even more features to enhance your online experience.
+                Novix VPN comes packed with even more features to enhance your
+                online experience.
               </p>
             </div>
 
@@ -306,7 +362,8 @@ export default function Features() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">Split Tunneling</h3>
                   <p className="text-muted-foreground">
-                    Choose which apps use the VPN and which ones connect directly to the internet.
+                    Choose which apps use the VPN and which ones connect
+                    directly to the internet.
                   </p>
                 </CardContent>
               </Card>
@@ -318,7 +375,8 @@ export default function Features() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">Ad Blocker</h3>
                   <p className="text-muted-foreground">
-                    Block ads, trackers, and malicious websites for a cleaner browsing experience.
+                    Block ads, trackers, and malicious websites for a cleaner
+                    browsing experience.
                   </p>
                 </CardContent>
               </Card>
@@ -330,7 +388,8 @@ export default function Features() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">Dedicated IP</h3>
                   <p className="text-muted-foreground">
-                    Get your own dedicated IP address for enhanced security and access.
+                    Get your own dedicated IP address for enhanced security and
+                    access.
                   </p>
                 </CardContent>
               </Card>
@@ -340,8 +399,12 @@ export default function Features() {
                   <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
                     <Lock className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Multi-Factor Authentication</h3>
-                  <p className="text-muted-foreground">Add an extra layer of security to your Novix VPN account.</p>
+                  <h3 className="text-xl font-bold mb-2">
+                    Multi-Factor Authentication
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Add an extra layer of security to your Novix VPN account.
+                  </p>
                 </CardContent>
               </Card>
 
@@ -352,7 +415,8 @@ export default function Features() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">Auto-Connect</h3>
                   <p className="text-muted-foreground">
-                    Automatically connect to Novix VPN when you join untrusted networks.
+                    Automatically connect to Novix VPN when you join untrusted
+                    networks.
                   </p>
                 </CardContent>
               </Card>
@@ -364,7 +428,8 @@ export default function Features() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">Obfuscated Servers</h3>
                   <p className="text-muted-foreground">
-                    Bypass network restrictions in countries with internet censorship.
+                    Bypass network restrictions in countries with internet
+                    censorship.
                   </p>
                 </CardContent>
               </Card>
@@ -385,12 +450,15 @@ export default function Features() {
                 Ready to Experience Novix VPN?
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Join millions of users who trust Novix VPN for their online privacy and security.
+                Join millions of users who trust Novix VPN for their online
+                privacy and security.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Get Started Today
               </Button>
-              <p className="mt-4 text-sm text-muted-foreground">30-day money-back guarantee. No questions asked.</p>
+              <p className="mt-4 text-sm text-muted-foreground">
+                30-day money-back guarantee. No questions asked.
+              </p>
             </div>
           </div>
         </section>
@@ -398,6 +466,5 @@ export default function Features() {
 
       <Footer />
     </div>
-  )
+  );
 }
-
