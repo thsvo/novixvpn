@@ -90,14 +90,17 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative hidden lg:block">
-                <div className="absolute -right-20 top-1/2 transform -translate-y-1/2 bg-primary/10 rounded-full w-80 h-80 blur-3xl"></div>
-                <Image
-                  src="/placeholder.svg?height=600&width=600"
+                <video
+                  src="/security.mp4"
                   width={600}
                   height={600}
-                  alt="VPN App Interface"
                   className="relative z-10 mx-auto"
-                />
+                  autoPlay
+                  loop
+                  muted
+                >
+                  Your browser does not support the video tag.
+                </video>
                 <Badge className="absolute top-10 right-10 text-lg py-2 px-4 bg-primary text-white">
                   -65% OFF
                 </Badge>

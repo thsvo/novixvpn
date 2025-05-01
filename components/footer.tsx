@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-muted py-12 border-t">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-1">
+          <div className="space-y-2">
             <div className="flex items-start -mt-6">
               <Image
                 src="/novix-logo.png"
