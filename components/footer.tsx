@@ -82,30 +82,52 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="font-medium mb-4">Products</h3>
+            <h3 className="font-medium mb-4">Novix VPN</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="#download"
+                  href="/contact"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  About us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#download"
                   className="text-muted-foreground hover:text-foreground"
                 >
                   Download
                 </Link>
               </li>
+
               <li>
                 <Link
-                  href="#pricing"
+                  href="/#testimonials"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Pricing
+                  Reviews
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-medium mb-4">Resources</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/ip-checker"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  IP Checker
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/vpn-servers"
+                  href="/what-is-vpn"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Locations
+                  What is VPN?
                 </Link>
               </li>
               <li>
@@ -116,56 +138,19 @@ export default function Footer() {
                   Features
                 </Link>
               </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-medium mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="#"
+                  href="/vpn-servers"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Help Center
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/what-is-vpn"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  What is a VPN?
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/money-back-guarantee"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Money-Back Guarantee
+                  VPN Servers
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-medium mb-4">Company</h3>
+            <h3 className="font-medium mb-4">Help</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/why-novix-vpn"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  About Us
-                </Link>
-              </li>
               <li>
                 <Link
                   href="/contact"
@@ -176,18 +161,26 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/faq"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Careers
+                  FAQ
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/terms-of-service"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Partners
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/privacy-policy"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
