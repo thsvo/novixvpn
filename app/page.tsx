@@ -293,7 +293,6 @@ export default function Home() {
                 <PricingCards interval="yearly" />
               </TabsContent>
             </Tabs>
-            ew
           </div>
         </section>
 
@@ -326,42 +325,22 @@ export default function Home() {
                 Available on all your favorite platforms
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+            <div className="flex justify-center items-center gap-2 max-w-3xl mx-auto">
+              <div className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity">
+                <div className="rounded-full bg-white/10 p-4">
+                  <Smartphone className="h-8 w-8 " />
+                </div>
+              </div>
               <Link
                 href="https://play.google.com/store"
                 className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
               >
-                <div className="rounded-full bg-white/10 p-4">
-                  <Smartphone className="h-8 w-8" />
-                </div>
-                <span>Android</span>
-              </Link>
-              <Link
-                href="https://apps.apple.com"
-                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
-              >
-                <div className="rounded-full bg-white/10 p-4">
-                  <Smartphone className="h-8 w-8" />
-                </div>
-                <span>iOS</span>
-              </Link>
-              <Link
-                href="#"
-                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
-              >
-                <div className="rounded-full bg-white/10 p-4">
-                  <Laptop className="h-8 w-8" />
-                </div>
-                <span>Windows</span>
-              </Link>
-              <Link
-                href="#"
-                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
-              >
-                <div className="rounded-full bg-white/10 p-4">
-                  <Laptop className="h-8 w-8" />
-                </div>
-                <span>macOS</span>
+                <Image
+                  src="playstore-dark.png"
+                  width={250}
+                  height={150}
+                  alt="playstore"
+                />
               </Link>
             </div>
           </div>
