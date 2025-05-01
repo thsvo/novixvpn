@@ -100,13 +100,36 @@ export default function Footer() {
                   Download
                 </Link>
               </li>
-
               <li>
                 <Link
-                  href="/#testimonials"
+                  href="/money-back-guarantee"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Reviews
+                  Money-back guarantee
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/why-novix-vpn"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Why Novix VPN?
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/no-user-tracking"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  No User Tracking
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/high-speed-vpn"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  High Speed VPN
                 </Link>
               </li>
             </ul>
@@ -120,6 +143,14 @@ export default function Footer() {
                   className="text-muted-foreground hover:text-foreground"
                 >
                   IP Checker
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blogs"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Blogs
                 </Link>
               </li>
               <li>
@@ -144,6 +175,14 @@ export default function Footer() {
                   className="text-muted-foreground hover:text-foreground"
                 >
                   VPN Servers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#testimonials"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Reviews
                 </Link>
               </li>
             </ul>
@@ -181,6 +220,14 @@ export default function Footer() {
                   className="text-muted-foreground hover:text-foreground"
                 >
                   Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cookie-policy"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Cookie Policy
                 </Link>
               </li>
             </ul>
