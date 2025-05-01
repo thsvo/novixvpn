@@ -8,16 +8,16 @@ export default function Footer() {
     <footer className="bg-muted py-12 border-t">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
+          <div className="space-y-1">
+            <div className="flex items-start -mt-6">
               <Image
                 src="/novix-logo.png"
                 alt="Novix VPN Logo"
-                width={24}
-                height={24}
+                width={180}
+                height={58}
                 className="rounded-md"
+                draggable="false"
               />
-              <span className="text-lg font-bold">Novix VPN</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Protecting your online privacy and security since 2015.
