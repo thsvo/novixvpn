@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Protect your online privacy with Novix VPN. Secure connections, unlimited bandwidth, and global server access.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/public/favicon.ico",
   },
 };
 
