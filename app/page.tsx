@@ -281,7 +281,7 @@ export default function Home() {
                 Choose the plan that works for you
               </p>
             </div>
-            <Tabs defaultValue="monthly" className="w-full max-w-3xl mx-auto">
+            <Tabs defaultValue="monthly" className="w-full max-w-full mx-auto">
               <TabsList className="grid w-full grid-cols-2 mb-8">
                 <TabsTrigger value="monthly">Monthly</TabsTrigger>
                 <TabsTrigger value="yearly">Yearly (Save 65%)</TabsTrigger>

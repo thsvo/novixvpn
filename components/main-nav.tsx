@@ -10,7 +10,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import posthog from "posthog-js";
 
 export default function MainNav() {
   return (
@@ -144,9 +143,6 @@ export default function MainNav() {
           <Link href="#download" legacyBehavior passHref>
             <NavigationMenuLink
               className={`bg-transparent ${navigationMenuTriggerStyle()}`}
-              onClick={() =>
-                posthog.capture("clicked get novix", { location: "header" })
-              }
             >
               Download
             </NavigationMenuLink>
