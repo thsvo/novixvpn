@@ -269,6 +269,40 @@ export default function Home() {
             <ComparisonTable />
           </div>
         </section>
+        {/* Download Section */}
+        <section
+          id="download"
+          className="bg-primary text-primary-foreground py-12 md:py-24"
+        >
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Download Novix VPN Now
+              </h2>
+              <p className="mt-4 max-w-[700px] md:text-xl">
+                Available on all your favorite platforms
+              </p>
+            </div>
+            <div className="flex justify-center items-center gap-2 max-w-3xl mx-auto">
+              <div className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity">
+                <div className="rounded-full bg-white/10 p-4">
+                  <Smartphone className="h-8 w-8 " />
+                </div>
+              </div>
+              <Link
+                href="https://play.google.com/store"
+                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <Image
+                  src="playstore-dark.png"
+                  width={250}
+                  height={150}
+                  alt="playstore"
+                />
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* Pricing Section */}
         <section id="pricing" className="bg-muted/50 py-12 md:py-24">
@@ -308,41 +342,6 @@ export default function Home() {
               </p>
             </div>
             <Testimonials />
-          </div>
-        </section>
-
-        {/* Download Section */}
-        <section
-          id="download"
-          className="bg-primary text-primary-foreground py-12 md:py-24"
-        >
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Download Novix VPN Now
-              </h2>
-              <p className="mt-4 max-w-[700px] md:text-xl">
-                Available on all your favorite platforms
-              </p>
-            </div>
-            <div className="flex justify-center items-center gap-2 max-w-3xl mx-auto">
-              <div className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity">
-                <div className="rounded-full bg-white/10 p-4">
-                  <Smartphone className="h-8 w-8 " />
-                </div>
-              </div>
-              <Link
-                href="https://play.google.com/store"
-                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
-              >
-                <Image
-                  src="playstore-dark.png"
-                  width={250}
-                  height={150}
-                  alt="playstore"
-                />
-              </Link>
-            </div>
           </div>
         </section>
       </main>
