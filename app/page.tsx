@@ -122,9 +122,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* Countdown Timer Section */}
-        <section className="bg-[#0052cc] text-white py-8">
+        {/* <section className="bg-[#0052cc] text-white py-8">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center">
               <h2 className="text-3xl font-bold mb-6">
@@ -143,8 +142,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-
+        </section> */}
         {/* Features Section */}
         <section id="features" className="bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">
@@ -205,7 +203,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* Multi-device Section */}
         <section className="bg-muted/50 py-12 md:py-24">
           <div className="container px-4 md:px-6">
@@ -257,18 +254,21 @@ export default function Home() {
                 </ul>
               </div>
               <div className="relative">
-                <Image
-                  src="/placeholder.svg?height=500&width=700"
-                  width={700}
-                  height={500}
-                  alt="VPN on multiple devices"
-                  className="mx-auto rounded-lg"
-                />
+                <video
+                  src="/utils.mp4"
+                  width={600}
+                  height={600}
+                  className="relative z-10 mx-auto w-full rounded-md bg-transparent object-cover shadow-md md:w-3/4"
+                  autoPlay
+                  loop
+                  muted
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
         </section>
-
         {/* Comparison Section */}
         <section id="comparison" className="bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">
@@ -317,7 +317,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* Pricing Section */}
         <section id="pricing" className="bg-muted/50 py-12 md:py-24">
           <div className="container px-4 md:px-6">
@@ -343,7 +342,6 @@ export default function Home() {
             </Tabs>
           </div>
         </section>
-
         {/* Testimonials Section */}
         <section id="testimonials" className="bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">

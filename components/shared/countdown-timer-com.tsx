@@ -109,10 +109,9 @@ export default function CountdownTimer() {
 
       <div className="relative mb-2">
         <button className="w-fit rounded-full bg-[#FF7A45] px-6 py-2 text-md font-bold text-white transition-transform hover:scale-105">
-          Save 65% Now!
+          Save 70% Now!
         </button>
       </div>
-
       <div className="flex text-[10px] items-center justify-center gap-2 text-white">
         <CircleCheck />
         <span>30-Day Money-Back Guarantee</span>
