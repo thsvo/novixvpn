@@ -5,23 +5,28 @@ import { FaTiktok, FaThreads } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-muted py-12 border-t">
+    // <footer className="bg-[#14162F] py-12 border-t">
+    <footer className="bg-[#0b0c1a] py-12 border-t">
       <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-2">
-            <div className="flex items-start -mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 place-items-center">
+          <div className="space-y-4">
+            <div className="flex items-center -mt-3">
               <Image
-                src="/novix-logo.png"
+                src="/novix-vpn.png"
                 alt="Novix VPN Logo"
-                width={180}
-                height={58}
+                width={50}
+                height={50}
                 className="rounded-md"
                 draggable="false"
               />
+              <span className="text-white font-semibold text-base">
+                Novix VPN
+              </span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Protecting your online privacy and security since 2015.
+              Protecting your online privacy and security since 2025.
             </p>
+            {/* Social media links */}
             <div className="flex space-x-4">
               <Link
                 href="https://www.facebook.com/NovixVPN"
@@ -80,9 +85,23 @@ export default function Footer() {
                 <span className="sr-only">Threads</span>
               </Link>
             </div>
+            {/* download links */}
+            <div className="w-full flex justify-start mt-5">
+              <Link
+                href="https://play.google.com/store"
+                className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <Image
+                  src="playstore-light.png"
+                  width={200}
+                  height={150}
+                  alt="playstore"
+                />
+              </Link>
+            </div>
           </div>
           <div>
-            <h3 className="font-medium mb-4">Novix VPN</h3>
+            <h3 className="font-medium mb-4 text-white">Novix VPN</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -135,7 +154,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-medium mb-4">Resources</h3>
+            <h3 className="font-medium mb-4 text-white">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -188,7 +207,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-medium mb-4">Help</h3>
+            <h3 className="font-medium mb-4 text-white">Help</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -248,7 +267,7 @@ export default function Footer() {
           </div>
           <div className="mt-4">
             <p>
-              Support:{" "}
+              Support:
               <a
                 href="mailto:novixvpna@gmail.com"
                 className="text-primary hover:underline"

@@ -114,7 +114,7 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center">
               <h2 className="text-3xl font-bold mb-6">
-                Limited Time Offer, Grab Now!{" "}
+                Limited Time Offer, Grab Now!
               </h2>
               <CountdownTimer />
               <Button
