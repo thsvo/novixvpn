@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import CountdownTimer from "./countdown-timer";
+import CountdownTimer from "./countdown-timer-com";
 
 export default function CountdownTimerClient() {
   const [visible, setVisible] = useState(false);
