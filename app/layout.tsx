@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import CountdownTimer from "@/components/shared/countdown-timer";
+import CountdownTimerClient from "@/components/shared/CountdownTimerClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +33,7 @@ export default function RootLayout({
           defer
           src="//js.hs-scripts.com/242560734.js"
         />
+        <CountdownTimerClient />
       </body>
     </html>
   );
