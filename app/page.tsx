@@ -88,6 +88,20 @@ export default function Home() {
                     25,798 reviews on Trustpilot
                   </span>
                 </div>
+                {/* download links */}
+                <div className="w-full flex justify-start mt-5">
+                  <Link
+                    href="https://play.google.com/store"
+                    className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+                  >
+                    <Image
+                      src="playstore-dark.png"
+                      width={200}
+                      height={150}
+                      alt="playstore"
+                    />
+                  </Link>
+                </div>
               </div>
               <div className="relative hidden lg:block">
                 <video
@@ -102,7 +116,7 @@ export default function Home() {
                   Your browser does not support the video tag.
                 </video>
                 <Badge className="absolute top-10 right-10 text-lg py-2 px-4 bg-primary text-white z-50">
-                  -65% OFF
+                  -70% OFF
                 </Badge>
               </div>
             </div>
