@@ -4,18 +4,14 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import MainNav from "./main-nav"; // Assuming MainNav component exists
+import MainNav from "./main-nav";
 
 export default function HeaderCom() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -24,10 +20,10 @@ export default function HeaderCom() {
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full border-b  ${
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? "w-full lg:max-w-[1440px] mx-auto px-10 md:mt-5 top-0 lg:top-2 bg-white shadow-lg transition-all duration-300 lg:rounded-full "
-          : ""
+          ? "bg-white top-2 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.1)] lg:rounded-full px-6 md:px-10 lg:max-w-[1440px] mx-auto mt-2"
+          : "border-b"
       }`}
     >
       <div
