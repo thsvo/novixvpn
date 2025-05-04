@@ -27,7 +27,7 @@ export default function Footer() {
               Protecting your online privacy and security since 2025.
             </p>
             {/* Social media links */}
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <Link
                 href="https://www.facebook.com/NovixVPN"
                 target="_blank"
@@ -84,7 +84,66 @@ export default function Footer() {
                 <FaThreads className="h-5 w-5" />
                 <span className="sr-only">Threads</span>
               </Link>
+            </div> */}
+            <div className="flex space-x-4">
+              <Link
+                href="https://www.facebook.com/NovixVPN"
+                target="_blank"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+              >
+                <Facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
+              </Link>
+              <Link
+                href="https://x.com/NovixVpn"
+                target="_blank"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+              >
+                <Twitter className="h-5 w-5" />
+                <span className="sr-only">Twitter</span>
+              </Link>
+              <Link
+                href="https://www.instagram.com/novixvpn/?next=%2F&hl=en"
+                target="_blank"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+              >
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
+              </Link>
+              <Link
+                href="https://www.youtube.com/@NOVIXVPN"
+                target="_blank"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+              >
+                <Youtube className="h-5 w-5" />
+                <span className="sr-only">YouTube</span>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/novix-vpn/?viewAsMember=true"
+                target="_blank"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+              >
+                <Linkedin className="h-5 w-5" />
+                <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link
+                href="https://www.tiktok.com/@novixvpn"
+                target="_blank"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+              >
+                <FaTiktok className="h-5 w-5" />
+                <span className="sr-only">TikTok</span>
+              </Link>
+              <Link
+                href="https://www.threads.net/@novixvpn"
+                target="_blank"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+              >
+                <FaThreads className="h-5 w-5" />
+                <span className="sr-only">Threads</span>
+              </Link>
             </div>
+
             {/* download links */}
             <div className="w-full flex justify-start mt-5">
               <Link
@@ -101,7 +160,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="font-medium mb-4 text-white">Novix VPN</h3>
+            <h3 className="font-bold mb-4 text-white">Novix VPN</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -154,7 +213,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-medium mb-4 text-white">Resources</h3>
+            <h3 className="font-bold mb-4 text-white">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -206,8 +265,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
-            <h3 className="font-medium mb-4 text-white">Help</h3>
+          <div className="-mt-6">
+            <h3 className="font-bold mb-4 text-white">Help</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
