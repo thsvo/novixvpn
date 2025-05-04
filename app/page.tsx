@@ -308,7 +308,7 @@ export default function Home() {
                 className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
               >
                 <Image
-                  src="playstore-dark.png"
+                  src="playstore-light.png"
                   width={250}
                   height={150}
                   alt="playstore"
