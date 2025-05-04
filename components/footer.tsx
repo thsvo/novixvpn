@@ -329,7 +329,7 @@ export default function Footer() {
               Support:
               <a
                 href="mailto:novixvpna@gmail.com"
-                className="text-primary hover:underline"
+                className="text-primary hover:underline pl-1"
               >
                 novixvpna@gmail.com
               </a>

@@ -22,7 +22,7 @@ export default function HeaderCom() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? "bg-white top-2 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.1)] lg:rounded-full px-6 md:px-10 lg:max-w-[1440px] mx-auto mt-2"
+          ? "bg-white top-2 shadow-[0_2px_4px_rgba(0,0,0,0.06),0_0_1px_rgba(0,0,0,0.08)] lg:rounded-full px-6 md:px-10 lg:max-w-[1440px] mx-auto mt-2 border border-[#E2E2E4]"
           : "border-b"
       }`}
     >
@@ -51,7 +51,7 @@ export default function HeaderCom() {
           >
             Log in
           </Link>
-          <Button>Get Novix VPN</Button>
+          <Button className="rounded-full">Get Novix VPN</Button>
         </div>
       </div>
     </header>

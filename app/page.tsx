@@ -115,7 +115,7 @@ export default function Home() {
                 >
                   Your browser does not support the video tag.
                 </video>
-                <Badge className="absolute top-10 right-10 text-lg py-2 px-4 bg-primary text-white z-50">
+                <Badge className="absolute top-10 right-10 text-lg py-2 px-4 bg-primary text-white z-20">
                   -70% OFF
                 </Badge>
               </div>
