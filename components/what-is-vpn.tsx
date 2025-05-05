@@ -107,7 +107,7 @@ export default function WhatIsVpn() {
 
           {openAccordion === "legal" && (
             <div className="border-t border-gray-200 px-6 py-4">
-              <ul className="mt-2 list-inside list-disc space-y-2 text-gray-700">
+              <ul className="mt-2 list-inside space-y-2 text-gray-700">
                 <li>
                   <strong>Enhanced Security:</strong> VPNs encrypt your internet
                   traffic, shielding your personal data from hackers, especially
@@ -129,6 +129,7 @@ export default function WhatIsVpn() {
                   public Wi-Fi without risk.
                 </li>
               </ul>
+
               <p className="mt-2 text-gray-700">
                 Even in countries where VPNs are legal, using them for illegal
                 activities is still against the law.
@@ -165,7 +166,7 @@ export default function WhatIsVpn() {
 
           {openAccordion === "speed" && (
             <div className="border-t border-gray-200 px-6 py-4">
-              <ul className="mt-2 list-inside list-disc space-y-2 text-gray-700">
+              <ul className="mt-2 list-inside space-y-2 text-gray-700">
                 <li>
                   <strong>Free VPNs</strong> – These are no-cost options with
                   basic features, but often come with ads, limited speeds, or
@@ -182,10 +183,6 @@ export default function WhatIsVpn() {
                   access, and centralized control.
                 </li>
               </ul>
-              <p className="mt-2 text-gray-700">
-                Choosing a premium VPN service with optimized servers can help
-                minimize speed loss.
-              </p>
             </div>
           )}
         </div>

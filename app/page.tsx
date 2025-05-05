@@ -358,7 +358,7 @@ export default function Home() {
           </div>
         </section>
         {/* what is vpn section */}
-        <div className="mb-8">
+        <div className="mb-24">
           <WhatIsVpn />
         </div>
       </main>
