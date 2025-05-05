@@ -18,7 +18,7 @@ const featuredArticle = {
   excerpt:
     "In 2025, as digital surveillance and cyber threats continue to rise, Novix VPN emerges as a game-changer in the privacy tech space. With blazing-fast servers, strict no-logs policies, and a privacy-first architecture, Novix redefines what it means to be truly untraceable online.",
   date: "May 3, 2025",
-  readTime: 4,
+  readTime: 173,
   author: {
     name: "Novix VPN",
     avatar: "/novix-vpn.png",
@@ -31,11 +31,12 @@ const recentArticles = [
   {
     id: "vpn-vs-proxy",
     category: "INFORMATION",
-    title: "VPN vs. Proxy: Understand the Key Differences",
+    title:
+      "VPN vs. Proxy: Learn the differences between these tools and discover which one is better",
     excerpt:
       "Discover the key differences between VPNs and proxies. Learn which is better for online privacy, speed, and security in this in-depth comparison.",
     date: "May 2, 2025",
-    readTime: 10,
+    readTime: 105,
     author: {
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
@@ -50,7 +51,7 @@ const recentArticles = [
     excerpt:
       "Learn what a VPN Kill Switch is, how it works, and why it's essential for your online privacy and security. Discover how NovixVPN's Kill Switch protects you.",
     date: "Apr 25, 2025",
-    readTime: 8,
+    readTime: 179,
     author: {
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
@@ -65,7 +66,7 @@ const recentArticles = [
     excerpt:
       "Learn about WireGuard, the modern VPN protocol that offers faster speeds and better security. Discover how NovixVPN uses WireGuard to keep you safe online.",
     date: "Apr 11, 2025",
-    readTime: 7,
+    readTime: 139,
     author: {
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
@@ -148,57 +149,56 @@ export default function BlogPage() {
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {recentArticles.map((article) => (
-            <article
-              key={article.id}
-              className="group overflow-hidden rounded-xl bg-blue-50 shadow-sm transition-all hover:shadow-md"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src={article.image || "/placeholder.svg?height=300&width=400"}
-                  alt={article.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
-              </div>
-              <div className="p-6">
-                <div className="mb-2">
-                  <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600">
-                    {article.category}
-                  </span>
-                </div>
-                <div className="mb-4 flex items-center gap-4 text-xs text-gray-500">
-                  <span>{article.date}</span>
-                  <div className="flex items-center gap-1">
-                    <Clock size={12} className="text-blue-500" />
-                    <span>{article.readTime} min read</span>
-                  </div>
-                </div>
-                <h3 className="mb-3 text-lg font-bold leading-tight text-gray-800 transition-colors group-hover:text-blue-600">
-                  <Link
-                    href={`/blogs/${article.id}`}
-                    className="hover:text-blue-600"
-                  >
-                    {article.title}
-                  </Link>
-                </h3>
-                <div className="mt-4 flex items-center gap-2">
+            <Link href={`/blogs/${article.id}`} className="hover:text-blue-600">
+              <article
+                key={article.id}
+                className="group overflow-hidden rounded-xl bg-blue-50 shadow-sm transition-all hover:shadow-md"
+              >
+                <div className="relative h-48 overflow-hidden">
                   <Image
                     src={
-                      article.author.avatar ||
-                      "/placeholder.svg?height=24&width=24"
+                      article.image || "/placeholder.svg?height=300&width=400"
                     }
-                    alt={article.author.name}
-                    width={24}
-                    height={24}
-                    className="rounded-full border border-gray-200"
+                    alt={article.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <span className="text-xs font-medium">
-                    {article.author.name}
-                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
                 </div>
-              </div>
-            </article>
+                <div className="p-6">
+                  <div className="mb-2">
+                    <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600">
+                      {article.category}
+                    </span>
+                  </div>
+                  <div className="mb-4 flex items-center gap-4 text-xs text-gray-500">
+                    <span>{article.date}</span>
+                    <div className="flex items-center gap-1">
+                      <Clock size={12} className="text-blue-500" />
+                      <span>{article.readTime} min read</span>
+                    </div>
+                  </div>
+                  <h3 className="mb-3 text-lg font-bold leading-tight text-gray-800 transition-colors group-hover:text-blue-600">
+                    {article.title}
+                  </h3>
+                  <div className="mt-4 flex items-center gap-2">
+                    <Image
+                      src={
+                        article.author.avatar ||
+                        "/placeholder.svg?height=24&width=24"
+                      }
+                      alt={article.author.name}
+                      width={24}
+                      height={24}
+                      className="rounded-full border border-gray-200"
+                    />
+                    <span className="text-xs font-medium">
+                      {article.author.name}
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </Link>
           ))}
         </div>
       </section>
