@@ -244,7 +244,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="font-bold">
-                        Secure up to 8 devices with one simple connection
+                        Secure up to 5 devices with one simple connection
                       </h3>
                       <p className="text-muted-foreground">
                         Protect your entire household with a single

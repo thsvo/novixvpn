@@ -11,28 +11,29 @@ export default function VPNDownloadPage() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold text-gray-800">
-              Download a VPN app for Android
+              Enjoy The True Freedom of The Internet with
+              <span className="text-blue-500 font-bold"> Novix VPN</span>
             </h1>
 
             <ul className="space-y-4 list-disc pl-5">
               <li className="text-gray-700">
-                Get a user-friendly VPN app for Android devices (9.0 or later).
+                Protect your Android device, encrypt your data, and browse
+                online with complete privacy.
               </li>
               <li className="text-gray-700">
-                Improve your phone&apos;s online security and privacy on Wi-Fi
-                and mobile networks.
+                Effortlessly block intrusive trackers and protect yourself from
+                malicious websites.
               </li>
-              <li className="text-gray-700">
-                Enjoy an ultra-fast connection and block malicious sites on your
-                phone.
+              <li>Keep your connection safe even during unexpected drops.</li>
+              <li>
+                Enjoy ultra-fast VPN speeds optimized for buffer-free streaming,
+                smooth browsing, and unrestricted access.
               </li>
-              <li className="text-gray-700">
-                Get the{" "}
-                <Link href="#" className="text-blue-600 hover:underline">
-                  APK version
-                </Link>{" "}
-                for extra protection agains malware, trackers, and ads.
+              <li>
+                Download our easy-to-use Android VPN app now and take control of
+                your online privacy, security, and freedom.
               </li>
+              <p></p>
             </ul>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -44,7 +45,7 @@ export default function VPNDownloadPage() {
               </Link>
               <Link
                 href="#"
-                className="border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-3 px-6 rounded-full text-center"
+                className="border border-gray-300 hover:bg-red-700 text-gray-700 hover:text-white font-medium py-3 px-6 rounded-full text-center transition-colors ease-in-out "
               >
                 Get from Google Play
               </Link>
@@ -80,6 +81,21 @@ export default function VPNDownloadPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="w-full h-full ">
+          <div className="my-24 max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl font-semibold mb-4">
+              What does a VPN do for Android?
+            </h2>
+            <p>
+              A VPN for Android builds a protected tunnel between the VPN server
+              and your phone, hiding your IP address, encrypting your data, and
+              protecting your online activity on any Android phone or tablet.
+              Whether you're using public Wi-Fi, streaming or browsing
+              privately, a VPN keeps your connection fast, secure, and helps you
+              bypass geographical restrictions.
+            </p>
           </div>
         </div>
       </div>

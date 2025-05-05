@@ -1,10 +1,17 @@
-import { Check } from "lucide-react"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { Check } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 interface PricingCardsProps {
-  interval: "monthly" | "yearly"
+  interval: "monthly" | "yearly";
 }
 
 export default function PricingCards({ interval }: PricingCardsProps) {
@@ -28,7 +35,7 @@ export default function PricingCards({ interval }: PricingCardsProps) {
       priceMonthly: 14.99,
       priceYearly: 5.24,
       features: [
-        "Connect 8 devices simultaneously",
+        "Connect 5 devices simultaneously",
         "Access to 90+ countries",
         "No-logs policy",
         "24/7 customer support",
@@ -43,7 +50,7 @@ export default function PricingCards({ interval }: PricingCardsProps) {
       priceMonthly: 19.99,
       priceYearly: 6.99,
       features: [
-        "Connect 10 devices simultaneously",
+        "Connect 5 devices simultaneously",
         "Access to 100+ countries",
         "No-logs policy",
         "24/7 customer support",
@@ -54,19 +61,28 @@ export default function PricingCards({ interval }: PricingCardsProps) {
       ],
       popular: false,
     },
-  ]
+  ];
 
   return (
     <div className="grid md:grid-cols-3 gap-6">
       {plans.map((plan) => (
-        <Card key={plan.name} className={`flex flex-col ${plan.popular ? "border-primary shadow-lg" : ""}`}>
+        <Card
+          key={plan.name}
+          className={`flex flex-col ${
+            plan.popular ? "border-primary shadow-lg" : ""
+          }`}
+        >
           <CardHeader>
             <div className="flex justify-between items-start">
               <div>
                 <CardTitle>{plan.name}</CardTitle>
-                <CardDescription className="mt-1">{plan.description}</CardDescription>
+                <CardDescription className="mt-1">
+                  {plan.description}
+                </CardDescription>
               </div>
-              {plan.popular && <Badge className="bg-primary">Most Popular</Badge>}
+              {plan.popular && (
+                <Badge className="bg-primary">Most Popular</Badge>
+              )}
             </div>
           </CardHeader>
           <CardContent className="flex-1">
@@ -78,7 +94,10 @@ export default function PricingCards({ interval }: PricingCardsProps) {
 
               {interval === "yearly" && (
                 <div className="mt-1">
-                  <Badge variant="outline" className="text-primary border-primary">
+                  <Badge
+                    variant="outline"
+                    className="text-primary border-primary"
+                  >
                     Save 65%
                   </Badge>
                 </div>
@@ -94,11 +113,12 @@ export default function PricingCards({ interval }: PricingCardsProps) {
             </ul>
           </CardContent>
           <CardFooter>
-            <Button className={`w-full ${plan.popular ? "bg-primary" : ""}`}>Get {plan.name}</Button>
+            <Button className={`w-full ${plan.popular ? "bg-primary" : ""}`}>
+              Get {plan.name}
+            </Button>
           </CardFooter>
         </Card>
       ))}
     </div>
-  )
+  );
 }
-
