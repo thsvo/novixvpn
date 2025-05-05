@@ -24,6 +24,7 @@ import Footer from "@/components/footer";
 import MainNav from "@/components/main-nav";
 import HeroPromotionCom from "@/components/HeroPromotionCom";
 import HeaderCom from "@/components/HeaderCom";
+import WhatIsVpn from "@/components/what-is-vpn";
 
 export default function Home() {
   return (
@@ -356,6 +357,10 @@ export default function Home() {
             <Testimonials />
           </div>
         </section>
+        {/* what is vpn section */}
+        <div className="mb-8">
+          <WhatIsVpn />
+        </div>
       </main>
       <Footer />
     </div>
