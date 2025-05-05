@@ -140,7 +140,7 @@ export default function MainNav() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/download" legacyBehavior passHref>
+          <Link href="/get-novix-vpn" legacyBehavior passHref>
             <NavigationMenuLink
               className={`bg-transparent ${navigationMenuTriggerStyle()}`}
             >

@@ -4,11 +4,10 @@ import Link from "next/link";
 import { Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Blog | NordVPN",
+  title: "Blog | NovixVPN",
   description:
     "Latest articles, guides, and insights about VPN technology and cybersecurity",
 };
-
 // Featured article data
 const featuredArticle = {
   id: "vpn-privacy-power-2025",
