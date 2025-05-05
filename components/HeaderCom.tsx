@@ -51,7 +51,9 @@ export default function HeaderCom() {
           >
             Log in
           </Link>
-          <Button className="rounded-full">Get Novix VPN</Button>
+          <Link href="/download">
+            <Button className="rounded-full">Get Novix VPN</Button>
+          </Link>
         </div>
       </div>
     </header>
