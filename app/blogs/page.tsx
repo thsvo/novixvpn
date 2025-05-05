@@ -30,26 +30,12 @@ const featuredArticle = {
 const recentArticles = [
   {
     id: "vpn-vs-proxy",
-    category: "Information",
-    title: "What is the difference between a VPN and a Proxy server?",
+    category: "INFORMATION",
+    title: "VPN vs. Proxy: Understand the Key Differences",
     excerpt:
-      "In this article, we will explain the key differences between a VPN (Virtual Private Network) and a proxy server. You will learn how each technology works, the advantages and disadvantages of using a VPN or a proxy, and which one is best for your online privacy and security needs.",
+      "Discover the key differences between VPNs and proxies. Learn which is better for online privacy, speed, and security in this in-depth comparison.",
     date: "May 2, 2025",
     readTime: 10,
-    author: {
-      name: "Novix VPN",
-      avatar: "/novix-vpn.png",
-    },
-    image: "/vpn-vs-proxy.png",
-  },
-  {
-    id: "vpn-pros-cons",
-    category: "CONNECTION",
-    title: "Benefits of a VPN: Pros and cons of a VPN",
-    excerpt:
-      "Discover the advantages and potential drawbacks of using a VPN service for your online activities and digital privacy.",
-    date: "Apr 25, 2025",
-    readTime: 12,
     author: {
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
@@ -57,11 +43,27 @@ const recentArticles = [
     image: "/placeholder.svg?height=300&width=400",
   },
   {
-    id: "vpn-server-quality",
-    category: "CONNECTION",
-    title: "Does the VPN server count actually matter? Quality over quantity",
+    id: "kill-switch",
+    category: "SECURITY",
+    title:
+      "Kill Switch: What Is It, Why Everyone Is So Serious About It, And Why Do You Need One?",
     excerpt:
-      "Explore why the quality and performance of VPN servers might be more important than simply having a large number of servers.",
+      "Learn what a VPN Kill Switch is, how it works, and why it's essential for your online privacy and security. Discover how NovixVPN's Kill Switch protects you.",
+    date: "Apr 25, 2025",
+    readTime: 8,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    id: "wireguard-guide",
+    category: "TECHNOLOGY",
+    title:
+      "What is WireGuard and How Does It Work? — A Beginner-Friendly Guide",
+    excerpt:
+      "Learn about WireGuard, the modern VPN protocol that offers faster speeds and better security. Discover how NovixVPN uses WireGuard to keep you safe online.",
     date: "Apr 11, 2025",
     readTime: 7,
     author: {
@@ -74,44 +76,49 @@ const recentArticles = [
 
 export default function BlogPage() {
   return (
-    <div className="container mx-auto px-4 py-8 md:px-6 lg:max-w-6xl">
+    <div className="container mx-auto px-4 py-12 md:px-6 lg:max-w-6xl">
       <h1 className="sr-only">NordVPN Blog</h1>
 
       {/* Featured Article */}
-      <article className="overflow-hidden rounded-lg bg-white">
+      <article className="overflow-hidden rounded-xl bg-white shadow-md transition-all hover:shadow-lg">
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="flex flex-col justify-center p-6">
-            <div className="mb-2">
-              <span className="text-sm font-medium text-blue-600">
+          <div className="flex flex-col justify-center p-8">
+            <div className="mb-3">
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600">
                 {featuredArticle.category}
               </span>
             </div>
             <h2 className="mb-4 text-3xl font-bold leading-tight text-gray-800 md:text-4xl">
               <Link
                 href={`/blog/${featuredArticle.id}`}
-                className="hover:text-blue-600"
+                className="transition-colors hover:text-blue-600"
               >
                 {featuredArticle.title}
               </Link>
             </h2>
-            <p className="mb-6 text-gray-600">{featuredArticle.excerpt}</p>
+            <p className="mb-6 text-gray-600 leading-relaxed">
+              {featuredArticle.excerpt}
+            </p>
             <div className="mt-auto flex items-center gap-4">
               <div className="flex items-center gap-2 text-sm text-gray-500">
                 <span>{featuredArticle.date}</span>
                 <span>•</span>
                 <div className="flex items-center gap-1">
-                  <Clock size={14} />
+                  <Clock size={14} className="text-blue-500" />
                   <span>{featuredArticle.readTime} min read</span>
                 </div>
               </div>
             </div>
             <div className="mt-4 flex items-center gap-2">
               <Image
-                src={featuredArticle.author.avatar || "/placeholder.svg"}
+                src={
+                  featuredArticle.author.avatar ||
+                  "/placeholder.svg?height=32&width=32"
+                }
                 alt={featuredArticle.author.name}
                 width={32}
                 height={32}
-                className="rounded-full"
+                className="rounded-full border border-gray-200"
               />
               <span className="text-sm font-medium">
                 {featuredArticle.author.name}
@@ -120,51 +127,54 @@ export default function BlogPage() {
           </div>
           <div className="relative min-h-[300px] overflow-hidden bg-gray-100 md:min-h-[400px]">
             <Image
-              src={featuredArticle.image || "/placeholder.svg"}
+              src={
+                featuredArticle.image || "/placeholder.svg?height=400&width=600"
+              }
               alt={featuredArticle.title}
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-500 hover:scale-105"
               priority
             />
-            <div className="absolute -left-10 bottom-10 h-24 w-24 rounded-full bg-coral-500"></div>
-            <div className="absolute -right-6 -top-6 h-16 w-16 rounded-full bg-coral-500"></div>
+            <div className="absolute -left-10 bottom-10 h-24 w-24 rounded-full bg-coral-500 opacity-80"></div>
+            <div className="absolute -right-6 -top-6 h-16 w-16 rounded-full bg-coral-500 opacity-80"></div>
           </div>
         </div>
       </article>
 
       {/* Popular Articles */}
-      <section className="mt-16">
-        <h2 className="mb-8 text-3xl font-bold text-gray-800">
+      <section className="mt-20">
+        <h2 className="mb-8 text-3xl font-bold text-gray-800 after:ml-4 after:inline-block after:h-1 after:w-24 after:bg-blue-500">
           Popular articles
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {recentArticles.map((article) => (
             <article
               key={article.id}
-              className="overflow-hidden rounded-lg bg-blue-50"
+              className="group overflow-hidden rounded-xl bg-blue-50 shadow-sm transition-all hover:shadow-md"
             >
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src={article.image || "/placeholder.svg"}
+                  src={article.image || "/placeholder.svg?height=300&width=400"}
                   alt={article.title}
                   fill
-                  className="object-cover transition-transform duration-300 hover:scale-105"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
               </div>
-              <div className="p-5">
+              <div className="p-6">
                 <div className="mb-2">
-                  <span className="text-xs font-medium text-blue-600">
+                  <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600">
                     {article.category}
                   </span>
                 </div>
                 <div className="mb-4 flex items-center gap-4 text-xs text-gray-500">
                   <span>{article.date}</span>
                   <div className="flex items-center gap-1">
-                    <Clock size={12} />
+                    <Clock size={12} className="text-blue-500" />
                     <span>{article.readTime} min read</span>
                   </div>
                 </div>
-                <h3 className="mb-3 text-lg font-bold leading-tight text-gray-800">
+                <h3 className="mb-3 text-lg font-bold leading-tight text-gray-800 transition-colors group-hover:text-blue-600">
                   <Link
                     href={`/blogs/${article.id}`}
                     className="hover:text-blue-600"
@@ -174,11 +184,14 @@ export default function BlogPage() {
                 </h3>
                 <div className="mt-4 flex items-center gap-2">
                   <Image
-                    src={article.author.avatar || "/placeholder.svg"}
+                    src={
+                      article.author.avatar ||
+                      "/placeholder.svg?height=24&width=24"
+                    }
                     alt={article.author.name}
                     width={24}
                     height={24}
-                    className="rounded-full"
+                    className="rounded-full border border-gray-200"
                   />
                   <span className="text-xs font-medium">
                     {article.author.name}
