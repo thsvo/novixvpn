@@ -31,16 +31,18 @@ export default function HeaderCom() {
           isScrolled ? "container-compact mx-auto" : "container"
         }`}
       >
-        <div className="flex items-center gap-2">
-          <Image
-            src="/novix-logo.png"
-            alt="Novix VPN Logo"
-            width={180}
-            height={58}
-            className="rounded-md"
-            draggable="false"
-          />
-        </div>
+        <Link href="/">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/novix-logo.png"
+              alt="Novix VPN Logo"
+              width={180}
+              height={58}
+              className="rounded-md"
+              draggable="false"
+            />
+          </div>
+        </Link>
         <nav className="hidden md:flex items-center gap-6">
           <MainNav />
         </nav>
