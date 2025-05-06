@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import CountdownTimer from "@/components/shared/countdown-timer-com";
 import CountdownTimerClient from "@/components/shared/CountdownTimerClient";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,14 +24,28 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
+
         {/* HubSpot Embed Code */}
         <Script
-          type="text/javascript"
           id="hs-script-loader"
-          async
-          defer
+          strategy="afterInteractive"
           src="//js.hs-scripts.com/242560734.js"
         />
+
+        {/* Google tag (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-H3HZP0C6ED"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-H3HZP0C6ED');
+          `}
+        </Script>
+
         <CountdownTimerClient />
       </body>
     </html>
