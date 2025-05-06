@@ -22,7 +22,7 @@ const featuredArticle = {
     name: "Novix VPN",
     avatar: "/novix-vpn.png",
   },
-  image: "/novix-vpn.png",
+  image: "/blog-page.png",
 };
 
 // Recent articles data
@@ -40,7 +40,7 @@ const popularArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/vpn-vs-proxy.jpg",
   },
   {
     id: "kill-switch",
