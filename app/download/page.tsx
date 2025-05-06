@@ -58,7 +58,7 @@ export default function VPNDownloadPage() {
           </div>
 
           <div className="flex justify-center">
-            <div className="relative bg-sky-200 rounded-full w-[400px] h-[400px] flex items-center justify-center">
+            {/* <div className="relative bg-sky-200 rounded-full w-[400px] h-[400px] flex items-center justify-center">
               <div className="relative w-[220px] h-[400px]">
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-3xl border-8 border-black w-[200px] h-[380px] overflow-hidden flex flex-col items-center">
                   <div className="bg-gray-100 w-full h-[40px]"></div>
@@ -80,7 +80,8 @@ export default function VPNDownloadPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <Image src="/qr.png" alt="QR Code" width={550} height={500} />
           </div>
         </div>
         <div className="w-full h-full ">
