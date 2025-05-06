@@ -26,7 +26,7 @@ const featuredArticle = {
 };
 
 // Recent articles data
-const recentArticles = [
+const popularArticles = [
   {
     id: "vpn-vs-proxy",
     category: "INFORMATION",
@@ -66,6 +66,74 @@ const recentArticles = [
       "Learn about WireGuard, the modern VPN protocol that offers faster speeds and better security. Discover how NovixVPN uses WireGuard to keep you safe online.",
     date: "Apr 11, 2025",
     readTime: 139,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=300&width=400",
+  },
+];
+// More articles data
+const recentArticles = [
+  {
+    id: "what-is-vpn",
+    category: "INFORMATION",
+    title: " What  is VPN?",
+    excerpt: "What is vpn",
+    date: "april 8, 2025",
+    readTime: 201,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    id: "how-does-vpn-work",
+    category: "INFORMATION",
+    title: "How Does VPN Work?",
+    excerpt: "how does vpn work?",
+    date: "Apr 25, 2025",
+    readTime: 189,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    id: "The-importance-of-vpn",
+    category: "TECHNOLOGY",
+    title: "The Importance of VPN",
+    excerpt: "The importance of vpn",
+    date: "Apr 11, 2025",
+    readTime: 29,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    id: "why-is-vpn-needed",
+    category: "TECHNOLOGY",
+    title: "Why is VPN Needed?",
+    excerpt: "why is vpn needed",
+    date: "Apr 20, 2025",
+    readTime: 139,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=300&width=400",
+  },
+  {
+    id: "why-novix-vpn-is-the-best",
+    category: "TECHNOLOGY",
+    title: "Why Novix VPN is The Best",
+    excerpt: "why novix vpn is the best",
+    date: "Apr 25, 2025",
+    readTime: 109,
     author: {
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
@@ -141,14 +209,82 @@ export default function BlogPage() {
         </div>
       </article>
 
-      {/* Popular Articles */}
+      {/* Popular  Articles */}
       <section className="mt-20">
         <h2 className="mb-8 text-3xl font-bold text-gray-800 after:ml-4 after:inline-block after:h-1 after:w-24 after:bg-blue-500">
           Popular articles
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {popularArticles.map((article) => (
+            <Link
+              href={`/blogs/${article.id}`}
+              key={article.id}
+              className="hover:text-blue-600"
+            >
+              <article
+                key={article.id}
+                className="group overflow-hidden rounded-xl bg-blue-50 shadow-sm transition-all hover:shadow-md"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={
+                      article.image || "/placeholder.svg?height=300&width=400"
+                    }
+                    alt={article.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
+                </div>
+                <div className="p-6">
+                  <div className="mb-2">
+                    <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600">
+                      {article.category}
+                    </span>
+                  </div>
+                  <div className="mb-4 flex items-center gap-4 text-xs text-gray-500">
+                    <span>{article.date}</span>
+                    <div className="flex items-center gap-1">
+                      <Clock size={12} className="text-blue-500" />
+                      <span>{article.readTime} min read</span>
+                    </div>
+                  </div>
+                  <h3 className="mb-3 text-lg font-bold leading-tight text-gray-800 transition-colors group-hover:text-blue-600">
+                    {article.title}
+                  </h3>
+                  <div className="mt-4 flex items-center gap-2">
+                    <Image
+                      src={
+                        article.author.avatar ||
+                        "/placeholder.svg?height=24&width=24"
+                      }
+                      alt={article.author.name}
+                      width={24}
+                      height={24}
+                      className="rounded-full border border-gray-200"
+                    />
+                    <span className="text-xs font-medium">
+                      {article.author.name}
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
+      </section>
+      {/* More Articles */}
+      <section className="mt-20">
+        <h2 className="mb-8 text-3xl font-bold text-gray-800 after:ml-4 after:inline-block after:h-1 after:w-24 after:bg-blue-500">
+          Recent articles
+        </h2>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {recentArticles.map((article) => (
-            <Link href={`/blogs/${article.id}`} className="hover:text-blue-600">
+            <Link
+              href={`/blogs/${article.id}`}
+              key={article.id}
+              className="hover:text-blue-600"
+            >
               <article
                 key={article.id}
                 className="group overflow-hidden rounded-xl bg-blue-50 shadow-sm transition-all hover:shadow-md"
