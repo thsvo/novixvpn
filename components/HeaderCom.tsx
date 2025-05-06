@@ -5,9 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import MainNav from "./main-nav";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import { FaAndroid } from "react-icons/fa6";
 
 export default function HeaderCom() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +49,54 @@ export default function HeaderCom() {
         <nav className="hidden md:flex items-center gap-6">
           <MainNav />
         </nav>
+
         <div className="flex items-center gap-4">
+          {/* product dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setDropdownOpen(true)}
+            // onMouseLeave={() => setDropdownOpen(false)}
+          >
+            <button
+              type="button"
+              className="flex items-center gap-2 bg-white px-4 py-2 text-sm font-medium text-black"
+              id="dropdown-products"
+              aria-haspopup="true"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            >
+              Products
+              <ChevronDown className={`${dropdownOpen ? "hidden" : "block"}`} />
+              <ChevronUp className={`${dropdownOpen ? "block" : "hidden"}`} />
+            </button>
+
+            {dropdownOpen && (
+              <div
+                className="absolute left-0 top-0 -z-10"
+                // onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <div
+                  className=" relative left-0 top-12 z-10 mt-2 w-48 origin-top-right rounded-md bg-white p-2 shadow-lg ring-1 ring-black ring-opacity-5"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="dropdown-products"
+                >
+                  <div>
+                    <span className="text-sm">Mobile</span>
+                    <Link
+                      href="/download"
+                      className="flex  items-center gap-1 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                      onClick={() => setDropdownOpen(false)}
+                    >
+                      <FaAndroid /> Android
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
           <Link
             href="#"
             className="text-sm font-medium hover:underline hidden md:block"
