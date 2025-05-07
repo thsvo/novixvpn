@@ -54,6 +54,10 @@ export default function Home() {
                     </li>
                     <li className="flex justify-start items-center gap-2  ">
                       <Check className="text-[#2460D1]" />
+                      Protect up to 5 devices effortlessly with a single account
+                    </li>
+                    <li className="flex justify-start items-center gap-2  ">
+                      <Check className="text-[#2460D1]" />
                       Strict No-Logs
                     </li>
                   </ul>
