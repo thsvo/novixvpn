@@ -2,6 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { Clock } from "lucide-react";
 import HeaderCom from "@/components/HeaderCom";
+import AndroidVPNInfo from "@/components/android-vpn-info";
+import VPNFeaturesGrid from "@/components/vpn-features-grid";
+import VPNSetupGuide from "@/components/vpn-setup-guide";
+import VPNPromoBanner from "@/components/vpn-promo-banner";
 
 export default function VPNDownloadPage() {
   return (
@@ -84,21 +88,14 @@ export default function VPNDownloadPage() {
             <Image src="/qr.png" alt="QR Code" width={550} height={500} />
           </div>
         </div>
-        <div className="w-full h-full ">
-          <div className="my-24 max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl font-semibold mb-4">
-              What does a VPN do for Android?
-            </h2>
-            <p>
-              A VPN for Android builds a protected tunnel between the VPN server
-              and your phone, hiding your IP address, encrypting your data, and
-              protecting your online activity on any Android phone or tablet.
-              Whether you're using public Wi-Fi, streaming or browsing
-              privately, a VPN keeps your connection fast, secure, and helps you
-              bypass geographical restrictions.
-            </p>
-          </div>
-        </div>
+        {/* What does a VPN component */}
+        <AndroidVPNInfo />
+        {/* Android VPN features component */}
+        <VPNFeaturesGrid />
+        {/* set up a VPN app component */}
+        <VPNSetupGuide />
+        {/* VPN PromoBanner component */}
+        <VPNPromoBanner />
       </div>
     </>
   );
