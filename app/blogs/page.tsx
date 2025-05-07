@@ -55,7 +55,7 @@ const popularArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/kill-switch.jpg",
   },
   {
     id: "wireguard-guide",
@@ -70,7 +70,7 @@ const popularArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/wireguard-guide.jpg",
   },
 ];
 // More articles data
@@ -86,7 +86,7 @@ const recentArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Vpn.jpg",
   },
   {
     id: "how-does-vpn-work",
@@ -99,7 +99,7 @@ const recentArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg?height=570&width=750",
   },
   {
     id: "The-importance-of-vpn",
@@ -112,7 +112,7 @@ const recentArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg?height=570&width=750",
   },
   {
     id: "why-is-vpn-needed",
@@ -125,7 +125,7 @@ const recentArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg?height=570&width=750",
   },
   {
     id: "why-novix-vpn-is-the-best",
@@ -138,7 +138,7 @@ const recentArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg?height=570&width=750",
   },
   {
     id: "how-to-use-vpn",
@@ -151,7 +151,7 @@ const recentArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg?height=570&width=750",
   },
   {
     id: "how-to-set-up-vpn",
@@ -164,7 +164,7 @@ const recentArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg?height=570&width=750",
   },
   {
     id: "benefits-of-a-vpn",
@@ -177,7 +177,7 @@ const recentArticles = [
       name: "Novix VPN",
       avatar: "/novix-vpn.png",
     },
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/placeholder.svg?height=570&width=750",
   },
 ];
 
@@ -258,51 +258,48 @@ export default function BlogPage() {
             <Link
               href={`/blogs/${article.id}`}
               key={article.id}
-              className="hover:text-blue-600"
+              className="group block rounded-xl bg-blue-50 shadow-sm transition-shadow hover:shadow-md overflow-hidden"
+              aria-label={`Read article: ${article.title}`}
             >
-              <article
-                key={article.id}
-                className="group overflow-hidden rounded-xl bg-blue-50 shadow-sm transition-all hover:shadow-md"
-              >
-                <div className="relative h-48 overflow-hidden">
+              <article>
+                <div className="relative w-full aspect-[4/3] bg-gray-100">
                   <Image
-                    src={
-                      article.image || "/placeholder.svg?height=300&width=400"
-                    }
+                    src={article.image || "/placeholder.svg"}
                     alt={article.title}
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 hover:scale-105 transition-all rounded-t-xl"></div>
                 </div>
-                <div className="p-6">
+
+                <div className="p-5">
                   <div className="mb-2">
-                    <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600">
+                    <span className="inline-block rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold uppercase tracking-wide text-blue-600">
                       {article.category}
                     </span>
                   </div>
-                  <div className="mb-4 flex items-center gap-4 text-xs text-gray-500">
+
+                  <div className="mb-4 flex items-center gap-3 text-xs text-gray-500">
                     <span>{article.date}</span>
                     <div className="flex items-center gap-1">
                       <Clock size={12} className="text-blue-500" />
                       <span>{article.readTime} min read</span>
                     </div>
                   </div>
-                  <h3 className="mb-3 text-lg font-bold leading-tight text-gray-800 transition-colors group-hover:text-blue-600">
+
+                  <h3 className="text-lg font-bold text-gray-800 leading-tight group-hover:text-blue-600 transition-colors">
                     {article.title}
                   </h3>
+
                   <div className="mt-4 flex items-center gap-2">
                     <Image
-                      src={
-                        article.author.avatar ||
-                        "/placeholder.svg?height=24&width=24"
-                      }
-                      alt={article.author.name}
+                      src={article.author.avatar || "/placeholder.svg"}
+                      alt={`Avatar of ${article.author.name}`}
                       width={24}
                       height={24}
-                      className="rounded-full border border-gray-200"
+                      className="rounded-full border border-gray-200 object-cover"
                     />
-                    <span className="text-xs font-medium">
+                    <span className="text-xs font-medium text-gray-700">
                       {article.author.name}
                     </span>
                   </div>
@@ -322,51 +319,46 @@ export default function BlogPage() {
             <Link
               href={`/blogs/${article.id}`}
               key={article.id}
-              className="hover:text-blue-600"
+              className="group block rounded-xl bg-blue-50 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+              aria-label={`Read article: ${article.title}`}
             >
-              <article
-                key={article.id}
-                className="group overflow-hidden rounded-xl bg-blue-50 shadow-sm transition-all hover:shadow-md"
-              >
-                <div className="relative h-48 overflow-hidden">
+              <article>
+                <div className="relative w-full aspect-[4/3] bg-gray-100">
                   <Image
-                    src={
-                      article.image || "/placeholder.svg?height=300&width=400"
-                    }
+                    src={article.image || "/placeholder.svg"}
                     alt={article.title}
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-contain transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 hover:scale-105 transition-all rounded-t-xl"></div>
                 </div>
-                <div className="p-6">
-                  <div className="mb-2">
-                    <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600">
-                      {article.category}
-                    </span>
-                  </div>
-                  <div className="mb-4 flex items-center gap-4 text-xs text-gray-500">
+
+                <div className="p-5">
+                  <span className="inline-block mb-2 rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold uppercase tracking-wide text-blue-600">
+                    {article.category}
+                  </span>
+
+                  <div className="mb-4 flex items-center gap-3 text-xs text-gray-500">
                     <span>{article.date}</span>
                     <div className="flex items-center gap-1">
                       <Clock size={12} className="text-blue-500" />
                       <span>{article.readTime} min read</span>
                     </div>
                   </div>
-                  <h3 className="mb-3 text-lg font-bold leading-tight text-gray-800 transition-colors group-hover:text-blue-600">
+
+                  <h3 className="text-lg font-bold text-gray-800 leading-tight group-hover:text-blue-600 transition-colors">
                     {article.title}
                   </h3>
+
                   <div className="mt-4 flex items-center gap-2">
                     <Image
-                      src={
-                        article.author.avatar ||
-                        "/placeholder.svg?height=24&width=24"
-                      }
-                      alt={article.author.name}
+                      src={article.author.avatar || "/placeholder.svg"}
+                      alt={`Avatar of ${article.author.name}`}
                       width={24}
                       height={24}
-                      className="rounded-full border border-gray-200"
+                      className="rounded-full border border-gray-200 object-cover"
                     />
-                    <span className="text-xs font-medium">
+                    <span className="text-xs font-medium text-gray-700">
                       {article.author.name}
                     </span>
                   </div>
