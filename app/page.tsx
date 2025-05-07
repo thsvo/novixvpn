@@ -68,7 +68,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
-                    Start Your Free Trial →
+                    Bonus VIP Days →
                   </Button>
                   <Button size="lg" variant="outline">
                     View Plans
