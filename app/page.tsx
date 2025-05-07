@@ -108,21 +108,13 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="relative hidden lg:block">
-                <video
-                  src="/security.mp4"
+              <div className="">
+                <Image
+                  src="/home-page.png"
                   width={600}
                   height={600}
-                  className="relative z-10 mx-auto"
-                  autoPlay
-                  loop
-                  muted
-                >
-                  Your browser does not support the video tag.
-                </video>
-                <Badge className="absolute top-10 right-10 text-lg py-2 px-4 bg-primary text-white z-20">
-                  -70% OFF
-                </Badge>
+                  alt="playstore"
+                />
               </div>
             </div>
           </div>
