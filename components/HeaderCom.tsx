@@ -76,21 +76,21 @@ export default function HeaderCom() {
                 onMouseLeave={() => setDropdownOpen(false)}
               >
                 <div
-                  className=" relative left-0 top-12 z-10 mt-2 w-48 origin-top-right rounded-md bg-white p-2 shadow-lg ring-1 ring-black ring-opacity-5"
+                  className=" relative left-0 top-12 z-10 mt-2 w-72 origin-top-right rounded-md bg-white p-2 shadow-lg ring-1 ring-black ring-opacity-5"
                   role="menu"
                   aria-orientation="vertical"
                   aria-labelledby="dropdown-products"
                 >
-                  <div>
-                    <span className="text-sm">Mobile</span>
-                    <Link
-                      href="/download"
-                      className="flex  items-center gap-1 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      role="menuitem"
-                      onClick={() => setDropdownOpen(false)}
-                    >
-                      <FaAndroid /> Android
-                    </Link>
+                  <div className="hover:bg-gray-100 p-2 rounded-md">
+                    <Image
+                      src="/novix-logo.png"
+                      height={0}
+                      width={150}
+                      alt=""
+                    />
+                    <span className="text-sm">
+                      Online Safety and Information Privacy
+                    </span>
                   </div>
                 </div>
               </div>
