@@ -98,7 +98,7 @@ export default function HeaderCom() {
           </div>
 
           <Link
-            href="#"
+            href="/login"
             className="text-sm font-medium hover:underline hidden md:block"
           >
             Log in
