@@ -108,27 +108,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* Countdown Timer Section */}
-        {/* <section className="bg-[#0052cc] text-white py-8">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center text-center">
-              <h2 className="text-3xl font-bold mb-6">
-                Limited Time Offer, Grab Now!
-              </h2>
-              <CountdownTimer />
-              <Button
-                size="lg"
-                className="mt-6 bg-[#ff7043] hover:bg-[#ff7043]/90 text-white"
-              >
-                Save 65% Now!
-              </Button>
-              <div className="flex items-center gap-2 mt-4">
-                <Check className="h-5 w-5 text-[#ff7043]" />
-                <span>30-Day Money-Back Guarantee</span>
-              </div>
-            </div>
-          </div>
-        </section> */}
         {/* Features Section */}
         <section id="features" className="bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">

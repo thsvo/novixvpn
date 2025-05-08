@@ -27,7 +27,7 @@ export default function VPNPromoBanner() {
           </p>
           <Link
             href="#"
-            className="inline-block bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-full"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full"
           >
             Get NovixVPN
           </Link>
