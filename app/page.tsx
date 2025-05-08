@@ -1,27 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  Shield,
-  Zap,
-  Check,
-  Download,
-  Smartphone,
-  Laptop,
-  Star,
-  Tag,
-} from "lucide-react";
+import { Shield, Zap, Check, Download, Star } from "lucide-react";
+import { FaAndroid } from "react-icons/fa6";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import CountdownTimer from "@/components/countdown-timer";
 import IpBanner from "@/components/ip-banner";
 import ComparisonTable from "@/components/comparison-table";
 import PricingCards from "@/components/pricing-cards";
 import Testimonials from "@/components/testimonials";
 import Footer from "@/components/footer";
-import MainNav from "@/components/main-nav";
 import HeroPromotionCom from "@/components/HeroPromotionCom";
 import HeaderCom from "@/components/HeaderCom";
 import WhatIsVpn from "@/components/what-is-vpn";
@@ -37,7 +26,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+            <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_650px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-6">
                   <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
@@ -111,8 +100,8 @@ export default function Home() {
               <div className="">
                 <Image
                   src="/home-page.png"
-                  width={600}
-                  height={600}
+                  width={800}
+                  height={800}
                   alt="playstore"
                 />
               </div>
@@ -297,7 +286,7 @@ export default function Home() {
             <div className="flex justify-center items-center gap-2 max-w-3xl mx-auto">
               <div className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity">
                 <div className="rounded-full bg-white/10 p-4">
-                  <Smartphone className="h-8 w-8 " />
+                  <FaAndroid className="h-8 w-8 " />
                 </div>
               </div>
               <Link
