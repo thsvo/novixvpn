@@ -81,16 +81,17 @@ export default function HeaderCom() {
                   aria-orientation="vertical"
                   aria-labelledby="dropdown-products"
                 >
-                  <div className="hover:bg-gray-100 p-2 rounded-md">
+                  <div className="hover:bg-gray-100 p-2 rounded-md ">
                     <Image
                       src="/novix-logo.png"
                       height={0}
                       width={150}
                       alt=""
+                      className="-ml-[1.5rem]"
                     />
-                    <span className="text-sm">
+                    <div className="text-sm -mt-[1.2rem]">
                       Online Safety and Information Privacy
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
