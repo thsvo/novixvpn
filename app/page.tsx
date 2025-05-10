@@ -44,7 +44,8 @@ export default function Home() {
                     </li>
                     <li className="flex justify-start items-center gap-2  ">
                       <Check className="text-[#2460D1]" />
-                      Protect up to 5 devices effortlessly with a single account
+                      Five devices, One Account, because your Privacy Shouldn’t
+                      play musical Chairs
                     </li>
                     <li className="flex justify-start items-center gap-2  ">
                       <Check className="text-[#2460D1]" />
@@ -114,11 +115,11 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                One VPN. 360° Protection. Zero Hassle.
+                One VPN. 360° Protection. Zero Hassle
               </h2>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
-                No complex configurations. No tech skills needed. Just install,
-                tap connect, and you're instantly protected.
+                No setup nightmare. No tech skills required, just install, tap
+                and enjoy your privacy.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -127,9 +128,9 @@ export default function Home() {
                   <div className="mb-4 rounded-full bg-primary/10 p-4">
                     <Download className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Download & Install</h3>
+                  <h3 className="text-xl font-bold mb-2">Download Now</h3>
                   <p className="text-muted-foreground">
-                    Available on all devices
+                    Android Only. Smooth and simple, just how it should be.
                   </p>
                   <Button variant="link" asChild className="mt-4">
                     <Link href="/features">Learn More</Link>
@@ -143,7 +144,8 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold mb-2">One-Tap Connect</h3>
                   <p className="text-muted-foreground">
-                    Instant encryption - no manual setup
+                    Instant encryption, without the manual fiddling, just tap
+                    and forget.
                   </p>
                   <Button variant="link" asChild className="mt-4">
                     <Link href="/high-speed-vpn">Learn More</Link>
@@ -159,7 +161,7 @@ export default function Home() {
                     Stay Private & Secure
                   </h3>
                   <p className="text-muted-foreground">
-                    Auto-connect with 24/7 protection
+                    auto-connect 24/7.Privacy shouldn’t be a choice it's a given
                   </p>
                   <Button variant="link" asChild className="mt-4">
                     <Link href="/no-user-tracking">Learn More</Link>
@@ -181,11 +183,11 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="font-bold">
-                        One-click setup on any device—get protected instantly
+                        One-click Setup. Protected in seconds:
                       </h3>
                       <p className="text-muted-foreground">
-                        Connect with a single tap on Windows, Mac, iOS, Android,
-                        Linux, and more.
+                        Tap it once and you are safe. Simple, quick and no
+                        nonsense.
                       </p>
                     </div>
                   </li>
@@ -195,11 +197,11 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="font-bold">
-                        Seamlessly switch between devices without interruptions
+                        Switch between devices without missing a beat:
                       </h3>
                       <p className="text-muted-foreground">
-                        Your connection stays secure as you move between your
-                        phone, tablet, and computer.
+                        Your Privacy is alway On, whether you are on your phone,
+                        tablet or anything else. No interruptions.
                       </p>
                     </div>
                   </li>
@@ -209,11 +211,11 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="font-bold">
-                        Secure up to 5 devices with one simple connection
+                        Secure Upto 5 devices with one connection:
                       </h3>
                       <p className="text-muted-foreground">
-                        Protect your entire household with a single
-                        subscription.
+                        One account, 5 devices. Keep the whole crew safe, zero
+                        fuss.
                       </p>
                     </div>
                   </li>
@@ -288,10 +290,10 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Simple, Transparent Pricing
+                Straight Forward Pricing
               </h2>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
-                Choose the plan that works for you
+                Pick the plan that fits you. No tricks, No Surprises
               </p>
             </div>
             <PricingCards />
@@ -302,10 +304,10 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                What Our Users Say
+                What Our Users are saying
               </h2>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
-                Join millions of satisfied users worldwide
+                Join the crowd who's already switched to smarter privacy
               </p>
             </div>
             <Testimonials />

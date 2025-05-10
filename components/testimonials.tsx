@@ -8,7 +8,7 @@ export default function Testimonials() {
       name: "Alex Johnson",
       location: "United States",
       comment:
-        "SecureVPN has been a game-changer for me. The speed is incredible and I can finally stream without buffering while staying protected.",
+        "Novix VPN has completely changed the game for me, The Speed is Insane, I can stream without any buffering, without anyone stealing my data. Its like a breath of fresh air.",
       rating: 5,
       avatar: "/alex-johnson.jpg",
     },
@@ -16,7 +16,7 @@ export default function Testimonials() {
       name: "Sarah Chen",
       location: "Canada",
       comment:
-        "I travel frequently for work and SecureVPN keeps me safe on public WiFi. The app is so easy to use - just one tap and I'm protected!",
+        "I travel a lot for work, and Novix VPN has been a lifesaver on public wifi, I no longer have to worry about getting hacked, Just one tap and I am protected. It gives me peace of mind wherever I go.",
       rating: 5,
       avatar: "/sarah-chen.jpg",
     },
@@ -24,7 +24,7 @@ export default function Testimonials() {
       name: "Michael Rodriguez",
       location: "Spain",
       comment:
-        "After trying several VPN services, I've finally found one that doesn't slow down my connection. The customer support is also excellent.",
+        "After trying a bunch of VPNs I can honestly say Novix is the best, Finally, a VPN that doesn’t slow down my connection, and their customer service is top-notch.",
       rating: 4,
       avatar: "/michael-rodriguez.jpeg",
     },
