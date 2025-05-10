@@ -5,7 +5,6 @@ import { FaAndroid } from "react-icons/fa6";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import IpBanner from "@/components/ip-banner";
 import ComparisonTable from "@/components/comparison-table";
 import PricingCards from "@/components/pricing-cards";
@@ -61,9 +60,11 @@ export default function Home() {
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Bonus VIP Days →
                   </Button>
-                  <Button size="lg" variant="outline">
-                    View Plans
-                  </Button>
+                  <Link href="#pricing">
+                    <Button size="lg" variant="outline">
+                      View Plans
+                    </Button>
+                  </Link>
                 </div>
                 <div className="flex items-center gap-1 text-sm text-muted-foreground">
                   <Check className="h-4 w-4 text-primary" />
