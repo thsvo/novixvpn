@@ -141,8 +141,8 @@ export default function Contact() {
                       </a>
                     </div>
                   </div>
-
-                  <div className="flex items-start gap-4">
+                  {/* call us */}
+                  {/* <div className="flex items-start gap-4">
                     <div className="rounded-full bg-primary/10 p-3 mt-1">
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
@@ -163,9 +163,9 @@ export default function Contact() {
                       <p>Monday - Friday: 9am - 8pm EST</p>
                       <p>Saturday - Sunday: 10am - 6pm EST</p>
                     </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
+                  </div> */}
+                  {/* our location */}
+                  {/* <div className="flex items-start gap-4">
                     <div className="rounded-full bg-primary/10 p-3 mt-1">
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
@@ -179,7 +179,7 @@ export default function Contact() {
                       </p>
                       <p className="text-muted-foreground">United States</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

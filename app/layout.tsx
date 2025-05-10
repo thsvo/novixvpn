@@ -26,14 +26,14 @@ export default function RootLayout({
         {children}
 
         {/* HubSpot Embed Code */}
-        <Script
+        {/* <Script
           id="hs-script-loader"
           strategy="afterInteractive"
           src="//js.hs-scripts.com/242560734.js"
-        />
+        /> */}
 
         {/* Google tag (gtag.js) */}
-        <Script
+        {/* <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-H3HZP0C6ED"
         />
@@ -44,7 +44,7 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-H3HZP0C6ED');
           `}
-        </Script>
+        </Script> */}
 
         <CountdownTimerClient />
       </body>
