@@ -9,18 +9,16 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
-interface PricingCardsProps {
-  interval: "monthly" | "yearly";
-}
+interface PricingCardsProps {}
 
-export default function PricingCards({ interval }: PricingCardsProps) {
+export default function PricingCards({}: PricingCardsProps) {
   const plans = [
     {
-      name: "Basic",
+      name: "Weekly",
       description: "Essential protection for individuals",
-      priceMonthly: 11.99,
-      priceYearly: 4.19,
+      price: 11.99,
       features: [
         "Connect 5 devices simultaneously",
         "Access to 60+ countries",
@@ -30,25 +28,9 @@ export default function PricingCards({ interval }: PricingCardsProps) {
       popular: false,
     },
     {
-      name: "Premium",
-      description: "Advanced security for all your devices",
-      priceMonthly: 14.99,
-      priceYearly: 5.24,
-      features: [
-        "Connect 5 devices simultaneously",
-        "Access to 90+ countries",
-        "No-logs policy",
-        "24/7 customer support",
-        "Ad & malware blocker",
-        "Split tunneling",
-      ],
-      popular: true,
-    },
-    {
-      name: "Ultimate",
+      name: "Yearly",
       description: "Complete protection for your digital life",
-      priceMonthly: 19.99,
-      priceYearly: 6.99,
+      price: 19.99,
       features: [
         "Connect 5 devices simultaneously",
         "Access to 100+ countries",
@@ -59,19 +41,38 @@ export default function PricingCards({ interval }: PricingCardsProps) {
         "Dedicated IP address",
         "Password manager included",
       ],
+      popular: true,
+    },
+    {
+      name: "Monthly",
+      description: "Advanced security for all your devices",
+      price: 14.99,
+      features: [
+        "Connect 5 devices simultaneously",
+        "Access to 90+ countries",
+        "No-logs policy",
+        "24/7 customer support",
+        "Ad & malware blocker",
+        "Split tunneling",
+      ],
       popular: false,
     },
   ];
 
   return (
-    <div className="grid md:grid-cols-3 gap-6">
+    <div className="flex justify-center gap-6 ">
       {plans.map((plan) => (
         <Card
           key={plan.name}
-          className={`flex flex-col ${
+          className={`flex flex-col max-w-[22rem] ${
             plan.popular ? "border-primary shadow-lg" : ""
           }`}
         >
+          {plan.popular && (
+            <div className="relative w-full flex justify-center items-center">
+              <Badge className="absolute bg-primary -top-3">Save 70% off</Badge>
+            </div>
+          )}
           <CardHeader>
             <div className="flex justify-between items-start">
               <div>
@@ -80,28 +81,15 @@ export default function PricingCards({ interval }: PricingCardsProps) {
                   {plan.description}
                 </CardDescription>
               </div>
-              {plan.popular && (
+              {/* {plan.popular && (
                 <Badge className="bg-primary">Most Popular</Badge>
-              )}
+              )} */}
             </div>
           </CardHeader>
           <CardContent className="flex-1">
             <div className="mb-4">
-              <span className="text-4xl font-bold">
-                ${interval === "monthly" ? plan.priceMonthly : plan.priceYearly}
-              </span>
+              <span className="text-4xl font-bold">{plan.price}</span>
               <span className="text-muted-foreground">/mo</span>
-
-              {interval === "yearly" && (
-                <div className="mt-1">
-                  <Badge
-                    variant="outline"
-                    className="text-primary border-primary"
-                  >
-                    Save 65%
-                  </Badge>
-                </div>
-              )}
             </div>
             <ul className="space-y-2 mb-6">
               {plan.features.map((feature) => (
@@ -113,9 +101,11 @@ export default function PricingCards({ interval }: PricingCardsProps) {
             </ul>
           </CardContent>
           <CardFooter>
-            <Button className={`w-full ${plan.popular ? "bg-primary" : ""}`}>
-              Get {plan.name}
-            </Button>
+            <Link href="/">
+              <Button className={`w-full ${plan.popular ? "bg-primary" : ""}`}>
+                Get {plan.name}
+              </Button>
+            </Link>
           </CardFooter>
         </Card>
       ))}

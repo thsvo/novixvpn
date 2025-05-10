@@ -294,18 +294,7 @@ export default function Home() {
                 Choose the plan that works for you
               </p>
             </div>
-            <Tabs defaultValue="monthly" className="w-full max-w-full mx-auto">
-              <TabsList className="grid w-full grid-cols-2 mb-8">
-                <TabsTrigger value="monthly">Monthly</TabsTrigger>
-                <TabsTrigger value="yearly">Yearly (Save 65%)</TabsTrigger>
-              </TabsList>
-              <TabsContent value="monthly">
-                <PricingCards interval="monthly" />
-              </TabsContent>
-              <TabsContent value="yearly">
-                <PricingCards interval="yearly" />
-              </TabsContent>
-            </Tabs>
+            <PricingCards />
           </div>
         </section>
         {/* Testimonials Section */}
