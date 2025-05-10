@@ -1,13 +1,7 @@
-import type { Metadata } from "next";
 import FAQAccordion from "@/components/faq-accordion";
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Frequently Asked Questions | NovixVPN",
-  description:
-    "Find answers to common questions about NovixVPN, including security features, pricing, and more.",
-};
-
-export default function FAQPage() {
+export default function FAQComponent() {
   const faqItems = [
     {
       question: "What makes Novix VPN stand out?",
@@ -151,12 +145,12 @@ export default function FAQPage() {
           <p className="text-gray-600 mb-6">
             Still have questions? We're here to help.
           </p>
-          <a
-            href="/contact"
+          <Link
+            href="/faq"
             className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
           >
-            Contact Support
-          </a>
+            More
+          </Link>
         </div>
       </div>
     </div>

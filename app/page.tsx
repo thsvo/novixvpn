@@ -14,6 +14,7 @@ import Footer from "@/components/footer";
 import HeroPromotionCom from "@/components/HeroPromotionCom";
 import HeaderCom from "@/components/HeaderCom";
 import WhatIsVpn from "@/components/what-is-vpn";
+import FAQComponent from "@/components/faq-component";
 
 export default function Home() {
   return (
@@ -325,6 +326,8 @@ export default function Home() {
         <div className="mb-24">
           <WhatIsVpn />
         </div>
+        {/* FAQ Section */}
+        <FAQComponent />
       </main>
       <Footer />
     </div>
