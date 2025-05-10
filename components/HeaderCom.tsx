@@ -98,12 +98,13 @@ export default function HeaderCom() {
             )}
           </div>
 
-          <Link
+          {/* Login button */}
+          {/* <Link
             href="/login"
             className="text-sm font-medium hover:underline hidden md:block"
           >
             Log in
-          </Link>
+          </Link> */}
           <Link href="/download">
             <Button className="rounded-full">Get Novix VPN</Button>
           </Link>
