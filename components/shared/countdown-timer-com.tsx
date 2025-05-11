@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 export default function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
-    hours: 2,
+    hours: 1,
     minutes: 59,
-    seconds: 57,
+    seconds: 59,
   });
   const [isVisible, setIsVisible] = useState(true);
 
