@@ -26,120 +26,61 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground">
               Protecting your online privacy and security since 2025.
             </p>
-            {/* Social media links */}
-            {/* <div className="flex space-x-4">
-              <Link
-                href="https://www.facebook.com/NovixVPN"
-                target="_blank"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link
-                href="https://x.com/NovixVpn"
-                target="_blank"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="https://www.instagram.com/novixvpn/?next=%2F&hl=en"
-                target="_blank"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link
-                href="https://www.youtube.com/@NOVIXVPN"
-                target="_blank"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                <Youtube className="h-5 w-5" />
-                <span className="sr-only">YouTube</span>
-              </Link>
-              <Link
-                href="https://www.linkedin.com/company/novix-vpn/?viewAsMember=true"
-                target="_blank"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link
-                href="https://www.tiktok.com/@novixvpn"
-                target="_blank"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                <FaTiktok className="h-5 w-5" />
-                <span className="sr-only">TikTok</span>
-              </Link>
-              <Link
-                href="https://www.threads.net/@novixvpn"
-                target="_blank"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                <FaThreads className="h-5 w-5" />
-                <span className="sr-only">Threads</span>
-              </Link>
-            </div> */}
             <div className="flex space-x-4">
               <Link
                 href="https://www.facebook.com/NovixVPN"
                 target="_blank"
-                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-white ring-offset rounded-full p-2 transition"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-5 w-5 text-white hover:text-primary" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
                 href="https://x.com/NovixVpn"
                 target="_blank"
-                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-white ring-offset rounded-full p-2 transition"
               >
-                <Twitter className="h-5 w-5" />
+                <Twitter className="h-5 w-5 text-white hover:text-primary" />
                 <span className="sr-only">Twitter</span>
               </Link>
               <Link
                 href="https://www.instagram.com/novixvpn/?next=%2F&hl=en"
                 target="_blank"
-                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-white ring-offset rounded-full p-2 transition"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-5 w-5 text-white hover:text-primary" />
                 <span className="sr-only">Instagram</span>
               </Link>
               <Link
                 href="https://www.youtube.com/@NOVIXVPN"
                 target="_blank"
-                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-white ring-offset rounded-full p-2 transition"
               >
-                <Youtube className="h-5 w-5" />
+                <Youtube className="h-5 w-5 text-white hover:text-primary" />
                 <span className="sr-only">YouTube</span>
               </Link>
               <Link
                 href="https://www.linkedin.com/company/novix-vpn/?viewAsMember=true"
                 target="_blank"
-                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-white ring-offset rounded-full p-2 transition"
               >
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-5 w-5 text-white hover:text-primary" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link
                 href="https://www.tiktok.com/@novixvpn"
                 target="_blank"
-                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-white ring-offset rounded-full p-2 transition"
               >
-                <FaTiktok className="h-5 w-5" />
+                <FaTiktok className="h-5 w-5 text-white hover:text-primary" />
                 <span className="sr-only">TikTok</span>
               </Link>
               <Link
                 href="https://www.threads.net/@novixvpn"
                 target="_blank"
-                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-muted-foreground ring-offset rounded-full p-2 transition"
+                className="text-muted-foreground hover:text-primary hover:ring-primary ring-1 ring-white ring-offset rounded-full p-2 transition"
               >
-                <FaThreads className="h-5 w-5" />
+                <FaThreads className="h-5 w-5 text-white hover:text-primary" />
                 <span className="sr-only">Threads</span>
               </Link>
             </div>
