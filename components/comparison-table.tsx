@@ -71,7 +71,7 @@ export default function ComparisonTable() {
             <th className="p-4 text-center">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/"
+                  src="/surfshark.png"
                   width={32}
                   height={32}
                   alt="NordVPN"
@@ -107,7 +107,7 @@ export default function ComparisonTable() {
             <th className="p-4 text-center">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/"
+                  src="/express-vpn.png"
                   width={32}
                   height={32}
                   alt="ProtonVPN"
