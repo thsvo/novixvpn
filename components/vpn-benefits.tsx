@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Shield, Globe } from "lucide-react";
 import { useState } from "react";
 
 export default function VpnBenefits() {
