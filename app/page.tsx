@@ -25,35 +25,63 @@ export default function Home() {
       <HeaderCom />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-background mt-16">
+        <section className="relative overflow-hidden bg-background mt-10">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_650px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-6">
-                  <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Guard What’s Yours. Ghost Everything Else.
-                  </h1>
+                  <div>
+                    <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                      Guard What’s Yours. Ghost the Rest.
+                    </h1>
+                    <p className="text-muted-foreground ml-2 py-2">
+                      <strong>Novix VPN</strong> gives you the privacy you
+                      deserve without the trade-offs.
+                    </p>
+                  </div>
                   <ul>
-                    <li className="flex justify-start items-center gap-2  ">
-                      <Check className="text-[#2460D1]" />
-                      Route traffic through two secure servers
+                    <li>
+                      <div className="flex items-center gap-2 font-bold">
+                        <Check className="text-primary" />
+                        Double Encrypted Routing
+                      </div>
+                      <span className="text-muted-foreground ml-8 text-sm">
+                        Your traffic moves through two secure servers, not one.
+                        Because one wall isn’t enough.
+                      </span>
                     </li>
-                    <li className="flex justify-start items-center gap-2  ">
-                      <Check className="text-[#2460D1]" />
-                      Blazing-fast servers, no throttling
+                    <li>
+                      <div className="flex items-center gap-2 font-bold">
+                        <Check className="text-primary" />
+                        Blazing-Fast Performance
+                      </div>
+                      <span className="text-muted-foreground ml-8 text-sm">
+                        No throttling. No slowdowns. Just smooth, uninterrupted
+                        browsing and streaming.
+                      </span>
                     </li>
-                    <li className="flex justify-start items-center gap-2  ">
-                      <Check className="text-[#2460D1]" />
-                      Five devices, One Account, because your Privacy Shouldn’t
-                      play musical Chairs
+                    <li>
+                      <div className="flex items-center gap-2 font-bold">
+                        <Check className="text-primary" />
+                        One Account, Five Devices
+                      </div>
+                      <span className="text-muted-foreground ml-8 text-sm">
+                        Your protection travels with you across devices,
+                        seamlessly.
+                      </span>
                     </li>
-                    <li className="flex justify-start items-center gap-2  ">
-                      <Check className="text-[#2460D1]" />
-                      Strict No-Logs
+                    <li>
+                      <div className="flex items-center gap-2 font-bold">
+                        <Check className="text-primary" />
+                        Zero Logs. Zero Tracking.
+                      </div>
+                      <span className="text-muted-foreground ml-8 text-sm">
+                        We don’t monitor. We don’t store. We don’t compromise.
+                      </span>
                     </li>
                   </ul>
                   {/* promotion section */}
-                  <Link href="#">
+                  <Link href="#pricing">
                     <HeroPromotionCom />
                   </Link>
                 </div>
