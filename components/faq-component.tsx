@@ -34,7 +34,7 @@ export default function FAQComponent() {
           </p>
         </div>
       ),
-      icon: "🔸",
+      icon: "",
     },
     {
       question: "Is Novix VPN free?",
@@ -67,7 +67,7 @@ export default function FAQComponent() {
           </p>
         </div>
       ),
-      icon: "🔸",
+      icon: "",
     },
     {
       question: "How secure is Novix VPN?",
@@ -122,7 +122,7 @@ export default function FAQComponent() {
           </div>
         </div>
       ),
-      icon: "🔸",
+      icon: "",
     },
   ];
 
