@@ -14,6 +14,7 @@ import HeroPromotionCom from "@/components/HeroPromotionCom";
 import HeaderCom from "@/components/HeaderCom";
 import WhatIsVpn from "@/components/what-is-vpn";
 import FAQComponent from "@/components/faq-component";
+import VpnBenefits from "@/components/vpn-benefits";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       <HeaderCom />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-background py-12 md:py-24">
+        <section className="relative overflow-hidden bg-background">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_650px]">
               <div className="flex flex-col justify-center space-y-4">
@@ -110,6 +111,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+        {/* Benefits Section */}
+        <section className="relative overflow-hidden bg-background py-12 md:py-24">
+          <VpnBenefits />
         </section>
         {/* Features Section */}
         <section id="features" className="bg-background py-12 md:py-24">
