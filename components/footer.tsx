@@ -106,7 +106,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   About us
                 </Link>
@@ -114,7 +114,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/#download"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Download
                 </Link>
@@ -122,7 +122,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/money-back-guarantee"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Money-back guarantee
                 </Link>
@@ -130,7 +130,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/why-novix-vpn"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Why Novix VPN?
                 </Link>
@@ -138,7 +138,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/no-user-tracking"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   No User Tracking
                 </Link>
@@ -146,7 +146,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/high-speed-vpn"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   High Speed VPN
                 </Link>
@@ -159,7 +159,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/ip-checker"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   IP Checker
                 </Link>
@@ -167,7 +167,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/blogs"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Blogs
                 </Link>
@@ -175,7 +175,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/what-is-vpn"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   What is VPN?
                 </Link>
@@ -183,7 +183,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/features"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Features
                 </Link>
@@ -191,7 +191,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/vpn-servers"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   VPN Servers
                 </Link>
@@ -199,7 +199,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/#testimonials"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Reviews
                 </Link>
@@ -212,7 +212,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Contact
                 </Link>
@@ -220,7 +220,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/faq"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   FAQ
                 </Link>
@@ -228,7 +228,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/terms-of-service"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Terms of Service
                 </Link>
@@ -236,7 +236,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/privacy-policy"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Privacy Policy
                 </Link>
@@ -244,7 +244,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/cookie-policy"
-                  className="text-muted-foreground hover:text-foreground"
+                  className="text-muted-foreground hover:text-white"
                 >
                   Cookie Policy
                 </Link>
