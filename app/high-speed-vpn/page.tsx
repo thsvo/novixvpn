@@ -2,17 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   ArrowLeft,
-  Zap,
-  Globe,
   Check,
-  Server,
-  Download,
-  Wifi,
+  ShieldCheck,
+  TabletSmartphone,
   Gauge,
+  ServerCrash,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/footer";
 
 export default function HighSpeedVPN() {
@@ -72,37 +69,23 @@ export default function HighSpeedVPN() {
             <div className="grid gap-12 md:grid-cols-2 items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-6">
-                  Speed Without Compromise
+                  Novix VPN: Designed for You, Built for Speed
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Most VPNs slow down your internet connection due to encryption
-                  overhead and server distance. Novix VPN is different.
-                </p>
-                <p className="text-lg text-muted-foreground mb-6">
-                  We've built our network from the ground up with speed in mind,
-                  using the latest technologies and optimizations to ensure you
-                  get the fastest possible connection without sacrificing
-                  security.
-                </p>
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="rounded-full bg-primary/10 p-3">
-                    <Gauge className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="text-2xl font-bold">
-                    Up to 10 Gbps Servers
-                  </div>
-                </div>
-                <p className="text-lg text-muted-foreground">
-                  Stream in 4K, download large files, play online games, and
-                  video chat without lag or buffering. Our high-speed VPN keeps
-                  you connected at peak performance.
+                  With VPNs, speed is not merely a benefit; it is really rather
+                  crucial. A bad connection spoils the experience, whether you
+                  are streaming your favourite series, gaming without latency,
+                  or loading a website fast. In that regard, Novix VPN is
+                  unique. Designed with performance in mind, especially for
+                  Android users, Novix offers high-speed browsing without
+                  compromising privacy or comfort.
                 </p>
               </div>
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/placeholder.svg?height=400&width=500"
                   alt="High-Speed VPN"
-                  width={600}
+                  width={500}
                   height={400}
                   className="object-cover w-full h-full"
                 />
@@ -111,70 +94,11 @@ export default function HighSpeedVPN() {
           </div>
         </section>
 
-        <section className="bg-muted py-12 md:py-24">
+        <section className="py-12 md:py-24 bg-muted">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-                What Makes Our VPN So Fast?
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                The technology behind our lightning-fast speeds.
-              </p>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-3">
-              <Card>
-                <CardContent className="p-6">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
-                    <Server className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">
-                    High-Capacity Servers
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Our network consists of high-capacity 10 Gbps servers that
-                    can handle massive amounts of traffic without slowing down.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
-                    <Zap className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">Optimized Protocol</h3>
-                  <p className="text-muted-foreground">
-                    We use our proprietary NovixLynx protocol, designed
-                    specifically for high-speed connections while maintaining
-                    security.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
-                    <Globe className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">
-                    Strategic Server Locations
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Our servers are strategically placed at internet exchange
-                    points around the world to minimize latency.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-12 md:py-24">
-          <div className="container px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-                Perfect for High-Bandwidth Activities
+                Speedy Feeling of Novix VPN
               </h2>
               <p className="text-xl text-muted-foreground">
                 Our high-speed VPN is optimized for all your online needs.
@@ -184,56 +108,73 @@ export default function HighSpeedVPN() {
             <div className="grid gap-6 md:grid-cols-2">
               <div className="flex items-start gap-4">
                 <div className="rounded-full bg-primary/10 p-2 mt-1">
-                  <Download className="h-5 w-5 text-primary" />
+                  <ShieldCheck className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">4K Streaming</h3>
+                  <h3 className="text-xl font-bold mb-2">
+                    WireGuard Protocol for Next Generation
+                  </h3>
                   <p className="text-muted-foreground">
-                    Stream your favorite content in ultra-high definition
-                    without buffering or quality drops. Our VPN is optimized for
-                    Netflix, Disney+, HBO Max, and other streaming platforms.
+                    Fundamentally, WireGuard is contemporary, lightweight, and
+                    built for speed. Novix VPN's speed is unlike older VPN
+                    protocols like OpenVPN; WireGuard permits your data to go
+                    through with the least latency by providing stronger
+                    security and cleaner coding. From a practical standpoint?
+                    Even over great distances, a quick connection and fewer
+                    interruptions.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="rounded-full bg-primary/10 p-2 mt-1">
-                  <Zap className="h-5 w-5 text-primary" />
+                  <ServerCrash className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Online Gaming</h3>
+                  <h3 className="text-xl font-bold mb-2">
+                    Network of Best Servers
+                  </h3>
                   <p className="text-muted-foreground">
-                    Enjoy low-ping gaming with our optimized gaming servers. Our
-                    VPN minimizes latency and packet loss, giving you a
-                    competitive edge in online games.
+                    Novix VPN links you to a global network of strategically
+                    located servers, both free and premium. Depending on
+                    location and performance, the software picks the optimal
+                    server for you; no human guessing or switching is necessary.
+                    The item? Quicker speeds every time you log on.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="rounded-full bg-primary/10 p-2 mt-1">
-                  <Download className="h-5 w-5 text-primary" />
+                  <Gauge className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Fast Downloads</h3>
+                  <h3 className="text-xl font-bold mb-2">
+                    Speed Test Built-In
+                  </h3>
                   <p className="text-muted-foreground">
-                    Download large files at maximum speed. Our P2P-optimized
-                    servers ensure fast and secure file transfers without
-                    throttling.
+                    Unsure of which server to choose? Novix simplifies things.
+                    Check real-time performance of many servers using the in-app
+                    speed test and select the one that most meets your
+                    requirements. It's great for everyone who wishes to stream,
+                    download, or play without delays.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="rounded-full bg-primary/10 p-2 mt-1">
-                  <Wifi className="h-5 w-5 text-primary" />
+                  <TabletSmartphone className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Video Conferencing</h3>
+                  <h3 className="text-xl font-bold mb-2">
+                    Particularly Designed for Android Devices
+                  </h3>
                   <p className="text-muted-foreground">
-                    Stay connected with crystal-clear video calls. Our VPN
-                    ensures stable connections for Zoom, Teams, and other video
-                    conferencing platforms.
+                    Unlike big VPN applications that slow down your phone, Novix
+                    is quick and simple. Promising quick performance, low
+                    battery use, and seamless multitasking even with your VPN
+                    running in the background, it was built only for Android.
                   </p>
                 </div>
               </div>
@@ -241,7 +182,7 @@ export default function HighSpeedVPN() {
           </div>
         </section>
 
-        <section className="bg-muted py-12 md:py-24">
+        <section className=" py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="grid gap-12 md:grid-cols-2 items-center">
               <div className="relative rounded-lg overflow-hidden">
@@ -254,46 +195,49 @@ export default function HighSpeedVPN() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl font-bold mb-6">Speed Test Results</h2>
-                <p className="text-lg text-muted-foreground mb-6">
-                  Don't just take our word for it. Independent speed tests
-                  consistently rank Novix VPN among the fastest VPN services
-                  available.
-                </p>
+                <h2 className="text-3xl font-bold mb-6">
+                  All That Speed: What Is Possible?
+                </h2>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium">
-                        Average Download Speed: 850 Mbps
-                      </h4>
-                      <p className="text-muted-foreground">
-                        On a 1 Gbps connection, our VPN maintains up to 85% of
-                        your base speed.
-                      </p>
-                    </div>
+                    View in HD or 4K: Wave farewell to fuzzy streaming and
+                    buffering.
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium">Low Latency: 5-20ms</h4>
-                      <p className="text-muted-foreground">
-                        Our optimized network keeps ping times low for
-                        responsive browsing and gaming.
-                      </p>
-                    </div>
+                    Play online games using low ping to avoid lag.
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium">Consistent Performance</h4>
-                      <p className="text-muted-foreground">
-                        Our speeds remain stable even during peak hours,
-                        ensuring reliable performance.
-                      </p>
-                    </div>
+                    Download files promptly: Transfer backups or big files
+                    without delay.
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    Effortless Browsing: Fast-loading websites, ideal video
+                    calls, and smooth social media access.
                   </li>
                 </ul>
+                <div className="mt-6 space-y-4">
+                  <h1 className="text-xl font-bold p">Extra Features</h1>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      Should the VPN fail, it will maintain your connection
+                      safely and not slow you down.
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      Under Flexible Plans, no commitment pressure; weekly,
+                      monthly, and annual choices.
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      Annual memberships offer extra days and unique benefits.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -303,16 +247,21 @@ export default function HighSpeedVPN() {
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-                Experience the Speed Difference
+                What Makes Novix VPN Unique?
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Try Novix VPN risk-free with our 30-day money-back guarantee.
+                A lot of VPNs claim to be fast. Novix shows that it works. It's
+                made for people who want speed without giving up security. It
+                uses advanced protocols, fast server routeing, and a focus on
+                Android performance. Novix fits your lifestyle, whether you just
+                browse the web occasionally or use it a lot.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Get Novix VPN Now
               </Button>
               <p className="mt-4 text-sm text-muted-foreground">
-                No speed caps. No bandwidth limits. No compromises.
+                Right now, give it a try to see how fast privacy might change
+                things.
               </p>
             </div>
           </div>
