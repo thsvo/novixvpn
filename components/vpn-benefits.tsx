@@ -12,53 +12,68 @@ export default function VpnBenefits() {
 
   const accordionItems = [
     {
-      title: "Protects your internet connection",
+      title: "Secure Your Internet Connection",
       content:
-        "A VPN adds an extra layer of protection to your daily browsing. By encrypting your internet traffic, a VPN helps you shield your online activity from hackers, especially when you're using public Wi-Fi. Whether you're working remotely or browsing on the go, a VPN makes your connection safer — it's virtually impossible to unencrypt internet traffic that's traveling through a VPN tunnel.",
+        "A VPN builds an encrypted tunnel from your Android device to the VPN provider’s server and the Internet. It protects your data and activities from malicious actors, making your personal information strictly secured.",
+      image: "/benefits-1.png",
     },
     {
-      title: "Unblocks your internet access",
+      title: "Unlocks Internet Restrictions",
       content:
-        "A VPN allows you to bypass geographical restrictions and access content that might be blocked in your region. Whether you're traveling abroad or want to access region-specific services, a VPN helps you maintain access to your favorite websites, streaming platforms, and online services from anywhere in the world.",
+        "VPNs allow you to access geographically-restricted websites, apps, and streaming platforms regardless of your real location. It maintains openness whether one is watching Netflix US in another country or unblocking censored websites. With a VPN, you set your own Internet rules.",
+      image: "/benefits-2.png",
     },
     {
-      title: "Helps boost your online privacy",
+      title: "Keeps You Stay Private",
       content:
-        "Privacy is increasingly important in today's digital world. A VPN masks your IP address and encrypts your internet connection, making it difficult for advertisers, ISPs, and other third parties to track your online activities. This added layer of privacy protection helps you maintain control over your personal information and browsing habits.",
+        "A VPN conceals your IP address and prevents trackers from tracking your online activity. No more location profiling or targeted advertisements. Browse without leaving a trail.",
+      image: "/benefits-3.png",
     },
   ];
 
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto">
-      <div className="text-center mb-10">
+      <div className="text-center 0">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
-          Why you should use a VPN
+          Why You Should Use a VPN
         </h2>
         <p className="max-w-3xl mx-auto text-gray-600 leading-relaxed">
-          A VPN makes you safer on public Wi-Fi, helps you securely access your
-          content while you travel, and helps boost your privacy online. Plus,
-          with our 30-day money-back guarantee and affordable monthly, annual,
-          and bi-annual plans, it's easy to try it out and see the difference
-          for yourself — no commitment needed.
+          Your online activity usually remains exposed. While browsing the
+          Internet, streaming contents, or sharing files, you are always at the
+          risk of malicious monitoring, privacy breach, and data theft. A
+          Virtual Private Network, or briefly VPN, secures your internet
+          connection, removes geo-restrictions, and keeps your activities
+          completely private.
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 items-start">
-        <div className="flex justify-center sticky top-24">
-          <Image
-            src="/placeholder.svg?height=400&width=300"
-            alt="US Map with VPN connection points"
-            width={300}
-            height={400}
-            className="object-contain"
-          />
-        </div>
-
-        <div className="space-y-4">
+        {/* Image container */}
+        <div className="flex justify-center sticky top-24 min-h-[400px]">
           {accordionItems.map((item, index) => (
             <div
               key={index}
-              className={`border-l-4 ${
+              className={`absolute transition-opacity duration-500 ${
+                openItem === index ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
+            >
+              <Image
+                src={item.image}
+                alt={`Illustration for ${item.title}`}
+                width={400}
+                height={400}
+                className="object-contain"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Accordion container */}
+        <div className="flex flex-col justify-center h-full space-y-4">
+          {accordionItems.map((item, index) => (
+            <div
+              key={index}
+              className={`border-l-2 ${
                 openItem === index ? "border-blue-500" : "border-[#B1B1B4]"
               }`}
             >

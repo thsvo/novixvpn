@@ -87,7 +87,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col justify-center md:justify-start gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
-                    Bonus VIP Days →
+                    Claim Extra Bonus →
                   </Button>
                   <Link href="#pricing">
                     <Button size="lg" variant="outline">
