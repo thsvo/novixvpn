@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function VPNPromoBanner() {
@@ -5,14 +6,7 @@ export default function VPNPromoBanner() {
     <section className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row border border-gray-200 rounded-xl overflow-hidden">
         <div className="bg-blue-100 p-8 flex items-center justify-center md:w-1/4">
-          <div className="relative w-32 h-32">
-            <div className="absolute inset-0 bg-blue-600 rounded-full flex items-center justify-center text-white">
-              <div className="text-center">
-                <div className="text-5xl font-bold">30</div>
-                <div className="text-lg font-bold">DAYS</div>
-              </div>
-            </div>
-          </div>
+          <Image src="/30-days.png" alt="30-days" width={500} height={500} />
         </div>
 
         <div className="p-8 md:w-3/4">
