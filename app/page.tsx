@@ -30,52 +30,52 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_650px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-6">
-                  <div>
-                    <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  <div className="text-center md:text-left">
+                    <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none ">
                       Guard What’s Yours. Ghost the Rest.
                     </h1>
-                    <p className="text-muted-foreground ml-2 py-2">
+                    <p className="text-muted-foreground md:ml-2 py-2">
                       <strong>Novix VPN</strong> gives you the privacy you
                       deserve without the trade-offs.
                     </p>
                   </div>
-                  <ul>
+                  <ul className="text-center md:text-left">
                     <li>
-                      <div className="flex items-center gap-2 font-bold">
+                      <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
                         <Check className="text-primary" />
                         Double Encrypted Routing
                       </div>
-                      <span className="text-muted-foreground ml-8 text-sm">
+                      <span className="text-muted-foreground md:ml-8 text-sm">
                         Your traffic moves through two secure servers, not one.
                         Because one wall isn’t enough.
                       </span>
                     </li>
                     <li>
-                      <div className="flex items-center gap-2 font-bold">
+                      <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
                         <Check className="text-primary" />
                         Blazing-Fast Performance
                       </div>
-                      <span className="text-muted-foreground ml-8 text-sm">
+                      <span className="text-muted-foreground md:ml-8 text-sm">
                         No throttling. No slowdowns. Just smooth, uninterrupted
                         browsing and streaming.
                       </span>
                     </li>
                     <li>
-                      <div className="flex items-center gap-2 font-bold">
+                      <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
                         <Check className="text-primary" />
                         One Account, Five Devices
                       </div>
-                      <span className="text-muted-foreground ml-8 text-sm">
+                      <span className="text-muted-foreground md:ml-8 text-sm">
                         Your protection travels with you across devices,
                         seamlessly.
                       </span>
                     </li>
                     <li>
-                      <div className="flex items-center gap-2 font-bold">
+                      <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
                         <Check className="text-primary" />
                         Zero Logs. Zero Tracking.
                       </div>
-                      <span className="text-muted-foreground ml-8 text-sm">
+                      <span className="text-muted-foreground md:ml-8 text-sm">
                         We don’t monitor. We don’t store. We don’t compromise.
                       </span>
                     </li>
@@ -85,7 +85,7 @@ export default function Home() {
                     <HeroPromotionCom />
                   </Link>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col justify-center md:justify-start gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Bonus VIP Days →
                   </Button>
@@ -95,14 +95,14 @@ export default function Home() {
                     </Button>
                   </Link>
                 </div>
-                <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                  <Check className="h-4 w-4 text-primary" />
+                <div className="flex items-start md:items-center  gap-1 text-sm text-muted-foreground">
+                  <Check className="h-5 w-5 text-primary" />
                   <span>
                     Join millions who trust Novix to keep their online life
                     truly private.
                   </span>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-center md:justify-start gap-4">
                   <div className="flex">
                     {Array(5)
                       .fill(null)
@@ -118,7 +118,7 @@ export default function Home() {
                   </span>
                 </div>
                 {/* download links */}
-                <div className="w-full flex justify-start mt-5">
+                <div className="w-full flex justify-center md:justify-start mt-5">
                   <Link
                     href="https://play.google.com/store"
                     className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
@@ -144,11 +144,11 @@ export default function Home() {
           </div>
         </section>
         {/* Benefits Section */}
-        <section className="relative overflow-hidden bg-background py-12 md:py-24">
+        <section className="relative overflow-hidden bg-background md:py-24">
           <VpnBenefits />
         </section>
         {/* Features Section */}
-        <section id="features" className="bg-background py-12 md:py-24">
+        <section id="features" className="bg-background  md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -159,9 +159,9 @@ export default function Home() {
                 and enjoy your privacy.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
               <Card className="border-none shadow-none">
-                <CardContent className="flex flex-col items-center text-center pt-6">
+                <CardContent className="flex flex-col items-center text-center md:pt-6">
                   <div className="mb-4 rounded-full bg-primary/10 p-4">
                     <Download className="h-8 w-8 text-primary" />
                   </div>
@@ -259,23 +259,19 @@ export default function Home() {
                 </ul>
               </div>
               <div className="relative">
-                <video
-                  src="/utils.mp4"
+                <Image
+                  src="/utils.png"
                   width={600}
                   height={600}
                   className="relative z-10 mx-auto w-full rounded-md bg-transparent object-cover shadow-md md:w-3/4"
-                  autoPlay
-                  loop
-                  muted
-                >
-                  Your browser does not support the video tag.
-                </video>
+                  alt="Novix VPN on various devices"
+                />
               </div>
             </div>
           </div>
         </section>
         {/* Comparison Section */}
-        <section id="comparison" className="bg-background py-12 md:py-24">
+        <section id="comparison" className="bg-background  md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -351,7 +347,7 @@ export default function Home() {
           </div>
         </section>
         {/* what is vpn section */}
-        <div className="mb-24">
+        <div className="md:mb-24">
           <WhatIsVpn />
         </div>
         {/* FAQ Section */}

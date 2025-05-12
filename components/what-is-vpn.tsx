@@ -11,9 +11,8 @@ export default function WhatIsVpn() {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
+    <div className="mx-auto max-w-4xl px-4 py-8 text-center md:text-left">
       <h1 className="mb-4 text-4xl font-bold text-gray-800">What is a VPN?</h1>
-
       <p className="mb-8 text-gray-700">
         <span className="text-blue-600">A VPN (Virtual Private Network):</span>A
         VPN, or virtual is a powerful online tool that lets you browse the

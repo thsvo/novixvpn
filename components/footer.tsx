@@ -5,10 +5,9 @@ import { FaTiktok, FaThreads } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    // <footer className="bg-[#14162F] py-12 border-t">
-    <footer className="bg-[#0b0c1a] py-12 border-t">
+    <footer className="min-w-screen bg-[#0b0c1a] py-12 border-t">
       <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 place-items-center">
+        <div className="w-full flex flex-col md:flex-row items-center gap-4 md:gap-8 justify-center md:justify-between">
           <div className="space-y-4">
             <div className="flex items-center -mt-3">
               <Image
@@ -100,156 +99,163 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div>
-            <h3 className="font-bold mb-4 text-white">Novix VPN</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  About us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#download"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Download
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/money-back-guarantee"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Money-back guarantee
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/why-novix-vpn"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Why Novix VPN?
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/no-user-tracking"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  No User Tracking
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/high-speed-vpn"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  High Speed VPN
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold mb-4 text-white">Resources</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/ip-checker"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  IP Checker
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blogs"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/what-is-vpn"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  What is VPN?
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/vpn-servers"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  VPN Servers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#testimonials"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Reviews
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="-mt-6">
-            <h3 className="font-bold mb-4 text-white">Help</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/faq"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms-of-service"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/cookie-policy"
-                  className="text-muted-foreground hover:text-white"
-                >
-                  Cookie Policy
-                </Link>
-              </li>
-            </ul>
+          <div className="w-full  col-span-3 py-10 md:py-0">
+            <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-8 md:justify-items-stretch justify-items-center">
+              {/* Novix vpn section */}
+              <div>
+                <h3 className="font-bold mb-4 text-white">Novix VPN</h3>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      About us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/#download"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Download
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/money-back-guarantee"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Money-back guarantee
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/why-novix-vpn"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Why Novix VPN?
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/no-user-tracking"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      No User Tracking
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/high-speed-vpn"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      High Speed VPN
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* resources section */}
+              <div>
+                <h3 className="font-bold mb-4 text-white">Resources</h3>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link
+                      href="/ip-checker"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      IP Checker
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/blogs"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Blogs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/what-is-vpn"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      What is VPN?
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/features"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Features
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/vpn-servers"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      VPN Servers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/#testimonials"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Reviews
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* Help Section */}
+              <div className="-ml-10 md:-ml-0">
+                <h3 className="font-bold mb-4 text-white">Help</h3>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/faq"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      FAQ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/terms-of-service"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Terms of Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/privacy-policy"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/cookie-policy"
+                      className="text-muted-foreground hover:text-white"
+                    >
+                      Cookie Policy
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">

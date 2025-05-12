@@ -60,7 +60,7 @@ export default function PricingCards({}: PricingCardsProps) {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-6 ">
+    <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-6 max-w-fit mx-auto">
       {plans.map((plan) => (
         <Card
           key={plan.name}

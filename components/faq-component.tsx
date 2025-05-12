@@ -6,7 +6,7 @@ export default function FAQComponent() {
     {
       question: "What makes Novix VPN stand out?",
       answer: (
-        <div className="space-y-4">
+        <div className="md:space-y-4">
           <p>
             Novix VPN isn't just another VPN app — it's a premium privacy
             solution built exclusively for Android users who value speed,
