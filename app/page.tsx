@@ -97,7 +97,10 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-1 text-sm text-muted-foreground">
                   <Check className="h-4 w-4 text-primary" />
-                  <span>Join Millions of Happy Novix VPN Users</span>
+                  <span>
+                    Join millions who trust Novix to keep their online life
+                    truly private.
+                  </span>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="flex">
