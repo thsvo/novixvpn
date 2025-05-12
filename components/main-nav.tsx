@@ -1,6 +1,6 @@
 "use client";
-import Link from "next/link";
 
+import Link from "next/link";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -14,7 +14,7 @@ import {
 export default function MainNav() {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList className="flex flex-col md:flex-row gap-2 md:gap-4">
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent">
             About
@@ -24,10 +24,10 @@ export default function MainNav() {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 no-underline outline-none focus:shadow-md"
                     href="/why-novix-vpn"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 text-white"
                   >
-                    <div className="mb-2 mt-4 text-lg font-medium text-white">
+                    <div className="mb-2 mt-4 text-lg font-medium">
                       Why Novix VPN?
                     </div>
                     <p className="text-sm leading-tight text-white/90">
@@ -38,27 +38,17 @@ export default function MainNav() {
                 </NavigationMenuLink>
               </li>
               <li>
-                <Link
-                  href="/what-is-vpn"
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                  <div className="text-sm font-medium leading-none">
-                    What is a VPN?
-                  </div>
-                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                <Link href="/what-is-vpn" className="nav-link">
+                  <div className="text-sm font-medium">What is a VPN?</div>
+                  <p className="text-sm text-muted-foreground">
                     Learn how VPNs protect your online privacy and security.
                   </p>
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/no-user-tracking"
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                  <div className="text-sm font-medium leading-none">
-                    No User Tracking
-                  </div>
-                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                <Link href="/no-user-tracking" className="nav-link">
+                  <div className="text-sm font-medium">No User Tracking</div>
+                  <p className="text-sm text-muted-foreground">
                     Our strict no-logs policy ensures your online activities
                     remain private.
                   </p>
@@ -67,61 +57,44 @@ export default function MainNav() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent">
             Features
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+            <ul className="grid gap-3 p-4 md:grid-cols-2 md:w-[500px] lg:w-[600px]">
               <li>
-                <Link
-                  href="/features"
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                  <div className="text-sm font-medium leading-none">
-                    All Features
-                  </div>
-                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                <Link href="/features" className="nav-link">
+                  <div className="text-sm font-medium">All Features</div>
+                  <p className="text-sm text-muted-foreground">
                     Explore all the powerful features of Novix VPN.
                   </p>
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/high-speed-vpn"
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                  <div className="text-sm font-medium leading-none">
-                    High-Speed VPN
-                  </div>
-                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                <Link href="/high-speed-vpn" className="nav-link">
+                  <div className="text-sm font-medium">High-Speed VPN</div>
+                  <p className="text-sm text-muted-foreground">
                     Experience lightning-fast speeds without compromising
                     security.
                   </p>
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/vpn-servers"
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                  <div className="text-sm font-medium leading-none">
-                    VPN Servers
-                  </div>
-                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                <Link href="/vpn-servers" className="nav-link">
+                  <div className="text-sm font-medium">VPN Servers</div>
+                  <p className="text-sm text-muted-foreground">
                     Our global network of high-speed servers in 90+ countries.
                   </p>
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/money-back-guarantee"
-                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                >
-                  <div className="text-sm font-medium leading-none">
+                <Link href="/money-back-guarantee" className="nav-link">
+                  <div className="text-sm font-medium">
                     Money-Back Guarantee
                   </div>
-                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                  <p className="text-sm text-muted-foreground">
                     Try Novix VPN risk-free with our 30-day money-back
                     guarantee.
                   </p>
@@ -130,6 +103,7 @@ export default function MainNav() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
           <Link href="/pricing" legacyBehavior passHref>
             <NavigationMenuLink
@@ -139,6 +113,7 @@ export default function MainNav() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
           <Link href="/download" legacyBehavior passHref>
             <NavigationMenuLink
@@ -148,6 +123,7 @@ export default function MainNav() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
           <Link href="/blogs" legacyBehavior passHref>
             <NavigationMenuLink
