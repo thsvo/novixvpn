@@ -136,13 +136,6 @@ export default function ComparisonTable() {
               ))}
             </tr>
           ))}
-          <tr className="bg-primary/5">
-            <td colSpan={6} className="p-4 text-center font-bold">
-              <span>
-                Novix VPN offers the most comprehensive protection and features
-              </span>
-            </td>
-          </tr>
         </tbody>
       </table>
     </div>
