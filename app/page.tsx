@@ -144,7 +144,7 @@ export default function Home() {
           </div>
         </section>
         {/* Benefits Section */}
-        <section className="relative overflow-hidden bg-background md:py-24">
+        <section className="relative bg-[#FAFAFA] overflow-hidden bg-background mt-5">
           <VpnBenefits />
         </section>
         {/* Features Section */}
