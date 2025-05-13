@@ -1,22 +1,14 @@
-// app/blog/page.tsx
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Clock } from "lucide-react";
+import { useEffect } from "react";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Blog | NovixVPN",
   description:
     "Latest articles, guides, and insights about VPN technology and cybersecurity",
 };
-
-type Article = {
-  ID: number;
-  title: string;
-  slug: string;
-  date: string;
-  content: string;
-};
-
 // Featured article data
 const featuredArticle = {
   id: "vpn-privacy-power-2025",
@@ -34,24 +26,126 @@ const featuredArticle = {
   image: "/blog-page.png",
 };
 
-async function getArticles(): Promise<Article[]> {
-  const res = await fetch(
-    "https://wordpress.novixvpn.com/wp-json/custom/v1/posts",
-    {
-      next: { revalidate: 60 }, // ISR
-    }
+// More articles data
+const moreArticles = [
+  {
+    id: "what-is-vpn",
+    category: "INFORMATION",
+    title: " What  is VPN?",
+    excerpt: "What is vpn",
+    date: "april 8, 2025",
+    readTime: 201,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/Vpn.jpg",
+  },
+  {
+    id: "how-does-vpn-work",
+    category: "INFORMATION",
+    title: "How Does VPN Work?",
+    excerpt: "how does vpn work?",
+    date: "Apr 25, 2025",
+    readTime: 189,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=570&width=750",
+  },
+  {
+    id: "The-importance-of-vpn",
+    category: "INFORMATION",
+    title: "The Importance of VPN",
+    excerpt: "The importance of vpn",
+    date: "Apr 11, 2025",
+    readTime: 29,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=570&width=750",
+  },
+  {
+    id: "why-is-vpn-needed",
+    category: "INFORMATION",
+    title: "Why is VPN Needed?",
+    excerpt: "why is vpn needed",
+    date: "Apr 20, 2025",
+    readTime: 139,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=570&width=750",
+  },
+  {
+    id: "why-novix-vpn-is-the-best",
+    category: "INFORMATION",
+    title: "Why Novix VPN is The Best",
+    excerpt: "why novix vpn is the best",
+    date: "Apr 25, 2025",
+    readTime: 109,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=570&width=750",
+  },
+  {
+    id: "how-to-use-vpn",
+    category: "INFORMATION",
+    title: "How To Use VPN",
+    excerpt: "How To Use VPN",
+    date: "Apr 23, 2025",
+    readTime: 89,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=570&width=750",
+  },
+  {
+    id: "how-to-set-up-vpn",
+    category: "INFORMATION",
+    title: "How to set up and use VPN on an android",
+    excerpt: "how to set up and use VPN on an android",
+    date: "Apr 21, 2025",
+    readTime: 59,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=570&width=750",
+  },
+  {
+    id: "benefits-of-a-vpn",
+    category: "INFORMATION",
+    title: "Benefits of a vpn : pros and cons of a vpn",
+    excerpt: "Benefits of a vpn : pros and cons of a vpn",
+    date: "Apr 21, 2025",
+    readTime: 59,
+    author: {
+      name: "Novix VPN",
+      avatar: "/novix-vpn.png",
+    },
+    image: "/placeholder.svg?height=570&width=750",
+  },
+];
+
+useEffect(() => {
+  const response = fetch(
+    "https://wordpress.novixvpn.com/wp-json/custom/v1/posts/"
   );
+  console.log(response);
+});
 
-  if (!res.ok) throw new Error("Failed to fetch articles");
-
-  return res.json();
-}
-
-export default async function BlogPage() {
-  const articles = await getArticles();
-
+export default function BlogPage() {
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 lg:max-w-6xl">
+      <h1 className="sr-only">NordVPN Blog</h1>
+
       {/* Featured Article */}
       <article className="overflow-hidden rounded-xl bg-white shadow-md transition-all hover:shadow-lg">
         <div className="grid gap-8 md:grid-cols-2">
@@ -63,7 +157,7 @@ export default async function BlogPage() {
             </div>
             <h2 className="mb-4 text-3xl font-bold leading-tight text-gray-800 md:text-4xl">
               <Link
-                href={`/blogs/${featuredArticle.id}`}
+                href={`/blog/${featuredArticle.id}`}
                 className="transition-colors hover:text-blue-600"
               >
                 {featuredArticle.title}
@@ -114,44 +208,59 @@ export default async function BlogPage() {
         </div>
       </article>
 
+      {/* More Articles */}
       <section className="mt-20">
         <h2 className="mb-8 text-3xl font-bold text-gray-800 after:ml-4 after:inline-block after:h-1 after:w-24 after:bg-blue-500">
           Recent articles
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {articles.map((article) => (
+          {moreArticles.map((article) => (
             <Link
-              href={`/blogs/${article.slug}`}
-              key={article.ID}
+              href={`/blogs/${article.id}`}
+              key={article.id}
               className="group block rounded-xl bg-blue-50 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
               aria-label={`Read article: ${article.title}`}
             >
               <article>
                 <div className="relative w-full aspect-[4/3] bg-gray-100">
                   <Image
-                    src="/placeholder.svg"
+                    src={article.image || "/placeholder.svg"}
                     alt={article.title}
                     fill
                     className="object-contain transition-transform duration-300 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 hover:scale-105 transition-all rounded-t-xl"></div>
                 </div>
 
                 <div className="p-5">
                   <span className="inline-block mb-2 rounded-full bg-blue-100 px-2 py-1 text-xs font-semibold uppercase tracking-wide text-blue-600">
-                    INFORMATION
+                    {article.category}
                   </span>
 
                   <div className="mb-4 flex items-center gap-3 text-xs text-gray-500">
                     <span>{article.date}</span>
                     <div className="flex items-center gap-1">
                       <Clock size={12} className="text-blue-500" />
-                      <span>5 min read</span>
+                      <span>{article.readTime} min read</span>
                     </div>
                   </div>
 
                   <h3 className="text-lg font-bold text-gray-800 leading-tight group-hover:text-blue-600 transition-colors">
                     {article.title}
                   </h3>
+
+                  <div className="mt-4 flex items-center gap-2">
+                    <Image
+                      src={article.author.avatar || "/placeholder.svg"}
+                      alt={`Avatar of ${article.author.name}`}
+                      width={24}
+                      height={24}
+                      className="rounded-full border border-gray-200 object-cover"
+                    />
+                    <span className="text-xs font-medium text-gray-700">
+                      {article.author.name}
+                    </span>
+                  </div>
                 </div>
               </article>
             </Link>
