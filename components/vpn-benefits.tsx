@@ -49,7 +49,7 @@ export default function VpnBenefits() {
 
       <div className="grid md:grid-cols-2 gap-8 items-start">
         {/* Image container */}
-        <div className="flex justify-center sticky top-24 min-h-[400px]">
+        <div className="flex justify-center sticky top-24 min-h-[500px]">
           {accordionItems.map((item, index) => (
             <div
               key={index}
@@ -60,8 +60,8 @@ export default function VpnBenefits() {
               <Image
                 src={item.image}
                 alt={`Illustration for ${item.title}`}
-                width={400}
-                height={400}
+                width={600}
+                height={600}
                 className="object-contain"
               />
             </div>

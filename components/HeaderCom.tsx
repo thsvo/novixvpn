@@ -30,13 +30,13 @@ export default function HeaderCom() {
 
   return (
     <header
-      className={`w-full sticky top-0 z-50  transition-all duration-300 ${
+      className={`w-full sticky top-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "container bg-white top-2 shadow-[0_2px_4px_rgba(0,0,0,0.06),0_0_1px_rgba(0,0,0,0.08)] rounded-full px-4 sm:px-6 md:px-10  mx-auto mt-2 border border-[#E2E2E4]"
-          : "border-b  bg-white px-20"
-      } ${mobileNavOpen ? "rounded-none" : ""}`}
+          ? "bg-white md:top-2 shadow md:rounded-full px-4 sm:px-6 md:px-10 mx-auto mt-2 border border-[#E2E2E4]"
+          : "border-b bg-white px-4 sm:px-6 md:px-10"
+      } `}
     >
-      <div className="flex h-16 items-center justify-between py-4 relative">
+      <div className="flex w-full max-w-7xl h-16 mx-auto items-center justify-between py-4">
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center gap-2">
