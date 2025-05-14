@@ -12,22 +12,16 @@ export default function VpnBenefits() {
 
   const accordionItems = [
     {
-      title: "Secure Your Internet Connection",
+      title: "Safeguard Your Internet Connection",
       content:
-        "A VPN builds an encrypted tunnel from your Android device to the VPN provider’s server and the Internet. It protects your data and activities from malicious actors, making your personal information strictly secured.",
+        "From your Android smartphone to the VPN provider's server and the Internet, a VPN constructs a secure and protected tunnel.  It keeps your data and activities safe from hostile people, ensuring your personal information is really safe.",
       image: "/benefits-1.png",
     },
     {
-      title: "Unlocks Internet Restrictions",
+      title: "Lifts Internet Restrictions",
       content:
-        "VPNs allow you to access geographically-restricted websites, apps, and streaming platforms regardless of your real location. It maintains openness whether one is watching Netflix US in another country or unblocking censored websites. With a VPN, you set your own Internet rules.",
+        "VPNs let you use streaming services, applications, and websites limited by geography, regardless of your actual location.  Whether one is watching Netflix US in another nation or unblocking banned websites, it keeps transparency.  A VPN lets you create your own Internet regulations.Keeps You Private A VPN hides your IP address and stops trackers from monitoring your online activity.  No more targeted ads or location profiling.  Browse without leaving a trail behind.",
       image: "/benefits-2.png",
-    },
-    {
-      title: "Keeps You Stay Private",
-      content:
-        "A VPN conceals your IP address and prevents trackers from tracking your online activity. No more location profiling or targeted advertisements. Browse without leaving a trail.",
-      image: "/benefits-3.png",
     },
   ];
 
@@ -35,15 +29,14 @@ export default function VpnBenefits() {
     <section className="py-16 px-4 max-w-6xl mx-auto">
       <div className="text-center 0">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
-          Why You Should Use a VPN
+          The Benefits of Using a VPN
         </h2>
         <p className="max-w-3xl mx-auto text-gray-600 leading-relaxed">
-          Your online activity usually remains exposed. While browsing the
-          Internet, streaming contents, or sharing files, you are always at the
-          risk of malicious monitoring, privacy breach, and data theft. A
-          Virtual Private Network, or briefly VPN, secures your internet
-          connection, removes geo-restrictions, and keeps your activities
-          completely private.
+          Usually, your internet behavior stays exposed. You are always at the
+          danger of hostile monitoring, privacy violation, and data theft while
+          using the Internet, streaming material, or file sharing. A Virtual
+          Private Network, or simply VPN, protects your internet connection,
+          removes geo-restrictions, and keeps your activities totally private.
         </p>
       </div>
 
