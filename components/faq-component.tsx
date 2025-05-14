@@ -8,20 +8,20 @@ export default function FAQComponent() {
       answer: (
         <div className="md:space-y-4">
           <p>
-            Novix VPN isn't just another VPN app — it's a premium privacy
+            Novix VPN isn’t just another VPN app — it’s a premium privacy
             solution built exclusively for Android users who value speed,
             security, and simplicity.
           </p>
           <p>
-            At its core is the powerful WireGuard® protocol, delivering
-            lightning-fast connections and strong encryption without draining
-            your battery. Whether you're browsing, streaming, or gaming, Novix
-            keeps your experience smooth and secure.
+            At its core is the powerful <strong>WireGuard® protocol</strong>,
+            delivering lightning-fast connections and strong security without
+            draining your battery. Whether you're browsing, streaming, or
+            gaming, Novix keeps your experience smooth and secure.
           </p>
           <p>
-            With the built-in Kill Switch, your data stays protected even if the
-            connection drops — ensuring your real IP is never exposed. Perfect
-            for public Wi-Fi, travel, or everyday use.
+            With the <strong>built-in Kill Switch</strong>, your data stays
+            protected even if the connection drops, ensuring your real IP is
+            never exposed. Perfect for public Wi-Fi, travel, or everyday use.
           </p>
           <p>
             Designed with Android in mind, Novix offers a clean interface,
@@ -29,8 +29,8 @@ export default function FAQComponent() {
             Wi-Fi.
           </p>
           <p>
-            Download Novix VPN today — and take control of your online privacy,
-            speed, and freedom.
+            <strong> Download Novix VPN today —</strong> and take control of
+            your online privacy, speed, and freedom.
           </p>
         </div>
       ),
@@ -52,18 +52,14 @@ export default function FAQComponent() {
           <p>
             However, if you're looking for faster speeds, more server locations,
             and advanced features like the kill switch, server performance
-            stats, and priority support, Novix VPN's premium plans (available
+            stats, and priority support, Novix VPN’s premium plans (available
             weekly, monthly, or yearly) are designed to deliver the full
             experience.
           </p>
           <p className="font-medium">
             👉 Bonus: We also offer a Try Extra Free for 3 Days for yearly
-            plans—so you can explore premium features risk-free before
+            plans, so you can explore premium features risk-free before
             committing.
-          </p>
-          <p>
-            Novix VPN gives you flexibility—Start Extra for Free start free,
-            upgrade anytime, and browse the internet on your terms.
           </p>
         </div>
       ),
@@ -75,15 +71,17 @@ export default function FAQComponent() {
         <div className="space-y-4">
           <p>
             Novix VPN is built with security as the top priority, combining
-            industry-leading encryption and modern protocols to ensure your
-            online activity stays private and protected at all times.
+            industry-leading security and modern protocols to ensure your online
+            activity stays private and protected at all times.
           </p>
           <div className="mt-4">
-            <p className="font-semibold">🔐 End-to-End Encryption</p>
+            <p className="font-semibold">
+              🔐 Secure Connection via SSL and TLS
+            </p>
             <p className="ml-6">
-              All your internet traffic is secured with SSL/TLS encryption,
-              making it virtually impossible for hackers, trackers, or third
-              parties to intercept your data—even on public Wi-Fi.
+              No third party can intercept your personal information or data
+              because of our VPN using SSL, TLS protocols . These high-security
+              measures ensure your data is confidential and unreadable.
             </p>
           </div>
           <div>
@@ -91,7 +89,7 @@ export default function FAQComponent() {
             <p className="ml-6">
               Novix supports WireGuard, one of the most trusted VPN protocols in
               the world. These offer a perfect balance of speed, stability, and
-              strong encryption, ideal for streaming, browsing, or secure
+              strong security, ideal for streaming, browsing, or secure
               communication.
             </p>
           </div>
@@ -116,7 +114,7 @@ export default function FAQComponent() {
             <p className="font-semibold">👁️ No Data Tracking or Logs</p>
             <p className="ml-6">
               Novix VPN is designed with a strict privacy-first approach. We
-              don't track your browsing activity, and we don't store sensitive
+              don’t track your browsing activity, and we don’t store sensitive
               usage logs—your data stays yours.
             </p>
           </div>
