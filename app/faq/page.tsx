@@ -130,6 +130,91 @@ export default function FAQPage() {
       ),
       icon: "",
     },
+    {
+      question: "How much can I trust Novix in terms of security?",
+      answer: (
+        <div className="space-y-4">
+          <p>
+            Our motivation behind building NovixVPN is to deliver
+            state-of-the-art technology that defines a new era of privacy and
+            security for the internet users of the 21st Century. It combines
+            modern security protocols with smart protection features to keep
+            your online activities safe at all costs.
+          </p>
+          <p>Here’s why you can trust it:</p>
+          <div className="mt-4">
+            <p className="font-semibold">Powered by WireGuard®</p>
+            <ul>
+              <li>Equips with advanced security and open-source protocol.</li>
+              <li>
+                Runs faster, is more secure, and is less vulnerable to malicious
+                activities than older technologies.
+              </li>
+              <li>Designed for stability and low battery impact on Android.</li>
+            </ul>
+          </div>
+          <div className="mt-4">
+            <p className="font-semibold">Kill Switch Protection</p>
+            <ul>
+              <li>Instantly blocks the internet if the VPN drops.</li>
+              <li>Prevents IP leaks and data exposure.</li>
+            </ul>
+          </div>
+          <div>
+            <p className="ml-6">
+              Also, we have a strict no-logs policy. When we say no-logs, we
+              mean it — even we don’t know who you are and what you are doing.
+              Thus, NovixVPN allows you to set your own rules.
+            </p>
+          </div>
+        </div>
+      ),
+      icon: "",
+    },
+    {
+      question: "Will using Novix VPN slow down my internet?",
+      answer: (
+        <div className="space-y-4">
+          <p>
+            Although VPNs generally slow down internet speed for implementing
+            privacy and security measures, NovixVPN's WireGuard protocol is
+            optimized for high performance and minimal lag — even during HD
+            streaming, gaming, or video calls.
+          </p>
+          <p>How Novix keeps things fast:</p>
+          <div className="mt-4">
+            <p className="font-semibold">Light and efficient protocol:</p>
+            <ul>
+              <li>
+                WireGuard protocol offers faster speeds than traditional
+                protocols like OpenVPN.
+              </li>
+              <li>
+                Minimizes battery usage and quicker server connections on
+                Android.
+              </li>
+            </ul>
+          </div>
+          <div className="mt-4">
+            <p className="font-semibold">Optimized global servers:</p>
+            <ul>
+              <li>
+                Allows you to connect to local high-speed servers from anywhere.
+              </li>
+              <li>
+                Offers seamless browsing, even on mobile data or public Wi-Fi
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p className="ml-6">
+              While choosing VPNs for speed, NovixVPN can be your go-to.
+            </p>
+          </div>
+        </div>
+      ),
+      icon: "",
+    },
   ];
 
   return (
