@@ -28,104 +28,77 @@ export default function HeaderCom() {
     setDropdownOpen(false);
   }, [pathname]);
 
+  // Prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileNavOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [mobileNavOpen]);
+
   return (
-    <header
-      className={`w-full sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white md:top-2 shadow md:rounded-full px-4 sm:px-6 md:px-10 mx-auto mt-2 border border-[#E2E2E4]"
-          : "border-b bg-white px-4 sm:px-6 md:px-10"
-      } `}
-    >
-      <div className="flex w-full max-w-7xl h-16 mx-auto items-center justify-between py-4">
-        {/* Logo */}
-        <Link href="/">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/novix-logo.png"
-              alt="Novix VPN Logo"
-              width={180}
-              height={58}
-              className="rounded-md"
-              draggable="false"
-            />
-          </div>
-        </Link>
-
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6">
-          <MainNav />
-        </nav>
-
-        {/* Mobile menu button */}
-        <button
-          className="md:hidden p-2"
-          onClick={() => setMobileNavOpen((prev) => !prev)}
-        >
-          {mobileNavOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-
-        {/* Right section */}
-        <div className="hidden md:flex items-center gap-4">
-          {/* Product dropdown */}
-          <div className="relative">
-            <button
-              type="button"
-              className="flex items-center gap-2 bg-white px-4 py-2 text-sm font-medium text-black"
-              id="dropdown-products"
-              aria-haspopup="true"
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-            >
-              Products
-              {dropdownOpen ? <ChevronUp /> : <ChevronDown />}
-            </button>
-
-            {dropdownOpen && (
-              <div
-                className="absolute left-0 top-12 z-50 mt-2 w-72 origin-top-right rounded-md bg-white p-2 shadow-lg ring-1 ring-black ring-opacity-5"
-                role="menu"
-                aria-orientation="vertical"
-                aria-labelledby="dropdown-products"
-              >
-                <div className="hover:bg-gray-100 p-2 rounded-md ">
-                  <Image
-                    src="/novix-logo.png"
-                    height={0}
-                    width={150}
-                    alt=""
-                    className="-ml-[1.5rem]"
-                  />
-                  <div className="text-sm -mt-[1.2rem]">
-                    Online Safety and Information Privacy
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Get Novix Button */}
-          <Link href="/download">
-            <Button className="rounded-full">Get Novix VPN</Button>
+    <>
+      <header
+        className={`w-full sticky top-0 z-50 transition-all duration-300 ${
+          isScrolled
+            ? "bg-white md:top-2 shadow md:rounded-full px-4 sm:px-6 md:px-10 mx-auto mt-2 border border-[#E2E2E4]"
+            : "border-b bg-white px-4 sm:px-6 md:px-10"
+        } `}
+      >
+        <div className="flex w-full max-w-7xl h-16 mx-auto items-center justify-between py-4">
+          {/* Logo */}
+          <Link href="/">
+            <div className="flex items-center gap-2">
+              <Image
+                src="/novix-logo.png"
+                alt="Novix VPN Logo"
+                width={180}
+                height={58}
+                className="rounded-md"
+                draggable="false"
+              />
+            </div>
           </Link>
-        </div>
-      </div>
 
-      {/* Mobile Nav Menu */}
-      {mobileNavOpen && (
-        <div className="md:hidden px-4 pb-4 pt-2 border-t bg-white">
-          <MainNav />
-          <div className="mt-4">
-            {/* Mobile Product Dropdown */}
-            <div className="mb-4">
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-6">
+            <MainNav />
+          </nav>
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setMobileNavOpen((prev) => !prev)}
+          >
+            {mobileNavOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+
+          {/* Right section */}
+          <div className="hidden md:flex items-center gap-4">
+            {/* Product dropdown */}
+            <div className="relative">
               <button
-                className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-black border rounded-md"
-                onClick={() => setDropdownOpen((prev) => !prev)}
+                type="button"
+                className="flex items-center gap-2 bg-white px-4 py-2 text-sm font-medium text-black"
+                id="dropdown-products"
+                aria-haspopup="true"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 Products
                 {dropdownOpen ? <ChevronUp /> : <ChevronDown />}
               </button>
 
               {dropdownOpen && (
-                <div className="mt-2 w-full rounded-md bg-white p-2 shadow ring-1 ring-black ring-opacity-5">
+                <div
+                  className="absolute left-0 top-12 z-50 mt-2 w-72 origin-top-right rounded-md bg-white p-2 shadow-lg ring-1 ring-black ring-opacity-5"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="dropdown-products"
+                >
                   <div className="hover:bg-gray-100 p-2 rounded-md ">
                     <Image
                       src="/novix-logo.png"
@@ -142,12 +115,140 @@ export default function HeaderCom() {
               )}
             </div>
 
+            {/* Get Novix Button */}
             <Link href="/download">
-              <Button className="w-full rounded-full">Get Novix VPN</Button>
+              <Button className="rounded-full">Get Novix VPN</Button>
             </Link>
           </div>
         </div>
+      </header>
+
+      {/* Mobile Nav Menu - 3/2 Screen Overlay */}
+      {mobileNavOpen && (
+        <>
+          {/* Backdrop */}
+          <div 
+            className="md:hidden fixed inset-0 z-50 bg-black/50"
+            onClick={() => setMobileNavOpen(false)}
+          ></div>
+          
+          {/* Menu Panel - 75% height */}
+          <div className="md:hidden fixed inset-x-0 top-0 h-[75vh] z-50 bg-white flex flex-col shadow-lg rounded-b-xl overflow-hidden">
+            {/* Mobile Menu Header */}
+            <div className="flex items-center justify-between p-4 border-b">
+              <Link href="/" onClick={() => setMobileNavOpen(false)}>
+                <Image
+                  src="/novix-logo.png"
+                  alt="Novix VPN Logo"
+                  width={150}
+                  height={48}
+                  className="rounded-md"
+                  draggable="false"
+                />
+              </Link>
+              <button
+                className="p-2"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                <X size={24} />
+              </button>
+            </div>
+            
+            {/* Mobile Menu Content */}
+            <div className="flex-1 flex flex-col px-4 py-3 space-y-1 overflow-y-auto">
+              {/* Menu Items */}
+              <div>
+                {/* Pricing */}
+                <Link 
+                  href="/pricing" 
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">Pricing</span>
+                </Link>
+                
+                {/* Features */}
+                <Link 
+                  href="/features" 
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">Features</span>
+                  <ChevronDown size={16} className="text-gray-500" />
+                </Link>
+                
+                {/* Download VPN */}
+                <Link 
+                  href="/download" 
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">Download VPN</span>
+                  <ChevronDown size={16} className="text-gray-500" />
+                </Link>
+                
+                {/* Learn */}
+                {/* <Link 
+                  href="/learn" 
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">Learn</span>
+                  <ChevronDown size={16} className="text-gray-500" />
+                </Link> */}
+                
+                {/* For Business */}
+                {/* <Link 
+                  href="/business" 
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">For Business</span>
+                  <ChevronDown size={16} className="text-gray-500" />
+                </Link> */}
+                
+                {/* Support Center */}
+                <Link 
+                  href="/contact" 
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">Contact</span>
+                </Link>
+                
+                {/* Products */}
+                <Link 
+                  href="/blogs" 
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">
+Blogs</span>
+                  <ChevronDown size={16} className="text-gray-500" />
+                </Link>
+                
+                {/* Log In */}
+                {/* <Link 
+                  href="/login" 
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">Log In</span>
+                </Link> */}
+              </div>
+              
+              {/* CTA Button */}
+              <div className="mt-4 pt-2 pb-4">
+                <Link href="/download" onClick={() => setMobileNavOpen(false)}>
+                  <Button className="w-full py-4 text-base font-semibold rounded-full bg-red-500 hover:bg-red-600">
+                    Get Novix VPN
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </>
       )}
-    </header>
+    </>
   );
 }
