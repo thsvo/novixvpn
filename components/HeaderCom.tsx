@@ -31,12 +31,12 @@ export default function HeaderCom() {
   // Prevent scrolling when mobile menu is open
   useEffect(() => {
     if (mobileNavOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     };
   }, [mobileNavOpen]);
 
@@ -45,8 +45,8 @@ export default function HeaderCom() {
       <header
         className={`w-full sticky top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white md:top-2 shadow md:rounded-full px-4 sm:px-6 md:px-10 mx-auto mt-2 border border-[#E2E2E4]"
-            : "border-b bg-white px-4 sm:px-6 md:px-10"
+            ? "bg-white md:top-2 shadow md:rounded-full  mx-auto mt-2 border border-[#E2E2E4]"
+            : "border-b bg-white"
         } `}
       >
         <div className="flex w-full max-w-7xl h-16 mx-auto items-center justify-between py-4">
@@ -127,15 +127,15 @@ export default function HeaderCom() {
       {mobileNavOpen && (
         <>
           {/* Backdrop */}
-          <div 
+          <div
             className="md:hidden fixed inset-0 z-50 bg-black/50"
             onClick={() => setMobileNavOpen(false)}
           ></div>
-          
+
           {/* Menu Panel - 75% height */}
           <div className="md:hidden fixed inset-x-0 top-0 h-[75vh] z-50 bg-white flex flex-col shadow-lg rounded-b-xl overflow-hidden">
             {/* Mobile Menu Header */}
-            <div className="flex items-center justify-between p-4 border-b">
+            <div className="flex items-center justify-between py-4 pr-4 border-b">
               <Link href="/" onClick={() => setMobileNavOpen(false)}>
                 <Image
                   src="/novix-logo.png"
@@ -146,47 +146,44 @@ export default function HeaderCom() {
                   draggable="false"
                 />
               </Link>
-              <button
-                className="p-2"
-                onClick={() => setMobileNavOpen(false)}
-              >
+              <button className="p-2" onClick={() => setMobileNavOpen(false)}>
                 <X size={24} />
               </button>
             </div>
-            
-            {/* Mobile Menu Content */}
+
+            {/* Mobile Menu Content - remain unchanged */}
             <div className="flex-1 flex flex-col px-4 py-3 space-y-1 overflow-y-auto">
               {/* Menu Items */}
               <div>
                 {/* Pricing */}
-                <Link 
-                  href="/pricing" 
+                <Link
+                  href="/pricing"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
                   onClick={() => setMobileNavOpen(false)}
                 >
                   <span className="text-lg font-medium">Pricing</span>
                 </Link>
-                
+
                 {/* Features */}
-                <Link 
-                  href="/features" 
+                <Link
+                  href="/features"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
                   onClick={() => setMobileNavOpen(false)}
                 >
                   <span className="text-lg font-medium">Features</span>
                   <ChevronDown size={16} className="text-gray-500" />
                 </Link>
-                
+
                 {/* Download VPN */}
-                <Link 
-                  href="/download" 
+                <Link
+                  href="/download"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
                   onClick={() => setMobileNavOpen(false)}
                 >
                   <span className="text-lg font-medium">Download VPN</span>
                   <ChevronDown size={16} className="text-gray-500" />
                 </Link>
-                
+
                 {/* Learn */}
                 {/* <Link 
                   href="/learn" 
@@ -196,7 +193,7 @@ export default function HeaderCom() {
                   <span className="text-lg font-medium">Learn</span>
                   <ChevronDown size={16} className="text-gray-500" />
                 </Link> */}
-                
+
                 {/* For Business */}
                 {/* <Link 
                   href="/business" 
@@ -206,27 +203,26 @@ export default function HeaderCom() {
                   <span className="text-lg font-medium">For Business</span>
                   <ChevronDown size={16} className="text-gray-500" />
                 </Link> */}
-                
+
                 {/* Support Center */}
-                <Link 
-                  href="/contact" 
+                <Link
+                  href="/contact"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
                   onClick={() => setMobileNavOpen(false)}
                 >
                   <span className="text-lg font-medium">Contact</span>
                 </Link>
-                
+
                 {/* Products */}
-                <Link 
-                  href="/blogs" 
+                <Link
+                  href="/blogs"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
                   onClick={() => setMobileNavOpen(false)}
                 >
-                  <span className="text-lg font-medium">
-Blogs</span>
+                  <span className="text-lg font-medium">Blogs</span>
                   <ChevronDown size={16} className="text-gray-500" />
                 </Link>
-                
+
                 {/* Log In */}
                 {/* <Link 
                   href="/login" 
@@ -236,7 +232,7 @@ Blogs</span>
                   <span className="text-lg font-medium">Log In</span>
                 </Link> */}
               </div>
-              
+
               {/* CTA Button */}
               <div className="mt-4 pt-2 pb-4">
                 <Link href="/download" onClick={() => setMobileNavOpen(false)}>
