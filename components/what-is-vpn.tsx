@@ -14,12 +14,11 @@ export default function WhatIsVpn() {
     <div className="mx-auto max-w-4xl px-4 py-8 text-center md:text-left">
       <h1 className="mb-4 text-4xl font-bold text-gray-800">What is a VPN?</h1>
       <p className="mb-8 text-gray-700">
-        <span className="text-blue-600">A VPN (Virtual Private Network):</span>A
-        VPN, or virtual is a powerful online tool that lets you browse the
-        internet securely and privately by creating a protected, encrypted
-        tunnel between your device and a remote VPN server. This process shields
-        your data from hackers, snoopers, or anyone trying to spy on your online
-        activity.
+        <strong> A VPN (Virtual Private Network)</strong> is a powerful online
+        tool that lets you browse the internet securely and privately by
+        creating a protected tunnel between your device and a remote VPN server.
+        This process shields your data from hackers, snoopers, or anyone trying
+        to spy on your online activity.
       </p>
 
       {/* Accordions */}
@@ -62,16 +61,16 @@ export default function WhatIsVpn() {
                   between your device and a VPN server.
                 </li>
                 <li>
-                  Your internet traffic is then rerouted through that VPN server
-                  — hiding your IP address in the process.
+                  Your internet traffic is then rerouted through that VPN
+                  server, hiding your IP address in the process.
                 </li>
                 <li>
-                  The data gets encrypted, meaning it’s scrambled into
-                  unreadable code during transmission.
+                  The data is then scrambled into unreadable code during
+                  transmission.
                 </li>
                 <li>
-                  The VPN server accesses the internet for you and sends the
-                  encrypted information to its final destination.
+                  The VPN server accesses the internet for you and securely
+                  forwards the information to its final destination.
                 </li>
               </ol>
             </div>
@@ -108,12 +107,12 @@ export default function WhatIsVpn() {
             <div className="border-t border-gray-200 px-6 py-4">
               <ul className="mt-2 list-inside space-y-2 text-gray-700">
                 <li>
-                  <strong>Enhanced Security:</strong> VPNs encrypt your internet
-                  traffic, shielding your personal data from hackers, especially
-                  on open or untrusted networks.
+                  <strong>Enhanced Security: </strong>VPNs protect your internet
+                  traffic by securing it in a way that prevents hackers from
+                  accessing your data, especially on open or untrusted networks
                 </li>
                 <li>
-                  <strong>Online Privacy:</strong> By hiding your real IP
+                  <strong> Online Privacy:</strong> By hiding your real IP
                   address, a VPN helps you stay anonymous and prevents websites
                   from tracking your location and identity.
                 </li>
@@ -128,11 +127,6 @@ export default function WhatIsVpn() {
                   public Wi-Fi without risk.
                 </li>
               </ul>
-
-              <p className="mt-2 text-gray-700">
-                Even in countries where VPNs are legal, using them for illegal
-                activities is still against the law.
-              </p>
             </div>
           )}
         </div>
@@ -167,7 +161,7 @@ export default function WhatIsVpn() {
             <div className="border-t border-gray-200 px-6 py-4">
               <ul className="mt-2 list-inside space-y-2 text-gray-700">
                 <li>
-                  <strong>Free VPNs</strong> – These are no-cost options with
+                  <strong>Free VPNs – </strong>These are no-cost options with
                   basic features, but often come with ads, limited speeds, or
                   bandwidth restrictions.
                 </li>
