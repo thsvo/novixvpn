@@ -80,50 +80,31 @@ export default function Features() {
                 <div className="grid gap-8 md:grid-cols-2">
                   <div>
                     <h2 className="text-3xl font-bold mb-4">
-                      Military-Grade Security
+                      Military-Grade Protection
                     </h2>
                     <p className="text-muted-foreground mb-6">
-                      Novix VPN uses the most advanced encryption standards to
-                      keep your data secure and private.
+                      To keep your personal information safe at all times,
+                      NovixVPN applies the latest technology in securing data
+                      with cutting-edge protocols.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
                         <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">AES-256 Encryption</h4>
                           <p className="text-muted-foreground">
-                            The gold standard in encryption, used by governments
-                            and security experts worldwide.
+                            Data Protection of AES-256-bit Global governments
+                            along with cyber experts rely on the AES-256
+                            algorithm which ensures protected data rovies the
+                            world.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">Kill Switch</h4>
                           <p className="text-muted-foreground">
-                            Automatically disconnects your internet if the VPN
-                            connection drops, preventing data leaks.
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                        <div>
-                          <h4 className="font-medium">DNS Leak Protection</h4>
-                          <p className="text-muted-foreground">
-                            Ensures your DNS requests are always routed through
-                            our secure servers.
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                        <div>
-                          <h4 className="font-medium">Double VPN</h4>
-                          <p className="text-muted-foreground">
-                            Routes your traffic through two VPN servers for an
-                            extra layer of encryption.
+                            Kill Switch Cuts your internet if the VPN drops, so
+                            your data never slips through the cracks
                           </p>
                         </div>
                       </li>
@@ -154,50 +135,38 @@ export default function Features() {
                   </div>
                   <div>
                     <h2 className="text-3xl font-bold mb-4">
-                      Lightning-Fast Performance
+                      Speed Without Compromise
                     </h2>
                     <p className="text-muted-foreground mb-6">
-                      Enjoy blazing-fast speeds without compromising on security
-                      or privacy.
+                      Enjoy lightning-fast speeds with top-tier security and
+                      privacy. No slowdowns, just seamless browsing.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
                         <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">Optimized Servers</h4>
                           <p className="text-muted-foreground">
-                            Our servers are optimized for speed, ensuring
-                            minimal impact on your connection.
+                            Turbocharged Servers Speed-boosted servers for a
+                            smooth, speedy connection; no lag, just fast.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">Unlimited Bandwidth</h4>
                           <p className="text-muted-foreground">
-                            Stream, download, and browse without restrictions or
-                            throttling.
+                            Unlimited Bandwidth Stream, download, and browse to
+                            your heart’s content. No limits, no throttling.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">P2P Support</h4>
                           <p className="text-muted-foreground">
-                            Optimized servers for peer-to-peer file sharing with
-                            fast download speeds.
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                        <div>
-                          <h4 className="font-medium">Smart Connect</h4>
-                          <p className="text-muted-foreground">
-                            Automatically connects you to the fastest server
-                            based on your location.
+                            Smart Connect Instantly connects you to the fastest
+                            server, no manual tweaking needed. Just pure speed,
+                            right where you are.
                           </p>
                         </div>
                       </li>
@@ -213,50 +182,36 @@ export default function Features() {
                       Easy Accessibility
                     </h2>
                     <p className="text-muted-foreground mb-6">
-                      Novix VPN is designed to be user-friendly and accessible
-                      on all your devices.
+                      Novix VPN is built for simplicity, making it easy to
+                      secure your Android device with just a few taps.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
                         <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">
-                            Multi-Platform Support
-                          </h4>
                           <p className="text-muted-foreground">
-                            Apps for Windows, Mac, iOS, Android, Linux, and
-                            browser extensions.
+                            Android-Exclusive Access Enjoy a tailored, seamless
+                            experience. Novix VPN is built for Android, offering
+                            optimized performance just for you.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Laptop className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">
-                            Connect Up to 8 Devices
-                          </h4>
                           <p className="text-muted-foreground">
-                            Protect all your devices with a single subscription.
+                            Connect Up to 5 Devices Keep the whole family secure
+                            with one subscription; protect up to 5 Android
+                            devices at once.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Tv className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">Smart TV Support</h4>
                           <p className="text-muted-foreground">
-                            Dedicated apps for Android TV, Fire TV, and other
-                            smart TV platforms.
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                        <div>
-                          <h4 className="font-medium">One-Click Connect</h4>
-                          <p className="text-muted-foreground">
-                            Simple interface that makes it easy to connect with
-                            just one click.
+                            One-Click Connect Effortless security. just one
+                            click and you're connected, no hassle, no fuss.
                           </p>
                         </div>
                       </li>
@@ -290,47 +245,43 @@ export default function Features() {
                       Complete Privacy
                     </h2>
                     <p className="text-muted-foreground mb-6">
-                      We take your privacy seriously with features designed to
-                      keep your online activities completely private.
+                      Your privacy is our priority; designed to keep your online
+                      activities completely private, with zero compromises.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
                         <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">Strict No-Logs Policy</h4>
                           <p className="text-muted-foreground">
-                            We never track, collect, or share your browsing
-                            history.
+                            Strict No-Logs Policy
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Server className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">RAM-Only Servers</h4>
                           <p className="text-muted-foreground">
-                            Our servers run on RAM only, ensuring all data is
-                            wiped with every reboot.
+                            Your browsing history stays yours; no tracking, no
+                            collecting, no sharing. Ever.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Globe className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">Anonymous Browsing</h4>
                           <p className="text-muted-foreground">
-                            Hide your IP address and encrypt your internet
-                            traffic to browse anonymously.
+                            Anonymous Browsing Hide your IP and surf the web
+                            incognito; no one will know you were there.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
-                        <Lock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <h4 className="font-medium">Camouflage Mode</h4>
                           <p className="text-muted-foreground">
-                            Disguise your VPN traffic to look like regular HTTPS
-                            traffic, bypassing VPN blocks.
+                            Camouflage Mode Blend in seamlessly; make your VPN
+                            traffic look just like regular HTTPS, slipping past
+                            any blocks unnoticed.
                           </p>
                         </div>
                       </li>
