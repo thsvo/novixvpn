@@ -108,6 +108,16 @@ export default function Features() {
                           </p>
                         </div>
                       </li>
+                      <li className="flex items-start gap-3">
+                        <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <p className="text-muted-foreground">
+                            DNS Leak Protection Zero peeking or snooping is
+                            allowed and thus your DNS is protected under lock
+                            and key.
+                          </p>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                   <div className="relative rounded-lg overflow-hidden">
