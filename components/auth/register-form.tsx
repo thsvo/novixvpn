@@ -1,26 +1,34 @@
 "use client";
 
+import type React from "react";
+
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Eye, EyeOff, Lock, Mail, User } from "lucide-react";
+import { Eye, EyeOff, Lock, Mail, User, UserCircle } from "lucide-react";
+import { IoLogoGoogle } from "react-icons/io5";
+import Image from "next/image";
 
 export default function RegisterForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [formData, setFormData] = useState({
-    name: "",
+    username: "",
+    first_name: "",
+    last_name: "",
     email: "",
     password: "",
-    confirmPassword: "",
+    confirm_password: "",
     agreeToTerms: false,
   });
   const [errors, setErrors] = useState({
-    name: "",
+    username: "",
+    first_name: "",
+    last_name: "",
     email: "",
     password: "",
-    confirmPassword: "",
+    confirm_password: "",
     agreeToTerms: "",
   });
 
@@ -46,8 +54,18 @@ export default function RegisterForm() {
     let valid = true;
     const newErrors = { ...errors };
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
+    if (!formData.username.trim()) {
+      newErrors.username = "Username is required";
+      valid = false;
+    }
+
+    if (!formData.first_name.trim()) {
+      newErrors.first_name = "First name is required";
+      valid = false;
+    }
+
+    if (!formData.last_name.trim()) {
+      newErrors.last_name = "Last name is required";
       valid = false;
     }
 
@@ -67,8 +85,8 @@ export default function RegisterForm() {
       valid = false;
     }
 
-    if (formData.password !== formData.confirmPassword) {
-      newErrors.confirmPassword = "Passwords do not match";
+    if (formData.password !== formData.confirm_password) {
+      newErrors.confirm_password = "Passwords do not match";
       valid = false;
     }
 
@@ -89,12 +107,31 @@ export default function RegisterForm() {
     setIsLoading(true);
 
     try {
-      // This would be replaced with your actual registration logic
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // Send registration data according to the required structure
+      const response = await fetch(
+        "http://api.novixvpn.com/api/v1/users/auth/register/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username: formData.username,
+            first_name: formData.first_name,
+            last_name: formData.last_name,
+            email: formData.email,
+            password: formData.password,
+            confirm_password: formData.confirm_password,
+          }),
+        }
+      );
 
-      // Simulate successful registration
+      if (!response.ok) {
+        throw new Error("Registration failed");
+      }
+
       console.log("Registration successful", formData);
-      router.push("/login?registered=true");
+      // router.push("/login?registered=true");
     } catch (error) {
       console.error("Registration failed", error);
     } finally {
@@ -111,34 +148,94 @@ export default function RegisterForm() {
         <p className="text-gray-600 mt-2">Join NovixVPN for secure browsing</p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-3">
         <div>
           <label
-            htmlFor="name"
+            htmlFor="username"
             className="block text-sm font-medium text-gray-700 mb-1"
           >
-            Full Name
+            Username
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <User className="h-5 w-5 text-gray-400" />
+              <UserCircle className="h-5 w-5 text-gray-400" />
             </div>
             <input
-              id="name"
-              name="name"
+              id="username"
+              name="username"
               type="text"
-              autoComplete="name"
-              value={formData.name}
+              autoComplete="username"
+              value={formData.username}
               onChange={handleChange}
               className={`block w-full pl-10 pr-3 py-2 border ${
-                errors.name ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:ring-blue-500 focus:border-blue-500`}
-              placeholder="John Doe"
+                errors.username ? "border-red-500" : "border-gray-300"
+              } rounded-lg focus:ring-primary focus:border-primary`}
+              placeholder="johndoe123"
             />
           </div>
-          {errors.name && (
-            <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+          {errors.username && (
+            <p className="mt-1 text-sm text-red-600">{errors.username}</p>
           )}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              htmlFor="first_name"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              First Name
+            </label>
+            <div className="relative">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <User className="h-5 w-5 text-gray-400" />
+              </div>
+              <input
+                id="first_name"
+                name="first_name"
+                type="text"
+                autoComplete="given-name"
+                value={formData.first_name}
+                onChange={handleChange}
+                className={`block w-full pl-10 pr-3 py-2 border ${
+                  errors.first_name ? "border-red-500" : "border-gray-300"
+                } rounded-lg focus:ring-primary focus:border-primary`}
+                placeholder="John"
+              />
+            </div>
+            {errors.first_name && (
+              <p className="mt-1 text-sm text-red-600">{errors.first_name}</p>
+            )}
+          </div>
+
+          <div>
+            <label
+              htmlFor="last_name"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
+              Last Name
+            </label>
+            <div className="relative">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <User className="h-5 w-5 text-gray-400" />
+              </div>
+              <input
+                id="last_name"
+                name="last_name"
+                type="text"
+                autoComplete="family-name"
+                value={formData.last_name}
+                onChange={handleChange}
+                className={`block w-full pl-10 pr-3 py-2 border ${
+                  errors.last_name ? "border-red-500" : "border-gray-300"
+                } rounded-lg focus:ring-primary focus:border-primary`}
+                placeholder="Doe"
+              />
+            </div>
+            {errors.last_name && (
+              <p className="mt-1 text-sm text-red-600">{errors.last_name}</p>
+            )}
+          </div>
         </div>
 
         <div>
@@ -161,7 +258,7 @@ export default function RegisterForm() {
               onChange={handleChange}
               className={`block w-full pl-10 pr-3 py-2 border ${
                 errors.email ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:ring-blue-500 focus:border-blue-500`}
+              } rounded-lg focus:ring-primary focus:border-primary`}
               placeholder="you@example.com"
             />
           </div>
@@ -190,7 +287,7 @@ export default function RegisterForm() {
               onChange={handleChange}
               className={`block w-full pl-10 pr-10 py-2 border ${
                 errors.password ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:ring-blue-500 focus:border-blue-500`}
+              } rounded-lg focus:ring-primary focus:border-primary`}
               placeholder="••••••••"
             />
             <button
@@ -212,7 +309,7 @@ export default function RegisterForm() {
 
         <div>
           <label
-            htmlFor="confirmPassword"
+            htmlFor="confirm_password"
             className="block text-sm font-medium text-gray-700 mb-1"
           >
             Confirm Password
@@ -222,15 +319,15 @@ export default function RegisterForm() {
               <Lock className="h-5 w-5 text-gray-400" />
             </div>
             <input
-              id="confirmPassword"
-              name="confirmPassword"
+              id="confirm_password"
+              name="confirm_password"
               type={showConfirmPassword ? "text" : "password"}
               autoComplete="new-password"
-              value={formData.confirmPassword}
+              value={formData.confirm_password}
               onChange={handleChange}
               className={`block w-full pl-10 pr-10 py-2 border ${
-                errors.confirmPassword ? "border-red-500" : "border-gray-300"
-              } rounded-lg focus:ring-blue-500 focus:border-blue-500`}
+                errors.confirm_password ? "border-red-500" : "border-gray-300"
+              } rounded-lg focus:ring-primary focus:border-primary`}
               placeholder="••••••••"
             />
             <button
@@ -245,9 +342,9 @@ export default function RegisterForm() {
               )}
             </button>
           </div>
-          {errors.confirmPassword && (
+          {errors.confirm_password && (
             <p className="mt-1 text-sm text-red-600">
-              {errors.confirmPassword}
+              {errors.confirm_password}
             </p>
           )}
         </div>
@@ -260,19 +357,22 @@ export default function RegisterForm() {
               type="checkbox"
               checked={formData.agreeToTerms}
               onChange={handleChange}
-              className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+              className="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
             />
           </div>
           <div className="ml-3 text-sm">
             <label htmlFor="agreeToTerms" className="font-medium text-gray-700">
               I agree to the{" "}
-              <Link href="/terms" className="text-blue-600 hover:text-blue-500">
+              <Link
+                href="/terms"
+                className="text-primary hover:text-primary-600"
+              >
                 Terms of Service
               </Link>{" "}
               and{" "}
               <Link
                 href="/privacy"
-                className="text-blue-600 hover:text-blue-500"
+                className="text-primary hover:text-primary-600"
               >
                 Privacy Policy
               </Link>
@@ -287,7 +387,7 @@ export default function RegisterForm() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isLoading ? "Creating account..." : "Create account"}
           </button>
@@ -306,18 +406,12 @@ export default function RegisterForm() {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid grid-cols-1 gap-3">
           <button
             type="button"
-            className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+            className="w-full inline-flex  items-center gap-1 justify-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
           >
-            Google
-          </button>
-          <button
-            type="button"
-            className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
-          >
-            Apple
+            <IoLogoGoogle /> <span>Google</span>
           </button>
         </div>
       </div>
@@ -326,7 +420,7 @@ export default function RegisterForm() {
         Already have an account?{" "}
         <Link
           href="/login"
-          className="font-medium text-blue-600 hover:text-blue-500"
+          className="font-medium text-primary hover:text-primary-600"
         >
           Sign in
         </Link>
