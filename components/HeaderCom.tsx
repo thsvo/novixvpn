@@ -114,7 +114,13 @@ export default function HeaderCom() {
                 </div>
               )}
             </div>
-
+            <Link
+              href="/login"
+              className="flex items-center justify-between py-3 border-b border-gray-100"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              <span className="text-base">Log In</span>
+            </Link>
             {/* Get Novix Button */}
             <Link href="/download">
               <Button className="rounded-full">Get Novix VPN</Button>
@@ -224,13 +230,13 @@ export default function HeaderCom() {
                 </Link>
 
                 {/* Log In */}
-                {/* <Link 
-                  href="/login" 
+                <Link
+                  href="/login"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
                   onClick={() => setMobileNavOpen(false)}
                 >
                   <span className="text-lg font-medium">Log In</span>
-                </Link> */}
+                </Link>
               </div>
 
               {/* CTA Button */}
