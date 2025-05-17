@@ -18,9 +18,9 @@ import VpnBenefits from "@/components/vpn-benefits";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Novix VPN – Protect 5 Devices with One Tap | Fast & Easy VPN ",
+  title: "Novix VPN – Fast, Secure & Private Android VPN | Try Free",
   description:
-    "Secure up to 5 devices with one account. Novix VPN gives you fast, one-tap privacy with no setup stress. Stay safe on any network, anytime.One account five devices, Protect Everyone you Care About Effortlessly ",
+    "Protect your privacy with Novix VPN. Enjoy no-logs, ultra-fast servers, and military-grade security. 70% off + free trial for Android users!",
 };
 
 export default function Home() {
@@ -154,8 +154,18 @@ export default function Home() {
         <section className="relative bg-[#FAFAFA] overflow-hidden bg-background mt-5">
           <VpnBenefits />
         </section>
-        {/* Features Section */}
+        {/* Features Section ✅*/}
         <section id="features" className="bg-background  md:py-24">
+          {/* meta tads for SEO */}
+          <Head>
+            <title>
+              Novix VPN – Protect 5 Devices with One Tap | Fast & Easy VPN
+            </title>
+            <meta
+              name="description"
+              content="Secure up to 5 devices with one account. Novix VPN gives you fast, one-tap privacy with no setup stress. Stay safe on any network, anytime. "
+            />
+          </Head>
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -277,20 +287,21 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* Comparison Section */}
+        {/* Comparison Section✅ */}
         <section id="comparison" className="bg-background  md:py-24">
+          {/* meta tads for SEO */}
+          <Head>
+            <title>
+              VPN Comparison: Novix VPN vs NordVPN vs Surfshark vs ProtonVPN
+            </title>
+            <meta
+              name="description"
+              content="Compare Novix VPN, NordVPN, Surfshark, and ProtonVPN. Explore features like WireGuard, flexible pricing, kill switch protection, and real-time speed tests."
+            />
+            <meta property="og:title" content="Open Graph Title" />
+          </Head>
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-start mb-12">
-              <Head>
-                <title>
-                  VPN Comparison: Novix VPN vs NordVPN vs Surfshark vs ProtonVPN
-                </title>
-                <meta
-                  name="description"
-                  content="Compare Novix VPN, NordVPN, Surfshark, and ProtonVPN. Explore features like WireGuard, flexible pricing, kill switch protection, and real-time speed tests."
-                />
-                <meta property="og:title" content="Open Graph Title" />
-              </Head>
               <h2 className="text-2xl font-bold tracking-tighter  md:text-5xl text-center">
                 VPN Comparison: Novix VPN vs. NordVPN, Surfshark, ProtonVPN, and
                 ExpressVPN
