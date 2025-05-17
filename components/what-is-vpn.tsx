@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head";
 import { useState } from "react";
 
 export default function WhatIsVpn() {
@@ -11,14 +12,31 @@ export default function WhatIsVpn() {
   };
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8 text-center md:text-left">
+    <section className="mx-auto max-w-4xl px-4 py-8 text-center md:text-left">
+      {/* meta tads for SEO */}
+      <Head>
+        <title>
+          Novix VPN – Fast, Private & Secure VPN for Android | 70% Off
+        </title>
+        <meta
+          name="description"
+          content="Guard your privacy with Novix VPN. Enjoy blazing-fast speed, no logs, secure servers & Android-first design. Try Extra Free. 70% off premium now!"
+        />
+      </Head>
       <h1 className="mb-4 text-4xl font-bold text-gray-800">What is a VPN?</h1>
       <p className="mb-8 text-gray-700">
-        <strong> A VPN (Virtual Private Network)</strong> is a powerful online
-        tool that lets you browse the internet securely and privately by
-        creating a protected tunnel between your device and a remote VPN server.
-        This process shields your data from hackers, snoopers, or anyone trying
-        to spy on your online activity.
+        A <strong>VPN</strong>
+        <a
+          href="https://www.novixvpn.com/"
+          target="_blank"
+          className="underline text-blue-500 px-1"
+        >
+          (Virtual Private Network)
+        </a>
+        is a powerful online tool that lets you browse the internet securely and
+        privately by creating a protected tunnel between your device and a
+        remote VPN server. This process shields your data from hackers,
+        snoopers, or anyone trying to spy on your online activity.
       </p>
 
       {/* Accordions */}
@@ -107,22 +125,23 @@ export default function WhatIsVpn() {
             <div className="border-t border-gray-200 px-6 py-4">
               <ul className="mt-2 list-inside space-y-2 text-gray-700">
                 <li>
-                  <strong>Enhanced Security: </strong>VPNs protect your internet
-                  traffic by securing it in a way that prevents hackers from
-                  accessing your data, especially on open or untrusted networks
+                  <strong>🔒 Enhanced Security: </strong>VPNs protect your
+                  internet traffic by securing it in a way that prevents hackers
+                  from accessing your data, especially on open or untrusted
+                  networks
                 </li>
                 <li>
-                  <strong> Online Privacy:</strong> By hiding your real IP
+                  <strong>👤 Online Privacy:</strong> By hiding your real IP
                   address, a VPN helps you stay anonymous and prevents websites
                   from tracking your location and identity.
                 </li>
                 <li>
-                  <strong>Access Blocked Content: </strong>Connect to servers in
-                  different countries to unlock websites, streaming services, or
-                  content that’s restricted in your region.
+                  <strong>🌍 Access Blocked Content: </strong>Connect to servers
+                  in different countries to unlock websites, streaming services,
+                  or content that’s restricted in your region.
                 </li>
                 <li>
-                  <strong>Safe Public Wi-Fi Use:</strong> Public hotspots are
+                  <strong>📶 Safe Public Wi-Fi Use:</strong> Public hotspots are
                   often unprotected — VPNs secure your connection so you can use
                   public Wi-Fi without risk.
                 </li>
@@ -180,6 +199,6 @@ export default function WhatIsVpn() {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

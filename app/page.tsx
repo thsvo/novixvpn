@@ -325,8 +325,8 @@ export default function Home() {
             <h1 className="text-2xl font-bold tracking-tighter md:text-5xl text-center">
               What VPN is Best for You?
             </h1>
-            <div className="py-5 md:py-8">
-              <p className="mt-4 text-muted-foreground md:text-md text-center">
+            <div className="py-5 md:py-8 max-w-[1000px] mx-auto">
+              <p className="mt-4 text-muted-foreground md:text-md text-justify">
                 Every VPN service has its own advantages; hence, the ideal
                 choice relies on which characteristics are most important to
                 you. Novix VPN distinguishes itself by providing customized
