@@ -4,17 +4,19 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Eye, EyeOff, Lock, Mail } from "lucide-react";
+import { useAuth } from "@/Context/AuthContext";
 
 export default function LoginForm() {
+  const { login } = useAuth();
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
-    email: "",
+    username: "", // API expects username
     password: "",
     rememberMe: false,
   });
   const [errors, setErrors] = useState({
-    email: "",
+    username: "",
     password: "",
   });
 
@@ -27,24 +29,18 @@ export default function LoginForm() {
       [name]: type === "checkbox" ? checked : value,
     });
 
-    // Clear error when user types
+    // Clear error on change
     if (errors[name as keyof typeof errors]) {
-      setErrors({
-        ...errors,
-        [name]: "",
-      });
+      setErrors((prev) => ({ ...prev, [name]: "" }));
     }
   };
 
   const validateForm = () => {
     let valid = true;
-    const newErrors = { ...errors };
+    const newErrors = { username: "", password: "" };
 
-    if (!formData.email) {
-      newErrors.email = "Email is required";
-      valid = false;
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email is invalid";
+    if (!formData.username) {
+      newErrors.username = "Username is required";
       valid = false;
     }
 
@@ -65,14 +61,38 @@ export default function LoginForm() {
     setIsLoading(true);
 
     try {
-      // This would be replaced with your actual authentication logic
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      //Send login data according to the required structure
+      const response = await fetch(
+        "http://api.novixvpn.com/api/v1/users/auth/login/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username: formData.username,
+            password: formData.password,
+          }),
+        }
+      );
 
-      // Simulate successful login
-      console.log("Login successful", formData);
-      router.push("/dashboard");
+      if (!response.ok) {
+        throw new Error("Invalid username or password");
+      }
+
+      const data = await response.json();
+
+      // Save token if needed
+      if (formData.rememberMe) {
+        localStorage.setItem("token", data.token);
+      }
+      // after successful login:
+      login(data.token, { username: formData.username });
+
+      router.push("/");
     } catch (error) {
       console.error("Login failed", error);
+      alert("Login failed. Please check your credentials.");
     } finally {
       setIsLoading(false);
     }
@@ -86,35 +106,37 @@ export default function LoginForm() {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
+        {/* Username Field */}
         <div>
           <label
-            htmlFor="email"
+            htmlFor="username"
             className="block text-sm font-medium text-gray-700 mb-1"
           >
-            Email
+            Username
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <Mail className="h-5 w-5 text-gray-400" />
             </div>
             <input
-              id="email"
-              name="email"
-              type="email"
-              autoComplete="email"
-              value={formData.email}
+              id="username"
+              name="username"
+              type="text"
+              autoComplete="username"
+              value={formData.username}
               onChange={handleChange}
               className={`block w-full pl-10 pr-3 py-2 border ${
-                errors.email ? "border-red-500" : "border-gray-300"
+                errors.username ? "border-red-500" : "border-gray-300"
               } rounded-lg focus:ring-blue-500 focus:border-blue-500`}
-              placeholder="you@example.com"
+              placeholder="your_username"
             />
           </div>
-          {errors.email && (
-            <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+          {errors.username && (
+            <p className="mt-1 text-sm text-red-600">{errors.username}</p>
           )}
         </div>
 
+        {/* Password Field */}
         <div>
           <div className="flex items-center justify-between mb-1">
             <label
@@ -163,6 +185,7 @@ export default function LoginForm() {
           )}
         </div>
 
+        {/* Remember Me */}
         <div className="flex items-center">
           <input
             id="rememberMe"
@@ -180,6 +203,7 @@ export default function LoginForm() {
           </label>
         </div>
 
+        {/* Submit Button */}
         <div>
           <button
             type="submit"
@@ -191,6 +215,7 @@ export default function LoginForm() {
         </div>
       </form>
 
+      {/* Social Auth & Register Links */}
       <div className="mt-6">
         <div className="relative">
           <div className="absolute inset-0 flex items-center">

@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button";
 import MainNav from "./main-nav";
 import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { useAuth } from "@/Context/AuthContext";
+import UserProfile from "./shared/UserProfile";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 export default function HeaderCom() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,6 +42,12 @@ export default function HeaderCom() {
       document.body.style.overflow = "auto";
     };
   }, [mobileNavOpen]);
+
+  // Get initials for avatar fallback
+  const { user, token, logout } = useAuth();
+  const getInitials = () => {
+    return user?.username?.substring(0, 2).toUpperCase() || "U";
+  };
 
   return (
     <>
@@ -114,17 +123,21 @@ export default function HeaderCom() {
                 </div>
               )}
             </div>
-            <Link
-              href="/login"
-              className="flex items-center justify-between py-3 border-b border-gray-100"
-              onClick={() => setMobileNavOpen(false)}
-            >
-              <span className="text-base">Log In</span>
-            </Link>
+            {!token && (
+              <Link
+                href="/login"
+                className="flex items-center justify-between py-3 border-b border-gray-100"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                <span className="text-sm">Log In</span>
+              </Link>
+            )}
             {/* Get Novix Button */}
             <Link href="/download">
               <Button className="rounded-full">Get Novix VPN</Button>
             </Link>
+            {/* user profile section */}
+            {token && <UserProfile />}
           </div>
         </div>
       </header>
@@ -238,6 +251,24 @@ export default function HeaderCom() {
                   <span className="text-lg font-medium">Log In</span>
                 </Link>
               </div>
+              {/* User Profile for mobile */}
+              {token && (
+                <div className="flex items-center justify-center gap-3 mt-4 py-2">
+                  <Button
+                    variant="ghost"
+                    className="relative h-10 w-10 rounded-full"
+                  >
+                    <Avatar className="h-10 w-10">
+                      <AvatarFallback>{getInitials()}</AvatarFallback>
+                    </Avatar>
+                  </Button>
+                  <div className="flex flex-col space-y-1">
+                    <p className="text-sm font-medium leading-none">
+                      {user?.username}
+                    </p>
+                  </div>
+                </div>
+              )}
 
               {/* CTA Button */}
               <div className="mt-4 pt-2 pb-4">

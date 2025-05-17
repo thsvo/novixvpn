@@ -7,7 +7,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Eye, EyeOff, Lock, Mail, User, UserCircle } from "lucide-react";
 import { IoLogoGoogle } from "react-icons/io5";
-import Image from "next/image";
 
 export default function RegisterForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -130,8 +129,7 @@ export default function RegisterForm() {
         throw new Error("Registration failed");
       }
 
-      console.log("Registration successful", formData);
-      // router.push("/login?registered=true");
+      router.push("/login");
     } catch (error) {
       console.error("Registration failed", error);
     } finally {

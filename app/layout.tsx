@@ -4,6 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import CountdownTimerClient from "@/components/shared/CountdownTimerClient";
 import PixelTracker from "@/components/shared/PixelTracker.tsx";
+import { AuthProvider } from "@/Context/AuthContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,7 +55,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <PixelTracker />
-        {children}
+        <AuthProvider>{children}</AuthProvider>
         <CountdownTimerClient />
       </body>
     </html>
