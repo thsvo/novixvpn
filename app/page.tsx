@@ -17,6 +17,12 @@ import FAQComponent from "@/components/faq-component";
 import VpnBenefits from "@/components/vpn-benefits";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Novix VPN – Protect 5 Devices with One Tap | Fast & Easy VPN ",
+  description:
+    "Secure up to 5 devices with one account. Novix VPN gives you fast, one-tap privacy with no setup stress. Stay safe on any network, anytime.One account five devices, Protect Everyone you Care About Effortlessly ",
+};
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -156,7 +162,7 @@ export default function Home() {
                 One VPN. 360° Protection. Zero Hassle
               </h2>
               <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
-                No setup nightmare. No tech skills required, just install, tap
+                No setup nightmare. No tech skills required,  just install, tap,
                 and enjoy your privacy.
               </p>
             </div>
