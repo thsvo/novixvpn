@@ -63,7 +63,7 @@ export default function LoginForm() {
     try {
       //Send login data according to the required structure
       const response = await fetch(
-        "http://api.novixvpn.com/api/v1/users/auth/login/",
+        "https://api.novixvpn.com/api/v1/users/auth/login/",
         {
           method: "POST",
           headers: {

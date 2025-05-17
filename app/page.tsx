@@ -15,6 +15,7 @@ import HeaderCom from "@/components/HeaderCom";
 import WhatIsVpn from "@/components/what-is-vpn";
 import FAQComponent from "@/components/faq-component";
 import VpnBenefits from "@/components/vpn-benefits";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -273,15 +274,64 @@ export default function Home() {
         {/* Comparison Section */}
         <section id="comparison" className="bg-background  md:py-24">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Why Choose Novix VPN?
+            <div className="flex flex-col items-center justify-start mb-12">
+              <Head>
+                <title>
+                  VPN Comparison: Novix VPN vs NordVPN vs Surfshark vs ProtonVPN
+                </title>
+                <meta
+                  name="description"
+                  content="Compare Novix VPN, NordVPN, Surfshark, and ProtonVPN. Explore features like WireGuard, flexible pricing, kill switch protection, and real-time speed tests."
+                />
+                <meta property="og:title" content="Open Graph Title" />
+              </Head>
+              <h2 className="text-2xl font-bold tracking-tighter  md:text-5xl text-center">
+                VPN Comparison: Novix VPN vs. NordVPN, Surfshark, ProtonVPN, and
+                ExpressVPN
               </h2>
-              <p className="mt-4 max-w-[700px] text-muted-foreground md:text-xl">
-                See how we compare to other leading VPN providers
+              <p className="mt-4 text-muted-foreground md:text-md text-center">
+                Selecting the appropriate VPN service depends on several
+                factors, including several characteristics that fit your
+                particular requirements. Here is a comparison of several leading
+                VPN providers, including Novix VPN, NordVPN, Surfshark,
+                ProtonVPN, and ExpressVPN. Every VPN has its own set of
+                particular characteristics meant to improve your browsing
+                experience, security, and privacy.
               </p>
+              <h3 className="text-lg text-muted-foreground w-full font-bold text-start">
+                Comparison of Features:
+              </h3>
             </div>
             <ComparisonTable />
+          </div>
+          <div className="mt-16 md:mt-20 container">
+            <h1 className="text-2xl font-bold tracking-tighter md:text-5xl text-center">
+              What VPN is Best for You?
+            </h1>
+            <div className="py-5 md:py-8">
+              <p className="mt-4 text-muted-foreground md:text-md text-center">
+                Every VPN service has its own advantages; hence, the ideal
+                choice relies on which characteristics are most important to
+                you. Novix VPN distinguishes itself by providing customized
+                Android compatibility, a reasonable price, and real-time speed
+                tests. NordVPN and Surfshark, on the other hand, both shine with
+                strong security measures such as WireGuard and large server
+                lists.
+              </p>
+              <p className="mt-4 text-muted-foreground md:text-md text-center">
+                Novix VPN provides a more complete annual service for those who
+                value things like instructional video configurations or unique
+                VIP access. For people who appreciate simple, user-friendly VPNs
+                with a wide server range but don't need particular extra
+                features like WireGuard or real-time speed checks, ExpressVPN
+                might be perfect.
+              </p>
+              <p className="mt-4 text-muted-foreground md:text-md text-center">
+                Ultimately, your choice will rely on your particular needs,
+                whether they be financial freedom, platform compatibility, or
+                sophisticated security features.
+              </p>
+            </div>
           </div>
         </section>
         {/* Download Section */}
