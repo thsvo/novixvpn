@@ -15,6 +15,7 @@ type Article = {
   slug: string;
   date: string;
   content: string;
+  thumbnail: string;
 };
 
 // Featured article data
@@ -129,7 +130,7 @@ export default async function BlogPage() {
               <article>
                 <div className="relative w-full aspect-[4/3] bg-gray-100">
                   <Image
-                    src="/placeholder.svg"
+                    src={article.thumbnail}
                     alt={article.title}
                     fill
                     className="object-contain transition-transform duration-300 group-hover:scale-105"
