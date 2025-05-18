@@ -14,6 +14,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/footer";
 
+// Metadata for the page
+export const metadata = {
+  title: "Novix VPN: No Logs, No Tracking, Maximum Privacy Protection",
+  description:
+    "Experience complete privacy with Novix VPN. No logs, no user tracking, secure SSL/TLS encryption, and advanced WireGuard protocol for ultimate protection.",
+};
+
 export default function NoUserTracking() {
   return (
     <div className="flex min-h-screen flex-col">

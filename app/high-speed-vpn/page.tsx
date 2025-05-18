@@ -21,9 +21,9 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "Novix VPN: No Logs, No Tracking, Maximum Privacy Protection",
+  title: "Novix VPN: Fast, Secure & Built for Android",
   description:
-    "Experience complete privacy with Novix VPN. No logs, no user tracking, secure SSL/TLS encryption, and advanced WireGuard protocol for ultimate protection.",
+    "Novix VPN delivers fast, secure browsing with WireGuard, smart server selection, and Android optimization—perfect for streaming and gaming.",
 };
 
 export default function HighSpeedVPNPage() {
