@@ -20,6 +20,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Footer from "@/components/footer";
 
+// Metadata for the page
+export const metadata = {
+  title: "NovixVPN: Military-Grade Protection & Lightning-Fast Speed",
+  description:
+    "Enjoy complete privacy with NovixVPN’s AES-256 encryption, kill switch, and turbocharged servers. Secure your data with ease on Android devices.",
+};
+
 export default function Features() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -84,37 +91,47 @@ export default function Features() {
                     </h2>
                     <p className="text-muted-foreground mb-6">
                       To keep your personal information safe at all times,
-                      NovixVPN applies the latest technology in securing data
-                      with cutting-edge protocols.
+                      <a href="" target="_blank" className="text-blue-500">
+                        NovixVPN
+                      </a>
+                      applies the latest technology in securing data with
+                      cutting-edge protocols.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
                         <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">
+                            Data Protection of AES-256-bit
+                          </h1>
                           <p className="text-muted-foreground">
-                            Data Protection of AES-256-bit Global governments
-                            along with cyber experts rely on the AES-256
-                            algorithm which ensures protected data rovies the
-                            world.
+                            Global governments along with
+                            <a
+                              href="https://cyberexperts.com/unlocking-online-privacy-expert-guide-to-top-vpn-protocols/"
+                              target="_blank"
+                            ></a>
+                            cyber experts rely on the AES-256 algorithm which
+                            ensures protected data travels the world.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">Kill Switch</h1>
                           <p className="text-muted-foreground">
-                            Kill Switch Cuts your internet if the VPN drops, so
-                            your data never slips through the cracks
+                            Cuts your internet if the VPN drops, so your data
+                            never slips through the cracks
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">DNS Leak Protection</h1>
                           <p className="text-muted-foreground">
-                            DNS Leak Protection Zero peeking or snooping is
-                            allowed and thus your DNS is protected under lock
-                            and key.
+                            Zero peeking or snooping is allowed and thus your
+                            DNS is protected under lock and key.
                           </p>
                         </div>
                       </li>
@@ -155,28 +172,31 @@ export default function Features() {
                       <li className="flex items-start gap-3">
                         <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">Turbocharged Servers</h1>
                           <p className="text-muted-foreground">
-                            Turbocharged Servers Speed-boosted servers for a
-                            smooth, speedy connection; no lag, just fast.
+                            Speed-boosted servers for a smooth, speedy
+                            connection; no lag, just fast.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">Unlimited Bandwidth</h1>
                           <p className="text-muted-foreground">
-                            Unlimited Bandwidth Stream, download, and browse to
-                            your heart’s content. No limits, no throttling.
+                            Stream, download, and browse to your heart’s
+                            content. No limits, no throttling.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Zap className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">Smart Connect</h1>
                           <p className="text-muted-foreground">
-                            Smart Connect Instantly connects you to the fastest
-                            server, no manual tweaking needed. Just pure speed,
-                            right where you are.
+                            Instantly connects you to the fastest server, no
+                            manual tweaking needed. Just pure speed, right where
+                            you are.
                           </p>
                         </div>
                       </li>
@@ -199,29 +219,33 @@ export default function Features() {
                       <li className="flex items-start gap-3">
                         <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">
+                            Android-Exclusive Access
+                          </h1>
                           <p className="text-muted-foreground">
-                            Android-Exclusive Access Enjoy a tailored, seamless
-                            experience. Novix VPN is built for Android, offering
-                            optimized performance just for you.
+                            Enjoy a tailored, seamless experience. Novix VPN is
+                            built for Android, offering optimized performance
+                            just for you.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">Connect Up to 5 Devices</h1>
                           <p className="text-muted-foreground">
-                            Connect Up to 5 Devices Keep the whole family secure
-                            with one subscription; protect up to 5 Android
-                            devices at once.
+                            Keep the whole family secure with one subscription;
+                            protect up to 5 Android devices at once.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">One-Click Connect</h1>
                           <p className="text-muted-foreground">
-                            One-Click Connect Effortless security. just one
-                            click and you're connected, no hassle, no fuss.
+                            Effortless security. just one click and you're
+                            connected, no hassle, no fuss.
                           </p>
                         </div>
                       </li>
@@ -290,8 +314,15 @@ export default function Features() {
                         <div>
                           <p className="text-muted-foreground">
                             Camouflage Mode Blend in seamlessly; make your VPN
-                            traffic look just like regular HTTPS, slipping past
-                            any blocks unnoticed.
+                            traffic look just like regular{" "}
+                            <a
+                              href="https://www.fortinet.com/resources/cyberglossary/what-is-https"
+                              target="_blank"
+                              className="text-blue-500"
+                            >
+                              HTTPS
+                            </a>
+                            , slipping past any blocks unnoticed.
                           </p>
                         </div>
                       </li>
