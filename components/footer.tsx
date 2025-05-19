@@ -322,7 +322,7 @@ export default function Footer() {
           {/* Available VPN Apps Section */}
           {renderSectionContent(
             "apps",
-            "Available VPN",
+            "Available VPN App",
             <ul className="space-y-4 pb-4">
               <li>
                 <Link
