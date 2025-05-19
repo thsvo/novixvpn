@@ -275,12 +275,12 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="relative">
+              <div className="relative w-full ">
                 <Image
-                  src="/utils.png"
-                  width={600}
-                  height={600}
-                  className="relative z-10 mx-auto w-full rounded-md bg-transparent object-cover shadow-md md:w-3/4"
+                  src="/home-page-middle.png"
+                  width={700}
+                  height={700}
+                  className="relative z-10 mx-auto w-full rounded-md bg-transparent object-cover"
                   alt="Novix VPN on various devices"
                 />
               </div>
