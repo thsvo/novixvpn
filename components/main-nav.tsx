@@ -25,7 +25,7 @@ export default function MainNav() {
                 <NavigationMenuLink asChild>
                   <Link
                     href="/why-novix-vpn"
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 text-white"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-primary/50 to-primary p-6 text-white hover:scale-105 transition-all ease-in-out duration-100"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
                       Why Novix VPN?
@@ -37,7 +37,7 @@ export default function MainNav() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
                 <Link href="/what-is-vpn" className="nav-link">
                   <div className="text-sm font-medium">What is a VPN?</div>
                   <p className="text-sm text-muted-foreground">
@@ -45,7 +45,7 @@ export default function MainNav() {
                   </p>
                 </Link>
               </li>
-              <li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
                 <Link href="/no-user-tracking" className="nav-link">
                   <div className="text-sm font-medium">No User Tracking</div>
                   <p className="text-sm text-muted-foreground">
@@ -62,9 +62,9 @@ export default function MainNav() {
           <NavigationMenuTrigger className="bg-transparent">
             Features
           </NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <NavigationMenuContent className="bg-popover">
             <ul className="grid gap-3 p-4 md:grid-cols-2 md:w-[500px] lg:w-[600px]">
-              <li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
                 <Link href="/features" className="nav-link">
                   <div className="text-sm font-medium">All Features</div>
                   <p className="text-sm text-muted-foreground">
@@ -72,7 +72,7 @@ export default function MainNav() {
                   </p>
                 </Link>
               </li>
-              <li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
                 <Link href="/high-speed-vpn" className="nav-link">
                   <div className="text-sm font-medium">High-Speed VPN</div>
                   <p className="text-sm text-muted-foreground">
@@ -81,7 +81,7 @@ export default function MainNav() {
                   </p>
                 </Link>
               </li>
-              <li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
                 <Link href="/vpn-servers" className="nav-link">
                   <div className="text-sm font-medium">VPN Servers</div>
                   <p className="text-sm text-muted-foreground">
@@ -89,7 +89,7 @@ export default function MainNav() {
                   </p>
                 </Link>
               </li>
-              <li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
                 <Link href="/money-back-guarantee" className="nav-link">
                   <div className="text-sm font-medium">
                     Money-Back Guarantee
