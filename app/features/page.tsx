@@ -280,14 +280,7 @@ export default function Features() {
                       <li className="flex items-start gap-3">
                         <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-muted-foreground">
-                            Strict No-Logs Policy
-                          </p>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                        <div>
+                          <h1 className="font-bold">Strict No-Logs Policy</h1>
                           <p className="text-muted-foreground">
                             Your browsing history stays yours; no tracking, no
                             collecting, no sharing. Ever.
@@ -297,19 +290,21 @@ export default function Features() {
                       <li className="flex items-start gap-3">
                         <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">Anonymous Browsing</h1>
                           <p className="text-muted-foreground">
-                            Anonymous Browsing Hide your IP and surf the web
-                            incognito; no one will know you were there.
+                            Hide your IP and surf the web incognito; no one will
+                            know you were there.
                           </p>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
                         <Eye className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                         <div>
+                          <h1 className="font-bold">Camouflage Mode</h1>
                           <p className="text-muted-foreground">
-                            Camouflage Mode Blend in seamlessly; make your VPN
-                            traffic look just like regular HTTPS , slipping past
-                            any blocks unnoticed.
+                            Blend in seamlessly; make your VPN traffic look just
+                            like regular HTTPS, slipping past any blocks
+                            unnoticed.
                           </p>
                         </div>
                       </li>

@@ -35,7 +35,6 @@ export default function ComparisonTable() {
       name: "Easy Setup with Tutorial Video",
       competitors: [true, false, false, false, false],
     },
-    { name: "", competitors: [true, true, true, true, false] },
   ];
 
   return (

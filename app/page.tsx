@@ -296,7 +296,7 @@ export default function Home() {
                 VPN Comparison: Novix VPN vs. NordVPN, Surfshark, ProtonVPN, and
                 ExpressVPN
               </h2>
-              <p className="mt-4 text-muted-foreground md:text-md text-center">
+              <p className="mt-5 text-muted-foreground md:text-md text-center max-w-6xl">
                 Selecting the appropriate VPN service depends on several
                 factors, including several characteristics that fit your
                 particular requirements. Here is a comparison of several leading
@@ -352,7 +352,7 @@ export default function Home() {
                 Download Novix VPN Now
               </h2>
               <p className="mt-4 max-w-[700px] md:text-xl">
-                Available on all your favorite platforms
+                Available on Android
               </p>
             </div>
             <div className="flex justify-center items-center gap-2 max-w-3xl mx-auto">

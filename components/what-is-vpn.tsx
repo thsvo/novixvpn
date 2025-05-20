@@ -25,7 +25,7 @@ export default function WhatIsVpn() {
       </Head>
       <h1 className="mb-4 text-4xl font-bold text-gray-800">What is a VPN?</h1>
       <p className="mb-8 text-gray-700">
-        A <strong>VPN</strong>
+        A <strong className="px-1">VPN</strong>
         (Virtual Private Network) is a powerful online tool that lets you browse
         the internet securely and privately by creating a protected tunnel
         between your device and a remote VPN server. This process shields your
