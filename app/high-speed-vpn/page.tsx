@@ -248,7 +248,7 @@ export default function HighSpeedVPNPage() {
       </section>
 
       {/* App Showcase Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-900 dark:to-gray-800">
+      {/* <section className="py-20 bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
@@ -348,13 +348,60 @@ export default function HighSpeedVPNPage() {
             </div>
           </div>
         </div>
+      </section> */}
+      {/* Extra Features Section */}
+      <section className="w-full py-16 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Extra Features</h2>
+              <p className="text-lg text-gray-600">
+                Beyond speed, Novix VPN offers additional features to enhance
+                your online experience.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-2 rounded-lg bg-primary-100 mt-1">
+                    <Shield className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-gray-600">
+                    Should the VPN fail, it will maintain your connection safely
+                    and not slow you down.
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-2 rounded-lg bg-primary-100 mt-1">
+                    <Shield className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-gray-600">
+                    Under Flexible Plans, no commitment pressure; weekly,
+                    monthly, and annual choices.
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-2 rounded-lg bg-primary-100 mt-1">
+                    <Shield className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-gray-600">
+                    Annual memberships offer extra days and unique benefits.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Unique Selling Point */}
       <section className="py-20 bg-white dark:bg-gray-950">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-2">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 What Makes Novix VPN Unique?
               </h2>
@@ -374,13 +421,13 @@ export default function HighSpeedVPNPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-700 text-white">
+      <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-700">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Experience True Speed?
             </h2>
-            <p className="text-xl mb-10 text-white/90">
+            <p className="text-xl mb-10 text-muted-foreground">
               If slow VPNs that offer a lot but don't deliver are wearing you
               out, it's time to switch. Novix VPN is what a current VPN should
               be like: fast, easy, and safe. Right now, give it a try to see how
