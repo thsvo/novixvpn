@@ -12,16 +12,22 @@ export default function VpnBenefits() {
 
   const accordionItems = [
     {
-      title: "Safeguard Your Internet Connection",
+      title: "Hide your IP address",
       content:
-        "From your Android smartphone to the VPN provider's server and the Internet, a VPN constructs a secure and protected tunnel.  It keeps your data and activities safe from hostile people, ensuring your personal information is really safe.",
+        "Connect to ghost everything. A VPN connects your device to its server and assigns a new IP address for your device replacing the original one. This means a VPN hides your online activity and location, making it harder to track you.",
       image: "/benefits-1.png",
     },
     {
-      title: "Lifts Internet Restrictions",
+      title: "Guard your device",
       content:
-        "VPNs let you use streaming services, applications, and websites limited by geography, regardless of your actual location.  Whether one is watching Netflix US in another nation or unblocking banned websites, it keeps transparency.  A VPN lets you create your own Internet regulations.Keeps You Private A VPN hides your IP address and stops trackers from monitoring your online activity.  No more targeted ads or location profiling.  Browse without leaving a trail behind.",
+        "Ensure advanced security for your device and data, and use your phone confidently. A VPN channels your internet connection through a secured tunnel and shields your device from cyber-threats.",
       image: "/benefits-2.png",
+    },
+    {
+      title: "Safely access contents",
+      content:
+        "Fly to wherever you wish to go — virtually. A VPN enables you to choose from a world-wide network of servers and decide your virtual location. This enables you to access region-specific contents from anywhere. Enjoy your online freedom.",
+      image: "/benefits-3.png",
     },
   ];
 
