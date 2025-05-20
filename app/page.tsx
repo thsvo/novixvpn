@@ -50,16 +50,6 @@ export default function Home() {
                     <li>
                       <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
                         <Check className="text-primary" />
-                        Double Encrypted Routing
-                      </div>
-                      <span className="text-muted-foreground md:ml-8 text-sm">
-                        Your traffic moves through two secure servers, not one.
-                        Because one wall isn’t enough.
-                      </span>
-                    </li>
-                    <li>
-                      <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
-                        <Check className="text-primary" />
                         Blazing-Fast Performance
                       </div>
                       <span className="text-muted-foreground md:ml-8 text-sm">
