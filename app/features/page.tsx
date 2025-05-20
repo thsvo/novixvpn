@@ -6,10 +6,7 @@ import {
   Lock,
   Zap,
   Globe,
-  Check,
   Smartphone,
-  Laptop,
-  Tv,
   Server,
   Eye,
   Clock,
@@ -91,11 +88,8 @@ export default function Features() {
                     </h2>
                     <p className="text-muted-foreground mb-6">
                       To keep your personal information safe at all times,
-                      <a href="" target="_blank" className="text-blue-500">
-                        NovixVPN
-                      </a>
-                      applies the latest technology in securing data with
-                      cutting-edge protocols.
+                      NovixVPN applies the latest technology in securing data
+                      with cutting-edge protocols.
                     </p>
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
@@ -314,15 +308,8 @@ export default function Features() {
                         <div>
                           <p className="text-muted-foreground">
                             Camouflage Mode Blend in seamlessly; make your VPN
-                            traffic look just like regular{" "}
-                            <a
-                              href="https://www.fortinet.com/resources/cyberglossary/what-is-https"
-                              target="_blank"
-                              className="text-blue-500"
-                            >
-                              HTTPS
-                            </a>
-                            , slipping past any blocks unnoticed.
+                            traffic look just like regular HTTPS , slipping past
+                            any blocks unnoticed.
                           </p>
                         </div>
                       </li>

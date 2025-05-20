@@ -29,14 +29,8 @@ export default function VPNDownloadPage() {
 
             <ul className="space-y-4 list-disc pl-5">
               <li className="text-gray-700">
-                Browse online with total privacy, secure your data, and
-                <a
-                  href="https://www.novixvpn.com/"
-                  target="_blank"
-                  className="text-primary px-1 underline"
-                >
-                  protect your Android device.
-                </a>
+                Browse online with total privacy, secure your data, and protect
+                your Android device.
               </li>
               <li className="text-gray-700">
                 Easily stop annoying trackers and shield yourself from hostile

@@ -12,19 +12,12 @@ export default function AndroidVPNInfo() {
         {/* Right column: Paragraph */}
         <div className="md:w-1/2">
           <p className="text-gray-600 leading-relaxed">
-            A
-            <a
-              href="https://www.cactusvpn.com/"
-              target="_blank"
-              className="text-primary px-1 underline"
-            >
-              VPN for Android
-            </a>
-            hides your IP address, secures your data, and protects your online
-            behavior on any Android phone or tablet by building a secure tunnel
-            between the VPN server and your phone. A VPN keeps your connection
-            safe, and helps you get around geographical limits whether you're
-            using public Wi-Fi, streaming or surfing discreetly.
+            A VPN for Android hides your IP address, secures your data, and
+            protects your online behavior on any Android phone or tablet by
+            building a secure tunnel between the VPN server and your phone. A
+            VPN keeps your connection safe, and helps you get around
+            geographical limits whether you're using public Wi-Fi, streaming or
+            surfing discreetly.
           </p>
         </div>
       </div>

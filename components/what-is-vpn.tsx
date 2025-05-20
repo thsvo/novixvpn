@@ -26,17 +26,11 @@ export default function WhatIsVpn() {
       <h1 className="mb-4 text-4xl font-bold text-gray-800">What is a VPN?</h1>
       <p className="mb-8 text-gray-700">
         A <strong>VPN</strong>
-        <a
-          href="https://www.novixvpn.com/"
-          target="_blank"
-          className="underline text-blue-500 px-1"
-        >
-          (Virtual Private Network)
-        </a>
-        is a powerful online tool that lets you browse the internet securely and
-        privately by creating a protected tunnel between your device and a
-        remote VPN server. This process shields your data from hackers,
-        snoopers, or anyone trying to spy on your online activity.
+        (Virtual Private Network) is a powerful online tool that lets you browse
+        the internet securely and privately by creating a protected tunnel
+        between your device and a remote VPN server. This process shields your
+        data from hackers, snoopers, or anyone trying to spy on your online
+        activity.
       </p>
 
       {/* Accordions */}
