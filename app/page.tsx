@@ -267,7 +267,7 @@ export default function Home() {
               </div>
               <div className="relative w-full ">
                 <Image
-                  src="/home-page-middle.png"
+                  src="/One-VPN.png"
                   width={700}
                   height={700}
                   className="relative z-10 mx-auto w-full rounded-md bg-transparent object-cover"
