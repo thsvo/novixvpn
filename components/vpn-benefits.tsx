@@ -15,19 +15,19 @@ export default function VpnBenefits() {
       title: "Hide your IP address",
       content:
         "Connect to ghost everything. A VPN connects your device to its server and assigns a new IP address for your device replacing the original one. This means a VPN hides your online activity and location, making it harder to track you.",
-      image: "/benefits-1.png",
+      image: "/hide-your-ip-address.png",
     },
     {
       title: "Guard your device",
       content:
         "Ensure advanced security for your device and data, and use your phone confidently. A VPN channels your internet connection through a secured tunnel and shields your device from cyber-threats.",
-      image: "/benefits-2.png",
+      image: "/guard-your-device.png",
     },
     {
       title: "Safely access contents",
       content:
         "Fly to wherever you wish to go — virtually. A VPN enables you to choose from a world-wide network of servers and decide your virtual location. This enables you to access region-specific contents from anywhere. Enjoy your online freedom.",
-      image: "/benefits-3.png",
+      image: "/server-features.png",
     },
   ];
 
