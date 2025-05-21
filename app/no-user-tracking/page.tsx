@@ -143,7 +143,7 @@ export default function NoUserTracking() {
               </div>
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Your-Privacy-is-Non-Negotiable.png"
                   alt="No User Tracking"
                   width={600}
                   height={400}
