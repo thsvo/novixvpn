@@ -224,7 +224,7 @@ export default function NoUserTracking() {
             <div className="grid gap-12 md:grid-cols-2 items-center">
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/No-User-Tracking-No-Logs.png"
                   alt="Independent Audit"
                   width={600}
                   height={400}
