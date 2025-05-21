@@ -339,7 +339,7 @@ export default function VPNServers() {
         <section className="bg-muted py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="grid gap-12 md:grid-cols-2 items-center">
-              <div>
+              <div className="md:-mt-10">
                 <h2 className="text-3xl font-bold mb-6">Server Features</h2>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -387,7 +387,7 @@ export default function VPNServers() {
               </div>
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/server-features.png"
                   alt="Server Network Map"
                   width={600}
                   height={400}
