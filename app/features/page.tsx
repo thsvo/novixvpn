@@ -81,8 +81,8 @@ export default function Features() {
               </TabsList>
 
               <TabsContent value="security" className="space-y-8">
-                <div className="grid gap-8 md:grid-cols-2">
-                  <div>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="md:mt-20">
                     <h2 className="text-3xl font-bold mb-4">
                       Military-Grade Protection
                     </h2>
@@ -99,13 +99,9 @@ export default function Features() {
                             Data Protection of AES-256-bit
                           </h1>
                           <p className="text-muted-foreground">
-                            Global governments along with
-                            <a
-                              href="https://cyberexperts.com/unlocking-online-privacy-expert-guide-to-top-vpn-protocols/"
-                              target="_blank"
-                            ></a>
-                            cyber experts rely on the AES-256 algorithm which
-                            ensures protected data travels the world.
+                            Global governments along with cyber experts rely on
+                            the AES-256 algorithm which ensures protected data
+                            travels the world.
                           </p>
                         </div>
                       </li>
@@ -131,11 +127,11 @@ export default function Features() {
                       </li>
                     </ul>
                   </div>
-                  <div className="relative rounded-lg overflow-hidden">
+                  <div className="w-full rounded-lg overflow-hidden max-w-xl">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/Military-Grade-Protection.png"
                       alt="Security Features"
-                      width={600}
+                      width={500}
                       height={400}
                       className="object-cover w-full h-full"
                     />
@@ -145,16 +141,16 @@ export default function Features() {
 
               <TabsContent value="performance" className="space-y-8">
                 <div className="grid gap-8 md:grid-cols-2">
-                  <div className="relative rounded-lg overflow-hidden">
+                  <div className="w-full rounded-lg overflow-hidden max-w-xl">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/Speed-Without-Compromise.png"
                       alt="Performance Features"
                       width={600}
                       height={400}
-                      className="object-cover w-full h-full"
+                      className="object-cover w-full h-full md:-mt-10"
                     />
                   </div>
-                  <div>
+                  <div className="md:mt-20">
                     <h2 className="text-3xl font-bold mb-4">
                       Speed Without Compromise
                     </h2>
@@ -201,7 +197,7 @@ export default function Features() {
 
               <TabsContent value="accessibility" className="space-y-8">
                 <div className="grid gap-8 md:grid-cols-2">
-                  <div>
+                  <div className="md:mt-20">
                     <h2 className="text-3xl font-bold mb-4">
                       Easy Accessibility
                     </h2>
@@ -245,9 +241,9 @@ export default function Features() {
                       </li>
                     </ul>
                   </div>
-                  <div className="relative rounded-lg overflow-hidden">
+                  <div className="w-full rounded-lg overflow-hidden max-w-xl">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/Easy-Accessibility.png"
                       alt="Accessibility Features"
                       width={600}
                       height={400}
@@ -259,16 +255,16 @@ export default function Features() {
 
               <TabsContent value="privacy" className="space-y-8">
                 <div className="grid gap-8 md:grid-cols-2">
-                  <div className="relative rounded-lg overflow-hidden">
+                  <div className="rounded-lg overflow-hidden max-w-xl">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/Complete-Privacy.png"
                       alt="Privacy Features"
-                      width={600}
+                      width={500}
                       height={400}
                       className="object-cover w-full h-full"
                     />
                   </div>
-                  <div>
+                  <div className="md:mt-32">
                     <h2 className="text-3xl font-bold mb-4">
                       Complete Privacy
                     </h2>
