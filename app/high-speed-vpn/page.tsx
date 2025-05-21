@@ -48,7 +48,7 @@ export default function HighSpeedVPNPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-900 dark:to-gray-800">
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-        <div className="container mx-auto px-4 py-20 lg:py-32">
+        <div className="container mx-auto px-4 py-10 lg:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-primary bg-primary-100 rounded-full">
@@ -81,19 +81,15 @@ export default function HighSpeedVPNPage() {
                 </Link>
               </div>
             </div>
-            <div className="order-1 lg:order-2 relative">
-              <div className="relative mx-auto w-full max-w-md">
-                <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
-                <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-primary rounded-full opacity-20 animate-pulse delay-300"></div>
-                <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden">
-                  <Image
-                    src="/images/vpn-hero-new.png"
-                    alt="Novix VPN Security"
-                    width={500}
-                    height={500}
-                    className="w-full h-auto"
-                  />
-                </div>
+            <div className="order-1 lg:order-2">
+              <div className="mx-auto w-full max-w-xl">
+                <Image
+                  src="/high-speed-vpn.png"
+                  alt="Novix VPN Security"
+                  width={700}
+                  height={700}
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>
