@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ComparisonTable() {
   const features = [
     {
-      name: "Tailored for Android",
+      name: "Tailored Just for Android",
       competitors: [true, false, false, false, false],
     },
     {
@@ -34,6 +34,10 @@ export default function ComparisonTable() {
     {
       name: "Easy Setup with Tutorial Video",
       competitors: [true, false, false, false, false],
+    },
+    {
+      name: "IP Checker",
+      competitors: [true, true, true, true, true],
     },
   ];
 
