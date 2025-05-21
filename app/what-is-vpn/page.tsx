@@ -89,7 +89,7 @@ export default function WhatIsVPN() {
               </div>
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/VPN-Explained-Simply.png"
                   alt="VPN Tunnel Illustration"
                   width={600}
                   height={400}
