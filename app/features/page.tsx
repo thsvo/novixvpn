@@ -147,7 +147,7 @@ export default function Features() {
                       alt="Performance Features"
                       width={600}
                       height={400}
-                      className="object-cover w-full h-full md:-mt-10"
+                      className="object-cover w-full h-full"
                     />
                   </div>
                   <div className="md:mt-20">

@@ -131,7 +131,7 @@ export default function Home() {
               </div>
               <div className="">
                 <Image
-                  src="/home-page.png"
+                  src="/Home-page-top.png"
                   width={800}
                   height={800}
                   alt="playstore"
