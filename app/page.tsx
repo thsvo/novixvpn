@@ -36,8 +36,8 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_650px]">
               <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-6">
-                  <div className="text-center md:text-left">
+                <div className="space-y-2 md:space-y-6">
+                  <div className="">
                     <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none ">
                       Guard What’s Yours. Ghost the Rest.
                     </h1>
@@ -46,35 +46,35 @@ export default function Home() {
                       deserve without the trade-offs.
                     </p>
                   </div>
-                  <ul className="text-center md:text-left">
+                  <ul>
                     <li>
-                      <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
+                      <div className="flex items-center gap-2 font-bold">
                         <Check className="text-primary" />
                         Blazing-Fast Performance
                       </div>
-                      <span className="text-muted-foreground md:ml-8 text-sm">
+                      <p className="text-muted-foreground ml-8 text-sm">
                         No throttling. No slowdowns. Just smooth, uninterrupted
                         browsing and streaming.
-                      </span>
+                      </p>
                     </li>
                     <li>
-                      <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
+                      <div className="flex items-center gap-2 font-bold">
                         <Check className="text-primary" />
                         One Account, Five Devices
                       </div>
-                      <span className="text-muted-foreground md:ml-8 text-sm">
+                      <p className="text-muted-foreground ml-8 text-sm">
                         Your protection travels with you across devices,
                         seamlessly.
-                      </span>
+                      </p>
                     </li>
                     <li>
-                      <div className="flex items-center gap-2 font-bold justify-center md:justify-start">
+                      <div className="flex items-center gap-2 font-bold">
                         <Check className="text-primary" />
                         Zero Logs. Zero Tracking.
                       </div>
-                      <span className="text-muted-foreground md:ml-8 text-sm">
+                      <p className="text-muted-foreground ml-8 text-sm">
                         We don’t monitor. We don’t store. We don’t compromise.
-                      </span>
+                      </p>
                     </li>
                   </ul>
                   {/* promotion section */}
@@ -82,7 +82,7 @@ export default function Home() {
                     <HeroPromotionCom />
                   </Link>
                 </div>
-                <div className="flex flex-col justify-center md:justify-start gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Claim Extra Bonus →
                   </Button>
@@ -99,7 +99,7 @@ export default function Home() {
                     truly private.
                   </span>
                 </div>
-                <div className="flex items-center justify-center md:justify-start gap-4">
+                <div className="flex items-center gap-4">
                   <div className="flex">
                     {Array(5)
                       .fill(null)
@@ -115,7 +115,7 @@ export default function Home() {
                   </span>
                 </div>
                 {/* download links */}
-                <div className="w-full flex justify-center md:justify-start mt-5">
+                <div className="w-full flex mt-5">
                   <Link
                     href="https://play.google.com/store"
                     className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
@@ -292,11 +292,11 @@ export default function Home() {
           </Head>
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-start mb-12">
-              <h2 className="text-2xl font-bold tracking-tighter  md:text-5xl text-center">
+              <h2 className="text-2xl font-bold tracking-tighter  md:text-5xl md:text-center">
                 VPN Comparison: Novix VPN vs. NordVPN, Surfshark, ProtonVPN, and
                 ExpressVPN
               </h2>
-              <p className="mt-5 text-muted-foreground md:text-md text-center max-w-6xl">
+              <p className="mt-5 text-muted-foreground md:text-md md:text-center max-w-6xl">
                 Selecting the appropriate VPN service depends on several
                 factors, including several characteristics that fit your
                 particular requirements. Here is a comparison of several leading
@@ -305,18 +305,18 @@ export default function Home() {
                 particular characteristics meant to improve your browsing
                 experience, security, and privacy.
               </p>
-              <h3 className="text-lg text-muted-foreground w-full font-bold text-start">
+              <h3 className="text-lg text-muted-foreground w-full font-bold text-start pt-5">
                 Comparison of Features:
               </h3>
             </div>
             <ComparisonTable />
           </div>
           <div className="mt-16 md:mt-20 container">
-            <h1 className="text-2xl font-bold tracking-tighter md:text-5xl text-center">
+            <h1 className="text-3xl font-bold tracking-tighter md:text-5xl md:text-center">
               What VPN is Best for You?
             </h1>
             <div className="py-5 md:py-8 max-w-[1000px] mx-auto">
-              <p className="mt-4 text-muted-foreground md:text-md text-justify">
+              <p className="mt-4 text-muted-foreground md:text-md md:text-justify">
                 Every VPN service has its own advantages; hence, the ideal
                 choice relies on which characteristics are most important to
                 you. Novix VPN distinguishes itself by providing customized
@@ -325,7 +325,7 @@ export default function Home() {
                 strong security measures such as WireGuard and large server
                 lists.
               </p>
-              <p className="mt-4 text-muted-foreground md:text-md text-center">
+              <p className="mt-4 text-muted-foreground md:text-md md:text-center">
                 Novix VPN provides a more complete annual service for those who
                 value things like instructional video configurations or unique
                 VIP access. For people who appreciate simple, user-friendly VPNs
@@ -333,7 +333,7 @@ export default function Home() {
                 features like WireGuard or real-time speed checks, ExpressVPN
                 might be perfect.
               </p>
-              <p className="mt-4 text-muted-foreground md:text-md text-center">
+              <p className="mt-4 text-muted-foreground md:text-md md:text-center">
                 Ultimately, your choice will rely on your particular needs,
                 whether they be financial freedom, platform compatibility, or
                 sophisticated security features.

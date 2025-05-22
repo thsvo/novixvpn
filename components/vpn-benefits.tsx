@@ -33,7 +33,7 @@ export default function VpnBenefits() {
 
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto">
-      <div className="text-center 0">
+      <div className="md:text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
           The Benefits of Using a VPN
         </h2>
