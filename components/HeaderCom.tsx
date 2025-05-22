@@ -52,9 +52,9 @@ export default function HeaderCom() {
   return (
     <>
       <header
-        className={`w-full sticky top-0 z-50 transition-all duration-300 ${
+        className={`w-full sticky top-0 z-50 transition-all duration-300 delay-100 ${
           isScrolled
-            ? "bg-white md:top-2 shadow md:rounded-full  mx-auto mt-2 border border-[#E2E2E4]"
+            ? "bg-white md:container md:top-2 shadow md:rounded-full  mx-auto mt-2 border border-[#E2E2E4]"
             : "border-b bg-white"
         } `}
       >
