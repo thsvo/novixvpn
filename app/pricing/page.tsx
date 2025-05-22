@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Header */}
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 min-h-full">
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Link href="/">
@@ -49,7 +49,7 @@ export default function Home() {
             </div>
             <Tabs defaultValue="monthly" className="w-full max-w-full mx-auto">
               <TabsContent value="monthly">
-                <PricingCards interval="monthly" />
+                <PricingCards />
               </TabsContent>
             </Tabs>
           </div>
