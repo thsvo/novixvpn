@@ -54,12 +54,17 @@ export default function VPNFeaturesGrid() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
         {features.map((feature, index) => (
-          <div key={index} className="flex flex-col items-start">
+          <div
+            key={index}
+            className="flex flex-col items-center md:items-start"
+          >
             <div className="mb-4">{feature.icon}</div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
               {feature.title}
             </h3>
-            <p className="text-gray-600">{feature.description}</p>
+            <p className="text-gray-600 text-center md:text-left">
+              {feature.description}
+            </p>
           </div>
         ))}
       </div>

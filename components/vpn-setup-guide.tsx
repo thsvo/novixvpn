@@ -21,32 +21,8 @@ export default function VPNSetupGuide() {
 
           {/* Main content with phone image */}
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center mb-12">
-            <div className="lg:w-2/5">
-              <div className="relative w-[240px] h-[480px] mx-auto">
-                <div className="absolute inset-0 rounded-[36px] border-8 border-gray-800 overflow-hidden bg-gray-800">
-                  <div className="absolute top-0 left-0 right-0 h-6 bg-gray-800 z-10"></div>
-                  <div className="h-full w-full bg-primary/10 flex items-center justify-center">
-                    <div className="w-3/4 aspect-square relative">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center">
-                          <div className="w-16 h-16 rounded-full bg-primary/30 flex items-center justify-center">
-                            <Shield className="h-8 w-8 text-primary" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="absolute bottom-0 left-0 right-0 h-12 bg-white/90 rounded-lg flex items-center justify-center">
-                        <span className="text-primary font-medium text-sm">
-                          NovixVPN Connected
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:w-3/5">
-              <div className="space-y-8">
+            <div className="">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Research and Download Section */}
                 <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-4 mb-4">
