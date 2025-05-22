@@ -99,7 +99,7 @@ export default function Home() {
                     truly private.
                   </span>
                 </div>
-                <div className="flex items-center gap-4">
+                {/* <div className="flex items-center gap-4">
                   <div className="flex">
                     {Array(5)
                       .fill(null)
@@ -113,7 +113,7 @@ export default function Home() {
                   <span className="text-sm font-medium">
                     25,798 reviews on Trustpilot
                   </span>
-                </div>
+                </div> */}
                 {/* download links */}
                 <div className="w-full flex mt-5">
                   <Link
