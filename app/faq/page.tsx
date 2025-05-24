@@ -67,9 +67,9 @@ export default function FAQPage() {
             experience.
           </p>
           <p className="font-medium">
-            👉 Bonus: We also offer a Try Extra Free for 3 Days for yearly
-            plans, so you can explore premium features risk-free before
-            committing.
+            <strong>Bonus:</strong> We also offer a Try Extra Free for 3 Days
+            for yearly plans, so you can explore premium features risk-free
+            before committing.
           </p>
         </div>
       ),
@@ -85,7 +85,7 @@ export default function FAQPage() {
             activity stays private and protected at all times.
           </p>
           <div>
-            <p className="font-semibold">🛡️ Advanced VPN Protocols</p>
+            <p className="font-semibold">Advanced VPN Protocols</p>
             <p className="ml-6">
               Novix supports
               <a
@@ -101,7 +101,7 @@ export default function FAQPage() {
             </p>
           </div>
           <div>
-            <p className="font-semibold">🧱 Built-In Kill Switch</p>
+            <p className="font-semibold">Built-In Kill Switch</p>
             <p className="ml-6">
               In case your connection drops, the <strong>Kill Switch</strong>
               automatically disconnects your device from the internet to prevent
@@ -109,7 +109,7 @@ export default function FAQPage() {
             </p>
           </div>
           <div>
-            <p className="font-semibold">🛠️ Hardened Backend Architecture</p>
+            <p className="font-semibold">Hardened Backend Architecture</p>
             <p className="ml-6">
               Our backend is developed using secure Python frameworks and
               follows the OWASP Top 10 security standards—protecting you from
@@ -118,9 +118,9 @@ export default function FAQPage() {
             </p>
           </div>
           <div>
-            <p className="font-semibold">👁️ No Data Tracking or Logs</p>
+            <p className="font-semibold">No Data Tracking or Logs</p>
             <p className="ml-6">
-              Novix VPN is designed with a{" "}
+              Novix VPN is designed with a
               <strong>strict privacy-first approach</strong>. We don’t track
               your browsing activity, and we don’t store sensitive usage
               logs—your data stays yours.
