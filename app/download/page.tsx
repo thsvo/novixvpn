@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Clock } from "lucide-react";
 import HeaderCom from "@/components/HeaderCom";
 import AndroidVPNInfo from "@/components/android-vpn-info";
-import VPNFeaturesGrid from "@/components/vpn-features-grid";
 import VPNSetupGuide from "@/components/vpn-setup-guide";
 import VPNPromoBanner from "@/components/vpn-promo-banner";
 import VpnComparison from "@/components/vpn-comparison";
@@ -84,8 +83,6 @@ export default function VPNDownloadPage() {
         <AndroidVPNInfo />
         {/* vpn comparison component */}
         <VpnComparison />
-        {/* Android VPN features component */}
-        <VPNFeaturesGrid />
         {/* set up a VPN app component */}
         <VPNSetupGuide />
         {/* VPN PromoBanner component */}
