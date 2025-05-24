@@ -233,7 +233,7 @@ export default function WhyNovixVPN() {
           </div>
         </section>
 
-        <section className="py-12 md:py-24">
+        {/* <section className="py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
@@ -322,7 +322,97 @@ export default function WhyNovixVPN() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
+        {/* <section className="py-12 md:py-24">
+          <div className="container px-4 md:px-6">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+                Trusted by Millions Worldwide
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Join the millions of users who trust Novix VPN to protect their
+                online privacy and security.
+              </p>
+            </div>
+
+            <div className="grid gap-8 md:grid-cols-3">
+              <div className="bg-background rounded-lg p-6 shadow border border-border">
+                <div className="flex mb-4">
+                  {Array(5)
+                    .fill(null)
+                    .map((_, i) => (
+                      <svg
+                        key={i}
+                        className="h-5 w-5 text-yellow-400 fill-current"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                    ))}
+                </div>
+                <p className="mb-4 italic text-muted-foreground">
+                  "Novix VPN has been a game-changer for me. The speed is
+                  incredible and I can finally stream without buffering while
+                  staying protected."
+                </p>
+                <div className="font-medium">Alex J., United States</div>
+              </div>
+
+              <div className="bg-background rounded-lg p-6 shadow border border-border">
+                <div className="flex mb-4">
+                  {Array(5)
+                    .fill(null)
+                    .map((_, i) => (
+                      <svg
+                        key={i}
+                        className="h-5 w-5 text-yellow-400 fill-current"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                    ))}
+                </div>
+                <p className="mb-4 italic text-muted-foreground">
+                  "I travel frequently for work and Novix VPN keeps me safe on
+                  public WiFi. The app is so easy to use - just one tap and I'm
+                  protected!"
+                </p>
+                <div className="font-medium">Sarah C., Canada</div>
+              </div>
+
+              <div className="bg-background rounded-lg p-6 shadow border border-border">
+                <div className="flex mb-4">
+                  {Array(5)
+                    .fill(null)
+                    .map((_, i) => (
+                      <svg
+                        key={i}
+                        className="h-5 w-5 text-yellow-400 fill-current"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                    ))}
+                </div>
+                <p className="mb-4 italic text-muted-foreground">
+                  "After trying several VPN services, I've finally found one
+                  that doesn't slow down my connection. The customer support is
+                  also excellent."
+                </p>
+                <div className="font-medium">Michael R., Spain</div>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                Try Novix VPN Risk-Free
+              </Button>
+              <p className="mt-4 text-sm text-muted-foreground">
+                30-day money-back guarantee. No questions asked.
+              </p>
+            </div>
+          </div>
+        </section> */}
       </main>
 
       <Footer />
