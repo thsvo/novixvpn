@@ -236,90 +236,6 @@ export default function WhatIsVPN() {
           </div>
         </section>
 
-        <section className="bg-muted py-12 md:py-24">
-          <div className="container px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
-                Common VPN Use Cases
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                How people around the world use VPNs in their daily lives.
-              </p>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Secure Remote Work</h3>
-                  <p className="text-muted-foreground">
-                    Remote workers use VPNs to securely access company resources
-                    and protect sensitive business data when working from home
-                    or public places.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Streaming Content</h3>
-                  <p className="text-muted-foreground">
-                    Access your favorite streaming services and content
-                    libraries from around the world, regardless of your physical
-                    location.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    Secure Online Banking
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Protect your financial information when accessing online
-                    banking services, especially when using public Wi-Fi
-                    networks.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                    Safe Online Shopping
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Keep your payment details and personal information secure
-                    when shopping online, preventing data theft and fraud.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Travel Security</h3>
-                  <p className="text-muted-foreground">
-                    Travelers use VPNs to maintain access to their home
-                    country's services and protect their data when using
-                    unfamiliar networks abroad.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Privacy Protection</h3>
-                  <p className="text-muted-foreground">
-                    Many people use VPNs simply to maintain their privacy online
-                    and prevent tracking by advertisers, websites, and other
-                    third parties.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         <section className="py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -383,7 +299,6 @@ export default function WhatIsVPN() {
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );
