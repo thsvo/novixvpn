@@ -227,16 +227,6 @@ export default function WhyNovixVPN() {
                       </p>
                     </div>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-medium">Multi-Platform Support</h4>
-                      <p className="text-muted-foreground">
-                        Protect all your devices with apps for Windows, Mac,
-                        iOS, Android, and more.
-                      </p>
-                    </div>
-                  </li>
                 </ul>
               </div>
             </div>
