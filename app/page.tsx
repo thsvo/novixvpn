@@ -311,35 +311,6 @@ export default function Home() {
             </div>
             <ComparisonTable />
           </div>
-          <div className="mt-16 md:mt-20 container">
-            <h1 className="text-3xl font-bold tracking-tighter md:text-5xl md:text-center">
-              What VPN is Best for You?
-            </h1>
-            <div className="py-5 md:py-8 max-w-[1000px] mx-auto">
-              <p className="mt-4 text-muted-foreground md:text-md md:text-justify">
-                Every VPN service has its own advantages; hence, the ideal
-                choice relies on which characteristics are most important to
-                you. Novix VPN distinguishes itself by providing customized
-                Android compatibility, a reasonable price, and real-time speed
-                tests. NordVPN and Surfshark, on the other hand, both shine with
-                strong security measures such as WireGuard and large server
-                lists.
-              </p>
-              <p className="mt-4 text-muted-foreground md:text-md md:text-center">
-                Novix VPN provides a more complete annual service for those who
-                value things like instructional video configurations or unique
-                VIP access. For people who appreciate simple, user-friendly VPNs
-                with a wide server range but don't need particular extra
-                features like WireGuard or real-time speed checks, ExpressVPN
-                might be perfect.
-              </p>
-              <p className="mt-4 text-muted-foreground md:text-md md:text-center">
-                Ultimately, your choice will rely on your particular needs,
-                whether they be financial freedom, platform compatibility, or
-                sophisticated security features.
-              </p>
-            </div>
-          </div>
         </section>
         {/* Download Section */}
         <section
