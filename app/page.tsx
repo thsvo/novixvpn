@@ -360,7 +360,7 @@ export default function Home() {
             <PricingCards />
           </div>
         </section>
-        {/* Testimonials Section */}
+        {/* Testimonials Section
         <section id="testimonials" className="bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
@@ -373,7 +373,7 @@ export default function Home() {
             </div>
             <Testimonials />
           </div>
-        </section>
+        </section> */}
         {/* what is vpn section */}
         <div className="md:mb-24">
           <WhatIsVpn />
