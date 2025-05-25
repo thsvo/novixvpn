@@ -115,7 +115,7 @@ export default function NoUserTracking() {
               </div>
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="/Your-Privacy-is-Non-Negotiable.png"
+                  src="/Your-Privacy-is-Non-Negotiable.webp"
                   alt="No User Tracking"
                   width={600}
                   height={400}
@@ -196,7 +196,7 @@ export default function NoUserTracking() {
             <div className="grid gap-12 md:grid-cols-2 items-center">
               <div className="relative rounded-lg overflow-hidden">
                 <Image
-                  src="/No-User-Tracking-No-Logs.png"
+                  src="/No-User-Tracking-No-Logs.webp"
                   alt="Independent Audit"
                   width={600}
                   height={400}

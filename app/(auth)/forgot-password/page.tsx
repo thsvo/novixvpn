@@ -49,7 +49,7 @@ export default function ForgotPasswordPage() {
           className="mx-auto -mb-14"
           height={0}
           width={248}
-          src="/novix-logo.png"
+          src="/novix-logo.webp"
           alt="NovixVPN Logo"
         />
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">

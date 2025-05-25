@@ -14,7 +14,7 @@ export default function LoginPage() {
           className="mx-auto -mb-14"
           height={0}
           width={248}
-          src="/novix-logo.png"
+          src="/novix-logo.webp"
           alt="NovixVPN Logo"
         />
       </div>

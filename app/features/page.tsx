@@ -101,7 +101,7 @@ export default function Features() {
                   </div>
                   <div className="w-full rounded-lg overflow-hidden max-w-xl">
                     <Image
-                      src="/Military-Grade-Protection.png"
+                      src="/Military-Grade-Protection.webp"
                       alt="Security Features"
                       width={500}
                       height={400}
@@ -115,7 +115,7 @@ export default function Features() {
                 <div className="grid gap-8 md:grid-cols-2">
                   <div className="w-full rounded-lg overflow-hidden max-w-xl">
                     <Image
-                      src="/Speed-Without-Compromise.png"
+                      src="/Speed-Without-Compromise.webp"
                       alt="Performance Features"
                       width={600}
                       height={400}
@@ -215,7 +215,7 @@ export default function Features() {
                   </div>
                   <div className="w-full rounded-lg overflow-hidden max-w-xl">
                     <Image
-                      src="/Easy-Accessibility.png"
+                      src="/Easy-Accessibility.webp"
                       alt="Accessibility Features"
                       width={600}
                       height={400}
@@ -229,7 +229,7 @@ export default function Features() {
                 <div className="grid gap-8 md:grid-cols-2">
                   <div className="rounded-lg overflow-hidden max-w-xl">
                     <Image
-                      src="/Complete-Privacy.png"
+                      src="/Complete-Privacy.webp"
                       alt="Privacy Features"
                       width={500}
                       height={400}

@@ -57,7 +57,7 @@ export default function HighSpeedVPNPage() {
             <div className="order-1 lg:order-2">
               <div className="mx-auto w-full max-w-xl">
                 <Image
-                  src="/high-speed-vpn.png"
+                  src="/high-speed-vpn.webp"
                   alt="Novix VPN Security"
                   width={700}
                   height={700}

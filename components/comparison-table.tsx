@@ -50,7 +50,7 @@ export default function ComparisonTable() {
             <th className="p-4 text-center bg-primary/5 border-t border-l border-r border-border">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/novix-vpn.png"
+                  src="/novix-vpn.webp"
                   alt="Novix VPN Logo"
                   width={32}
                   height={32}
@@ -62,7 +62,7 @@ export default function ComparisonTable() {
             <th className="p-4 text-center">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/nord-vpn.png"
+                  src="/nord-vpn.webp"
                   width={32}
                   height={32}
                   alt="NordVPN"
@@ -74,7 +74,7 @@ export default function ComparisonTable() {
             <th className="p-4 text-center">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/surfshark.png"
+                  src="/surfshark.webp"
                   width={32}
                   height={32}
                   alt="NordVPN"
@@ -98,7 +98,7 @@ export default function ComparisonTable() {
             <th className="p-4 text-center">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/protonvpn.png"
+                  src="/protonvpn.webp"
                   width={32}
                   height={32}
                   alt="ProtonVPN"
@@ -110,7 +110,7 @@ export default function ComparisonTable() {
             <th className="p-4 text-center">
               <div className="flex flex-col items-center justify-center">
                 <Image
-                  src="/express-vpn.png"
+                  src="/express-vpn.webp"
                   width={32}
                   height={32}
                   alt="ProtonVPN"

@@ -30,9 +30,9 @@ const featuredArticle = {
   readTime: 173,
   author: {
     name: "Novix VPN",
-    avatar: "/novix-vpn.png",
+    avatar: "/novix-vpn.webp",
   },
-  image: "/blog-page.png",
+  image: "/blog-page.webp",
 };
 
 async function getArticles(): Promise<Article[]> {

@@ -116,7 +116,7 @@ export default function Home() {
                     className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
                   >
                     <Image
-                      src="/playstore-dark-square.png"
+                      src="/playstore-dark-square.webp"
                       width={200}
                       height={150}
                       alt="playstore"
@@ -126,7 +126,7 @@ export default function Home() {
               </div>
               <div className="md:-mt-7">
                 <Image
-                  src="/Home-page-update.png"
+                  src="/Home-page-update.webp"
                   width={800}
                   height={800}
                   alt="playstore"
@@ -262,7 +262,7 @@ export default function Home() {
               </div>
               <div className="relative w-full ">
                 <Image
-                  src="/One-VPN.png"
+                  src="/One-VPN.webp"
                   width={700}
                   height={700}
                   className="relative z-10 mx-auto w-full rounded-md bg-transparent object-cover"
@@ -332,7 +332,7 @@ export default function Home() {
                 className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
               >
                 <Image
-                  src="playstore-light.png"
+                  src="playstore-light.webp"
                   width={250}
                   height={150}
                   alt="playstore"

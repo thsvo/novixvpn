@@ -149,7 +149,7 @@ export default function Footer() {
             className="w-full max-w-[200px]"
           >
             <Image
-              src="/playstore-dark-square.png"
+              src="/playstore-dark-square.webp"
               width={250}
               height={75}
               alt="Get it on Google Play"
@@ -366,7 +366,7 @@ export default function Footer() {
         )}
 
         {/* Copyright */}
-        <div className="mt-6 pt-4 text-gray-400 text-sm">
+        <div className="mt-6 pt-4 text-gray-400 text-sm text-center">
           <p>
             © {new Date().getFullYear()} Novix Security. All rights reserved
           </p>

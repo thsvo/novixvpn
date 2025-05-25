@@ -63,7 +63,7 @@ export default function HeaderCom() {
           <Link href="/">
             <div className="flex items-center gap-2">
               <Image
-                src="/novix-logo.png"
+                src="/novix-logo.webp"
                 alt="Novix VPN Logo"
                 width={180}
                 height={58}
@@ -111,7 +111,7 @@ export default function HeaderCom() {
                   <Link href="/">
                     <div className="hover:bg-gray-100 p-2 rounded-md ">
                       <Image
-                        src="/novix-logo.png"
+                        src="/novix-logo.webp"
                         height={0}
                         width={150}
                         alt=""
@@ -159,7 +159,7 @@ export default function HeaderCom() {
             <div className="flex items-center justify-between py-4 pr-4 border-b">
               <Link href="/" onClick={() => setMobileNavOpen(false)}>
                 <Image
-                  src="/novix-logo.png"
+                  src="/novix-logo.webp"
                   alt="Novix VPN Logo"
                   width={150}
                   height={48}
