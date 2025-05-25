@@ -24,8 +24,8 @@ export default function ComparisonTable() {
       competitors: [true, true, true, true, true],
     },
     {
-      name: "Kill Switch Protection",
-      competitors: [true, true, true, true, true],
+      name: "free Kill Switch Protection all",
+      competitors: [true, false, false, false, false],
     },
     {
       name: "Real-Time Speed Test",
