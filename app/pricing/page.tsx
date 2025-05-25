@@ -8,33 +8,6 @@ import { ArrowLeft } from "lucide-react";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Header */}
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 min-h-full">
-        <div className="container flex h-16 items-center justify-between py-4">
-          <div className="flex items-center gap-2">
-            <Link href="/">
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/novix-logo.png"
-                  alt="Novix VPN Logo"
-                  width={180}
-                  height={58}
-                  className="rounded-md"
-                  draggable="false"
-                />
-              </div>
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button asChild variant="ghost">
-              <Link href="/">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </header>
       <main className="flex-1">
         {/* Pricing Section */}
         <section id="pricing" className="bg-muted/50 py-12 md:py-24">

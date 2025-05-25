@@ -46,38 +46,38 @@ export default function VpnBenefits() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 items-start">
+      <div className="w-full flex justify-center items-center gap-8 py-10">
         {/* Image container */}
-        <div className="flex justify-center sticky top-24 min-h-[500px]">
+        <div className="relative w-[700px] h-[700px]">
           {accordionItems.map((item, index) => (
             <div
               key={index}
-              className={`absolute transition-opacity duration-500 ${
+              className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ${
                 openItem === index ? "opacity-100 z-10" : "opacity-0 z-0"
               }`}
             >
               <Image
                 src={item.image}
                 alt={`Illustration for ${item.title}`}
-                width={600}
-                height={600}
-                className="object-contain"
+                width={700}
+                height={700}
+                className="object-contain w-full h-full scale-110"
               />
             </div>
           ))}
         </div>
 
         {/* Accordion container */}
-        <div className="flex flex-col justify-center h-full space-y-4">
+        <div className="flex flex-col justify-center space-y-4 max-w-md">
           {accordionItems.map((item, index) => (
             <div
               key={index}
-              className={`border-l-2 ${
+              className={`border-l-4 pl-4 transition-colors ${
                 openItem === index ? "border-blue-500" : "border-[#B1B1B4]"
               }`}
             >
               <div
-                className="pl-4 py-2 cursor-pointer"
+                className="py-2 cursor-pointer"
                 onClick={() => toggleAccordion(index)}
               >
                 <h3 className="text-xl font-semibold text-gray-700">

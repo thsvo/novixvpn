@@ -18,33 +18,6 @@ import { Button } from "@/components/ui/button";
 export default function HighSpeedVPNPage() {
   return (
     <div className="bg-white">
-      {/* Header */}
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between py-4">
-          <div className="flex items-center gap-2">
-            <Link href="/">
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/novix-logo.png"
-                  alt="Novix VPN Logo"
-                  width={180}
-                  height={58}
-                  className="rounded-md"
-                  draggable="false"
-                />
-              </div>
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button asChild variant="ghost">
-              <Link href="/">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </header>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-900 dark:to-gray-800">
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
@@ -88,7 +61,7 @@ export default function HighSpeedVPNPage() {
                   alt="Novix VPN Security"
                   width={700}
                   height={700}
-                  className="w-full h-auto"
+                  className="w-full h-auto scale-125"
                 />
               </div>
             </div>
@@ -112,7 +85,7 @@ export default function HighSpeedVPNPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-xl p-8 transform transition-all hover:scale-105 duration-300">
+            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl border border-blue-200  p-8 transform transition-all hover:scale-105 duration-300">
               <div className="flex items-center mb-6">
                 <div className="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center mr-4">
                   <Shield className="h-7 w-7 text-primary" />
@@ -131,7 +104,7 @@ export default function HighSpeedVPNPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-xl p-8 transform transition-all hover:scale-105 duration-300">
+            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl border border-blue-200  p-8 transform transition-all hover:scale-105 duration-300">
               <div className="flex items-center mb-6">
                 <div className="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center mr-4">
                   <Server className="h-7 w-7 text-primary" />
@@ -147,7 +120,7 @@ export default function HighSpeedVPNPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-xl p-8 transform transition-all hover:scale-105 duration-300">
+            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl border border-blue-200  p-8 transform transition-all hover:scale-105 duration-300">
               <div className="flex items-center mb-6">
                 <div className="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center mr-4">
                   <Activity className="h-7 w-7 text-primary" />
@@ -163,7 +136,7 @@ export default function HighSpeedVPNPage() {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-xl p-8 transform transition-all hover:scale-105 duration-300">
+            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl border border-blue-200 p-8 transform transition-all hover:scale-105 duration-300">
               <div className="flex items-center mb-6">
                 <div className="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center mr-4">
                   <Zap className="h-7 w-7 text-primary" />
@@ -403,7 +376,7 @@ export default function HighSpeedVPNPage() {
               </h2>
             </div>
 
-            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-xl p-10">
+            <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl border border-blue-200  p-10">
               <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
                 A lot of VPNs claim to be fast. Novix shows that it works. It's
                 made for people who want speed without giving up security. It

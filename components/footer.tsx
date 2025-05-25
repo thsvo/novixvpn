@@ -76,85 +76,7 @@ export default function Footer() {
     <footer className="min-w-screen bg-[#0b0c1a] py-8">
       <div className="container px-4">
         {/* App download section */}
-        <div className="flex flex-col items-center justify-center gap-3 mb-8">
-          {/* App store link commented out */}
-          <Link
-            href="https://play.google.com/store"
-            className="w-full max-w-[250px]"
-          >
-            <Image
-              src="/playstore-light.png"
-              width={250}
-              height={75}
-              alt="Get it on Google Play"
-              className="w-full"
-            />
-          </Link>
-        </div>
-
-        {/* Divider */}
-        <div className="h-px bg-gray-700 my-6"></div>
-
-        {/* Main content - responsive layout */}
-        <div
-          className={isMobile ? "" : "grid grid-cols-1 md:grid-cols-5 gap-8"}
-        >
-          {/* Novix VPN Section */}
-          {renderSectionContent(
-            "novix",
-            "Novix VPN",
-            <ul className="space-y-4 pb-4">
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-400 hover:text-white"
-                >
-                  About us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#download"
-                  className="text-gray-400 hover:text-white"
-                >
-                  Download
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/money-back-guarantee"
-                  className="text-gray-400 hover:text-white"
-                >
-                  Money-back guarantee
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/why-novix-vpn"
-                  className="text-gray-400 hover:text-white"
-                >
-                  Why Novix VPN?
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/no-user-tracking"
-                  className="text-gray-400 hover:text-white"
-                >
-                  No User Tracking
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/high-speed-vpn"
-                  className="text-gray-400 hover:text-white"
-                >
-                  High Speed VPN
-                </Link>
-              </li>
-            </ul>
-          )}
-
+        <div className="flex  items-center justify-between gap-3 mb-8">
           {/* Engage Section */}
           {renderSectionContent(
             "engage",
@@ -219,6 +141,84 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
+          )}
+
+          {/* App store link commented out */}
+          <Link
+            href="https://play.google.com/store"
+            className="w-full max-w-[200px]"
+          >
+            <Image
+              src="/playstore-dark-square.png"
+              width={250}
+              height={75}
+              alt="Get it on Google Play"
+              className="w-full"
+            />
+          </Link>
+        </div>
+
+        {/* Divider */}
+        <div className="h-px bg-gray-700 my-6"></div>
+
+        {/* Main content - responsive layout */}
+        <div
+          className={isMobile ? "" : "grid grid-cols-1 md:grid-cols-4 gap-8"}
+        >
+          {/* Novix VPN Section */}
+          {renderSectionContent(
+            "novix",
+            "Novix VPN",
+            <ul className="space-y-4 pb-4">
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-400 hover:text-white"
+                >
+                  About us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#download"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Download
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/money-back-guarantee"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Money-back guarantee
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/why-novix-vpn"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Why Novix VPN?
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/no-user-tracking"
+                  className="text-gray-400 hover:text-white"
+                >
+                  No User Tracking
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/high-speed-vpn"
+                  className="text-gray-400 hover:text-white"
+                >
+                  High Speed VPN
+                </Link>
+              </li>
+            </ul>
           )}
 
           {/* Help Section */}

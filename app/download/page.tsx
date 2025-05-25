@@ -17,8 +17,7 @@ export const metadata = {
 export default function VPNDownloadPage() {
   return (
     <>
-      <HeaderCom />
-      <div className="container mx-auto px-4 py-12 md:py-24">
+      <div className="container mx-auto px-4 py-12 md:pb-24">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold text-gray-800 capitalize">
@@ -27,11 +26,11 @@ export default function VPNDownloadPage() {
             </h1>
 
             <ul className="space-y-4 list-disc pl-5">
-              <li className="text-gray-700">
+              <li>
                 Browse online with total privacy, secure your data, and protect
                 your Android device.
               </li>
-              <li className="text-gray-700">
+              <li>
                 Easily stop annoying trackers and shield yourself from hostile
                 websites.
               </li>
@@ -76,6 +75,7 @@ export default function VPNDownloadPage() {
               alt="QR Code"
               width={550}
               height={500}
+              className="scale-125"
             />
           </div>
         </div>

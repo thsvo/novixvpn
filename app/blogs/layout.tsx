@@ -20,11 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <div className={inter.className}>
-        {/* Header/Navigation */}
-        <HeaderCom />
-        {children}
-      </div>
+      <div className={inter.className}>{children}</div>
     </>
   );
 }

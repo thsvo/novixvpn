@@ -11,7 +11,6 @@ import PricingCards from "@/components/pricing-cards";
 import Testimonials from "@/components/testimonials";
 import Footer from "@/components/footer";
 import HeroPromotionCom from "@/components/HeroPromotionCom";
-import HeaderCom from "@/components/HeaderCom";
 import WhatIsVpn from "@/components/what-is-vpn";
 import FAQComponent from "@/components/faq-component";
 import VpnBenefits from "@/components/vpn-benefits";
@@ -26,10 +25,6 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <IpBanner />
-
-      {/* Header/Navigation */}
-      <HeaderCom />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-background mt-10">
@@ -121,7 +116,7 @@ export default function Home() {
                     className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
                   >
                     <Image
-                      src="playstore-dark.png"
+                      src="/playstore-dark-square.png"
                       width={200}
                       height={150}
                       alt="playstore"
@@ -129,9 +124,9 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="">
+              <div className="md:-mt-7">
                 <Image
-                  src="/Home-page-top.png"
+                  src="/Home-page-update.png"
                   width={800}
                   height={800}
                   alt="playstore"

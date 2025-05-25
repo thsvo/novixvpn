@@ -5,6 +5,8 @@ import Script from "next/script";
 import CountdownTimerClient from "@/components/shared/CountdownTimerClient";
 import PixelTracker from "@/components/shared/PixelTracker.tsx";
 import { AuthProvider } from "@/Context/AuthContext";
+import HeaderCom from "@/components/HeaderCom";
+import IpBanner from "@/components/ip-banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -55,7 +57,13 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <PixelTracker />
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          {/* ip banner component */}
+          <IpBanner />
+          {/* Header/Navigation */}
+          <HeaderCom />
+          {children}
+        </AuthProvider>
         <CountdownTimerClient />
       </body>
     </html>
