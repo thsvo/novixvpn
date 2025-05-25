@@ -253,7 +253,7 @@ export default function HeaderCom() {
                 </Link>
               </div>
               {/* Log In */}
-              {!token && (
+              {!token ? (
                 <Link
                   href="/login"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -261,6 +261,16 @@ export default function HeaderCom() {
                 >
                   <span className="text-lg font-medium">Log In</span>
                 </Link>
+              ) : (
+                <button
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => {
+                    logout();
+                    setMobileNavOpen(false);
+                  }}
+                >
+                  <span className="text-lg font-medium">Log Out</span>
+                </button>
               )}
               {/* User Profile for mobile */}
               {token && (
