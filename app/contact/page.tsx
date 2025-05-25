@@ -54,7 +54,6 @@ export default function Contact() {
           description:
             "Thank you for contacting us. We'll get back to you shortly.",
         });
-        console.log("Message sent:", data);
         setFormData({
           name: "",
           email: "",

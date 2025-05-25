@@ -1,10 +1,11 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
+import Cookies from "js-cookie";
 
 type User = {
   username: string;
-  // Add more fields if available: email, avatar, etc.
+  // Add more fields if needed
 };
 
 type AuthContextType = {
@@ -21,8 +22,9 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
-    const savedToken = localStorage.getItem("token");
-    const savedUser = localStorage.getItem("user");
+    const savedToken = Cookies.get("token");
+    const savedUser = Cookies.get("user");
+
     if (savedToken && savedUser) {
       setToken(savedToken);
       setUser(JSON.parse(savedUser));
@@ -32,15 +34,17 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const login = (token: string, user: User) => {
     setToken(token);
     setUser(user);
-    localStorage.setItem("token", token);
-    localStorage.setItem("user", JSON.stringify(user));
+
+    Cookies.set("token", token, { expires: 7 }); // expires in 7 days
+    Cookies.set("user", JSON.stringify(user), { expires: 7 });
   };
 
   const logout = () => {
     setToken(null);
     setUser(null);
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
+
+    Cookies.remove("token");
+    Cookies.remove("user");
   };
 
   return (
