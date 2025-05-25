@@ -33,7 +33,7 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2 md:space-y-6">
                   <div className="">
-                    <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none ">
+                    <h1 className="text-4xl font-bold tracking-tighter md:text-6xl/none ">
                       Guard What’s Yours. Ghost the Rest.
                     </h1>
                     <p className="text-muted-foreground md:ml-2 py-2">
