@@ -83,61 +83,62 @@ export default function Footer() {
             "Engage",
             <div className="pb-4 space-y-4">
               <div className="flex flex-wrap gap-3">
-                <Link
-                  href="https://www.facebook.com/NovixVPN"
-                  target="_blank"
-                  className="text-gray-400 hover:text-white ring-1 ring-gray-600 rounded-full p-2.5 transition"
-                >
-                  <Facebook className="h-5 w-5" />
-                  <span className="sr-only">Facebook</span>
+                <Link href="https://www.facebook.com/NovixVPN" target="_blank">
+                  <Image
+                    src="facebook.webp"
+                    alt="facebook"
+                    width={40}
+                    height={40}
+                  />
                 </Link>
-                <Link
-                  href="https://x.com/NovixVpn"
-                  target="_blank"
-                  className="text-gray-400 hover:text-white ring-1 ring-gray-600 rounded-full p-2.5 transition"
-                >
-                  <Twitter className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
+                <Link href="https://x.com/NovixVpn" target="_blank">
+                  <Image src="x.webp" alt="x" width={40} height={40} />
                 </Link>
                 <Link
                   href="https://www.instagram.com/novixvpn/?next=%2F&hl=en"
                   target="_blank"
-                  className="text-gray-400 hover:text-white ring-1 ring-gray-600 rounded-full p-2.5 transition"
                 >
-                  <Instagram className="h-5 w-5" />
-                  <span className="sr-only">Instagram</span>
+                  <Image
+                    src="instagram.webp"
+                    alt="instagram"
+                    width={40}
+                    height={40}
+                  />
                 </Link>
-                <Link
-                  href="https://www.youtube.com/@NOVIXVPN"
-                  target="_blank"
-                  className="text-gray-400 hover:text-white ring-1 ring-gray-600 rounded-full p-2.5 transition"
-                >
-                  <Youtube className="h-5 w-5" />
-                  <span className="sr-only">YouTube</span>
+                <Link href="https://www.youtube.com/@NOVIXVPN" target="_blank">
+                  <Image
+                    src="youtube.webp"
+                    alt="youtube"
+                    width={40}
+                    height={40}
+                  />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/company/novix-vpn/?viewAsMember=true"
                   target="_blank"
-                  className="text-gray-400 hover:text-white ring-1 ring-gray-600 rounded-full p-2.5 transition"
                 >
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
+                  <Image
+                    src="linkedin.webp"
+                    alt="linkedin"
+                    width={40}
+                    height={40}
+                  />
                 </Link>
-                <Link
-                  href="https://www.tiktok.com/@novixvpn"
-                  target="_blank"
-                  className="text-gray-400 hover:text-white ring-1 ring-gray-600 rounded-full p-2.5 transition"
-                >
-                  <FaTiktok className="h-5 w-5" />
-                  <span className="sr-only">TikTok</span>
+                <Link href="https://www.tiktok.com/@novixvpn" target="_blank">
+                  <Image
+                    src="tiktok.webp"
+                    alt="tiktok"
+                    width={40}
+                    height={40}
+                  />
                 </Link>
-                <Link
-                  href="https://www.threads.net/@novixvpn"
-                  target="_blank"
-                  className="text-gray-400 hover:text-white ring-1 ring-gray-600 rounded-full p-2.5 transition"
-                >
-                  <FaThreads className="h-5 w-5" />
-                  <span className="sr-only">Threads</span>
+                <Link href="https://www.threads.net/@novixvpn" target="_blank">
+                  <Image
+                    src="threads.webp"
+                    alt="threads"
+                    width={40}
+                    height={40}
+                  />
                 </Link>
               </div>
             </div>
