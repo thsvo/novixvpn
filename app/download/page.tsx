@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Clock } from "lucide-react";
-import HeaderCom from "@/components/HeaderCom";
 import AndroidVPNInfo from "@/components/android-vpn-info";
 import VPNSetupGuide from "@/components/vpn-setup-guide";
 import VPNPromoBanner from "@/components/vpn-promo-banner";
@@ -75,7 +74,7 @@ export default function VPNDownloadPage() {
               alt="QR Code"
               width={550}
               height={500}
-              className="scale-125"
+              className="md:scale-125"
             />
           </div>
         </div>

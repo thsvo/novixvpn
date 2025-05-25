@@ -243,8 +243,17 @@ export default function HeaderCom() {
                   <span className="text-lg font-medium">Blogs</span>
                   <ChevronDown size={16} className="text-gray-500" />
                 </Link>
-
-                {/* Log In */}
+                <Link
+                  href="/faq"
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">FAQ</span>
+                  <ChevronDown size={16} className="text-gray-500" />
+                </Link>
+              </div>
+              {/* Log In */}
+              {!token && (
                 <Link
                   href="/login"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -252,7 +261,7 @@ export default function HeaderCom() {
                 >
                   <span className="text-lg font-medium">Log In</span>
                 </Link>
-              </div>
+              )}
               {/* User Profile for mobile */}
               {token && (
                 <div className="flex items-center justify-center gap-3 mt-4 py-2">

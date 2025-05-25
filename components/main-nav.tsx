@@ -133,6 +133,24 @@ export default function MainNav() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/faq" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={`bg-transparent ${navigationMenuTriggerStyle()}`}
+            >
+              FAQ
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/contact" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={`bg-transparent ${navigationMenuTriggerStyle()}`}
+            >
+              Contact
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );
