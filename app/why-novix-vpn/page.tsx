@@ -14,11 +14,10 @@ export default function WhyNovixVPN() {
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
-                Why Choose Novix VPN?
+                Why Novix VPN?
               </h1>
               <p className="text-xl md:text-2xl mb-8">
-                Secure, fast, and reliable VPN service that puts your privacy
-                first.
+                Security that’s silent. Speed that speaks for itself.
               </p>
               <Button
                 size="lg"
@@ -33,91 +32,105 @@ export default function WhyNovixVPN() {
         <section className="py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card className="border-none shadow-lg">
+              <Card className="border border-primary shadow-md hover:scale-105 transition-all ease-in-out duration-500">
                 <CardContent className="p-6">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
-                    <Shield className="h-6 w-6 text-primary" />
+                  <div className="w-full flex justify-center items-center">
+                    <span className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center border border-primary">
+                      <Shield className="h-6 w-6 text-primary" />
+                    </span>
                   </div>
                   <h3 className="text-xl font-bold mb-2">
-                    Military-Grade Encryption
+                    Data Protection for Businesses
                   </h3>
                   <p className="text-muted-foreground">
-                    Novix VPN uses AES-256 encryption, the same standard used by
-                    security experts worldwide to protect sensitive data.
+                    The same strong standards that global organizations use to
+                    protect your online activity and keep your data safe are
+                    used by Novix.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-none shadow-lg">
+              <Card className="border border-primary shadow-md hover:scale-105 transition-all ease-in-out duration-500">
                 <CardContent className="p-6">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
-                    <Zap className="h-6 w-6 text-primary" />
+                  <div className="w-full flex justify-center items-center">
+                    <span className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center border border-primary">
+                      <Zap className="h-6 w-6 text-primary" />
+                    </span>
                   </div>
                   <h3 className="text-xl font-bold mb-2">
-                    Lightning-Fast Speeds
+                    Performance Without Giving Up
                   </h3>
                   <p className="text-muted-foreground">
-                    Our optimized servers ensure you get the fastest possible
-                    connection speeds without compromising security.
+                    Our server architecture is built for business and optimized
+                    for regular use, so you can always have quick connections.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-none shadow-lg">
+              <Card className="border border-primary shadow-md hover:scale-105 transition-all ease-in-out duration-500">
                 <CardContent className="p-6">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
-                    <Globe className="h-6 w-6 text-primary" />
+                  <div className="w-full flex justify-center items-center">
+                    <span className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center border border-primary">
+                      <Globe className="h-6 w-6 text-primary" />
+                    </span>
                   </div>
                   <h3 className="text-xl font-bold mb-2">
-                    Global Server Network
+                    Infrastructure around the world, an advantage at home
                   </h3>
                   <p className="text-muted-foreground">
-                    With servers in over 90 countries, you can access content
-                    from anywhere in the world with just one click.
+                    You can connect as if you were next door, no matter where
+                    business or curiosity takes you, thanks to servers in more
+                    than 90 countries.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-none shadow-lg">
+              <Card className="border border-primary shadow-md hover:scale-105 transition-all ease-in-out duration-500">
                 <CardContent className="p-6">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
-                    <Lock className="h-6 w-6 text-primary" />
+                  <div className="w-full flex justify-center items-center">
+                    <span className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center  border border-primary">
+                      <Lock className="h-6 w-6 text-primary" />
+                    </span>
                   </div>
                   <h3 className="text-xl font-bold mb-2">
-                    Strict No-Logs Policy
+                    No Tracking. No Profiling. No Exceptions.
                   </h3>
                   <p className="text-muted-foreground">
-                    We never track, collect, or share your browsing history,
-                    ensuring your online activities remain private.
+                    Your privacy isn't a perk; it's the base of everything. We
+                    don't keep track of, trace, or log your digital imprint.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-none shadow-lg">
+              <Card className="border border-primary shadow-md hover:scale-105 transition-all ease-in-out duration-500">
                 <CardContent className="p-6">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
-                    <Check className="h-6 w-6 text-primary" />
+                  <div className="w-full flex justify-center items-center">
+                    <span className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center  border border-primary">
+                      <Check className="h-6 w-6 text-primary" />
+                    </span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Easy to Use</h3>
+                  <h3 className="text-xl font-bold mb-2">Smooth Onboarding</h3>
                   <p className="text-muted-foreground">
-                    Our intuitive apps make it simple to connect and protect
-                    your devices with just one click, no technical knowledge
-                    required.
+                    Novix connects with just one click, so you don't need to
+                    know how to use technology or just get by.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-none shadow-lg">
+              <Card className="border border-primary shadow-md hover:scale-105 transition-all ease-in-out duration-500">
                 <CardContent className="p-6">
-                  <div className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center">
-                    <Shield className="h-6 w-6 text-primary" />
+                  <div className="w-full flex justify-center items-center">
+                    <span className="mb-4 rounded-full bg-primary/10 p-3 w-12 h-12 flex items-center justify-center border border-primary">
+                      <Shield className="h-6 w-6 text-primary" />
+                    </span>
                   </div>
                   <h3 className="text-xl font-bold mb-2">
                     30-Day Money-Back Guarantee
                   </h3>
                   <p className="text-muted-foreground">
-                    Try Novix VPN risk-free with our 30-day money-back
-                    guarantee. No questions asked.
+                    Try Novix on your own terms. Not a good fit? You can get
+                    your money back in full if you cancel within 30 days. No
+                    problems, no fine print.
                   </p>
                 </CardContent>
               </Card>
@@ -132,42 +145,45 @@ export default function WhyNovixVPN() {
                 What Sets Us Apart
               </h2>
               <p className="text-xl text-muted-foreground">
-                Novix VPN offers unique features that make us the preferred
-                choice for millions of users worldwide.
+                Novix VPN combines uncompromising security with peak performance
+                — trusted by professionals, preferred by millions.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2">
               <div className="bg-background rounded-lg p-8 shadow-lg">
-                <h3 className="text-2xl font-bold mb-4">Unmatched Security</h3>
+                <h3 className="text-2xl font-bold mb-4">
+                  Enterprise-Grade Security
+                </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium">Advanced Encryption</h4>
+                      <h4 className="font-medium">Military-Grade Encryption</h4>
                       <p className="text-muted-foreground">
-                        AES-256 encryption keeps your data secure from hackers
-                        and surveillance.
+                        AES-256 encryption makes your online activities safe
+                        from hackers and other people who want to spy on you.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium">Kill Switch</h4>
+                      <h4 className="font-medium">Automatic Kill Switch</h4>
                       <p className="text-muted-foreground">
-                        Automatically disconnects your internet if the VPN
-                        connection drops, preventing data leaks.
+                        We cut off your internet access right away if your VPN
+                        connection drops to keep your data safe. No gaps, no
+                        assumptions.
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium">DNS Leak Protection</h4>
+                      <h4 className="font-medium">DNS Leak Prevention</h4>
                       <p className="text-muted-foreground">
-                        Ensures your DNS requests are always routed through our
-                        secure servers.
+                        Your DNS requests always go through Novix servers that
+                        are safe, so no one can listen in on your traffic.
                       </p>
                     </div>
                   </li>
@@ -176,26 +192,27 @@ export default function WhyNovixVPN() {
 
               <div className="bg-background rounded-lg p-8 shadow-lg">
                 <h3 className="text-2xl font-bold mb-4">
-                  Superior Performance
+                  Seamless Performance
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium">Optimized Servers</h4>
+                      <h4 className="font-medium">Servers that are fast</h4>
                       <p className="text-muted-foreground">
-                        Our servers are optimized for speed, ensuring minimal
-                        impact on your connection.
+                        Our infrastructure is built for speed, so no matter
+                        where you connect from, you'll have a smooth experience
+                        with low latency
                       </p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-medium">Unlimited Bandwidth</h4>
+                      <h4 className="font-medium">Unlimited Bandwidth:</h4>
                       <p className="text-muted-foreground">
-                        Stream, download, and browse without restrictions or
-                        throttling.
+                        You can stream, download, and browse without limits. No
+                        limits, no slowing down, no giving in.
                       </p>
                     </div>
                   </li>
