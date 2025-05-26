@@ -24,7 +24,7 @@ export default function ComparisonTable() {
       competitors: [true, true, true, true, true],
     },
     {
-      name: "Free Kill Switch Protection All",
+      name: "Kill Switch (Free on All Plans)",
       competitors: [true, false, false, false, false],
     },
     {
