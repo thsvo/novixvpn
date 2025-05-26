@@ -272,14 +272,14 @@ export default function Footer() {
             "discover",
             "Discover",
             <ul className="space-y-4 pb-4">
-              <li>
+              {/* <li>
                 <Link
                   href="/ip-checker"
                   className="text-gray-400 hover:text-white"
                 >
                   IP Checker
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/blogs" className="text-gray-400 hover:text-white">
                   Blogs
@@ -309,14 +309,14 @@ export default function Footer() {
                   VPN Servers
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/#testimonials"
                   className="text-gray-400 hover:text-white"
                 >
                   Reviews
                 </Link>
-              </li>
+              </li> */}
             </ul>
           )}
 
