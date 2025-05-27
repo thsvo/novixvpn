@@ -4,13 +4,8 @@ import { useCountdown } from "@/utils/useCountdown";
 import { CircleCheck, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-// Convert 1h 33m 47s to total seconds
-const OFFER_DURATION_SECONDS = 1 * 60 * 60 + 33 * 60 + 47;
-
 export default function CountdownTimer() {
-  const { days, hours, minutes, seconds } = useCountdown(
-    OFFER_DURATION_SECONDS
-  );
+  const { days, hours, minutes, seconds } = useCountdown();
   const format = (n: number) => n.toString().padStart(2, "0");
 
   const [isVisible, setIsVisible] = useState(true);

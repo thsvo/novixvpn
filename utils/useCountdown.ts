@@ -7,8 +7,12 @@ interface Countdown {
   seconds: number;
 }
 
-export function useCountdown(durationSeconds: number): Countdown {
-  const [targetDate] = useState(() => new Date(Date.now() + durationSeconds * 1000));
+export function useCountdown(): Countdown {
+  // Convert 5h 33m 47s to total seconds
+  const OFFER_DURATION = 5 * 60 * 60 + 33 * 60 + 47;
+
+
+  const [targetDate] = useState(() => new Date(Date.now() + OFFER_DURATION * 1000));
 
   const calculateTimeLeft = () => {
     const difference = +targetDate - +new Date();
@@ -20,7 +24,7 @@ export function useCountdown(durationSeconds: number): Countdown {
     const minutes = Math.floor((difference / 1000 / 60) % 60);
     const seconds = Math.floor((difference / 1000) % 60);
 
-    return { days: 0, hours, minutes, seconds };
+    return { days: 0, hours, minutes, seconds,OFFER_DURATION };
   };
 
   const [timeLeft, setTimeLeft] = useState<Countdown>(calculateTimeLeft());
