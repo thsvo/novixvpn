@@ -11,6 +11,8 @@ export default function CountdownTimer() {
     seconds: 59,
   });
   const [isVisible, setIsVisible] = useState(true);
+  const [onHoverVisible, setOnHoverVisible] = useState<boolean>(false);
+  const [initialHover, setInitialHover] = useState<boolean>(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -57,10 +59,25 @@ export default function CountdownTimer() {
     return () => clearInterval(timer);
   }, []);
 
+  // Show the half component after 5 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setOnHoverVisible(true);
+      clearInterval(timer);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   if (!isVisible) return null;
 
   return (
-    <div className="relative mx-auto max-w-md rounded-lg bg-[#0052cc] p-4 text-center shadow-lg">
+    <div
+      onMouseEnter={() => setOnHoverVisible(false)}
+      onMouseLeave={() => setOnHoverVisible(true)}
+      className={`relative mx-auto max-w-md rounded-tr-lg bg-[#0052cc] p-4 text-center shadow-lg transition-all duration-500 ease-in-out  ${
+        onHoverVisible ? "-mb-24" : ""
+      }`}
+    >
       <button
         onClick={() => setIsVisible(false)}
         className="absolute right-2 top-2 text-white/70 hover:text-white"
