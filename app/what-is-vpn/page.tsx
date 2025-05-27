@@ -245,7 +245,8 @@ export default function WhatIsVPN() {
                   <div>
                     <h4 className="font-medium">Global Server Network</h4>
                     <p className="text-sm text-muted-foreground">
-                      Servers in 90+ countries for unrestricted access.
+                      Servers available worldwide for unrestricted global
+                      access.
                     </p>
                   </div>
                 </div>

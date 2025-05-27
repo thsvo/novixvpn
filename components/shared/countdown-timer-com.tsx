@@ -1,80 +1,31 @@
 "use client";
 
 import { CircleCheck, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import { useCountdown } from "@/utils/useCountdown"; // adjust path as needed
+
+const targetDate = new Date("2025-05-30T23:59:59");
 
 export default function CountdownTimer() {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 1,
-    minutes: 59,
-    seconds: 59,
-  });
+  const { days, hours, minutes, seconds } = useCountdown(targetDate);
   const [isVisible, setIsVisible] = useState(true);
-  const [onHoverVisible, setOnHoverVisible] = useState<boolean>(false);
-  const [initialHover, setInitialHover] = useState<boolean>(true);
+  const [onHoverVisible, setOnHoverVisible] = useState(false);
 
+  // Slide-up after 5 seconds
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prevTime) => {
-        if (
-          prevTime.days === 0 &&
-          prevTime.hours === 0 &&
-          prevTime.minutes === 0 &&
-          prevTime.seconds === 0
-        ) {
-          clearInterval(timer);
-          return prevTime;
-        }
-
-        let newSeconds = prevTime.seconds - 1;
-        let newMinutes = prevTime.minutes;
-        let newHours = prevTime.hours;
-        let newDays = prevTime.days;
-
-        if (newSeconds < 0) {
-          newSeconds = 59;
-          newMinutes -= 1;
-        }
-
-        if (newMinutes < 0) {
-          newMinutes = 59;
-          newHours -= 1;
-        }
-
-        if (newHours < 0) {
-          newHours = 23;
-          newDays -= 1;
-        }
-
-        return {
-          days: newDays,
-          hours: newHours,
-          minutes: newMinutes,
-          seconds: newSeconds,
-        };
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  // Show the half component after 5 seconds
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setOnHoverVisible(true);
-      clearInterval(timer);
-    }, 5000);
-    return () => clearInterval(timer);
+    const timer = setTimeout(() => setOnHoverVisible(true), 5000);
+    return () => clearTimeout(timer);
   }, []);
 
   if (!isVisible) return null;
+
+  const format = (n: number) => n.toString().padStart(2, "0");
 
   return (
     <div
       onMouseEnter={() => setOnHoverVisible(false)}
       onMouseLeave={() => setOnHoverVisible(true)}
-      className={`relative mx-auto max-w-md rounded-tr-lg bg-[#0052cc] p-4 text-center shadow-lg transition-all duration-500 ease-in-out  ${
+      className={`relative mx-auto max-w-md rounded-tr-lg bg-[#0052cc] p-4 text-center shadow-lg transition-all duration-500 ease-in-out ${
         onHoverVisible ? "-mb-24" : ""
       }`}
     >
@@ -89,39 +40,20 @@ export default function CountdownTimer() {
       <h2 className="mb-2 text-2xl font-bold text-white">Time to go!</h2>
 
       <div className="mb-4 flex justify-center space-x-2 text-center">
-        <div className="flex flex-col items-center">
-          <span className="text-xl font-bold text-white">
-            {timeLeft.days.toString().padStart(2, "0")}
-          </span>
-          <span className="mt-2 text-white text-xs">Days</span>
-        </div>
-
-        <span className="text-xl font-bold text-white">:</span>
-
-        <div className="flex flex-col items-center">
-          <span className="text-xl font-bold text-white">
-            {timeLeft.hours.toString().padStart(2, "0")}
-          </span>
-          <span className="mt-2 text-white text-xs">Hours</span>
-        </div>
-
-        <span className="text-xl font-bold text-white">:</span>
-
-        <div className="flex flex-col items-center">
-          <span className="text-xl font-bold text-white">
-            {timeLeft.minutes.toString().padStart(2, "0")}
-          </span>
-          <span className="mt-2 text-white text-xs">Minutes</span>
-        </div>
-
-        <span className="text-xl font-bold text-white">:</span>
-
-        <div className="flex flex-col items-center">
-          <span className="text-xl font-bold text-white">
-            {timeLeft.seconds.toString().padStart(2, "0")}
-          </span>
-          <span className="mt-2 text-white text-xs">Seconds</span>
-        </div>
+        {[
+          { label: "Days", value: format(days) },
+          { label: "Hours", value: format(hours) },
+          { label: "Minutes", value: format(minutes) },
+          { label: "Seconds", value: format(seconds) },
+        ].map(({ label, value }, i) => (
+          <div key={label} className="flex items-center space-x-1">
+            {i > 0 && <span className="text-xl font-bold text-white">:</span>}
+            <div className="flex flex-col items-center">
+              <span className="text-xl font-bold text-white">{value}</span>
+              <span className="mt-2 text-xs text-white">{label}</span>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="relative mb-2">
@@ -129,8 +61,9 @@ export default function CountdownTimer() {
           Save 70% Now!
         </button>
       </div>
-      <div className="flex text-[10px] items-center justify-center gap-2 text-white">
-        <CircleCheck />
+
+      <div className="flex items-center justify-center gap-2 text-[10px] text-white">
+        <CircleCheck size={12} />
         <span>30-Day Money-Back Guarantee</span>
       </div>
     </div>
