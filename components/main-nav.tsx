@@ -14,7 +14,7 @@ import {
 export default function MainNav() {
   return (
     <NavigationMenu>
-      <NavigationMenuList className="flex flex-col md:flex-row gap-2 md:gap-4">
+      <NavigationMenuList className="flex flex-col md:flex-row gap-2">
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent">
             About

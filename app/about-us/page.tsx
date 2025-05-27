@@ -235,7 +235,7 @@ const AboutUs = () => {
             Are you ready to reclaim your digital freedom?
           </p>
           <a
-            href="/signup"
+            href="/download"
             className="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-lg shadow hover:bg-primary/85 transition"
           >
             Join NovixVPN Today
