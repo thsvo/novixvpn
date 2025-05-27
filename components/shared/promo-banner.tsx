@@ -10,7 +10,7 @@ export default function PromoBanner() {
       <div className="px-28 py-6 flex justify-between items-center relative">
         <div>
           <h2 className="text-xl font-bold text-[#1A1A1A]">
-            Time To Go Turbo! Save 70% Now
+            Time to Go Novix — Get 70% Off Today!
           </h2>
           <p className="text-[#5F6368]">
             Offer Ends In{" "}
