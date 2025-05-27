@@ -1,14 +1,13 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
 import PricingCards from "@/components/pricing-cards";
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import PromoBanner from "@/components/shared/promo-banner";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
+        {/* Promo banner */}
+        <PromoBanner />
         {/* Pricing Section */}
         <section id="pricing" className="bg-muted/50 py-12 md:py-24">
           <div className="container px-4 md:px-6">
