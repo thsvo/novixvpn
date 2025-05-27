@@ -1,10 +1,13 @@
 "use client";
-import { useCountdown } from "@/utils/useCountdown"; // adjust path
-const targetDate = new Date("2025-05-30T23:59:59");
+import { useCountdown } from "@/utils/useCountdown"; // Adjust the path
+
+// Convert 1h 33m 47s to total seconds
+const OFFER_DURATION_SECONDS = 1 * 60 * 60 + 33 * 60 + 47;
 
 export default function PromoBanner() {
-  const { days, hours, minutes, seconds } = useCountdown(targetDate);
-
+  const { days, hours, minutes, seconds } = useCountdown(
+    OFFER_DURATION_SECONDS
+  );
   const format = (n: number) => n.toString().padStart(2, "0");
 
   return (

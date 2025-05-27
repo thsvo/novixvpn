@@ -1,31 +1,37 @@
 "use client";
 
+import { useCountdown } from "@/utils/useCountdown";
 import { CircleCheck, X } from "lucide-react";
-import { useState, useEffect } from "react";
-import { useCountdown } from "@/utils/useCountdown"; // adjust path as needed
+import { useEffect, useState } from "react";
 
-const targetDate = new Date("2025-05-30T23:59:59");
+// Convert 1h 33m 47s to total seconds
+const OFFER_DURATION_SECONDS = 1 * 60 * 60 + 33 * 60 + 47;
 
 export default function CountdownTimer() {
-  const { days, hours, minutes, seconds } = useCountdown(targetDate);
-  const [isVisible, setIsVisible] = useState(true);
-  const [onHoverVisible, setOnHoverVisible] = useState(false);
+  const { days, hours, minutes, seconds } = useCountdown(
+    OFFER_DURATION_SECONDS
+  );
+  const format = (n: number) => n.toString().padStart(2, "0");
 
-  // Slide-up after 5 seconds
+  const [isVisible, setIsVisible] = useState(true);
+  const [onHoverVisible, setOnHoverVisible] = useState<boolean>(false);
+
+  // Show the half component after 5 seconds
   useEffect(() => {
-    const timer = setTimeout(() => setOnHoverVisible(true), 5000);
-    return () => clearTimeout(timer);
+    const timer = setInterval(() => {
+      setOnHoverVisible(true);
+      clearInterval(timer);
+    }, 5000);
+    return () => clearInterval(timer);
   }, []);
 
   if (!isVisible) return null;
-
-  const format = (n: number) => n.toString().padStart(2, "0");
 
   return (
     <div
       onMouseEnter={() => setOnHoverVisible(false)}
       onMouseLeave={() => setOnHoverVisible(true)}
-      className={`relative mx-auto max-w-md rounded-tr-lg bg-[#0052cc] p-4 text-center shadow-lg transition-all duration-500 ease-in-out ${
+      className={`relative mx-auto max-w-md rounded-tr-lg bg-[#0052cc] p-4 text-center shadow-lg transition-all duration-500 ease-in-out  ${
         onHoverVisible ? "-mb-24" : ""
       }`}
     >
@@ -40,20 +46,35 @@ export default function CountdownTimer() {
       <h2 className="mb-2 text-2xl font-bold text-white">Time to go!</h2>
 
       <div className="mb-4 flex justify-center space-x-2 text-center">
-        {[
-          { label: "Days", value: format(days) },
-          { label: "Hours", value: format(hours) },
-          { label: "Minutes", value: format(minutes) },
-          { label: "Seconds", value: format(seconds) },
-        ].map(({ label, value }, i) => (
-          <div key={label} className="flex items-center space-x-1">
-            {i > 0 && <span className="text-xl font-bold text-white">:</span>}
-            <div className="flex flex-col items-center">
-              <span className="text-xl font-bold text-white">{value}</span>
-              <span className="mt-2 text-xs text-white">{label}</span>
-            </div>
-          </div>
-        ))}
+        <div className="flex flex-col items-center">
+          <span className="text-xl font-bold text-white">{format(days)}</span>
+          <span className="mt-2 text-white text-xs">Days</span>
+        </div>
+
+        <span className="text-xl font-bold text-white">:</span>
+
+        <div className="flex flex-col items-center">
+          <span className="text-xl font-bold text-white">{format(hours)}</span>
+          <span className="mt-2 text-white text-xs">Hours</span>
+        </div>
+
+        <span className="text-xl font-bold text-white">:</span>
+
+        <div className="flex flex-col items-center">
+          <span className="text-xl font-bold text-white">
+            {format(minutes)}
+          </span>
+          <span className="mt-2 text-white text-xs">Minutes</span>
+        </div>
+
+        <span className="text-xl font-bold text-white">:</span>
+
+        <div className="flex flex-col items-center">
+          <span className="text-xl font-bold text-white">
+            {format(seconds)}
+          </span>
+          <span className="mt-2 text-white text-xs">Seconds</span>
+        </div>
       </div>
 
       <div className="relative mb-2">
@@ -61,9 +82,8 @@ export default function CountdownTimer() {
           Save 70% Now!
         </button>
       </div>
-
-      <div className="flex items-center justify-center gap-2 text-[10px] text-white">
-        <CircleCheck size={12} />
+      <div className="flex text-[10px] items-center justify-center gap-2 text-white">
+        <CircleCheck />
         <span>30-Day Money-Back Guarantee</span>
       </div>
     </div>
