@@ -5,11 +5,9 @@ import { FaAndroid } from "react-icons/fa6";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import IpBanner from "@/components/ip-banner";
 import ComparisonTable from "@/components/comparison-table";
 import PricingCards from "@/components/pricing-cards";
 import Testimonials from "@/components/testimonials";
-import Footer from "@/components/footer";
 import HeroPromotionCom from "@/components/HeroPromotionCom";
 import WhatIsVpn from "@/components/what-is-vpn";
 import FAQComponent from "@/components/faq-component";
@@ -376,7 +374,6 @@ export default function Home() {
         {/* FAQ Section */}
         <FAQComponent />
       </main>
-      <Footer />
     </div>
   );
 }

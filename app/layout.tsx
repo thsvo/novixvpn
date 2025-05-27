@@ -7,6 +7,7 @@ import PixelTracker from "@/components/shared/PixelTracker.tsx";
 import { AuthProvider } from "@/Context/AuthContext";
 import HeaderCom from "@/components/HeaderCom";
 import IpBanner from "@/components/ip-banner";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -63,6 +64,7 @@ export default function RootLayout({
           {/* Header/Navigation */}
           <HeaderCom />
           {children}
+          <Footer />
         </AuthProvider>
         <CountdownTimerClient />
       </body>
