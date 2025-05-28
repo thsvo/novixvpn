@@ -1,5 +1,3 @@
-// components/AboutUs.tsx
-
 import {
   Check,
   Shield,
@@ -14,199 +12,237 @@ import React from "react";
 const AboutUs = () => {
   return (
     <section className="max-w-5xl mx-auto px-6 py-12 sm:py-16">
-      <h1 className="text-4xl font-extrabold text-gray-900 mb-8 text-center">
+      <h1 className="text-4xl font-extrabold text-gray-900 mb-4 text-center">
         About NovixVPN
       </h1>
+      <p className="text-center text-lg text-gray-600 mb-10">
+        Your digital freedom starts with Novix.
+      </p>
 
-      <article className="space-y-10">
-        {/* Privacy Promise */}
+      <article className="space-y-12">
+        {/* Privacy Philosophy */}
         <div>
           <h2 className="text-2xl font-semibold text-primary mb-4">
-            We Promise to Protect Your Privacy
+            We Believe Privacy is a Fundamental Right
           </h2>
-          <p className="text-gray-700 text-lg max-w-3xl leading-relaxed">
-            At <strong>NovixVPN</strong>, we believe that{" "}
-            <strong>online privacy is a fundamental right</strong>, not a
-            luxury. Everyone deserves the freedom to browse the internet without
-            fear of surveillance, data theft, or manipulation. That’s why we’ve
-            built a VPN service that always puts your{" "}
-            <strong>privacy first</strong>—no compromises.
+          <p className="text-gray-700 text-lg   leading-relaxed">
+            At <strong>NovixVPN</strong>, we don't just believe in online
+            privacy —<strong>we champion it</strong> as a basic human right. In
+            a world where data is currency and surveillance is normalized, we
+            stand as your unwavering guardian of digital freedom.
+          </p>
+          <p className="text-gray-700 text-lg   leading-relaxed mt-3">
+            We envision a future where anyone can explore, communicate, and
+            connect online without fear of being watched, tracked, or exploited.
+            This isn't just our business model —{" "}
+            <strong>it's our moral mission</strong>.
           </p>
         </div>
 
-        {/* Mission */}
+        {/* Mission Statement */}
         <div>
           <h2 className="text-2xl font-semibold text-primary mb-4">
             Our Mission
           </h2>
-          <p className="text-gray-700 text-lg max-w-3xl leading-relaxed">
-            In an age where tech giants profit from your personal data and
-            governments increase digital surveillance, NovixVPN stands as your{" "}
-            <strong>shield for internet freedom</strong>. Our mission is simple:{" "}
-            <strong>give you back control</strong> over your online identity and
-            privacy.
+          <p className="text-gray-700 text-lg   leading-relaxed">
+            <strong>Empowering digital freedom</strong> for everyone,
+            everywhere. NovixVPN exists to restore the open internet — a place
+            for free expression, privacy, and exploration. In a time when
+            governments and corporations commodify your personal data, we give
+            you back control over your identity.
           </p>
         </div>
 
-        {/* What Makes Us Different */}
+        {/* Unique Features */}
         <div>
           <h2 className="text-2xl font-semibold text-primary mb-6">
-            What Makes NovixVPN Different?
+            What Sets NovixVPN Apart
           </h2>
-          <ul className="max-w-3xl  space-y-6">
+          <ul className="  space-y-6">
             <li className="flex items-start space-x-3">
-              <span className="text-primary text-2xl">
-                <Check />
-              </span>
+              <Check className="text-primary text-2xl" />
               <div>
                 <h3 className="font-semibold text-lg text-gray-900">
-                  A True No-Logs Policy
+                  True Zero-Logs Architecture
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Unlike other VPN providers who claim to respect privacy but
-                  secretly log user activity, we have a{" "}
-                  <strong>genuine no-logs policy</strong>. We do{" "}
-                  <strong>not track</strong>, <strong>store</strong>, or{" "}
-                  <strong>monitor</strong> your online behavior—what you do is
-                  your business, not ours.
+                  We don’t track, store, or monitor your activity — ever. Our
+                  infrastructure is designed so your data never exists on our
+                  servers. Your actions remain yours, period.
                 </p>
               </div>
             </li>
-
             <li className="flex items-start space-x-3">
-              <span className="text-primary text-2xl">
-                <ShieldAlert />
-              </span>
+              <Shield className="text-primary text-2xl" />
               <div>
                 <h3 className="font-semibold text-lg text-gray-900">
-                  Built Without Tracking
+                  Privacy by Design, Not Marketing
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  We’ve engineered our systems to ensure that even we can’t see
-                  what you’re doing online. No browsing records, no connection
-                  timestamps, no data collection. That’s{" "}
-                  <strong>privacy by design</strong>.
+                  From the first line of code, our systems are built to keep
+                  your data private — even from us. This is privacy engineered,
+                  not promised in a brochure.
                 </p>
               </div>
             </li>
-
             <li className="flex items-start space-x-3">
-              <span className="text-primary text-2xl">
-                <Shield />
-              </span>
+              <Shield className="text-primary text-2xl" />
               <div>
                 <h3 className="font-semibold text-lg text-gray-900">
-                  Privacy for Everyone
+                  Built for the Privacy-Conscious
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Whether you're a journalist protecting sources, a digital
-                  rights activist, or simply someone who values privacy,{" "}
-                  <strong>NovixVPN is designed for you</strong>. It’s simple,
-                  effective, and built to serve{" "}
-                  <strong>real people in the real world</strong>.
+                  Whether you're a journalist, activist, or simply someone who
+                  values their privacy, NovixVPN delivers{" "}
+                  <strong>enterprise-level security</strong> with simplicity for
+                  all.
                 </p>
               </div>
             </li>
           </ul>
         </div>
 
-        {/* Core Principles */}
+        {/* Core Values */}
         <div>
           <h2 className="text-2xl font-semibold text-primary mb-4">
-            Our Core Principles
+            Our Core Values
           </h2>
-          <ul className="list-disc list-inside max-w-3xl space-y-2 text-gray-700 text-lg">
+          <ul className="list-disc list-inside   space-y-2 text-gray-700 text-lg">
             <li>
-              <strong>Privacy First:</strong> Every decision we make starts with
-              one question: <em>“Does this protect our users’ privacy?”</em> If
-              the answer is no, we don’t do it.
+              <strong>Privacy First:</strong> Every decision we make passes
+              through one filter: "Does this enhance our users' privacy?" If the
+              answer isn't an unequivocal yes, we don't proceed. Your privacy
+              isn't negotiable.
             </li>
             <li>
-              <strong>Transparency:</strong> We’re upfront about how our systems
-              work, what data we don’t collect, and how we keep you safe.
+              <strong>Radical Transparency:</strong> You deserve to know exactly
+              how we protect you. We maintain complete transparency about our
+              infrastructure, policies, and practices. No hidden terms, no fine
+              print surprises just honest, straightforward protection.
             </li>
             <li>
-              <strong>User Empowerment:</strong> We don’t just offer a
-              service—we give you the tools and confidence to take charge of
-              your digital life.
+              <strong>User Empowerment:</strong> We don't just provide a
+              service; we equip you with the tools and knowledge to take control
+              of your digital life. Your data, your rules, your freedom.
             </li>
             <li>
-              <strong>Innovation:</strong> Privacy threats are constantly
-              evolving. We’re committed to staying ahead by continuously
-              improving our technology.
+              <strong>Continuous Innovation:</strong> The privacy landscape
+              evolves rapidly, and so do we. We stay ahead of emerging threats
+              through constant innovation, ensuring your protection evolves with
+              the digital world.
             </li>
           </ul>
         </div>
 
-        {/* Why We Created NovixVPN */}
+        {/* Why We Exist */}
         <div>
           <h2 className="text-2xl font-semibold text-primary mb-4">
             Why We Created NovixVPN
           </h2>
-          <p className="text-gray-700 text-lg max-w-3xl leading-relaxed">
-            NovixVPN was born out of frustration with the current state of
-            online privacy. Many VPN services make bold claims but operate in
-            the shadows—
-            <strong>collecting user data to monetize their platforms</strong>.
+          <p className="text-gray-700 text-lg   leading-relaxed">
+            NovixVPN was born from frustration with the current state of online
+            privacy. Too many VPN providers make bold privacy promises while
+            secretly harvesting user data for profit. We knew we could do better
+            we knew we had to do better.
           </p>
-          <p className="text-gray-700 text-lg max-w-3xl leading-relaxed mt-3">
-            We knew there had to be a better way.
+          <p className="text-gray-700 text-lg   leading-relaxed mt-3">
+            Our founding team consists of privacy advocates, cybersecurity
+            experts, and software engineers united by a shared conviction: your
+            personal data should remain personal. Having experienced the erosion
+            of digital privacy firsthand, we're committed to providing our users
+            with the same level of protection we demand for ourselves.
           </p>
-          <p className="text-gray-700 text-lg max-w-3xl leading-relaxed mt-3">
-            Our team consists of{" "}
-            <strong>
-              privacy advocates, cybersecurity experts, and tech professionals
-            </strong>{" "}
-            who share one mission: to build a VPN that truly respects and
-            protects your privacy. We've experienced the risks of poor digital
-            security firsthand, and we're committed to delivering a safer online
-            experience for you.
+          <p className="text-gray-700 text-lg   leading-relaxed mt-3">
+            This isn't just another tech startup story. This is the story of
+            digital activists who decided to build the solution they wished
+            existed.
           </p>
         </div>
 
-        {/* What We Promise You */}
+        {/* Our Promise to You */}
         <div>
           <h2 className="text-2xl font-semibold text-primary mb-6">
-            What We Promise You
+            Our Promise to You
           </h2>
-          <ul className="max-w-3xl space-y-4 text-gray-700 text-lg">
-            <li className="flex items-center space-x-3">
-              <span className="text-primary text-2xl">
-                <ShieldBan />
-              </span>
-              <p>
-                <strong>No tracking. Ever.</strong> What you do online is none
-                of our business.
-              </p>
-            </li>
-            <li className="flex items-center space-x-3">
-              <span className="text-primary text-2xl">
-                <Lock />
-              </span>
-              <p>
-                <strong>Continuous innovation</strong> to stay ahead of evolving
-                privacy threats.
-              </p>
-            </li>
-            <li className="flex items-center space-x-3">
-              <span className="text-primary text-2xl">
-                <MessageCircleMore />
-              </span>
-              <p>
-                <strong>Honest communication</strong>—we’ll always be
-                transparent about what we can and can’t do.
-              </p>
-            </li>
-            <li className="flex items-center space-x-3">
-              <span className="text-primary text-2xl">
-                <HeartHandshake />
-              </span>
-              <p>
-                <strong>Responsive support</strong>, always here when you need
-                us.
-              </p>
-            </li>
-          </ul>
+          <p className="text-gray-700 text-lg   leading-relaxed pb-5">
+            When you choose NovixVPN, you're not just selecting a VPN provider
+            you're joining a community dedicated to digital rights and online
+            freedom. Here's our unwavering commitment:
+          </p>
+          <div className="space-y-10">
+            {/* Complete Privacy Protection */}
+            <ul className="  space-y-4 text-gray-700 text-lg">
+              <h3 className="text-lg font-semibold text-primary mb-6">
+                Complete Privacy Protection
+              </h3>
+              <li className="flex items-center space-x-3">
+                <Check className="text-primary text-2xl" />
+                <p>
+                  Zero logging of your online activities it's not our business
+                  what you do online
+                </p>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Check className="text-primary text-2xl" />
+                <p>
+                  Advanced encryption that keeps your data secure from all
+                  prying eyes
+                </p>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Check className="text-primary text-2xl" />
+                <p>
+                  Anonymous browsing that protects your identity and location
+                </p>
+              </li>
+            </ul>
+            {/* Continuous Excellence */}
+            <ul className="  space-y-4 text-gray-700 text-lg">
+              <h3 className="text-lg font-semibold text-primary mb-6">
+                Continuous Excellence
+              </h3>
+              <li className="flex items-center space-x-3">
+                <Check className="text-primary text-2xl" />
+                <p>
+                  Constant innovation to stay ahead of emerging privacy threats
+                </p>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Check className="text-primary text-2xl" />
+                <p>
+                  Transparent communication about our capabilities and
+                  limitations
+                </p>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Check className="text-primary text-2xl" />
+                <p>
+                  Anonymous browsing that protects your identity and location
+                </p>
+              </li>
+            </ul>
+            {/* Genuine Support */}
+            <ul className="  space-y-4 text-gray-700 text-lg">
+              <h3 className="text-lg font-semibold text-primary mb-6">
+                Genuine Support
+              </h3>
+              <li className="flex items-center space-x-3">
+                <Check className="text-primary text-2xl" />
+                <p>Responsive customer service from real privacy advocates</p>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Check className="text-primary text-2xl" />
+                <p>
+                  Educational resources to help you maximize your digital
+                  security
+                </p>
+              </li>
+              <li className="flex items-center space-x-3">
+                <Check className="text-primary text-2xl" />
+                <p>Clear, jargon-free explanations of how we protect you</p>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Looking Forward */}
@@ -214,25 +250,40 @@ const AboutUs = () => {
           <h2 className="text-2xl font-semibold text-primary mb-4">
             Looking Forward
           </h2>
-          <p className="text-gray-700 text-lg max-w-3xl leading-relaxed">
-            The fight for digital privacy isn’t over. As surveillance grows and
-            corporations find new ways to exploit data, the demand for{" "}
-            <strong>authentic privacy tools</strong> has never been greater.
+          <p className="text-gray-700 text-lg   leading-relaxed">
+            The fight for digital privacy is far from over. As surveillance
+            capabilities expand and data monetization intensifies, the need for
+            genuine privacy protection grows stronger every day.
           </p>
-          <p className="text-gray-700 text-lg max-w-3xl leading-relaxed mt-3">
-            For us, NovixVPN isn’t just a business. It’s our contribution to
-            building a <strong>safer, more private internet</strong> for
-            everyone. And we’re just getting started.
+          <p className="text-gray-700 text-lg   leading-relaxed mt-3">
+            For us, NovixVPN represents more than a business venture it's our
+            contribution to building a safer, more private internet for
+            everyone. We're committed to evolving with the digital landscape
+            while never compromising on our core principle: your privacy comes
+            first, always.
+          </p>
+          <p className="text-gray-700 text-lg   leading-relaxed mt-3">
+            The internet was created to connect and empower humanity. We're here
+            to ensure it fulfills that promise while respecting your right to
+            privacy.
+          </p>
+          <p className="text-gray-700 font-bold text-lg text-center leading-relaxed mt-8">
+            Join us in reclaiming your digital freedom. Your journey to true
+            online privacy starts here.
+          </p>
+          <p className="text-gray-700 mt-12 italic text-lg text-center leading-relaxed">
+            Ready to experience genuine online privacy? Begin your journey with
+            NovixVPN today.
           </p>
         </div>
 
         {/* Call to Action */}
-        <div className="text-center ">
+        <div className="text-center">
           <h3 className="text-3xl font-bold text-primary mb-4">
             Start Your Privacy Journey with NovixVPN
           </h3>
-          <p className="text-gray-700 text-lg mb-6 max-w-2xl">
-            Are you ready to reclaim your digital freedom?
+          <p className="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
+            Ready to take back control of your digital life?
           </p>
           <a
             href="/download"
