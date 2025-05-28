@@ -390,8 +390,6 @@ export default function VPNServers() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

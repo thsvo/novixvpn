@@ -272,7 +272,6 @@ export default function WhatIsVPN() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

@@ -306,8 +306,6 @@ export default function MoneyBackGuarantee() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

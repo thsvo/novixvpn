@@ -380,8 +380,6 @@ export default function NoUserTracking() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }

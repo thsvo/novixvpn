@@ -403,8 +403,6 @@ export default function WhyNovixVPN() {
           </div>
         </section> */}
       </main>
-
-      <Footer />
     </div>
   );
 }

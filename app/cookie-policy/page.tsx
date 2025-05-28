@@ -103,8 +103,6 @@ export default function CookiePolicy() {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
