@@ -219,9 +219,9 @@ export default function FAQPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+      <div className="container mx-auto px-4 py-16">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-gray-800">
             Frequently Asked Questions (FAQ)
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -230,8 +230,12 @@ export default function FAQPage() {
           </p>
         </div>
 
-        <FAQAccordion items={faqItems} />
-
+        <div className="w-full grid md:grid-cols-2 justify-items-center items-center gap-x-4">
+          <div className=" top-0">
+            <Image src="/FAQ.png" alt="" width={600} height={600} />
+          </div>
+          <FAQAccordion items={faqItems} />
+        </div>
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-6">
             Still have questions? We're here to help.
