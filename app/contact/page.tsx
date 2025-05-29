@@ -117,7 +117,7 @@ export default function Contact() {
                         href="mailto:novixvpna@gmail.com"
                         className="text-primary hover:underline"
                       >
-                        novixvpna@gmail.com
+                        novixvpn@gmail.com
                       </a>
                       <p className="text-muted-foreground mt-2 mb-1">
                         For technical support:
@@ -126,7 +126,7 @@ export default function Contact() {
                         href="mailto:support@novixvpn.com"
                         className="text-primary hover:underline"
                       >
-                        support@novixvpn.com
+                        novixvpn@gmail.com
                       </a>
                     </div>
                   </div>
