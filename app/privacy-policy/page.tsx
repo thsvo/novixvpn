@@ -138,7 +138,11 @@ export default function PrivacyPolicy() {
                   We use cookies and other tracking technologies to enhance your
                   experience on our website. For more detailed information about
                   our use of cookies and how you can manage your preferences,
-                  please visit our 5. Sharing of Information Cookie Policy page.
+                  please visit our 5. Sharing of Information{" "}
+                  <a href="/cookie-policy" className="hover:underline">
+                    Cookie Policy
+                  </a>{" "}
+                  page.
                 </p>
               </li>
               <li>
