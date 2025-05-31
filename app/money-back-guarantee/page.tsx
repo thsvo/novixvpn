@@ -249,7 +249,12 @@ export default function MoneyBackGuarantee() {
                       faster.
                     </p>
                     <Button variant="outline" className="mt-auto">
-                      Email Us
+                      <a
+                        href="mailto:novixvpn@gmail.com"
+                        className="text-primary "
+                      >
+                        Email Us
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>

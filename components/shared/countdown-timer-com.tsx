@@ -42,21 +42,25 @@ export default function CountdownTimer() {
 
       <div className="mb-4 flex justify-center space-x-2 text-center">
         <div className="flex flex-col items-center">
-          <span className="text-xl font-bold text-white">{format(days)}</span>
+          <span className="text-xl  font-bold text-[#f39e2e]">
+            {format(days)}
+          </span>
           <span className="mt-2 text-white text-xs">Days</span>
         </div>
 
         <span className="text-xl font-bold text-white">:</span>
 
         <div className="flex flex-col items-center">
-          <span className="text-xl font-bold text-white">{format(hours)}</span>
+          <span className="text-xl font-bold text-[#f39e2e]">
+            {format(hours)}
+          </span>
           <span className="mt-2 text-white text-xs">Hours</span>
         </div>
 
         <span className="text-xl font-bold text-white">:</span>
 
         <div className="flex flex-col items-center">
-          <span className="text-xl font-bold text-white">
+          <span className="text-xl font-bold text-[#f39e2e]">
             {format(minutes)}
           </span>
           <span className="mt-2 text-white text-xs">Minutes</span>
@@ -65,7 +69,7 @@ export default function CountdownTimer() {
         <span className="text-xl font-bold text-white">:</span>
 
         <div className="flex flex-col items-center">
-          <span className="text-xl font-bold text-white">
+          <span className="text-xl font-bold text-[#f39e2e]">
             {format(seconds)}
           </span>
           <span className="mt-2 text-white text-xs">Seconds</span>

@@ -27,10 +27,10 @@ export default function PromoBanner() {
       <div className="absolute inset-0"></div>
       <div className="absolute inset-0  mt-20 md:mt-0 md:px-12 flex flex-row justify-start items-center">
         <div className="text-left  p-4 rounded-lg w-full ">
-          <h2 className="text-sm md:text-2xl font-bold text-white [text-shadow:_2px_2px_1px_rgba(0,0,0,0.2)]">
+          <h2 className="text-sm md:text-2xl font-bold text-white [text-shadow:_1px_1px_1px_rgba(0,0,0,0.3)] md:[text-shadow:_2px_2px_1px_rgba(0,0,0,0.2)]">
             Time to Go Novix — Get 70% Off Today!
           </h2>
-          <p className="md:text-xs text-[9px] text-white mt-2 [text-shadow:_2px_2px_1px_rgba(0,0,0,0.3)]">
+          <p className="md:text-xs text-[9px] text-white mt-2 [text-shadow:_1px_1px_1px_rgba(0,0,0,0.3)] md:[text-shadow:_2px_2px_1px_rgba(0,0,0,0.3)]">
             Offer Ends In{" "}
             <span className="text-[#f39e2e] font-bold md:text-2xl px-1">
               {format(days)}
