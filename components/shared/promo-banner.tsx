@@ -12,31 +12,39 @@ export default function PromoBanner() {
         src="/image/Pricing-banner.png"
         alt="Promo Banner"
         layout="responsive"
-        width={1200} // Adjust based on image dimensions
-        height={400} // Adjust based on image dimensions
-        className="object-cover hidden xs:hidden sm:block"
+        width={1200}
+        height={400}
+        className="object-cover hidden sm:block"
+      />
+      <Image
+        src="/image/mobile.png"
+        alt="Promo Banner Small"
+        layout="responsive"
+        width={600}
+        height={200}
+        className="object-cover block sm:hidden"
       />
       <div className="absolute inset-0"></div>
-      <div className="absolute inset-0 px-4 sm:px-6 md:px-12 lg:px-20 xl:px-28 py-4 sm:py-6 flex flex-col sm:flex-row justify-between items-center">
-        <div className="text-center sm:text-left bg-black xs:bg-gray-800/70 sm:bg-transparent p-4 xs:p-6 rounded-lg">
-          <h2 className="text-base xs:text-lg sm:text-xl md:text-2xl font-bold text-white">
+      <div className="absolute inset-0  mt-20 md:mt-0 md:px-12 flex flex-row justify-start items-center">
+        <div className="text-left  p-4 rounded-lg w-full ">
+          <h2 className="text-sm md:text-2xl font-bold text-white [text-shadow:_2px_2px_1px_rgba(0,0,0,0.2)]">
             Time to Go Novix — Get 70% Off Today!
           </h2>
-          <p className="text-xs xs:text-sm sm:text-base text-white mt-2">
+          <p className="md:text-xs text-[9px] text-white mt-2 [text-shadow:_2px_2px_1px_rgba(0,0,0,0.3)]">
             Offer Ends In{" "}
-            <span className="text-primary font-semibold px-1">
+            <span className="text-[#f39e2e] font-bold md:text-2xl px-1">
               {format(days)}
             </span>{" "}
             Days
-            <span className="text-primary font-semibold px-1">
+            <span className="text-[#f39e2e] font-bold md:text-2xl px-1">
               {format(hours)}
             </span>{" "}
             Hours
-            <span className="text-primary font-semibold px-1">
+            <span className="text-[#f39e2e] font-bold md:text-2xl px-1">
               {format(minutes)}
             </span>{" "}
             Minutes
-            <span className="text-primary font-semibold px-1">
+            <span className="text-[#f39e2e] font-bold md:text-2xl px-1">
               {format(seconds)}
             </span>{" "}
             Seconds
