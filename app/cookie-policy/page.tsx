@@ -95,7 +95,7 @@ export default function CookiePolicy() {
               <p>
                 <strong>Our office address:</strong> Dhaka, Bangladesh
                 <br />
-                <strong>Email:</strong> support@novixvpn.com
+                <strong>Email:</strong> novixvpn@gmail.com
                 <br />
                 <strong>Company:</strong> Novix VPN
               </p>
