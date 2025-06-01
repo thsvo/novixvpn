@@ -298,7 +298,7 @@ export default function Features() {
                 Get Started Today
               </Button>
               <p className="mt-4 text-sm text-muted-foreground">
-                30-day money-back guarantee. No questions asked.
+                48-hours money-back guarantee. No questions asked.
               </p>
             </div>
           </div>

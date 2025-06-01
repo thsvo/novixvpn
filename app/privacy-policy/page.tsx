@@ -183,13 +183,23 @@ export default function PrivacyPolicy() {
                 <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
                 <p>
                   If you have any questions or concerns about this Privacy
-                  Policy, please feel free to contact us at{" "}
+                  Policy, please feel free to contact us
+                </p>
+
+                <p className="text-gray-400 text-sm">
+                  <strong>Company:</strong> CYBERLOOM IT TECHNOLOGIES
+                  <br />
+                  <strong>Address:</strong> Plot-33, Main Road, Section-10,
+                  Senpara Parbata Mirpur - 1216 Bangladesh (BD)
+                  <br />
+                  <strong>Email:</strong>{" "}
                   <a
                     href="mailto:novixvpn@gmail.com"
                     className="text-primary hover:underline"
                   >
                     novixvpn@gmail.com
                   </a>
+                  <br />
                 </p>
               </li>
             </ol>

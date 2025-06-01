@@ -181,7 +181,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/#download"
+                  href="/download"
                   className="text-gray-400 hover:text-white"
                 >
                   Download

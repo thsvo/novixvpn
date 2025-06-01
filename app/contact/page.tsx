@@ -181,9 +181,9 @@ export default function Contact() {
                         </div>
                       ))}
                     </div>
-                    <div className="text-gray-600 text-sm flex items-center justify-center mt-5">
-                      Plot-33, Main Road, Section-10, Senpara Parbata Mirpur -
-                      1216 Bangladesh (BD)
+                    <div className="text-gray-600 text-[10px] flex items-center justify-center mt-5">
+                      Address : Plot-33, Main Road, Section-10, Senpara Parbata
+                      Mirpur - 1216 Bangladesh (BD)
                     </div>
                   </div>
                 </CardContent>
