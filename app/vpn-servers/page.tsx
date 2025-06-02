@@ -539,8 +539,13 @@ export default function VPNServers() {
                 Our VPN gives you the connectivity you need and the protection
                 you need, no matter where you are or what you're trying to do.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Get Started Today
+
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-primary text-white hover:bg-primary/90"
+              >
+                <Link href="/download">Get Started Today</Link>
               </Button>
               <p className="mt-4 text-sm text-muted-foreground">
                 48-hours money-back guarantee. No questions asked.

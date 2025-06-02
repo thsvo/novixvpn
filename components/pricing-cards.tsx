@@ -18,10 +18,9 @@ export default function PricingCards({}: PricingCardsProps) {
     {
       name: "Weekly",
       description: "Essential protection for individuals",
-      price: 11.99,
+      price: 6.99,
       features: [
         "Connect 5 devices simultaneously",
-        "Access to 60+ countries",
         "No-logs policy",
         "24/7 customer support",
       ],
@@ -30,30 +29,27 @@ export default function PricingCards({}: PricingCardsProps) {
     {
       name: "Yearly",
       description: "Complete protection for your digital life",
-      price: 19.99,
+      price: 59.99,
       features: [
         "Connect 5 devices simultaneously",
-        "Access to 100+ countries",
+
         "No-logs policy",
         "24/7 customer support",
         "Ad & malware blocker",
-        "Split tunneling",
+
         "Dedicated IP address",
-        "Password manager included",
       ],
       popular: true,
     },
     {
       name: "Monthly",
       description: "Advanced security for all your devices",
-      price: 14.99,
+      price: 8.99,
       features: [
         "Connect 5 devices simultaneously",
-        "Access to 90+ countries",
+
         "No-logs policy",
         "24/7 customer support",
-        "Ad & malware blocker",
-        "Split tunneling",
       ],
       popular: false,
     },
