@@ -95,7 +95,7 @@ export default function MainNav() {
                     Money-Back Guarantee
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Try Novix VPN risk-free with our 30-day money-back
+                    Try Novix VPN risk-free with our 48 hours money-back
                     guarantee.
                   </p>
                 </Link>

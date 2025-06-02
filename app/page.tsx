@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Shield, Zap, Check, Download, Star } from "lucide-react";
+import { Shield, Zap, Check, Download, Star, Clock } from "lucide-react";
 import { FaAndroid } from "react-icons/fa6";
 
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,8 @@ import WhatIsVpn from "@/components/what-is-vpn";
 import FAQComponent from "@/components/faq-component";
 import VpnBenefits from "@/components/vpn-benefits";
 import Head from "next/head";
+import VPNPromoBanner from "@/components/vpn-promo-banner";
+import MoneyBackGuarantee from "./money-back-guarantee/page";
 
 export const metadata = {
   title: "Novix VPN – Fast, Secure & Private Android VPN | Try Free",
@@ -92,6 +94,10 @@ export default function Home() {
                     truly private.
                   </span>
                 </div>
+                <div className="flex items-start md:items-center  gap-1 text-sm text-muted-foreground">
+                  <Clock className="h-5 w-5 text-primary" />
+                  <span>48-hours Money Back Guarantee</span>
+                </div>
                 {/* <div className="flex items-center gap-4">
                   <div className="flex">
                     {Array(5)
@@ -138,6 +144,7 @@ export default function Home() {
           <VpnBenefits />
         </section>
         {/* Features Section ✅*/}
+        <VPNPromoBanner />
         <section id="features" className="bg-background  md:py-24">
           {/* meta tads for SEO */}
           <Head>
@@ -149,6 +156,7 @@ export default function Home() {
               content="Secure up to 5 devices with one account. Novix VPN gives you fast, one-tap privacy with no setup stress. Stay safe on any network, anytime. "
             />
           </Head>
+
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

@@ -19,10 +19,7 @@ export default function VPNPromoBanner() {
             Everyday online security — for everyone
           </h2>
           <p className="text-gray-600 mb-6">
-            Change your virtual location, unblock censored websites and
-            services, and access the internet with confidence with NovixVPN. If
-            you are not 100% satisfied, tell us within 30 days of the purchase
-            date and get a full refund.
+            Try Novix VPN risk-free with our 48-hours money-back guarantee.
           </p>
           <Link
             href="#"
