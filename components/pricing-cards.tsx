@@ -19,7 +19,7 @@ export default function PricingCards({}: PricingCardsProps) {
       name: "Weekly Plan",
       originalPrice: "$5.99",
       price: "$1.79 / week",
-      description: "",
+      description: "Essential protection for individuals",
       features: [
         "Connect 5 devices simultaneously",
         "No-logs policy",
@@ -35,7 +35,7 @@ export default function PricingCards({}: PricingCardsProps) {
       originalPrice: "$160.00",
       price: "$48.00 / year",
       monthlyEquivalent: "~$4.00/month",
-      description: "",
+      description: "Complete protection for your digital life. Save 70%",
       features: [
         "Connect 5 devices simultaneously",
         "No-logs policy",
@@ -51,7 +51,7 @@ export default function PricingCards({}: PricingCardsProps) {
       name: "Monthly Plan",
       originalPrice: "$17.99",
       price: "$5.39 / month",
-      description: "",
+      description: "Complete protection for your digital life",
       features: [
         "Connect 5 devices simultaneously",
         "No-logs policy",

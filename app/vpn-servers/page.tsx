@@ -221,7 +221,7 @@ export default function VPNServers() {
               </div>
 
               {/* The Americas */}
-              {/* <div>
+              <div>
                 <h3 className="text-2xl font-bold mb-6">The Americas</h3>
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                   <Card>
@@ -325,7 +325,7 @@ export default function VPNServers() {
                     </CardContent>
                   </Card>
                 </div>
-              </div> */}
+              </div>
 
               {/* Europe and the Middle East */}
               <div>
