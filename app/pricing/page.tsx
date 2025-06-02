@@ -1,12 +1,14 @@
 import { Tabs, TabsContent } from "@/components/ui/tabs";
 import PricingCards from "@/components/pricing-cards";
 import PromoBanner from "@/components/shared/promo-banner";
+import VPNPromoBanner from "@/components/vpn-promo-banner";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
         {/* Promo banner */}
+
         <PromoBanner />
         {/* Pricing Section */}
         <section id="pricing" className="bg-muted/50 py-12 md:py-24">
@@ -26,6 +28,7 @@ export default function Home() {
             </Tabs>
           </div>
         </section>
+        <VPNPromoBanner></VPNPromoBanner>
       </main>
     </div>
   );

@@ -85,7 +85,7 @@ export default function MainNav() {
                 <Link href="/vpn-servers" className="nav-link">
                   <div className="text-sm font-medium">VPN Servers</div>
                   <p className="text-sm text-muted-foreground">
-                    Our global network of high-speed servers in 90+ countries.
+                    Servers available worldwide for unrestricted global access.
                   </p>
                 </Link>
               </li>

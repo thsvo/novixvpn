@@ -433,11 +433,11 @@ export default function VPNServers() {
             </div>
 
             <div className="mt-8 text-center">
-              <Button variant="outline" className="mr-2">
+              {/* <Button variant="outline" className="mr-2">
                 View More Countries
-              </Button>
+              </Button> */}
               <Button className="bg-primary hover:bg-primary/90">
-                Get Novix VPN
+                <Link href="/download">Get Novix VPN</Link>
               </Button>
             </div>
           </div>
