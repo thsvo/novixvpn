@@ -46,7 +46,7 @@ export default function VPNServers() {
               <h2 className="text-3xl font-bold tracking-tighter mb-6 text-center">
                 Server Locations That Are Good for Business and Fun
               </h2>
-              <div className="flex flex-col md:flex-row gap-4 items-center">
+              {/* <div className="flex flex-col md:flex-row gap-4 items-center">
                 <div className="relative w-full">
                   <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <Input
@@ -56,7 +56,7 @@ export default function VPNServers() {
                   />
                 </div>
                 <Button className="whitespace-nowrap">Find Servers</Button>
-              </div>
+              </div> */}
             </div>
 
             <div className="space-y-12">
