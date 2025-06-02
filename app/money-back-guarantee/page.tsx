@@ -278,7 +278,7 @@ export default function MoneyBackGuarantee() {
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90"
               >
-                Get Started Today
+                <Link href="/download">Get Started Today</Link>
               </Button>
               <p className="mt-4">
                 No pressure. No small print. Just good service.
