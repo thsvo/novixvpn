@@ -8,11 +8,21 @@ interface Countdown {
 }
 
 export function useCountdown(): Countdown {
-  // Convert 5h 33m 47s to total seconds
-  const OFFER_DURATION =12 * 60 * 60;
+  const OFFER_DURATION =  4 * 60 * 60 + 44 * 60 + 24; // in seconds
+  const STORAGE_KEY = "offer_target_date";
 
+  const getStoredOrNewTargetDate = () => {
+    const storedDate = localStorage.getItem(STORAGE_KEY);
+    if (storedDate) {
+      return new Date(storedDate);
+    } else {
+      const newTargetDate = new Date(Date.now() + OFFER_DURATION * 1000);
+      localStorage.setItem(STORAGE_KEY, newTargetDate.toISOString());
+      return newTargetDate;
+    }
+  };
 
-  const [targetDate] = useState(() => new Date(Date.now() + OFFER_DURATION * 1000));
+  const [targetDate] = useState(getStoredOrNewTargetDate);
 
   const calculateTimeLeft = () => {
     const difference = +targetDate - +new Date();
@@ -24,7 +34,7 @@ export function useCountdown(): Countdown {
     const minutes = Math.floor((difference / 1000 / 60) % 60);
     const seconds = Math.floor((difference / 1000) % 60);
 
-    return { days: 0, hours, minutes, seconds,OFFER_DURATION };
+    return { days: 0, hours, minutes, seconds };
   };
 
   const [timeLeft, setTimeLeft] = useState<Countdown>(calculateTimeLeft());

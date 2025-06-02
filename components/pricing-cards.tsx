@@ -23,6 +23,7 @@ export default function PricingCards({}: PricingCardsProps) {
         "Connect 5 devices simultaneously",
         "No-logs policy",
         "24/7 customer support",
+        "Kill Switch (Free on All Plans)",
       ],
       popular: false,
     },
@@ -32,12 +33,11 @@ export default function PricingCards({}: PricingCardsProps) {
       price: 59.99,
       features: [
         "Connect 5 devices simultaneously",
-
         "No-logs policy",
         "24/7 customer support",
         "Ad & malware blocker",
 
-        "Dedicated IP address",
+        "Kill Switch (Free on All Plans)",
       ],
       popular: true,
     },
@@ -50,6 +50,8 @@ export default function PricingCards({}: PricingCardsProps) {
 
         "No-logs policy",
         "24/7 customer support",
+        "Ad & malware blocker",
+        "Kill Switch (Free on All Plans)",
       ],
       popular: false,
     },
