@@ -144,7 +144,7 @@ export default function Home() {
           <VpnBenefits />
         </section>
         {/* Features Section ✅*/}
-        <VPNPromoBanner />
+
         <section id="features" className="bg-background  md:py-24">
           {/* meta tads for SEO */}
           <Head>
@@ -361,6 +361,7 @@ export default function Home() {
             <PricingCards />
           </div>
         </section>
+        <VPNPromoBanner />
         {/* Testimonials Section
         <section id="testimonials" className="bg-background py-12 md:py-24">
           <div className="container px-4 md:px-6">

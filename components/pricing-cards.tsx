@@ -16,42 +16,49 @@ interface PricingCardsProps {}
 export default function PricingCards({}: PricingCardsProps) {
   const plans = [
     {
-      name: "Weekly",
-      description: "Essential protection for individuals",
-      price: 6.99,
+      name: "Weekly Plan",
+      originalPrice: "$5.99",
+      price: "$1.79 / week",
+      description: "",
       features: [
         "Connect 5 devices simultaneously",
         "No-logs policy",
         "24/7 customer support",
-        "Kill Switch (Free on All Plans)",
+        "Ad & Malware Blocker",
+        "Free Kill Switch",
+        "48-hour money-back guarantee",
       ],
       popular: false,
     },
     {
-      name: "Yearly",
-      description: "Complete protection for your digital life",
-      price: 59.99,
+      name: "Yearly Plan",
+      originalPrice: "$160.00",
+      price: "$48.00 / year",
+      monthlyEquivalent: "~$4.00/month",
+      description: "",
       features: [
         "Connect 5 devices simultaneously",
         "No-logs policy",
+        "Free Kill Switch",
         "24/7 customer support",
-        "Ad & malware blocker",
-
-        "Kill Switch (Free on All Plans)",
+        "Ad & Malware Blocker",
+        "3-Day-Claim Extra Bonus",
+        "48-hour money-back guarantee",
       ],
       popular: true,
     },
     {
-      name: "Monthly",
-      description: "Advanced security for all your devices",
-      price: 8.99,
+      name: "Monthly Plan",
+      originalPrice: "$17.99",
+      price: "$5.39 / month",
+      description: "",
       features: [
         "Connect 5 devices simultaneously",
-
         "No-logs policy",
         "24/7 customer support",
-        "Ad & malware blocker",
-        "Kill Switch (Free on All Plans)",
+        "Ad & Malware Blocker",
+        "Free Kill Switch",
+        "48-hour money-back guarantee",
       ],
       popular: false,
     },
@@ -74,7 +81,14 @@ export default function PricingCards({}: PricingCardsProps) {
           <CardHeader>
             <div className="flex justify-between items-start">
               <div>
-                <CardTitle>{plan.name}</CardTitle>
+                {/* <CardTitle>{plan.name}</CardTitle> */}
+                <CardTitle>
+                  {plan.name.includes("Monthly") || plan.name.includes("Weekly")
+                    ? "🔵 "
+                    : ""}
+                  {plan.name}
+                </CardTitle>
+
                 <CardDescription className="mt-1">
                   {plan.description}
                 </CardDescription>
@@ -85,10 +99,20 @@ export default function PricingCards({}: PricingCardsProps) {
             </div>
           </CardHeader>
           <CardContent className="flex-1">
-            <div className="mb-4">
-              <span className="text-4xl font-bold">{plan.price}</span>
-              <span className="text-muted-foreground">/mo</span>
+            <div className="mb-4 space-y-1">
+              {plan.originalPrice && (
+                <div className="line-through text-muted-foreground text-sm">
+                  {plan.originalPrice}
+                </div>
+              )}
+              <div className="text-xl font-semibold">{plan.price}</div>
+              {plan.monthlyEquivalent && (
+                <div className="text-sm text-muted-foreground">
+                  {plan.monthlyEquivalent}
+                </div>
+              )}
             </div>
+
             <ul className="space-y-2 mb-6">
               {plan.features.map((feature) => (
                 <li key={feature} className="flex items-center gap-2">
