@@ -14,7 +14,7 @@ export default function VPNServers() {
         <section className="bg-gradient-to-b from-primary to-primary/80 text-white py-16 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl  mb-6">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl mb-6">
                 Network of Global VPN Servers
               </h1>
               <p className="text-sm mb-8">
@@ -46,17 +46,6 @@ export default function VPNServers() {
               <h2 className="text-3xl font-bold tracking-tighter mb-6 text-center">
                 Server Locations That Are Good for Business and Fun
               </h2>
-              {/* <div className="flex flex-col md:flex-row gap-4 items-center">
-                <div className="relative w-full">
-                  <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                  <Input
-                    type="search"
-                    placeholder="Search for a country or city..."
-                    className="pl-10"
-                  />
-                </div>
-                <Button className="whitespace-nowrap">Find Servers</Button>
-              </div> */}
             </div>
 
             <div className="space-y-12">
@@ -69,13 +58,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/ID/flat/64.png"
                             alt="Indonesia Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -95,13 +84,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/JP/flat/64.png"
                             alt="Japan Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -120,13 +109,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/AU/flat/64.png"
                             alt="Australia Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -146,13 +135,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/HK/flat/64.png"
                             alt="Hong Kong Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -170,13 +159,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/SG/flat/64.png"
                             alt="Singapore Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -196,13 +185,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/IN/flat/64.png"
                             alt="India Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -227,13 +216,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/BR/flat/64.png"
                             alt="Brazil Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -253,13 +242,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/CA/flat/64.png"
                             alt="Canada Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -277,13 +266,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/US/flat/64.png"
                             alt="USA Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -301,13 +290,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/US/flat/64.png"
                             alt="USA Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -336,13 +325,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/DE/flat/64.png"
                             alt="Germany Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -358,13 +347,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/GB/flat/64.png"
                             alt="UK Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -380,13 +369,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/FR/flat/64.png"
                             alt="France Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -404,13 +393,13 @@ export default function VPNServers() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="rounded-full overflow-hidden w-10 h-10 flex-shrink-0">
+                        <div className="overflow-hidden w-10 h-10 flex-shrink-0 flex items-center justify-center">
                           <Image
                             src="https://flagsapi.com/QA/flat/64.png"
                             alt="Qatar Flag"
                             width={40}
                             height={40}
-                            className="object-cover"
+                            className="object-contain"
                           />
                         </div>
                         <div>
@@ -433,9 +422,6 @@ export default function VPNServers() {
             </div>
 
             <div className="mt-8 text-center">
-              {/* <Button variant="outline" className="mr-2">
-                View More Countries
-              </Button> */}
               <Button className="bg-primary hover:bg-primary/90">
                 <Link href="/download">Get Novix VPN</Link>
               </Button>

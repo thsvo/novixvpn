@@ -39,9 +39,15 @@ export function useCountdown(): Countdown {
     if (!targetDate) return;
 
     const calculateTimeLeft = () => {
-      const difference = +targetDate - +new Date();
+      const now = new Date();
+      let difference = +targetDate - +now;
+
+      // Restart the countdown if time is up
       if (difference <= 0) {
-        return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+        const newTarget = new Date(now.getTime() + OFFER_DURATION * 1000);
+        localStorage.setItem(STORAGE_KEY, newTarget.toISOString());
+        setTargetDate(newTarget);
+        difference = +newTarget - +now;
       }
 
       const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
