@@ -159,9 +159,9 @@ export default function Contact() {
                         <p className="text-gray-600 text-sm">
                           Comprehensive guides & FAQs
                         </p>
-                        <p className="text-gray-600 text-sm">
+                        {/* <p className="text-gray-600 text-sm">
                           Setup tutorials and troubleshooting
-                        </p>
+                        </p> */}
                       </div>
                     </div>
 
