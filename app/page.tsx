@@ -130,7 +130,7 @@ export default function Home() {
               </div>
               <div className="md:-mt-7">
                 <Image
-                  src="/Home-page-update.webp"
+                  src="/Home-page-update.png"
                   width={800}
                   height={800}
                   alt="playstore"

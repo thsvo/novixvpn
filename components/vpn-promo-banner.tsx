@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function VPNPromoBanner() {
   return (
     <section className="max-w-6xl mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row border border-gray-200 rounded-xl overflow-hidden">
+      <div className=" shadow-lg flex flex-col md:flex-row border border-gray-200 rounded-xl overflow-hidden">
         <div className="bg-blue-100 p-8 flex items-center justify-center md:w-1/4">
           <Image
             src="image/48-Hour-Money-Back-Guarantee.png"
