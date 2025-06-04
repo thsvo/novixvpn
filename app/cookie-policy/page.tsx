@@ -9,7 +9,7 @@ export default function CookiePolicy() {
 
           <div className="prose prose-blue max-w-none">
             <p className="text-muted-foreground mb-6">
-              Last updated: May 7, 2025
+              Last updated: May 31, 2025 
             </p>
 
             <section className="mb-8">

@@ -125,7 +125,7 @@ export default function HeaderCom() {
                 </div>
               )}
             </div>
-            {!token && (
+            {/* {!token && (
               <Link
                 href="/login"
                 className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -133,7 +133,7 @@ export default function HeaderCom() {
               >
                 <span className="text-sm">Log In</span>
               </Link>
-            )}
+            )} */}
             {/* Get Novix Button */}
             <Link href="/download">
               <Button className="rounded-full">Get Novix VPN</Button>
@@ -253,7 +253,7 @@ export default function HeaderCom() {
                 </Link>
               </div>
               {/* Log In */}
-              {!token ? (
+              {/* {!token ? (
                 <Link
                   href="/login"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -271,7 +271,7 @@ export default function HeaderCom() {
                 >
                   <span className="text-lg font-medium">Log Out</span>
                 </button>
-              )}
+              )} */}
               {/* User Profile for mobile */}
               {token && (
                 <div className="flex items-center justify-center gap-3 mt-4 py-2">

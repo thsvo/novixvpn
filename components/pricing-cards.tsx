@@ -42,7 +42,7 @@ export default function PricingCards({}: PricingCardsProps) {
         "Free Kill Switch",
         "24/7 customer support",
         "Ad & Malware Blocker",
-        "3-Day-Claim Extra Bonus",
+        // "3-Day-Claim Extra Bonus",
         "48-hour money-back guarantee",
       ],
       popular: true,
@@ -65,12 +65,12 @@ export default function PricingCards({}: PricingCardsProps) {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-6 max-w-fit mx-auto">
+    <div className="grid  grid-cols-1 md:grid-cols-3 justify-items-center gap-6 max-w-fit mx-auto">
       {plans.map((plan) => (
         <Card
           key={plan.name}
           className={`flex flex-col max-w-[22rem] ${
-            plan.popular ? "border-primary shadow-lg" : ""
+            plan.popular ? "border-primary shadow-xl" : ""
           }`}
         >
           {plan.popular && (

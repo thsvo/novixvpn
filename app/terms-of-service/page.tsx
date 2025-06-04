@@ -14,7 +14,7 @@ export default function TermsOfService() {
 
           <div className="prose prose-blue max-w-none">
             <p className="text-muted-foreground mb-6">
-              Last updated: May 30, 2025
+              Last updated: May 31, 2025 
             </p>
 
             <ol className="list-decimal marker:font-bold marker:text-2xl marker:text-black ">
@@ -155,12 +155,13 @@ export default function TermsOfService() {
                 <section className="mb-8">
                   <h2 className="text-2xl font-semibold mb-4"> PRIVACY</h2>
                   <p>
-                    You agree to read our Privacy Policy, which explains what
-                    type of information we collect and what might happen to that
-                    information, including, without limitation, how such
-                    information is shared and used. Our Privacy Policy contains
-                    information that you should review prior to using the Novix
-                    VPN Services.
+                    You agree to read our{" "}
+                    <Link href="/privacy-policy">Privacy Policy</Link> which
+                    explains what type of information we collect and what might
+                    happen to that information, including, without limitation,
+                    how such information is shared and used. Our Privacy Policy
+                    contains information that you should review prior to using
+                    the Novix VPN Services.
                   </p>
                 </section>
               </li>

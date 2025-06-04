@@ -211,6 +211,16 @@ export default function Features() {
                           </p>
                         </div>
                       </li>
+                      <li className="flex items-start gap-3">
+                        <Smartphone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                        <div>
+                          <h1 className="font-bold">100% Ad-Free Experience</h1>
+                          <p className="text-muted-foreground">
+                         
+                          Enjoy uninterrupted browsing with Novix VPN for Android, free from ads, pop-ups, or banners for seamless streaming and gaming.
+                          </p>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                   <div className="w-full rounded-lg overflow-hidden max-w-xl">
