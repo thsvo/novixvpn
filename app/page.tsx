@@ -78,11 +78,18 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  <Button
+                    size="lg"
+                    className="bg-primary rounded-full hover:bg-primary/90"
+                  >
                     Claim Extra Bonus →
                   </Button>
                   <Link href="#pricing">
-                    <Button size="lg" variant="outline">
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="rounded-full"
+                    >
                       View Plans
                     </Button>
                   </Link>
