@@ -28,7 +28,7 @@ export default function PricingCards({}: PricingCardsProps) {
         "Free Kill Switch",
         "48-hour money-back guarantee",
       ],
-      popular: false,
+      popular: true,
     },
     {
       name: "Yearly Plan",
@@ -60,7 +60,7 @@ export default function PricingCards({}: PricingCardsProps) {
         "Free Kill Switch",
         "48-hour money-back guarantee",
       ],
-      popular: false,
+      popular: true,
     },
   ];
 
