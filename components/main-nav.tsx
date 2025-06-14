@@ -100,6 +100,16 @@ export default function MainNav() {
                   </p>
                 </Link>
               </li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
+                <Link href="/how-to-delete-account" className="nav-link">
+                  <div className="text-sm font-medium">
+                    How To Delete My Novix Vpn Account
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Follow these steps to delete your Novix VPN account.
+                  </p>
+                </Link>
+              </li>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

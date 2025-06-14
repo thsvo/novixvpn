@@ -217,7 +217,7 @@ export default function HeaderCom() {
                         onClick={() => setMobileNavOpen(false)}
                         className="block text-base text-muted-foreground hover:text-primary"
                       >
-                        How to Delete Account
+                        How To Delete My Novix Vpn Account
                       </Link>
                       {/* <Link
                         href="/features/feature-2"

@@ -269,7 +269,7 @@ export default function Footer() {
                   href="/how-to-delete-account"
                   className="text-gray-400 hover:text-white"
                 >
-                  How to Delete Account
+                  How To Delete My Novix Vpn Account
                 </Link>
               </li>
             </ul>
