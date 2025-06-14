@@ -1,6 +1,7 @@
 // app/(your-folder)/delete-account/page.tsx
 "use client";
 
+import Image from "next/image";
 import {
   Mail,
   Trash2,
@@ -26,6 +27,18 @@ export default function DeleteAccountPage() {
             Your privacy is our top priority. If you’ve decided to leave, we’re
             here to make the process safe, simple, and stress-free.
           </p>
+        </div>
+
+        {/* Intro Image */}
+        <div className="flex justify-center">
+          <Image
+            src="/image/How-to-delete-my-VPN-account.png"
+            alt="Delete Account Illustration"
+            width={800}
+            height={600}
+            className="w-full max-w-md h-auto rounded-lg shadow-sm"
+            priority
+          />
         </div>
 
         {/* Reasons */}
