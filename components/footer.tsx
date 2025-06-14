@@ -264,6 +264,14 @@ export default function Footer() {
                   Cookie Policy
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/how-to-delete-account"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Delete account
+                </Link>
+              </li>
             </ul>
           )}
 
