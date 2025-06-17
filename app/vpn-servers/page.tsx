@@ -423,7 +423,7 @@ export default function VPNServers() {
 
             <div className="mt-8 text-center">
               <Button className="bg-primary hover:bg-primary/90">
-                <Link href="/download">Get Novix VPN</Link>
+                <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">Get Novix VPN</Link>
               </Button>
             </div>
           </div>
@@ -531,7 +531,7 @@ export default function VPNServers() {
                 variant="outline"
                 className="bg-primary text-white hover:bg-primary/90"
               >
-                <Link href="/download">Get Started Today</Link>
+                <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">Get Started Today</Link>
               </Button>
               <p className="mt-4 text-sm text-muted-foreground">
                 48-hours money-back guarantee. No questions asked.

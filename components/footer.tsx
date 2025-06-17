@@ -334,7 +334,10 @@ export default function Footer() {
             "Available VPN App",
             <ul className="space-y-4 pb-4">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white">
+                <Link
+                  href="https://play.google.com/store/apps/details?id=com.novix.mobile"
+                  className="text-gray-400 hover:text-white"
+                >
                   Android
                 </Link>
               </li>

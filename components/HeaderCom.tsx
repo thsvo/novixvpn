@@ -137,7 +137,7 @@ export default function HeaderCom() {
               </Link>
             )} */}
             {/* Get Novix Button */}
-            <Link href="/download">
+            <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
               <Button className="rounded-full">Get Novix VPN</Button>
             </Link>
             {/* user profile section */}
@@ -328,7 +328,10 @@ export default function HeaderCom() {
 
               {/* CTA Button */}
               <div className="mt-4 pt-2 pb-4">
-                <Link href="/download" onClick={() => setMobileNavOpen(false)}>
+                <Link
+                  href="https://play.google.com/store/apps/details?id=com.novix.mobile"
+                  onClick={() => setMobileNavOpen(false)}
+                >
                   <Button className="w-full py-4 text-base font-semibold rounded-full bg-red-500 hover:bg-red-600">
                     Get Novix VPN
                   </Button>
