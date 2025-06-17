@@ -123,7 +123,7 @@ export default function PricingCards({}: PricingCardsProps) {
             </ul>
           </CardContent>
           <CardFooter>
-            <Link href="/">
+            <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
               <Button className={`w-full ${plan.popular ? "bg-primary" : ""}`}>
                 Get {plan.name}
               </Button>

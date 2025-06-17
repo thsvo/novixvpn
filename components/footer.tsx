@@ -146,7 +146,7 @@ export default function Footer() {
 
           {/* App store link commented out */}
           <Link
-            href="https://play.google.com/store"
+            href="https://play.google.com/store/apps/details?id=com.novix.mobile"
             className="w-full max-w-[200px]"
           >
             <Image
