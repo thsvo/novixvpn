@@ -42,7 +42,7 @@ export default function PricingCards({}: PricingCardsProps) {
         "Free Kill Switch",
         "24/7 customer support",
         "Ad & Malware Blocker",
-        // "3-Day-Claim Extra Bonus",
+        "3-Day-Claim Extra Bonus",
         "48-hour money-back guarantee",
       ],
       popular: true,

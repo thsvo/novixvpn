@@ -70,7 +70,7 @@ export default function VPNDownloadPage() {
 
           <div className="flex justify-center">
             <Image
-              src="/download-page.webp"
+              src="/Download-page.png"
               alt="QR Code"
               width={550}
               height={500}
