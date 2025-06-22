@@ -29,7 +29,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Google Tag Manager */}
-
         <Script
           id="gtm-head"
           strategy="afterInteractive"
@@ -99,6 +98,13 @@ export default function RootLayout({
               height="0" width="0" style="display:none;visibility:hidden"></iframe>
             `,
           }}
+        />
+
+        {/* HubSpot Embed Code */}
+        <Script
+          id="hubspot-script"
+          strategy="afterInteractive"
+          src="//js-na2.hs-scripts.com/242560734.js"
         />
 
         <PixelTracker />

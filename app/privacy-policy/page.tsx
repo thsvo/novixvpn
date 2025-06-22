@@ -161,11 +161,17 @@ export default function PrivacyPolicy() {
                   Sharing of Information
                 </h3>
                 <p>
-                  Your privacy is our priority—Novix VPN does not trade, rent,
+                  {/* Your privacy is our priority—Novix VPN does not trade, rent,
                   or sell your information to outside parties for profit. Any
                   information shared with third parties (such as payment
                   processors) is strictly for the purpose of providing Novix
-                  Premium service
+                  Premium service. */}
+                  Your privacy is our priority—Novix VPN does not trade, rent,
+                  or sell your information to outside parties for profit. Any
+                  information shared with third parties (such as payment
+                  processors and customer service tools like{" "}
+                  <span className="font-bold">HubSpot</span>) is strictly for
+                  the purpose of providing Novix Premium service.
                 </p>
               </li>
               <li>
