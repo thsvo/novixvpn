@@ -114,6 +114,17 @@ export default function PrivacyPolicy() {
                     </li>
                     <li> Device Information</li>
                   </ul>
+                  <p>
+                    Additionally, we use{" "}
+                    <span className="font-bold">Google Tag Manager</span> and{" "}
+                    <span className="font-bold">Google Analytics</span> on our
+                    website to better understand how visitors interact with our
+                    content and to improve website performance. These tools do
+                    not collect or store personal or VPN usage data, and IP
+                    anonymization is enabled. The data gathered is purely for
+                    aggregate website analytics and is never linked to your VPN
+                    activity or account.
+                  </p>
                 </section>
               </li>
               <li>
