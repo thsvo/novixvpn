@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 import { useAuth } from "@/Context/AuthContext";
 import UserProfile from "./shared/UserProfile";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import LanguageDropdown from "./language/LanguageDropdown";
 
 export default function HeaderCom() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -286,6 +287,7 @@ export default function HeaderCom() {
                   <span className="text-lg font-medium">FAQ</span>
                   <ChevronDown size={16} className="text-gray-500" />
                 </Link>
+                <LanguageDropdown />
               </div>
               {/* Log In */}
               {/* {!token ? (
