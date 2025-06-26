@@ -171,7 +171,11 @@ export default function PrivacyPolicy() {
                   information shared with third parties (such as payment
                   processors and customer service tools like{" "}
                   <span className="font-bold">HubSpot</span>) is strictly for
-                  the purpose of providing Novix Premium service.
+                  the purpose of providing Novix Premium service. Our website
+                  uses <span className="font-bold">Google Translate</span> to
+                  offer seamless language translation for a better user
+                  experience. This feature helps ensure accessibility for users
+                  worldwide.
                 </p>
               </li>
               <li>
