@@ -106,14 +106,14 @@ export default function Home() {
                 </div>
                 <div className="flex items-start md:items-center  gap-1 text-sm text-muted-foreground">
                   <Check className="h-5 w-5 text-primary" />
-                  <span className="font-bold text-black">
+                  <span>
                     Join millions who trust Novix to keep their online life
                     truly private.
                   </span>
                 </div>
                 <div className="flex items-start md:items-center  gap-1 text-sm text-muted-foreground">
                   <DollarSign className="h-6 w-6 font-bold text-white bg-green-500 rounded-full p-1" />
-                  <span className="font-bold text-black ">
+                  <span className="font-bold text-black">
                     Risk-free purchase: 48-hour refund, Google-backed.
                   </span>
                 </div>
