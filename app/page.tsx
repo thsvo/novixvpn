@@ -91,7 +91,7 @@ export default function Home() {
                       size="lg"
                       className="bg-primary rounded-full hover:bg-primary/90"
                     >
-                      3-Day Claim Extra + 70% OFF
+                      Claim 70% OFF
                     </Button>
                   </Link>
                   <Link href="#pricing">
