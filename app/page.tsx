@@ -91,7 +91,7 @@ export default function Home() {
                       size="lg"
                       className="bg-primary rounded-full hover:bg-primary/90"
                     >
-                      Claim 70% OFF
+                      Start Free Trial + Save 70%
                     </Button>
                   </Link>
                   <Link href="#pricing">
