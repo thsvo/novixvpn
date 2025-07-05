@@ -16,6 +16,22 @@ interface PricingCardsProps {}
 export default function PricingCards({}: PricingCardsProps) {
   const plans = [
     {
+      name: "Novix Free",
+      // originalPrice: "$5.99",
+      price: "$0.00 / month",
+      description: "Essential protection for individuals",
+      features: [
+        "💳 No credit card. No hidden fees. Just freedom",
+        "Security & Freedom, Always Free",
+        "Connect securely on 1 device",
+        "Fast & stable speeds for everyday browsing",
+        "Connect to 5 trusted global servers—no random limits",
+        // "Los Angeles , Delhi , Doha , Singapore  ,Berlin",
+        "No trials. No catch. Just private internet, for everyone",
+      ],
+      popular: false,
+    },
+    {
       name: "Weekly Plan",
       originalPrice: "$5.99",
       price: "$1.79 / week",
