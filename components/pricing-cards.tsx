@@ -25,8 +25,7 @@ export default function PricingCards({}: PricingCardsProps) {
         "Security & Freedom, Always Free",
         "Connect securely on 1 device",
         "Fast & stable speeds for everyday browsing",
-        "Connect to 5 trusted global servers—no random limits",
-        // "Los Angeles , Delhi , Doha , Singapore  ,Berlin",
+        "Connect to 5 trusted global servers no random limits - Los Angeles , Delhi , Doha , Singapore  ,Berlin",
         "No trials. No catch. Just private internet, for everyone",
       ],
       popular: false,
@@ -81,12 +80,12 @@ export default function PricingCards({}: PricingCardsProps) {
   ];
 
   return (
-    <div className="grid  grid-cols-1 md:grid-cols-3 justify-items-center gap-6 max-w-fit mx-auto">
+    <div className="grid  grid-cols-1 md:grid-cols-4 justify-items-center gap-6 max-w-fit mx-auto">
       {plans.map((plan) => (
         <Card
           key={plan.name}
           className={`flex flex-col max-w-[22rem] ${
-            plan.popular ? "border-primary shadow-xl" : ""
+            plan.popular ? "border-primary shadow-xl" : "border-green-500"
           }`}
         >
           {plan.popular && (
