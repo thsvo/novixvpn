@@ -133,6 +133,10 @@ export default function Home() {
                   </span>
                 </div> */}
                 {/* download links */}
+
+                <p className="font-bold">
+                  Successfully passed security verification
+                </p>
                 <div className="w-full flex mt-5">
                   <Link
                     href="https://play.google.com/store/apps/details?id=com.novix.mobile"
