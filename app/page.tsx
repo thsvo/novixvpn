@@ -41,7 +41,7 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2 md:space-y-6">
                   <div className="">
-                    <p className="font-semibold">
+                    {/* <p className="font-semibold">
                       Successfully passed security verification
                     </p>
                     <Image
@@ -49,7 +49,7 @@ export default function Home() {
                       width={100}
                       height={150}
                       alt="playstore"
-                    />
+                    /> */}
                     <h1 className="text-4xl font-bold tracking-tighter md:text-6xl/none ">
                       Guard What’s Yours. Ghost the Rest.
                     </h1>
