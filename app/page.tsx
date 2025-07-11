@@ -41,6 +41,15 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2 md:space-y-6">
                   <div className="">
+                    <p className="font-semibold">
+                      Successfully passed security verification
+                    </p>
+                    <Image
+                      src="/Google-Play-Logo.jpg"
+                      width={100}
+                      height={150}
+                      alt="playstore"
+                    />
                     <h1 className="text-4xl font-bold tracking-tighter md:text-6xl/none ">
                       Guard What’s Yours. Ghost the Rest.
                     </h1>
@@ -134,9 +143,6 @@ export default function Home() {
                 </div> */}
                 {/* download links */}
 
-                <p className="font-bold">
-                  Successfully passed security verification
-                </p>
                 <div className="w-full flex mt-5">
                   <Link
                     href="https://play.google.com/store/apps/details?id=com.novix.mobile"
