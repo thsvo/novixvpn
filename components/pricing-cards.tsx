@@ -25,7 +25,8 @@ export default function PricingCards({}: PricingCardsProps) {
         "Security & Freedom, Always Free",
         "Connect securely on 1 device",
         "Fast & stable speeds for everyday browsing",
-        "Connect to 5 trusted global servers no random limits - Los Angeles , Delhi , Doha , Singapore  ,Berlin",
+        // "Connect to 9 trusted global servers no random limits - Los Angeles , Delhi , Doha , Singapore  ,Berlin",
+        "Connect to 5 trusted global servers no random limits ",
         "No trials. No catch. Just private internet, for everyone",
       ],
       popular: false,
@@ -33,7 +34,7 @@ export default function PricingCards({}: PricingCardsProps) {
     {
       name: "Weekly Plan",
       originalPrice: "$5.99",
-      price: "$1.79 / week",
+      price: "$1.99 / week",
       description: "Essential protection for individuals",
       features: [
         "Connect 5 devices simultaneously",
@@ -42,13 +43,14 @@ export default function PricingCards({}: PricingCardsProps) {
         "Ad & Malware Blocker",
         "Free Kill Switch",
         "48-hour money-back guarantee",
+        "Includes 1-Day Free",
       ],
       popular: true,
     },
     {
       name: "Yearly Plan",
       originalPrice: "$160.00",
-      price: "$47.99 / year",
+      price: "$21.99 / year",
       monthlyEquivalent: "~$4.00/month",
       description: "Complete protection for your digital life. Save 70%",
       features: [
@@ -57,7 +59,8 @@ export default function PricingCards({}: PricingCardsProps) {
         "Free Kill Switch",
         "24/7 customer support",
         "Ad & Malware Blocker",
-        "Includes Extra bonus:  3-days",
+        // "Includes Extra bonus:  14-days free",
+        "Includes 14-Day Free",
         "48-hour money-back guarantee",
       ],
       popular: true,
@@ -65,7 +68,7 @@ export default function PricingCards({}: PricingCardsProps) {
     {
       name: "Monthly Plan",
       originalPrice: "$17.99",
-      price: "$5.39 / month",
+      price: "$4.99 / month",
       description: "Complete protection for your digital life",
       features: [
         "Connect 5 devices simultaneously",
@@ -74,6 +77,7 @@ export default function PricingCards({}: PricingCardsProps) {
         "Ad & Malware Blocker",
         "Free Kill Switch",
         "48-hour money-back guarantee",
+        "Includes 3-Day Free",
       ],
       popular: true,
     },
