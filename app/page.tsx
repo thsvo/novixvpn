@@ -51,9 +51,11 @@ export default function Home() {
                       height={150}
                       alt="playstore"
                     /> */}
-                    <h1 className="text-3xl font-bold tracking-tighter md:text-4xl/none ">
-                      The Best VPN for Total Online Freedom. Start risk-free.
-                      Stay protected.
+                    <h1 className="text-3xl mb-2 font-[3rem] tracking-tighter md:text-4xl/none ">
+                      The Best VPN for Total Online Freedom.
+                    </h1>
+                    <h1 className="text-3xl my-2 font-[3rem] tracking-tighter md:text-4xl/none ">
+                      Start risk-free. Stay protected.
                     </h1>
                     <p className="text-muted-foreground md:ml-2 py-2">
                       <strong>Novix VPN</strong> gives you the privacy you
