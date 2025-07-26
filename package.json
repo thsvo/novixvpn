@@ -46,6 +46,7 @@
     "crypto-js": "^4.2.0",
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
+    "flipdown": "^0.3.2",
     "input-otp": "1.4.1",
     "js-cookie": "^3.0.5",
     "lucide-react": "^0.454.0",

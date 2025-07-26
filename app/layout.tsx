@@ -9,6 +9,7 @@ import HeaderCom from "@/components/HeaderCom";
 import IpBanner from "@/components/ip-banner";
 import Footer from "@/components/footer";
 import HubspotLoader from "@/components/shared/HubspotLoader";
+import "flipdown/dist/flipdown.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -23,6 +23,7 @@ import VpnBenefits from "@/components/vpn-benefits";
 import Head from "next/head";
 import VPNPromoBanner from "@/components/vpn-promo-banner";
 import MoneyBackGuarantee from "./money-back-guarantee/page";
+import Timer from "@/components/shared/Timer";
 
 export const metadata = {
   title: "Novix VPN – Fast, Secure & Private Android VPN | Try Free",
@@ -50,14 +51,19 @@ export default function Home() {
                       height={150}
                       alt="playstore"
                     /> */}
-                    <h1 className="text-4xl font-bold tracking-tighter md:text-6xl/none ">
-                      Guard What’s Yours. Ghost the Rest.
+                    <h1 className="text-3xl font-bold tracking-tighter md:text-5xl/none ">
+                      The Best VPN for Total Online Freedom. Start risk-free.
+                      Stay protected.
                     </h1>
                     <p className="text-muted-foreground md:ml-2 py-2">
                       <strong>Novix VPN</strong> gives you the privacy you
                       deserve without the trade-offs.
                     </p>
                   </div>
+
+                  {/* <div>
+                    <Timer></Timer>
+                  </div> */}
                   <ul>
                     <li>
                       <div className="flex items-center gap-2 font-bold">
@@ -100,7 +106,7 @@ export default function Home() {
                       size="lg"
                       className="bg-primary rounded-full hover:bg-primary/90"
                     >
-                      Start Free Trial + Save 70%
+                      Claim 14 days Free
                     </Button>
                   </Link>
                   <Link href="#pricing">

@@ -37,9 +37,13 @@ export default function HeroPromotionCom() {
         </div>
         <div>
           <h2 className="text-lg ">
-            <strong>Limited-Time Offer:</strong> Save <strong>70% off</strong>
+            <strong>
+              Back to School + Global Privacy Deal Get 70% OFF + 14 Days
+              Free—Limited Time Protect your connection, unblock the world.
+              Risk-free, no strings attached.
+            </strong>
           </h2>
-          <h3 className="font-bold"> + Claim VIP Days</h3>
+          <h3 className="font-bold"> + Claim My Offer Now</h3>
         </div>
       </div>
     </>
