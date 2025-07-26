@@ -51,7 +51,7 @@ export default function PricingCards({}: PricingCardsProps) {
       name: "Yearly Plan",
       originalPrice: "$160.00",
       price: "$21.99 / year",
-      monthlyEquivalent: "~$4.00/month",
+      monthlyEquivalent: "~$1.83/month",
       description: "Complete protection for your digital life. Save 70%",
       features: [
         "Connect 5 devices simultaneously",
