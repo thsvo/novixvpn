@@ -38,9 +38,8 @@ export default function HeroPromotionCom() {
         <div>
           <h2 className="text-lg ">
             <strong>
-              Back to School + Global Privacy Deal Get 70% OFF + 14 Days
-              Free—Limited Time Protect your connection, unblock the world.
-              Risk-free, no strings attached.
+              Back to School + Global Privacy Deal—Save 70% Today! <br /> Unlock
+              full online freedom and security.
             </strong>
           </h2>
           <h3 className="font-bold"> + Claim My Offer Now</h3>

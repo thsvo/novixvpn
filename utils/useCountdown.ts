@@ -8,7 +8,9 @@ interface Countdown {
 }
 
 export function useCountdown(): Countdown {
-  const OFFER_DURATION = 4 * 60 * 60 + 44 * 60 + 24; // 4h 44m 24s
+  // const OFFER_DURATION = 4 * 60 * 60 + 44 * 60 + 24; // 4h 44m 24s
+  const OFFER_DURATION = 12 * 60 * 60; // 12h
+
   const STORAGE_KEY = "offer_target_date";
 
   const [targetDate, setTargetDate] = useState<Date | null>(null);

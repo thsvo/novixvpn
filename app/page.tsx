@@ -51,7 +51,7 @@ export default function Home() {
                       height={150}
                       alt="playstore"
                     /> */}
-                    <h1 className="text-3xl font-bold tracking-tighter md:text-5xl/none ">
+                    <h1 className="text-3xl font-bold tracking-tighter md:text-4xl/none ">
                       The Best VPN for Total Online Freedom. Start risk-free.
                       Stay protected.
                     </h1>
