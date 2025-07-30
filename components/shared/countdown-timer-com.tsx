@@ -3,6 +3,7 @@
 import { useCountdown } from "@/utils/useCountdown";
 import { CircleCheck, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import Timer from "@/components/shared/Timer";
 
 export default function CountdownTimer() {
   const { days, hours, minutes, seconds } = useCountdown();
@@ -38,9 +39,15 @@ export default function CountdownTimer() {
         <X size={24} />
       </button>
 
-      <h2 className="mb-2 text-2xl font-bold text-white">Time to go!</h2>
+      <h2 className="mb-5 text-2xl font-bold text-white">
+        Back-to-School Deal
+      </h2>
 
-      <div className="mb-4 flex justify-center space-x-2 text-center">
+      <div className="bg-white/20 mb-4 rounded-lg p-4 text-white">
+        <Timer></Timer>
+      </div>
+
+      {/* <div className="mb-4 flex justify-center space-x-2 text-center">
         <div className="flex flex-col items-center">
           <span className="text-xl  font-bold text-[#f39e2e]">
             {format(days)}
@@ -74,7 +81,7 @@ export default function CountdownTimer() {
           </span>
           <span className="mt-2 text-white text-xs">Seconds</span>
         </div>
-      </div>
+      </div> */}
 
       <div className="relative mb-2">
         <button className="w-fit rounded-full bg-[#FF7A45] px-6 py-2 text-md font-bold text-white transition-transform hover:scale-105">
