@@ -39,11 +39,11 @@ export default function CountdownTimer() {
         <X size={24} />
       </button>
 
-      <h2 className="mb-5 text-2xl font-bold text-orange-500">
+      <h2 className="mb-5 md:text-2xl font-bold text-orange-500">
         Back-to-School Deal
       </h2>
 
-      <div className="bg-white/20 mb-4 rounded-lg p-4 text-white">
+      <div className="bg-white/20 mb-4 rounded-lg py-2 px-1 md:p-4 text-white">
         <Timer></Timer>
       </div>
 
