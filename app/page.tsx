@@ -63,9 +63,9 @@ export default function Home() {
                     </p>
                   </div>
 
-                  {/* <div>
+                  <div>
                     <Timer></Timer>
-                  </div> */}
+                  </div>
                   <ul>
                     <li>
                       <div className="flex items-center gap-2 font-bold">
@@ -151,7 +151,7 @@ export default function Home() {
                 </div> */}
                 {/* download links */}
 
-                <div className="w-full flex mt-5">
+                <div className="w-full gap-2 flex mt-5">
                   <Link
                     href="https://play.google.com/store/apps/details?id=com.novix.mobile"
                     className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
@@ -159,6 +159,17 @@ export default function Home() {
                     <Image
                       src="/playstore-dark-square.webp"
                       width={200}
+                      height={150}
+                      alt="playstore"
+                    />
+                  </Link>
+                  <Link
+                    href="https://play.google.com/store/apps/details?id=com.novix.mobile"
+                    className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
+                  >
+                    <Image
+                      src="/download-for-android.png"
+                      width={180}
                       height={150}
                       alt="playstore"
                     />

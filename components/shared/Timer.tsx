@@ -1,35 +1,58 @@
 "use client";
 
-import { useCountdown } from "@/utils/useCountdown";
+import dynamic from "next/dynamic";
+import { CSSProperties } from "react";
+const FlipClockCountdown = dynamic(
+  () => import("@leenguyen/react-flip-clock-countdown"),
+  { ssr: false }
+);
 
-function format(n: number) {
-  return n.toString().padStart(2, "0");
-}
-
-const TimeBox = ({ value, label }: { value: number; label: string }) => {
-  return (
-    <div className="flex flex-col items-center mx-1">
-      <div className="bg-gray-700 text-white w-12 h-16 rounded-sm flex items-center justify-center text-2xl font-bold shadow-md">
-        {format(value)}
-      </div>
-      <span className="mt-1 text-xs text-gray-600">{label}</span>
-    </div>
-  );
-};
+import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 
 export default function Timer() {
-  const { days, hours, minutes, seconds } = useCountdown();
+  // const { days, hours, minutes, seconds } = useCountdown();
+  const targetDate =
+    typeof window !== "undefined"
+      ? localStorage.getItem("offer_target_date")
+      : null;
 
   return (
-    <div className="flex items-center justify-center">
-      <div className="flex items-center space-x-1">
-        <TimeBox value={days} label="Days" />
-        <span className="text-2xl text-gray-700 font-bold">:</span>
-        <TimeBox value={hours} label="Hours" />
-        <span className="text-2xl text-gray-700 font-bold">:</span>
-        <TimeBox value={minutes} label="Minutes" />
-        <span className="text-2xl text-gray-700 font-bold">:</span>
-        <TimeBox value={seconds} label="Seconds" />
+    <div>
+      <div className="flex flex-col items-start">
+        {targetDate && (
+          <FlipClockCountdown
+            to={new Date(targetDate).getTime()}
+            labels={["Days", "Hours", "Minutes", "Seconds"]}
+            labelStyle={
+              {
+                fontSize: 12,
+                textTransform: "uppercase",
+                color: "#4B5563",
+              } as CSSProperties
+            }
+            digitBlockStyle={
+              {
+                width: 36,
+                height: 64,
+                fontSize: 30,
+                fontStyle: "italic",
+                fontWeight: "bold",
+                background: "#666666",
+                color: "#FFFFFF",
+                borderRadius: 6,
+                boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+              } as CSSProperties
+            }
+            separatorStyle={
+              {
+                color: "#666666",
+                size: "8px",
+              } as CSSProperties
+            }
+            duration={0.8}
+            onComplete={() => console.log("Countdown completed!")}
+          ></FlipClockCountdown>
+        )}
       </div>
     </div>
   );
