@@ -96,7 +96,7 @@ export default function Timer() {
                 fontSize: "clamp(8px, 6vw, 30px)",
                 fontStyle: "italic",
                 fontWeight: "bold",
-                background: "#0052cc",
+                background: "#000080",
                 color: "#FFFFFF",
                 borderRadius: 6,
                 boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
