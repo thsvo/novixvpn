@@ -91,9 +91,9 @@ export default function Timer() {
             }
             digitBlockStyle={
               {
-                width: "clamp(8px, 8vw, 30px)",
+                width: "clamp(4px, 8vw, 30px)",
                 height: "clamp(38px, 12vw, 60px)",
-                fontSize: "clamp(6px, 6vw, 28px)",
+                fontSize: "clamp(2px, 6vw, 28px)",
                 fontStyle: "italic",
                 fontWeight: "bold",
                 background: "#FFFFFF",
@@ -105,7 +105,7 @@ export default function Timer() {
             separatorStyle={
               {
                 color: "#FFFFFF",
-                size: "clamp(2px, 2vw, 8px)",
+                size: "clamp(1px, 2vw, 8px)",
               } as CSSProperties
             }
             duration={0.8}

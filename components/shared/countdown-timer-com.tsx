@@ -27,7 +27,7 @@ export default function CountdownTimer() {
     <div
       onMouseEnter={() => setOnHoverVisible(false)}
       onMouseLeave={() => setOnHoverVisible(true)}
-      className={`relative mx-auto max-w-md rounded-tr-lg bg-[#0052cc] p-4 text-center shadow-lg transition-all duration-500 ease-in-out  ${
+      className={`relative mx-auto max-w-md rounded-tr-lg bg-[#0052cc] p-2 md:p-4 text-center shadow-lg transition-all duration-500 ease-in-out  ${
         onHoverVisible ? "-mb-24" : ""
       }`}
     >
