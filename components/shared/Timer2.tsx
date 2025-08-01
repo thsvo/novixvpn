@@ -84,28 +84,28 @@ export default function Timer() {
             labels={["Days", "Hours", "Minutes", "Seconds"]}
             labelStyle={
               {
-                fontSize: "clamp(6px, 2vw, 12px)",
+                fontSize: "clamp(10px, 2vw, 12px)",
                 textTransform: "uppercase",
-                color: "#FFFFFF",
+                color: "#595959",
               } as CSSProperties
             }
             digitBlockStyle={
               {
-                width: "clamp(8px, 8vw, 30px)",
-                height: "clamp(38px, 12vw, 60px)",
-                fontSize: "clamp(6px, 6vw, 28px)",
+                width: "clamp(12px, 8vw, 36px)",
+                height: "clamp(40px, 12vw, 64px)",
+                fontSize: "clamp(8px, 6vw, 30px)",
                 fontStyle: "italic",
                 fontWeight: "bold",
-                background: "#FFFFFF",
-                color: "#0052cc",
+                background: "#595959",
+                color: "#FFFFFF",
                 borderRadius: 6,
                 boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
               } as CSSProperties
             }
             separatorStyle={
               {
-                color: "#FFFFFF",
-                size: "clamp(2px, 2vw, 8px)",
+                color: "#595959",
+                size: "clamp(4px, 2vw, 8px)",
               } as CSSProperties
             }
             duration={0.8}

@@ -39,7 +39,7 @@ export default function CountdownTimer() {
         <X size={24} />
       </button>
 
-      <h2 className="mb-5 md:text-2xl font-bold text-orange-500">
+      <h2 className="mb-5 md:text-1xl font-bold text-white">
         Back-to-School Deal
       </h2>
 
