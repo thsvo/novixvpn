@@ -89,7 +89,9 @@ export default function PricingCards({}: PricingCardsProps) {
         <Card
           key={plan.name}
           className={`flex flex-col max-w-[22rem] ${
-            plan.popular ? "border-primary shadow-xl" : "border-green-500"
+            plan.popular
+              ? "border-primary shadow-xl"
+              : "border-green-500 shadow-xl"
           }`}
         >
           {plan.popular && (
@@ -101,10 +103,15 @@ export default function PricingCards({}: PricingCardsProps) {
             <div className="flex justify-between items-start">
               <div>
                 {/* <CardTitle>{plan.name}</CardTitle> */}
-                <CardTitle>
+                {/* <CardTitle>
                   {plan.name.includes("Monthly") || plan.name.includes("Weekly")
                     ? "🔵 "
                     : ""}
+                  {plan.name}
+                </CardTitle> */}
+                <CardTitle>
+                  {plan.name.includes("Monthly") ||
+                    plan.name.includes("Weekly")}
                   {plan.name}
                 </CardTitle>
 

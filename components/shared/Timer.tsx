@@ -92,7 +92,7 @@ export default function Timer() {
             digitBlockStyle={
               {
                 width: "clamp(4px, 8vw, 30px)",
-                height: "clamp(38px, 12vw, 60px)",
+                height: "clamp(38px, 12vw, 50px)",
                 fontSize: "clamp(2px, 6vw, 28px)",
                 fontStyle: "italic",
                 fontWeight: "bold",

@@ -106,7 +106,8 @@ export default function Home() {
                   <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
                     <Button
                       size="lg"
-                      className="bg-primary rounded-full hover:bg-primary/90"
+                      variant="outline"
+                      className="bg-primary text-white rounded-full hover:bg-white hover:text-black"
                     >
                       Claim 14 days Free
                     </Button>
@@ -115,7 +116,7 @@ export default function Home() {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="rounded-full"
+                      className="rounded-full hover:bg-primary hover:text-white"
                     >
                       View Plans
                     </Button>
