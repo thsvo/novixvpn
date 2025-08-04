@@ -57,11 +57,11 @@ export default function HeaderCom() {
       <header
         className={`w-full sticky top-0 z-50 transition-all duration-300 delay-100 ${
           isScrolled
-            ? "bg-white md:container md:top-2 shadow md:rounded-full  mx-auto mt-2 border border-[#E2E2E4]"
+            ? "bg-white px-5 md:top-2 shadow md:rounded-full  mx-auto mt-2 border border-[#E2E2E4]"
             : "border-b bg-white"
         } `}
       >
-        <div className="flex w-full max-w-7xl h-16 mx-auto items-center justify-between py-4">
+        <div className="flex w-full px-2 h-16 mx-auto items-center justify-between py-4">
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center gap-2">
@@ -128,7 +128,7 @@ export default function HeaderCom() {
                 </div>
               )}
             </div>
-            {/* {!token && (
+            {!token && (
               <Link
                 href="/login"
                 className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -136,7 +136,7 @@ export default function HeaderCom() {
               >
                 <span className="text-sm">Log In</span>
               </Link>
-            )} */}
+            )}
             {/* Get Novix Button */}
             <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
               <Button className="rounded-full">Get Novix VPN</Button>
@@ -290,7 +290,7 @@ export default function HeaderCom() {
                 <LanguageDropdown />
               </div>
               {/* Log In */}
-              {/* {!token ? (
+              {!token ? (
                 <Link
                   href="/login"
                   className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -308,7 +308,7 @@ export default function HeaderCom() {
                 >
                   <span className="text-lg font-medium">Log Out</span>
                 </button>
-              )} */}
+              )}
               {/* User Profile for mobile */}
               {token && (
                 <div className="flex items-center justify-center gap-3 mt-4 py-2">
