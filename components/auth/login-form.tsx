@@ -61,6 +61,17 @@ export default function LoginForm() {
     setIsLoading(true);
 
     try {
+      const generateRandomString = (length: number) => {
+        const characters =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        let result = "";
+        for (let i = 0; i < length; i++) {
+          result += characters.charAt(
+            Math.floor(Math.random() * characters.length)
+          );
+        }
+        return result;
+      };
       //Send login data according to the required structure
       const response = await fetch(
         "https://api.novixvpn.com/api/v1/users/auth/login/",
@@ -72,6 +83,8 @@ export default function LoginForm() {
           body: JSON.stringify({
             username: formData.username,
             password: formData.password,
+            device_id: generateRandomString(16),
+            device_name: generateRandomString(8),
           }),
         }
       );
