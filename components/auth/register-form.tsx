@@ -108,7 +108,9 @@ export default function RegisterForm() {
     try {
       // Send registration data according to the required structure
       const response = await fetch(
-        "http://api.novixvpn.com/api/v1/users/auth/register/",
+        // "http://api.novixvpn.com/api/v1/users/auth/register/",
+        "https://api.novixvpn.com/api/v1/users/auth/register/",
+
         {
           method: "POST",
           headers: {
