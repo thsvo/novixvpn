@@ -213,8 +213,8 @@ export default function PrivacyPolicy() {
                   <strong>Address:</strong> Plot-33, Main Road, Section-10,
                   Senpara Parbata Mirpur - 1216 Bangladesh (BD)
                   <br />
-                  <strong>Phone:</strong> +8801974523700
-                  <br />
+                  {/* <strong>Phone:</strong> +8801974523700 */}
+                  {/* <br /> */}
                   <strong>Email:</strong>{" "}
                   <a
                     href="mailto:novixvpn@gmail.com"
