@@ -10,6 +10,8 @@ import IpBanner from "@/components/ip-banner";
 import Footer from "@/components/footer";
 import HubspotLoader from "@/components/shared/HubspotLoader";
 import "flipdown/dist/flipdown.css";
+import { SessionProvider } from "next-auth/react";
+import Providers from "@/components/auth/Providers/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -135,14 +137,16 @@ export default function RootLayout({
         /> */}
 
         <PixelTracker />
-        <AuthProvider>
-          {/* ip banner component */}
-          <IpBanner />
-          {/* Header/Navigation */}
-          <HeaderCom />
-          {children}
-          <Footer />
-        </AuthProvider>
+        <Providers>
+          <AuthProvider>
+            {/* ip banner component */}
+            <IpBanner />
+            {/* Header/Navigation */}
+            <HeaderCom />
+            {children}
+            <Footer />
+          </AuthProvider>
+        </Providers>
         <CountdownTimerClient />
       </body>
     </html>

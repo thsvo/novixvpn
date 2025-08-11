@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Eye, EyeOff, Lock, Mail } from "lucide-react";
 import { useAuth } from "@/Context/AuthContext";
+import GoogleLoginButton from "./GoogleLoginButton/GoogleLoginButton";
 
 export default function LoginForm() {
   const { login } = useAuth();
@@ -21,6 +22,7 @@ export default function LoginForm() {
   });
 
   const router = useRouter();
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
@@ -229,6 +231,7 @@ export default function LoginForm() {
       </form>
 
       {/* Social Auth & Register Links */}
+
       <div className="mt-6">
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
@@ -241,14 +244,33 @@ export default function LoginForm() {
           </div>
         </div>
 
-        <div className="mt-6">
+        <GoogleLoginButton></GoogleLoginButton>
+
+        {/* <div className="mt-6">
+          {session ? (
+            <>
+              <p>Signed in as {session.user?.email}</p>
+              <button onClick={() => signOut()}>Sign Out</button>
+            </>
+          ) : (
+            <button
+              className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+              onClick={() => signIn("google")}
+            >
+              Sign in with Google
+            </button>
+          )}
+        </div> */}
+
+        {/* <div className="mt-6">
           <button
+            onClick={() => signIn("google")}
             type="button"
             className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
           >
             Google
           </button>
-        </div>
+        </div> */}
       </div>
 
       <p className="mt-8 text-center text-sm text-gray-600">

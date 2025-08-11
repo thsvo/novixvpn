@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Eye, EyeOff, Lock, Mail, User, UserCircle } from "lucide-react";
 import { IoLogoGoogle } from "react-icons/io5";
+import GoogleLoginButton from "./GoogleLoginButton/GoogleLoginButton";
 
 export default function RegisterForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -406,14 +407,15 @@ export default function RegisterForm() {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-1 gap-3">
+        {/* <div className="mt-6 grid grid-cols-1 gap-3">
           <button
             type="button"
             className="w-full inline-flex  items-center gap-1 justify-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
           >
             <IoLogoGoogle /> <span>Google</span>
           </button>
-        </div>
+        </div> */}
+        <GoogleLoginButton></GoogleLoginButton>
       </div>
 
       <p className="mt-8 text-center text-sm text-gray-600">
