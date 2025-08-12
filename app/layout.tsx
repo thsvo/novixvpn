@@ -12,6 +12,7 @@ import HubspotLoader from "@/components/shared/HubspotLoader";
 import "flipdown/dist/flipdown.css";
 import { SessionProvider } from "next-auth/react";
 import Providers from "@/components/auth/Providers/Providers";
+import DownloadVPNDialog from "@/components/DownloadVPNDialog";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -144,6 +145,7 @@ export default function RootLayout({
             {/* Header/Navigation */}
             <HeaderCom />
             {children}
+            <DownloadVPNDialog />
             <Footer />
           </AuthProvider>
         </Providers>

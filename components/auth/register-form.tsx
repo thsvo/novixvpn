@@ -415,7 +415,7 @@ export default function RegisterForm() {
             <IoLogoGoogle /> <span>Google</span>
           </button>
         </div> */}
-        <GoogleLoginButton></GoogleLoginButton>
+        {/* <GoogleLoginButton></GoogleLoginButton> */}
       </div>
 
       <p className="mt-8 text-center text-sm text-gray-600">
