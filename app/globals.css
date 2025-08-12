@@ -14,6 +14,21 @@ body {
   }
 }
 
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.8s ease-out;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
