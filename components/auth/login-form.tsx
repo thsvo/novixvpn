@@ -23,7 +23,6 @@ export default function LoginForm() {
 
   const router = useRouter();
 
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -114,11 +113,22 @@ export default function LoginForm() {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto p-6 bg-white rounded-xl shadow-md">
-      <div className="text-center mb-8">
-        <h1 className="text-2xl font-bold text-gray-800">Welcome back</h1>
-        <p className="text-gray-600 mt-2">Sign in to your NovixVPN account</p>
+    <div className="w-full max-w-md mx-auto p-6 bg-white border border-gray-300 rounded-xl shadow-md">
+      <div className="text-center gap-3 items-center justify-center flex mb-3">
+        <img src="/favicon.ico" alt="VPN Logo" className="w-6 h-6" />
+        <h1 className="text-2xl font-bold text-gray-800">Novix Account</h1>
+        
       </div>
+      <p className="text-gray-600  text-center text-xl font-bold ">Sign in </p>
+      <p className="mt-8 text-center text-sm text-gray-600">
+        Don't have an account?{" "}
+        <Link
+          href="/register"
+          className="font-medium text-blue-600 hover:text-blue-500"
+        >
+          Sign up
+        </Link>
+      </p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Username Field */}
@@ -223,7 +233,7 @@ export default function LoginForm() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm  font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isLoading ? "Signing in..." : "Sign in"}
           </button>
@@ -272,16 +282,6 @@ export default function LoginForm() {
           </button>
         </div> */}
       </div>
-
-      <p className="mt-8 text-center text-sm text-gray-600">
-        Don't have an account?{" "}
-        <Link
-          href="/register"
-          className="font-medium text-blue-600 hover:text-blue-500"
-        >
-          Sign up
-        </Link>
-      </p>
     </div>
   );
 }

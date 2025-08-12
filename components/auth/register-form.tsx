@@ -142,12 +142,24 @@ export default function RegisterForm() {
 
   return (
     <div className="w-full max-w-md mx-auto p-6 bg-white rounded-xl shadow-md">
-      <div className="text-center mb-8">
-        <h1 className="text-2xl font-bold text-gray-800">
-          Create your account
-        </h1>
-        <p className="text-gray-600 mt-2">Join NovixVPN for secure browsing</p>
+      <div className="text-center gap-3 items-center justify-center flex mb-3">
+        <img src="/favicon.ico" alt="VPN Logo" className="w-6 h-6" />
+        <h1 className="text-2xl font-bold text-gray-800">Novix Account</h1>
       </div>
+      <div className="text-center mb-8">
+        <h1 className="text-gray-600  text-center text-xl font-bold ">
+          Create an account
+        </h1>
+      </div>
+      <p className="mt-8 text-center text-sm text-gray-600">
+        Already have an account?{" "}
+        <Link
+          href="/login"
+          className="font-medium text-primary hover:text-primary-600"
+        >
+          Sign in
+        </Link>
+      </p>
 
       <form onSubmit={handleSubmit} className="space-y-3">
         <div>
@@ -417,16 +429,6 @@ export default function RegisterForm() {
         </div> */}
         {/* <GoogleLoginButton></GoogleLoginButton> */}
       </div>
-
-      <p className="mt-8 text-center text-sm text-gray-600">
-        Already have an account?{" "}
-        <Link
-          href="/login"
-          className="font-medium text-primary hover:text-primary-600"
-        >
-          Sign in
-        </Link>
-      </p>
     </div>
   );
 }
