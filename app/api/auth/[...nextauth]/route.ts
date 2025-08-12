@@ -1,14 +1,43 @@
+// import NextAuth from "next-auth";
+// import GoogleProvider from "next-auth/providers/google";
+
+// const handler = NextAuth({
+//   providers: [
+//     GoogleProvider({
+//       clientId: process.env.AUTH_GOOGLE_ID!,
+//       clientSecret: process.env.AUTH_GOOGLE_SECRET!,
+//     }),
+//   ],
+//   secret: process.env.AUTH_SECRET,
+// });
+
+// export { handler as GET, handler as POST };
+
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
-const handler = NextAuth({
+export const authOptions = {
   providers: [
     GoogleProvider({
-      clientId: process.env.AUTH_GOOGLE_ID!,
-      clientSecret: process.env.AUTH_GOOGLE_SECRET!,
+      clientId: process.env.GOOGLE_CLIENT_ID!,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code",
+        },
+      },
     }),
   ],
-  secret: process.env.AUTH_SECRET,
-});
+  secret: process.env.NEXTAUTH_SECRET,
+  callbacks: {
+    async session({ session, token }: any) {
+      session.user.id = token.sub; // Add user ID to session
+      return session;
+    },
+  },
+};
 
+const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };
