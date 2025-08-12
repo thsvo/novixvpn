@@ -208,11 +208,11 @@ export default function PrivacyPolicy() {
                 </p>
 
                 <p className="text-gray-600 text-sm">
-                  <strong>Company:</strong> CYBERLOOM IT TECHNOLOGIES
+                  {/* <strong>Company:</strong> CYBERLOOM IT TECHNOLOGIES
                   <br />
                   <strong>Address:</strong> Plot-33, Main Road, Section-10,
                   Senpara Parbata Mirpur - 1216 (BD)
-                  <br />
+                  <br /> */}
                   {/* <strong>Phone:</strong> +8801974523700 */}
                   {/* <br /> */}
                   <strong>Email:</strong>{" "}
