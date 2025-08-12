@@ -1,66 +1,3 @@
-// "use client";
-
-// import { useEffect, useState } from "react";
-// import { Dialog, DialogContent } from "@/components/ui/dialog";
-
-// const DownloadVPNDialog: React.FC = () => {
-//   const [open, setOpen] = useState(false);
-
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       setOpen(true);
-//     }, 5000); // 5 seconds delay
-//     return () => clearTimeout(timer);
-//   }, []);
-
-//   return (
-//     <Dialog open={open} onOpenChange={setOpen}>
-//       <DialogContent className="max-w-xl p-0 overflow-hidden rounded-xl border-none shadow-lg">
-//         <div className="bg-white flex flex-col md:flex-row items-center p-6 gap-6">
-//           {/* Left Side Text */}
-//           <div className="flex-1">
-//             <p className="text-green-700 font-semibold text-sm mb-2">
-//               BEFORE YOU GO!
-//             </p>
-//             <h2 className="text-2xl font-bold text-gray-800 leading-snug">
-//               TRY OUR 100%
-//               <br />
-//               FREE VPN
-//             </h2>
-//             <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-//               <li>✅ Access to 5 locations for free</li>
-//               <li>✅ Unlimited</li>
-//               <li>✅ No registration or personal data</li>
-//               <li>✅ No limits on traffic, bandwidth, or time</li>
-//             </ul>
-//           </div>
-
-//           {/* Right Side Logo + Button */}
-//           <div className="flex flex-col items-center">
-//             <img
-//               //   src="/Novix VPN LOGO.jpg"
-//               src="/novix-logo.webp"
-//               alt="VPN Logo"
-//               className=" h-24 mb-4"
-//             />
-//             <button
-//               onClick={() =>
-//                 (window.location.href =
-//                   "https://play.google.com/store/apps/details?id=com.novix.mobile")
-//               }
-//               className="bg-red-500 hover:bg-red-600 text-white font-semibold text-sm px-6 py-3 rounded-lg shadow-md flex items-center gap-2"
-//             >
-//               DOWNLOAD NOW <span className="text-lg">➔</span>
-//             </button>
-//           </div>
-//         </div>
-//       </DialogContent>
-//     </Dialog>
-//   );
-// };
-
-// export default DownloadVPNDialog;
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -72,7 +9,7 @@ const DownloadVPNDialog: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 3000); // 3 seconds delay
+    }, 10000); // 10 seconds delay
     return () => clearTimeout(timer);
   }, []);
 
