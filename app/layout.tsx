@@ -138,6 +138,21 @@ export default function RootLayout({
     `,
           }}
         />
+
+        {/* <!-- Event snippet for Subscribe (2) conversion page --> */}
+        <Script
+          id="google-conversion-event-2"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17452243262/v16sCPvr84UbEL6y8IFB',
+        'value': 1.0,
+        'currency': 'USD'
+      });
+    `,
+          }}
+        />
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
