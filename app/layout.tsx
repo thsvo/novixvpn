@@ -121,6 +121,23 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=1682612962619444&ev=PageView&noscript=1"
           />
         </noscript>
+
+        {/* <!-- Event snippet for Purchase (2) conversion page --> */}
+
+        <Script
+          id="google-conversion-event"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17452243262/lNO3COWG5IUbEL6y8IFB',
+        'value': 1.0,
+        'currency': 'USD',
+        'transaction_id': ''
+      });
+    `,
+          }}
+        />
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
