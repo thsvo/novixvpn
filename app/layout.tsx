@@ -168,6 +168,21 @@ export default function RootLayout({
     `,
           }}
         />
+
+        {/* Event snippet for Page view conversion page */}
+        <Script
+          id="google-conversion-event-pageview"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17452243262/6JOwCM3L_4UbEL6y8IFB',
+        'value': 1.0,
+        'currency': 'USD'
+      });
+    `,
+          }}
+        />
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) */}
