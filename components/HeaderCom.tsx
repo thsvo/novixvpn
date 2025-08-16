@@ -131,7 +131,7 @@ export default function HeaderCom() {
                 </div>
               )}
             </div>
-            {!token && (
+            {!token && !session && (
               <Link
                 href="/login"
                 className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -293,7 +293,7 @@ export default function HeaderCom() {
                 <LanguageDropdown />
               </div>
               {/* Log In */}
-              {!token ? (
+              {!token && !session ? (
                 <Link
                   href="/login"
                   className="flex items-center justify-between py-3 border-b border-gray-100"

@@ -10,11 +10,15 @@ export default function GoogleLoginButton() {
     return null;
   }
 
+  const handleGoogleSignIn = () => {
+    signIn("google", { callbackUrl: "/" });
+  };
+
   return (
     <div className="mt-6">
       <button
         className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
-        onClick={() => signIn("google")}
+        onClick={handleGoogleSignIn}
       >
         Sign in with Google
       </button>
