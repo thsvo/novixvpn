@@ -254,7 +254,7 @@ export default function LoginForm() {
           </div>
         </div>
 
-        {/* <GoogleLoginButton></GoogleLoginButton> */}
+        <GoogleLoginButton></GoogleLoginButton>
 
         {/* <div className="mt-6">
           {session ? (

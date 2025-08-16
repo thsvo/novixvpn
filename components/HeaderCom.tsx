@@ -9,8 +9,10 @@ import { ChevronDown, ChevronUp, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/Context/AuthContext";
 import UserProfile from "./shared/UserProfile";
+import GoogleUserProfile from "./shared/GoogleUserProfile";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import LanguageDropdown from "./language/LanguageDropdown";
+import { useSession } from "next-auth/react";
 
 export default function HeaderCom() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,6 +50,7 @@ export default function HeaderCom() {
 
   // Get initials for avatar fallback
   const { user, token, logout } = useAuth();
+  const { data: session } = useSession();
   const getInitials = () => {
     return user?.username?.substring(0, 2).toUpperCase() || "U";
   };
@@ -142,7 +145,7 @@ export default function HeaderCom() {
               <Button className="rounded-full">Get Novix VPN</Button>
             </Link>
             {/* user profile section */}
-            {token && <UserProfile />}
+            {session ? <GoogleUserProfile /> : token && <UserProfile />}
           </div>
         </div>
       </header>
