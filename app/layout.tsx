@@ -48,7 +48,7 @@ export default function RootLayout({
         `}
         </Script> */}
 
-        {/* <Script
+        <Script
           id="gtm-head"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -60,9 +60,9 @@ export default function RootLayout({
       })(window,document,'script','dataLayer','GTM-TWS93V63');
     `,
           }}
-        /> */}
+        />
 
-        <Script
+        {/* <Script
           id="gtm-head"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -74,7 +74,7 @@ export default function RootLayout({
               })(window,document,'script','dataLayer','GTM-54G43J2B');
             `,
           }}
-        />
+        /> */}
 
         {/* Google Analytics (GA4) */}
         <Script
