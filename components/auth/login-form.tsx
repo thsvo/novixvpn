@@ -117,7 +117,6 @@ export default function LoginForm() {
       <div className="text-center gap-3 items-center justify-center flex mb-3">
         <img src="/favicon.ico" alt="VPN Logo" className="w-6 h-6" />
         <h1 className="text-2xl font-bold text-gray-800">Novix Account</h1>
-        
       </div>
       <p className="text-gray-600  text-center text-xl font-bold ">Sign in </p>
       <p className="mt-8 text-center text-sm text-gray-600">
@@ -129,6 +128,17 @@ export default function LoginForm() {
           Sign up
         </Link>
       </p>
+
+      <GoogleLoginButton></GoogleLoginButton>
+
+      <div className="relative my-5">
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full border-t border-gray-300" />
+        </div>
+        <div className="relative flex justify-center text-sm">
+          <span className="px-2 bg-white text-gray-500">Or continue with</span>
+        </div>
+      </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Username Field */}
@@ -243,7 +253,7 @@ export default function LoginForm() {
       {/* Social Auth & Register Links */}
 
       <div className="mt-6">
-        <div className="relative">
+        {/* <div className="relative">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-gray-300" />
           </div>
@@ -252,9 +262,7 @@ export default function LoginForm() {
               Or continue with
             </span>
           </div>
-        </div>
-
-        <GoogleLoginButton></GoogleLoginButton>
+        </div> */}
 
         {/* <div className="mt-6">
           {session ? (

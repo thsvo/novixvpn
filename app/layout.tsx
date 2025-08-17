@@ -35,7 +35,7 @@ export default function RootLayout({
       <head>
         {/* Google Tag Manager */}
 
-        <Script
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17452243262"
           strategy="afterInteractive"
         />
@@ -46,9 +46,9 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'AW-17452243262');
         `}
-        </Script>
+        </Script> */}
 
-        {/* <Script
+        <Script
           id="gtm-head"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -60,7 +60,7 @@ export default function RootLayout({
       })(window,document,'script','dataLayer','GTM-TWS93V63');
     `,
           }}
-        /> */}
+        />
 
         {/* <Script
           id="gtm-head"
