@@ -194,7 +194,7 @@ export default function RegisterForm() {
               className={`block w-full pl-10 pr-3 py-2 border ${
                 errors.username ? "border-red-500" : "border-gray-300"
               } rounded-lg focus:ring-primary focus:border-primary`}
-              placeholder="johndoe123"
+              placeholder="Username"
             />
           </div>
           {errors.username && (
@@ -224,7 +224,7 @@ export default function RegisterForm() {
                 className={`block w-full pl-10 pr-3 py-2 border ${
                   errors.first_name ? "border-red-500" : "border-gray-300"
                 } rounded-lg focus:ring-primary focus:border-primary`}
-                placeholder="John"
+                placeholder="First name"
               />
             </div>
             {errors.first_name && (
@@ -253,7 +253,7 @@ export default function RegisterForm() {
                 className={`block w-full pl-10 pr-3 py-2 border ${
                   errors.last_name ? "border-red-500" : "border-gray-300"
                 } rounded-lg focus:ring-primary focus:border-primary`}
-                placeholder="Doe"
+                placeholder="Last name"
               />
             </div>
             {errors.last_name && (
@@ -411,7 +411,7 @@ export default function RegisterForm() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full flex justify-center py-4 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isLoading ? "Creating account..." : "Create account"}
           </button>
