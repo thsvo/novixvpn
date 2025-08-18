@@ -114,7 +114,7 @@ export default function HeaderCom() {
                   aria-orientation="vertical"
                   aria-labelledby="dropdown-products"
                 >
-                  <Link href="/">
+                  <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
                     <div className="hover:bg-gray-100 p-2 rounded-md ">
                       <Image
                         src="/novix-logo.webp"

@@ -19,7 +19,7 @@ export default function VPNPromoBanner() {
             Everyday online security — for everyone
           </h2>
           <p className="text-gray-600 mb-6">
-            Try Novix VPN risk-free with our 48-hours money-back guarantee.
+            Try Novix VPN risk-free with our 40-days money-back guarantee.
           </p>
           <Link
             href="https://play.google.com/store/apps/details?id=com.novix.mobile"

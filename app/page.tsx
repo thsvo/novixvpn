@@ -132,7 +132,7 @@ export default function Home() {
                 <div className="flex items-start md:items-center  gap-1 text-sm text-muted-foreground">
                   <DollarSign className="h-6 w-6 font-bold text-white bg-green-500 rounded-full p-1" />
                   <span className="font-bold text-black">
-                    Risk-free purchase: 48-hour refund, Google-backed.
+                    Risk-free purchase: 40-days refund, Google-backed.
                   </span>
                 </div>
                 {/* <div className="flex items-center gap-4">

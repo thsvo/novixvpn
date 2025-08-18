@@ -90,7 +90,7 @@ export default function CountdownTimer() {
       </div>
       <div className="flex text-[10px] items-center justify-center gap-2 text-white">
         <CircleCheck />
-        <span>48-hours Money-Back Guarantee</span>
+        <span>40-days Money-Back Guarantee</span>
       </div>
     </div>
   );
