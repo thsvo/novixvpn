@@ -110,7 +110,7 @@ export default function Home() {
                       className="bg-primary text-white rounded-full hover:bg-white hover:text-black"
                     >
                       {/* Claim 14 days Free */}
-                      Start free trial + SAVE 70%
+                      Start free trial + Save 70%
                     </Button>
                   </Link>
                   <Link href="#pricing">
