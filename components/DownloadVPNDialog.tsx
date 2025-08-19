@@ -74,7 +74,7 @@ const DownloadVPNDialog: React.FC = () => {
 
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 20000); // 20 seconds delay
+    }, 60000); // 60 seconds delay
 
     return () => clearTimeout(timer);
   }, [pathname]);

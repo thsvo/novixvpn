@@ -40,7 +40,8 @@ export default function CountdownTimer() {
       </button>
 
       <h2 className="mb-5 md:text-1xl font-bold text-white">
-        Back-to-School Deal
+        {/* Back-to-School Deal */}
+        Limited Time Offer
       </h2>
 
       <div className="bg-white/20 mb-4 rounded-lg py-2 px-1 md:p-4 text-white">

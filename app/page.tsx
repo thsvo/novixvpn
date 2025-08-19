@@ -63,9 +63,9 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <div>
+                  {/* <div>
                     <Timer2></Timer2>
-                  </div>
+                  </div> */}
                   <ul>
                     <li>
                       <div className="flex items-center gap-2 font-bold">
@@ -109,7 +109,8 @@ export default function Home() {
                       variant="outline"
                       className="bg-primary text-white rounded-full hover:bg-white hover:text-black"
                     >
-                      Claim 14 days Free
+                      {/* Claim 14 days Free */}
+                      Start free trial + SAVE 70%
                     </Button>
                   </Link>
                   <Link href="#pricing">
@@ -132,7 +133,8 @@ export default function Home() {
                 <div className="flex items-start md:items-center  gap-1 text-sm text-muted-foreground">
                   <DollarSign className="h-6 w-6 font-bold text-white bg-green-500 rounded-full p-1" />
                   <span className="font-bold text-black">
-                    Risk-free purchase: 40-days refund, Google-backed.
+                    {/* Risk-free purchase: 40-days refund, Google-backed. */}
+                    40-days Money-Back Guarantee
                   </span>
                 </div>
                 {/* <div className="flex items-center gap-4">
