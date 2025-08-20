@@ -96,18 +96,16 @@ const DownloadVPNDialog: React.FC = () => {
           {/* Left Side Text */}
           <div className="flex-1">
             <p className="text-green-700 font-semibold text-sm mb-2">
-              BEFORE YOU GO!
+              💡 Before You Vanish...
             </p>
             <h2 className="text-2xl font-bold text-gray-800 leading-snug">
-              TRY OUR 100%
-              <br />
-              FREE VPN
+              The web is a wild place. Take a shield with you.
             </h2>
             <ul className="mt-4 space-y-2 text-gray-700 text-sm">
-              <li>✅ Connect to 5 trusted global servers</li>
+              <li>✅ 5 trusted global servers</li>
+              <li>✅ No registration or strings attached</li>
+              <li>✅ Unlimited speed, bandwidth</li>
               <li>✅ 48-hour money-back guarantee</li>
-              <li>✅ No registration or personal data</li>
-              <li>✅ No limits on traffic, bandwidth, or time</li>
             </ul>
           </div>
 
