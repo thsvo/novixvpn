@@ -38,7 +38,8 @@ export default function HeroPromotionCom() {
         <div>
           <h2 className="text-lg ">
             <strong>
-              Back to School Deal + Global Privacy—Save 70% Today!
+              {/* Back to School Deal + Global Privacy—Save 70% Today! */}
+              Limited Time Offer + Global Privacy—Save 70% Today!
             </strong>
           </h2>
           <h3 className="font-bold"> + Claim Your Offer Now</h3>

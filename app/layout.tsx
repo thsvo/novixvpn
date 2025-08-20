@@ -33,6 +33,37 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17452243262"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-tag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17452243262');
+    `,
+          }}
+        />
+
+        {/* Event snippet for Page view (1) conversion page */}
+        <Script
+          id="google-conversion-pageview-1"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17452243262/6JXNCObu74kbEL6y8IFB'
+      });
+    `,
+          }}
+        />
+
         {/* Google Tag Manager */}
 
         {/* <Script
