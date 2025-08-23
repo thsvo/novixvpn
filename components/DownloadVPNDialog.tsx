@@ -105,7 +105,7 @@ const DownloadVPNDialog: React.FC = () => {
               <li>✅ 5 trusted global servers</li>
               <li>✅ No registration or strings attached</li>
               <li>✅ Unlimited speed, bandwidth</li>
-              <li>✅ 48-hour money-back guarantee</li>
+              <li>✅ 40-days money-back guarantee</li>
             </ul>
           </div>
 
