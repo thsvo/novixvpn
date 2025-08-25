@@ -107,10 +107,11 @@ export default function Home() {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="bg-primary text-white rounded-full hover:bg-white hover:text-black"
+                      className="bg-primary text-white font-bold rounded-full hover:bg-white hover:text-black"
                     >
                       {/* Claim 14 days Free */}
-                      Start free trial + Save 70%
+                      {/* Start free trial + Save 70% */}
+                      Start 14 Day's free trial+ 70% off
                     </Button>
                   </Link>
                   <Link href="#pricing">

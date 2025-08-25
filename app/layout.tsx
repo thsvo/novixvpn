@@ -33,6 +33,66 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Tag (1) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17497722799"
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtag-1" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17497722799');
+          `}
+        </Script>
+
+        {/* Google Tag (2) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17497722799"
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtag-2" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17497722799');
+          `}
+        </Script>
+
+        {/* Google Tag (3) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17497722799"
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtag-3" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17497722799');
+          `}
+        </Script>
+
+        {/* Google Tag (4) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17497722799"
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtag-4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17497722799');
+          `}
+        </Script>
+
         {/* Google tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17452243262"
