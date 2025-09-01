@@ -33,6 +33,62 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Tag base code */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17497722799"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17497722799');
+          `}
+        </Script>
+
+        {/* Conversion snippets */}
+        <Script id="purchase-conversion" strategy="afterInteractive">
+          {`
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17497722799/yQECCMjZypEbEK-fyJdB',
+              'value': 1.0,
+              'currency': 'USD',
+              'transaction_id': ''
+            });
+          `}
+        </Script>
+
+        <Script id="signup-conversion" strategy="afterInteractive">
+          {`
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17497722799/SDETCJLcypEbEK-fyJdB',
+              'value': 1.0,
+              'currency': 'USD'
+            });
+          `}
+        </Script>
+
+        <Script id="subscribe-conversion" strategy="afterInteractive">
+          {`
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17497722799/mMqmCI3O25EbEK-fyJdB',
+              'value': 1.0,
+              'currency': 'USD'
+            });
+          `}
+        </Script>
+
+        <Script id="pageview-conversion" strategy="afterInteractive">
+          {`
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17497722799/P4GlCLnoypEbEK-fyJdB',
+              'value': 1.0,
+              'currency': 'USD'
+            });
+          `}
+        </Script>
+
         {/* Meta Pixel Script */}
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
