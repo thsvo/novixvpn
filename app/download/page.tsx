@@ -52,7 +52,7 @@ export default function VPNDownloadPage() {
                 href="https://play.google.com/store/apps/details?id=com.novix.mobile"
                 className="bg-primary text-white font-medium hover:bg-transparent hover:text-black  py-3 px-6 rounded-full text-center border border-gray-300 hover:border transition-colors ease-in-out "
               >
-                Buy NovixVPN
+                Download Novix VPN
               </Link>
               <Link
                 href="https://play.google.com/store/apps/details?id=com.novix.mobile"
