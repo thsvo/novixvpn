@@ -136,6 +136,24 @@ export default function MainNav() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
+          <NavigationMenuTrigger className="bg-transparent">
+            Tools
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
+                <Link href="/speed-test" className="nav-link">
+                  <div className="text-sm font-medium">Speed Test</div>
+                  <p className="text-sm text-muted-foreground">
+                    Test your internet speed and optimize your VPN connection.
+                  </p>
+                </Link>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
           <Link href="/blogs" legacyBehavior passHref>
             <NavigationMenuLink
               className={`bg-transparent ${navigationMenuTriggerStyle()}`}
@@ -144,7 +162,7 @@ export default function MainNav() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <Link href="/faq" legacyBehavior passHref>
             <NavigationMenuLink
               className={`bg-transparent ${navigationMenuTriggerStyle()}`}
@@ -152,7 +170,8 @@ export default function MainNav() {
               FAQ
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
+
         <NavigationMenuItem>
           <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink

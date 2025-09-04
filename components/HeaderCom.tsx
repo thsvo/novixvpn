@@ -244,6 +244,31 @@ export default function HeaderCom() {
                   <ChevronDown size={16} className="text-gray-500" />
                 </Link>
 
+                <div>
+                  <button
+                    className="w-full flex items-center justify-between py-3 border-b border-gray-100"
+                    onClick={() => setFeaturesDropdownOpen((prev) => !prev)}
+                  >
+                    <span className="text-lg font-medium">Tools</span>
+                    {featuresDropdownOpen ? (
+                      <ChevronUp size={16} className="text-gray-500" />
+                    ) : (
+                      <ChevronDown size={16} className="text-gray-500" />
+                    )}
+                  </button>
+                  {featuresDropdownOpen && (
+                    <div className="pl-4 pb-2 space-y-2">
+                      <Link
+                        href="/speed-test"
+                        onClick={() => setMobileNavOpen(false)}
+                        className="block text-base text-muted-foreground hover:text-primary"
+                      >
+                        Speed Test
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
                 {/* Learn */}
                 {/* <Link 
                   href="/learn" 
