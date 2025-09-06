@@ -128,6 +128,34 @@ export default function HeaderCom() {
                       </div>
                     </div>
                   </Link>
+                  <Link href="https://play.google.com/store/apps/details?id=com.novix.mobile">
+                    <div className="hover:bg-gray-100 p-2 rounded-md ">
+                      <Image
+                        src="/android-logo-2.svg"
+                        height={0}
+                        width={30}
+                        alt="android-logo"
+                        className="mr-5"
+                      />
+                      <div className="text-sm mt-2">
+                        Download for android app
+                      </div>
+                    </div>
+                  </Link>
+                  <Link href="/">
+                    <div className="hover:bg-gray-100 p-2 rounded-md ">
+                      <Image
+                        src="/Apple_logo_black.svg.png"
+                        height={0}
+                        width={30}
+                        alt="app-ios-png"
+                        className="mr-5"
+                      />
+                      <div className="text-sm mt-2">
+                        Download for ios app
+                      </div>
+                    </div>
+                  </Link>
                 </div>
               )}
             </div>

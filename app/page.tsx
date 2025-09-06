@@ -157,6 +157,18 @@ export default function Home() {
 
                 <div className="w-full gap-2 flex mt-5">
                   <Link
+                    href="/"
+                    className="flex flex-col items-center mr-5 gap-5 hover:opacity-80 transition-opacity"
+                  >
+                    <Image
+                      src="/app-ios-png-4.png"
+                      width={70}
+                      height={150}
+                      alt="ios"
+                    />
+                    {/* <p>download ios file</p> */}
+                  </Link>
+                  <Link
                     href="https://play.google.com/store/apps/details?id=com.novix.mobile"
                     className="flex flex-col items-center gap-2 hover:opacity-80 transition-opacity"
                   >
@@ -185,7 +197,7 @@ export default function Home() {
                   src="/Home-page-update.png"
                   width={800}
                   height={800}
-                  alt="playstore"
+                  alt="Home-page"
                 />
               </div>
             </div>

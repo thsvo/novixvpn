@@ -181,7 +181,7 @@ export default function MainNav() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <Link href="/pricing" legacyBehavior passHref>
             <NavigationMenuLink
               className={`bg-transparent ${navigationMenuTriggerStyle()}`}
@@ -189,7 +189,36 @@ export default function MainNav() {
               Free VPN
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
+
+        {/* <NavigationMenuItem>
+          <NavigationMenuTrigger className="bg-transparent">
+            Business
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
+                <Link href="/affiliate" className="nav-link">
+                  <div className="text-sm font-medium">Affiliate</div>
+                  <p className="text-sm text-muted-foreground">
+                    Explore our affiliate program and earn commissions by
+                    promoting our VPN service.
+                  </p>
+                </Link>
+              </li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
+                <Link href="/refer" className="nav-link">
+                  <div className="text-sm font-medium">Refer-a-friend</div>
+                  <p className="text-sm text-muted-foreground">
+                    Explore our affiliate program and earn commissions by
+                    promoting our VPN service.
+                  </p>
+                </Link>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem> */}
+
         <NavigationMenuItem>
           <NavigationMenuLink
             className={`bg-transparent ${navigationMenuTriggerStyle()}`}
