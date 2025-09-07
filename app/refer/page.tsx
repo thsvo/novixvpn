@@ -1,5 +1,10 @@
+import Refer from "@/components/ui/refer";
 import React from "react";
 
 export default function page() {
-  return <div>this is refer</div>;
+  return (
+    <div>
+      <Refer />
+    </div>
+  );
 }

@@ -1,13 +1,10 @@
 import React from "react";
+import Affiliate from "@/components/affiliate";
 
-export default function page() {
+export default function AffiliatePage() {
   return (
     <div>
-      <h1>Affiliate Program</h1>
-      <p>
-        Join our affiliate program and earn commissions by promoting our VPN
-        service.
-      </p>
+      <Affiliate />
     </div>
   );
 }

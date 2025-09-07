@@ -145,7 +145,15 @@ export default function MainNav() {
                 <Link href="/speed-test" className="nav-link">
                   <div className="text-sm font-medium">Speed Test</div>
                   <p className="text-sm text-muted-foreground">
-                    Test your internet speed and optimize your VPN connection.
+                    Test your internet speed.
+                  </p>
+                </Link>
+              </li>
+              <li className="hover:bg-accent p-2 hover:scale-105 transition-all ease-in-out duration-100 rounded">
+                <Link href="/proxy-check" className="nav-link">
+                  <div className="text-sm font-medium">Proxy Check</div>
+                  <p className="text-sm text-muted-foreground">
+                    Check your proxy settings.
                   </p>
                 </Link>
               </li>
@@ -191,7 +199,7 @@ export default function MainNav() {
           </Link>
         </NavigationMenuItem> */}
 
-        {/* <NavigationMenuItem>
+        <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent">
             Business
           </NavigationMenuTrigger>
@@ -201,8 +209,7 @@ export default function MainNav() {
                 <Link href="/affiliate" className="nav-link">
                   <div className="text-sm font-medium">Affiliate</div>
                   <p className="text-sm text-muted-foreground">
-                    Explore our affiliate program and earn commissions by
-                    promoting our VPN service.
+                    Explore our affiliate program
                   </p>
                 </Link>
               </li>
@@ -210,14 +217,13 @@ export default function MainNav() {
                 <Link href="/refer" className="nav-link">
                   <div className="text-sm font-medium">Refer-a-friend</div>
                   <p className="text-sm text-muted-foreground">
-                    Explore our affiliate program and earn commissions by
-                    promoting our VPN service.
+                    Share with friends and earn rewards.
                   </p>
                 </Link>
               </li>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem> */}
+        </NavigationMenuItem>
 
         <NavigationMenuItem>
           <NavigationMenuLink
