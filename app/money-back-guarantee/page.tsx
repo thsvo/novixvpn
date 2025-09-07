@@ -27,7 +27,7 @@ export default function MoneyBackGuarantee() {
           <div className="container px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
-                48-Hour Money-Back Guarantee
+                40-Days Money-Back Guarantee
               </h1>
               <p className="text-xl md:text-2xl mb-8">
                 Try NovixVPN without worrying about commitment. If you’re not
