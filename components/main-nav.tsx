@@ -181,11 +181,11 @@ export default function MainNav() {
         </NavigationMenuItem> */}
 
         <NavigationMenuItem>
-          <Link href="/contact" legacyBehavior passHref>
+          <Link href="/support" legacyBehavior passHref>
             <NavigationMenuLink
               className={`bg-transparent ${navigationMenuTriggerStyle()}`}
             >
-              Contact
+              Support Center
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

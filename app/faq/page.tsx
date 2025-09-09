@@ -157,15 +157,15 @@ export default function FAQPage() {
         </p>
       ),
     },
-    {
-      question: "How does the 48-hour money-back guarantee work?",
-      answer: (
-        <p>
-          Cancel through Google Play within 48 hours of purchase for a full
-          refund. No hassle.
-        </p>
-      ),
-    },
+    // {
+    //   question: "How does the 48-hour money-back guarantee work?",
+    //   answer: (
+    //     <p>
+    //       Cancel through Google Play within 48 hours of purchase for a full
+    //       refund. No hassle.
+    //     </p>
+    //   ),
+    // },
     {
       question: "Do you offer different subscription plans?",
       answer: (
