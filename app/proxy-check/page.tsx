@@ -25,9 +25,9 @@ export default function ProxyCheckCard() {
       const ipData = await ipRes.json();
       setIp(ipData.ip);
 
-      // Fetch proxy details using ip-api.com
+      // Fetch proxy details using ip-api.com (HTTPS instead of HTTP ✅)
       const proxyRes = await fetch(
-        `http://ip-api.com/json/${ipData.ip}?fields=proxy,hosting`
+        `https://ip-api.com/json/${ipData.ip}?fields=proxy,hosting`
       );
       const proxyData = await proxyRes.json();
 
