@@ -64,7 +64,7 @@ export default function SupportCenter() {
     <div className="w-full  mx-auto">
       {/* Header */}
 
-      <section className="bg-gradient-to-b from-blue-500 to-blue-400 text-white py-16 md:py-24">
+      <section className="bg-[#3E5FFF] text-white py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-6">
