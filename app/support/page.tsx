@@ -1,145 +1,14 @@
 "use client";
+
 import FAQComponent from "@/components/faq-component";
-import NovixVPNUpdates from "@/components/NovixVPNUpdates";
+import Link from "next/link";
 import { useState } from "react";
-import { Mail, Send } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"; // Added Select components
-import { toast } from "@/components/ui/use-toast";
-
-interface FAQCategory {
-  title: string;
-  questions: string[];
-}
-
-const categories: FAQCategory[] = [
-  {
-    title: "Troubleshooting and VPN issues",
-    questions: [
-      "Why is my VPN not connecting?",
-      "How do I fix slow VPN speed?",
-      "VPN disconnects frequently – what to do?",
-    ],
-  },
-  {
-    title: "Getting started, installation, and features",
-    questions: [
-      "How to install VPN on Windows?",
-      "Can I use VPN on multiple devices?",
-      "What features are included?",
-    ],
-  },
-  {
-    title: "Account management and logging in",
-    questions: [
-      "I forgot my password, how do I reset it?",
-      "How do I change my email?",
-      "Login issues – how to fix?",
-    ],
-  },
-  {
-    title: "Billing and subscriptions",
-    questions: [
-      "How can I update my payment method?",
-      "Can I cancel my subscription?",
-      "How do refunds work?",
-    ],
-  },
-];
 
 export default function SupportCenter() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubjectChange = (value: string) => {
-    setFormData((prev) => ({ ...prev, subject: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const res = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-      if (res.ok) {
-        toast({
-          title: "Message Sent",
-          description:
-            "Thank you for contacting Trafford Publishing. We'll get back to you shortly.",
-        });
-        setFormData({
-          name: "",
-          email: "",
-          subject: "General Inquiry",
-          message: "",
-        });
-      } else {
-        toast({
-          title: "Failed to send message",
-          description: data?.error || "Please try again later.",
-        });
-      }
-    } catch (err) {
-      console.error(err);
-      toast({
-        title: "Something went wrong",
-        description: "Please check your connection and try again.",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
   const [search, setSearch] = useState("");
-  const [openCategory, setOpenCategory] = useState<string | null>(null);
-
-  const filteredCategories = categories
-    .map((cat) => ({
-      ...cat,
-      questions: cat.questions.filter((q) =>
-        q.toLowerCase().includes(search.toLowerCase())
-      ),
-    }))
-    .filter(
-      (cat) =>
-        cat.title.toLowerCase().includes(search.toLowerCase()) ||
-        cat.questions.length > 0
-    );
-
   return (
-    <div className="w-full  mx-auto">
+    <div className="w-full mx-auto">
       {/* Header */}
-
       <section className="bg-[#3E5FFF] text-white py-16 md:py-24">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
@@ -160,265 +29,210 @@ export default function SupportCenter() {
       </section>
 
       {/* Categories */}
-      <h2 className="text-lg md:text-2xl mt-10 font-semibold text-center mb-4">
-        Select the primary category.
-      </h2>
-      <p className="text-gray-500 text-center mb-6">
-        Explore further and quickly discover the answers you need.
-      </p>
-
-      <div className="space-y-4 max-w-3xl my-10 mx-auto">
-        {filteredCategories.map((cat) => (
-          <div
-            key={cat.title}
-            className="border rounded-lg shadow-sm bg-white overflow-hidden"
-          >
-            <button
-              className="w-full flex justify-between items-center px-4 py-3 text-left font-medium hover:bg-gray-50"
-              onClick={() =>
-                setOpenCategory(openCategory === cat.title ? null : cat.title)
-              }
-            >
-              {cat.title}
-              <span>{openCategory === cat.title ? "−" : "+"}</span>
-            </button>
-            {openCategory === cat.title && (
-              <div className="px-4 py-2 border-t bg-gray-50">
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  {cat.questions.map((q, idx) => (
-                    <li
-                      key={idx}
-                      className="hover:text-blue-600 cursor-pointer"
-                    >
-                      {q}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+      <section className="container mx-auto px-4 md:px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Getting started</h2>
+            <ul className="space-y-2 text-blue-600">
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1o5g7ak9Qkc_rMwMqVPzokepiTnjuSFA_-DR_CJ1NqMY/edit?tab=t.0#heading=h.fcfhct3van9v"
+                >
+                  Download and Install
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1a4xRijjgxb3wEzvwfgoOF5gOXnAlVw-ryZHCql-r7FQ/edit?tab=t.0#heading=h.jbv03dkfj641"
+                >
+                  Create your account
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/12BkjN6f4G92O_d1a-Jzit1YCDyepnIbsb0dAKVQg4EY/edit?tab=t.0#heading=h.lseob8dn6tfd"
+                >
+                  Your First Connection
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/14do-ftbgE6FncbJicHFfMpTtzTAhfE0CaYNrMQAyGEQ/edit?tab=t.0#heading=h.if6vk3pspx0p"
+                >
+                  Multi Device Setup
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1DG7FoQyan8QfNlhEPIMPbjS5kcZiq2uJJkvw1bjL9yo/edit?tab=t.0#heading=h.3ohht7bfjumc"
+                >
+                  Android Setup Tutorial
+                </Link>
+              </li>
+            </ul>
           </div>
-        ))}
-
-        {filteredCategories.length === 0 && (
-          <p className="text-center text-gray-500">No results found.</p>
-        )}
-      </div>
-
-      <NovixVPNUpdates />
-      <FAQComponent />
-      <section className="py-12 md:py-24">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-8 md:grid-cols-2">
-            <Card className="shadow-lg border-none rounded-2xl">
-              <CardContent className="p-8">
-                <h2 className="text-3xl font-bold mb-4 text-blue-600">
-                  Get in Touch
-                </h2>
-                <p className="text-lg text-gray-600 mb-8">
-                  Need help with your VPN connection? Have questions about our
-                  security features? We’re here to help you stay secure online.
-                </p>
-
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4">
-                    <div className="rounded-full bg-blue-100 p-3 mt-1">
-                      <Mail className="h-6 w-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold mb-1">
-                        Email Support
-                      </h3>
-                      <p className="text-gray-600 mb-1">
-                        <a
-                          href="mailto:novixvpn@gmail.com"
-                          className="text-blue-600 hover:underline"
-                        >
-                          novixvpn@gmail.com
-                        </a>
-                      </p>
-                      <p className="text-gray-500 text-sm">
-                        Response within 24 hours
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="rounded-full bg-blue-100 p-3 mt-1">
-                      <svg
-                        className="h-6 w-6 text-blue-600"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M9 12h6m-3-3v6m-9 3h18a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold mb-1">
-                        Help Center
-                      </h3>
-                      <p className="text-gray-600 text-sm">
-                        Comprehensive guides & FAQs
-                      </p>
-                      {/* <p className="text-gray-600 text-sm">
-                          Setup tutorials and troubleshooting
-                        </p> */}
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-3 mt-6">
-                    {[
-                      { text: "Zero-Log Policy", icon: "🔒" },
-                      { text: "Servers Worldwide", icon: "🌍" },
-                      { text: "10Gbps Servers", icon: "⚡" },
-                      { text: "Military-Grade Encryption", icon: "🛡️" },
-                    ].map((item) => (
-                      <div
-                        key={item.text}
-                        className="flex items-center gap-2 bg-blue-50 text-black px-4 py-2 rounded-full text-sm font-medium"
-                      >
-                        <span>{item.icon}</span>
-                        <span>{item.text}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="text-gray-600 text-[10px] flex items-center justify-center mt-5">
-                    Address : Plot-33, Main Road, Section-10, Senpara Parbata
-                    Mirpur - 1216 Bangladesh (BD)
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-lg border-none rounded-2xl">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-2">Send us a Message</h3>
-                <p className="text-gray-500 mb-6">
-                  We'll get back to you as soon as possible
-                </p>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-sm font-medium">
-                      Full Name
-                    </Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      placeholder="Enter your full name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="border-2 border-[#CCE5FF] rounded-lg focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-sm font-medium">
-                      Email Address
-                    </Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder="your.email@example.com"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="border-2 border-[#CCE5FF]  rounded-lg focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="subject" className="text-sm font-medium">
-                      Subject
-                    </Label>
-                    <Select
-                      value={formData.subject}
-                      onValueChange={handleSubjectChange}
-                    >
-                      <SelectTrigger className="border-2 border-[#CCE5FF]  rounded-lg focus:ring-2 focus:ring-blue-500">
-                        <SelectValue placeholder="Select a subject" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {[
-                          "Technical Support",
-                          "Billing & Account",
-                          "Connection Issues",
-                          "Feature Request",
-                          "Security Concerns",
-                          "Other",
-                        ].map((label) => (
-                          <SelectItem key={label} value={label}>
-                            {label}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-sm font-medium">
-                      Your Message
-                    </Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      placeholder="Tell us how we can help you..."
-                      rows={5}
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      className="border-2 border-[#CCE5FF]  rounded-lg focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg py-3 flex items-center justify-center gap-2"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? (
-                      <span className="flex items-center">
-                        <svg
-                          className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <circle
-                            className="opacity-25"
-                            cx="12"
-                            cy="12"
-                            r="10"
-                            stroke="currentColor"
-                            strokeWidth="4"
-                          ></circle>
-                          <path
-                            className="opacity-75"
-                            fill="currentColor"
-                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                          ></path>
-                        </svg>
-                        Sending...
-                      </span>
-                    ) : (
-                      <span className="flex items-center">
-                        <Send className="mr-2 h-4 w-4" />
-                        Send Secure Message
-                      </span>
-                    )}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+          <div>
+            <h2 className="text-2xl font-bold mb-4">
+              Connection and technical
+            </h2>
+            <ul className="space-y-2 text-blue-600">
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1DLVZ7eux7WkEx7Jv2GVfeQJ_I4iD6EDUw1e1IuZCJW4/edit?tab=t.0#heading=h.jl4tq9rqzhey"
+                >
+                  Connection Problems
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1bzX4L4SlF835htB018Z0h9yBAjUEhzce-JywTRgVRVs/edit?usp=sharing"
+                >
+                  Speed Optimization
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/188KgCeuYTHdiDgDAoYDjM-Rb0KAU4H9kYbf1WdVl1cE/edit?usp=sharing"
+                >
+                  Kill Switch SetUp
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1h7c1Bk9VDDwIaDEN85DaaUfHwGKY2EPRB74C_7ul1rs/edit?usp=sharing"
+                >
+                  Wire Guard Protocol
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1VLFfVBOVcq-DS5wXmbIKElgYxfvLz2JLSluPREKMzXY/edit?usp=sharing"
+                >
+                  Server Location
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Privacy and security</h2>
+            <ul className="space-y-2 text-blue-600">
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1PRj9hxRSOxak-cevTca128hgOTKGyW8IvLWFoF3rVVA/edit?usp=sharing"
+                >
+                  No-logs Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1Eq2cTTPjGEStfeC2QExtd2tqTmhRiXaeawST1o0wzKg/edit?usp=sharing"
+                >
+                  Ip Leak protection
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1WNnLsjsl17eA1YaQtKS9RSjqCqUCAosiFX1SGCrf-Z8/edit?usp=sharing"
+                >
+                  DNS configuration
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1VAq3yy5_Xq4ueyJckrdeapqGFWha_Vj_Er7CDnVc_ao/edit?usp=sharing"
+                >
+                  Ad and Malware Blocker
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1s-82L_pyrCy_64pxBjKbqwLYPnC4wPm8XMkK8l2LjJI/edit?usp=sharing"
+                >
+                  Military grade encrytption
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Billing and Account</h2>
+            <ul className="space-y-2 text-blue-600">
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1oeN03Is3KSY4cyEE1gg8T2U7rFAmmQ05TNKwqNip8Ak/edit?usp=sharing"
+                >
+                  Plans and Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1_4u9q4wB5PJXp9huuuybl-jeq_Xih77rZTst9Dqqz5Q/edit?usp=sharing"
+                >
+                  Payment Methods
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1XQv21BAPPdemn9_0KFBDRRJ8gmmpH9pvYZKB9rBEwik/edit?usp=sharing"
+                >
+                  40 day money back guarantee
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1YCkDs5uLj1jzJDpvgrrME6SyAzKv8vF3ytR1BN2IfWw/edit?usp=sharing"
+                >
+                  Manage subscription
+                </Link>
+              </li>
+              <li>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1mH31jprfcs693w_UFuS3ak2dyhezvwBhZGPtTDL2zE8/edit?usp=sharing"
+                >
+                  Account settings
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+
+      <FAQComponent />
+
+      <div className="bg-[#3E5FFF] container mx-auto text-white  md:w-[1000px] mb-10 p-5 rounded-lg">
+        <div className=" px-4 md:px-15 py-10 text-center">
+          <p className="text-lg md:text-xl font-medium">
+            Can’t find what you need?
+          </p>
+          <div className="mt-4 space-x-8">
+            <button className="px-4 py-2 bg-white bg-opacity-20 rounded hover:bg-opacity-30">
+              <Link href="/contact">Contact with us</Link>
+            </button>
+            {/* <button className="px-4 py-2 bg-white bg-opacity-20 rounded hover:bg-opacity-30">
+              Submit a request
+            </button> */}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
