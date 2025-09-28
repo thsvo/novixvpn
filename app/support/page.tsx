@@ -225,7 +225,7 @@ export default function SupportCenter() {
           </p>
           <div className="mt-4 space-x-8">
             <button className="px-4 py-2 bg-white bg-opacity-20 rounded hover:bg-opacity-30">
-              <Link href="/contact">Contact with us</Link>
+              <Link href="/contact">Contact with us </Link>
             </button>
             {/* <button className="px-4 py-2 bg-white bg-opacity-20 rounded hover:bg-opacity-30">
               Submit a request
