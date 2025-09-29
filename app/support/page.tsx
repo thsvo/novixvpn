@@ -35,33 +35,27 @@ export default function SupportCenter() {
             <h2 className="text-2xl font-bold mb-4">Getting started</h2>
             <ul className="space-y-2 text-blue-600">
               <li>
-                <Link
-                  target="_blank"
-                  href="https://docs.google.com/document/d/1o5g7ak9Qkc_rMwMqVPzokepiTnjuSFA_-DR_CJ1NqMY/edit?tab=t.0#heading=h.fcfhct3van9v"
-                >
+                <Link target="_blank" href="/download-install">
                   Download and Install
                 </Link>
               </li>
               <li>
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/document/d/1a4xRijjgxb3wEzvwfgoOF5gOXnAlVw-ryZHCql-r7FQ/edit?tab=t.0#heading=h.jbv03dkfj641"
+                  href="/createYourAccount"
                 >
                   Create your account
                 </Link>
               </li>
               <li>
-                <Link
-                  target="_blank"
-                  href="https://docs.google.com/document/d/12BkjN6f4G92O_d1a-Jzit1YCDyepnIbsb0dAKVQg4EY/edit?tab=t.0#heading=h.lseob8dn6tfd"
-                >
+                <Link target="_blank" href="/yourFirstConnection">
                   Your First Connection
                 </Link>
               </li>
               <li>
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/document/d/14do-ftbgE6FncbJicHFfMpTtzTAhfE0CaYNrMQAyGEQ/edit?tab=t.0#heading=h.if6vk3pspx0p"
+                  href="/multiDeviceSetup"
                 >
                   Multi Device Setup
                 </Link>
