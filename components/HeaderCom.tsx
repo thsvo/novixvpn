@@ -19,6 +19,7 @@ export default function HeaderCom() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [featuresDropdownOpen, setFeaturesDropdownOpen] = useState(false);
+  const [businessDropdownOpen, setBusinessDropdownOpen] = useState(false);
 
   const pathname = usePathname();
 
@@ -151,9 +152,7 @@ export default function HeaderCom() {
                         alt="app-ios-png"
                         className="mr-5"
                       />
-                      <div className="text-sm mt-2">
-                        Download for ios app
-                      </div>
+                      <div className="text-sm mt-2">Download for ios app</div>
                     </div>
                   </Link>
                 </div>
@@ -293,6 +292,13 @@ export default function HeaderCom() {
                       >
                         Speed Test
                       </Link>
+                      <Link
+                        href="/proxy-check"
+                        onClick={() => setMobileNavOpen(false)}
+                        className="block text-base text-muted-foreground hover:text-primary"
+                      >
+                        Proxy check
+                      </Link>
                     </div>
                   )}
                 </div>
@@ -308,6 +314,39 @@ export default function HeaderCom() {
                 </Link> */}
 
                 {/* For Business */}
+
+                <div>
+                  <button
+                    className="w-full flex items-center justify-between py-3 border-b border-gray-100"
+                    onClick={() => setBusinessDropdownOpen((prev) => !prev)}
+                  >
+                    <span className="text-lg font-medium">Business</span>
+                    {businessDropdownOpen ? (
+                      <ChevronUp size={16} className="text-gray-500" />
+                    ) : (
+                      <ChevronDown size={16} className="text-gray-500" />
+                    )}
+                  </button>
+                  {businessDropdownOpen && (
+                    <div className="pl-4 pb-2 space-y-2">
+                      <Link
+                        href="/affiliate"
+                        onClick={() => setMobileNavOpen(false)}
+                        className="block text-base text-muted-foreground hover:text-primary"
+                      >
+                        Affiliate
+                      </Link>
+                      <Link
+                        href="/refer"
+                        onClick={() => setMobileNavOpen(false)}
+                        className="block text-base text-muted-foreground hover:text-primary"
+                      >
+                        Refer-a-friend
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
                 {/* <Link 
                   href="/business" 
                   className="flex items-center justify-between py-3 border-b border-gray-100"
@@ -324,6 +363,13 @@ export default function HeaderCom() {
                   onClick={() => setMobileNavOpen(false)}
                 >
                   <span className="text-lg font-medium">Contact</span>
+                </Link>
+                <Link
+                  href="/support"
+                  className="flex items-center justify-between py-3 border-b border-gray-100"
+                  onClick={() => setMobileNavOpen(false)}
+                >
+                  <span className="text-lg font-medium">Support Center</span>
                 </Link>
 
                 {/* Products */}
@@ -345,6 +391,7 @@ export default function HeaderCom() {
                 </Link>
                 <LanguageDropdown />
               </div>
+
               {/* Log In */}
               {!token && !session ? (
                 <Link
