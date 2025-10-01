@@ -35,27 +35,27 @@ export default function SupportCenter() {
             <h2 className="text-2xl font-bold mb-4">Getting started</h2>
             <ul className="space-y-2 text-blue-600">
               <li>
-                <Link target="_blank" href="/download-install">
+                <Link target="_blank" href="/support/download-install">
                   Download and Install
                 </Link>
               </li>
               <li>
                 <Link
                   target="_blank"
-                  href="/createYourAccount"
+                  href="/support/createYourAccount"
                 >
                   Create your account
                 </Link>
               </li>
               <li>
-                <Link target="_blank" href="/yourFirstConnection">
+                <Link target="_blank" href="/support/yourFirstConnection">
                   Your First Connection
                 </Link>
               </li>
               <li>
                 <Link
                   target="_blank"
-                  href="/multiDeviceSetup"
+                  href="/support/multiDeviceSetup"
                 >
                   Multi Device Setup
                 </Link>
@@ -63,7 +63,7 @@ export default function SupportCenter() {
               <li>
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/document/d/1DG7FoQyan8QfNlhEPIMPbjS5kcZiq2uJJkvw1bjL9yo/edit?tab=t.0#heading=h.3ohht7bfjumc"
+                  href="/support/androidSetupTutoria"
                 >
                   Android Setup Tutorial
                 </Link>
@@ -78,7 +78,7 @@ export default function SupportCenter() {
               <li>
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/document/d/1DLVZ7eux7WkEx7Jv2GVfeQJ_I4iD6EDUw1e1IuZCJW4/edit?tab=t.0#heading=h.jl4tq9rqzhey"
+                  href="/support/connectionProblems"
                 >
                   Connection Problems
                 </Link>
@@ -86,7 +86,7 @@ export default function SupportCenter() {
               <li>
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/document/d/1bzX4L4SlF835htB018Z0h9yBAjUEhzce-JywTRgVRVs/edit?usp=sharing"
+                  href="support/speedOptimization"
                 >
                   Speed Optimization
                 </Link>
@@ -94,7 +94,7 @@ export default function SupportCenter() {
               <li>
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/document/d/188KgCeuYTHdiDgDAoYDjM-Rb0KAU4H9kYbf1WdVl1cE/edit?usp=sharing"
+                  href="/support/killSwitchSetup"
                 >
                   Kill Switch SetUp
                 </Link>
@@ -102,7 +102,7 @@ export default function SupportCenter() {
               <li>
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/document/d/1h7c1Bk9VDDwIaDEN85DaaUfHwGKY2EPRB74C_7ul1rs/edit?usp=sharing"
+                  href="/support/wireGuardProtocol"
                 >
                   Wire Guard Protocol
                 </Link>
@@ -110,7 +110,7 @@ export default function SupportCenter() {
               <li>
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/document/d/1VLFfVBOVcq-DS5wXmbIKElgYxfvLz2JLSluPREKMzXY/edit?usp=sharing"
+                  href="/support/serverLocations"
                 >
                   Server Location
                 </Link>
